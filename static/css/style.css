@@ -1,0 +1,158 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/*****************************
+    Typography
+*****************************/
+@font-face {
+  font-family: 'Alta';
+  src: url('../fonts/Alta_regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant-Garamond';
+  src: url('../fonts/CormorantGaramond-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EB-Garamond';
+  src: url('../fonts/EBGaramond-VariableFont_wght.ttf');
+  font-weight: 400 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair';
+  src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+  font-weight: 400 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+  font-weight: 400 900;
+  font-style: normal;
+}
+
+/* Variables */
+* {
+  --header-height: 120px;
+  
+  --color-primary: #fff;
+  --color-secondary: #000;
+  --color-highlight: #f5f5f5;
+  --color-background: #fff;
+  --color-accent-1: #f5f5f5;
+  --color-accent-2: #f5f5f5;
+  --color-accent-3: #f5f5f5;
+
+  --font-hero: 'Alta', sans-serif;
+  --font-header: 'EB-Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-serif: 'Playfair', serif;
+  --font-mono: 'Cormorant-Garamond', serif;
+
+}
+
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  --header-height: 120px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/******************************************
+/* SECTIONS
+/*******************************************/
+section {
+  min-height: 80vh;
+  max-height: fit-content;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: #fff;
+  padding: 0 1rem 0 1rem;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  overflow: hidden;
+  object-position: center;
+  box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.5);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+
+a:hover {
+  cursor: pointer;
+}
+
+
+/* Bootstrap Breakpoints */
+@media (max-width: 576px) { 
+  section .content-container {
+    width: 90%;
+    margin: auto;
+  }
+
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  section .content-container {
+    width: 90%;
+    margin: auto;
+    padding: 0 1rem 0 1rem;
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  section .content-container {
+    width: 90%;
+
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  section .content-container {
+    width: 90%;
+
+  }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  section .content-container {
+    width: 85%;
+
+  }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  section .content-container {
+    width: 75%;
+
+  }
+ }
