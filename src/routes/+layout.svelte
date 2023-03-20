@@ -7,8 +7,19 @@
 <div class="app">
 	<main>
         <Header />
-		<slot />
+		<slot class="test"/>
         <Footer />
 	</main>
 	
 </div>
+
+<style>
+	main {
+		z-index: 0;
+	}
+
+	.test {
+		z-index: 1;
+	}
+
+</style>
