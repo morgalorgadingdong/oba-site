@@ -371,23 +371,23 @@
     }
 
     #tour1 {
-        background-image: url('./img/tour1-cover.jpg');
+        background-image: url('$lib/img/tour1-cover.jpg');
     }
     #tour2 {
-        background-image: url('./img/tour2-cover2.jpg');
+        background-image: url('$lib/img/tour2-cover2.jpg');
     }
 
     #tour3 {
-        background-image: url('./img/tour3-cover.jpeg');
+        background-image: url('$lib/img/tour3-cover.jpeg');
     }
     
     #tour4 {
-        background-image: url('./img/tour4-cover.jpg');
+        background-image: url('$lib/img/tour4-cover.jpg');
 
     }
 
     #inspirational-section {
-        background-image: url('./img/hero-3.jpg');
+        background-image: url('$lib/img/hero-3.jpg');
         background-position: center;
         background-size: cover;
     }
