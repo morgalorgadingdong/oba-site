@@ -371,10 +371,10 @@
     }
 
     #tour1 {
-        background-image: url('./img/tour1-cover.png');
+        background-image: url('./img/tour1-cover.jpg');
     }
     #tour2 {
-        background-image: url('./img/tour2-cover2.png');
+        background-image: url('./img/tour2-cover2.jpg');
     }
 
     #tour3 {
