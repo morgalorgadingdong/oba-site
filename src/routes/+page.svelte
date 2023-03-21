@@ -3,16 +3,16 @@
     import '@splidejs/svelte-splide/css';
 </script>
 
-<div class="hero col-12">
+<div class="hero col-12 d-flex flex-column justify-content-end">
     <div class="img-container">
         <img class="hero-img img" src="./img/hero-2.jpg"/>
-        <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3">
-            <h1 class="hero-tagline col-12 mb-4">Discover the best of Oregon on two wheels.</h1>
-            <button class="btn btn-primary">Tours</button>
-        </div>
+    </div>
+    <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-5">
+        <h1 class="hero-tagline col-12 mb-4">Discover the best of Oregon on two wheels.</h1>
+        <button class="btn btn-primary">Tours</button>
     </div>
 </div>
-<div class="hero-spacer"></div>
+<!-- <div class="hero-spacer"></div> -->
 
 <!-- <div class="col-12 d-flex justify-content-center cta-container">
     <div class="d-flex justify-content-center flex-wrap px-3 py-3 cta">
@@ -47,16 +47,16 @@
                         </div>
                         <h4 class="px-4 py-2">McKenzie Pass</h4>
                         <div class="trip-info-container d-flex justify-content-between justify-content-xxl-around px-3 pb-3">
-                            <div class="trip-info">
-                                <i class="fa-solid fa-clock"></i>
+                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                                <!-- <i class="fa-solid fa-clock"></i> -->
                                 <span>Half day</span>
                             </div>
-                            <div class="trip-info">
-                                <i class="fa-solid fa-tachometer"></i>
+                            <div class="trip-info mx-1 p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                                <!-- <i class="fa-solid fa-tachometer"></i> -->
                                 <span>Difficult</span>
                             </div>
-                            <div class="trip-info">
-                                <i class="fa-solid fa-bicycle"></i>
+                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                                <!-- <i class="fa-solid fa-bicycle"></i> -->
                                 <span>E-bikes available</span>
                             </div>
                         </div>
@@ -72,16 +72,16 @@
                         </div>
                         <h4 class="px-4 py-2">Twin Bridges</h4>
                         <div class="trip-info-container d-flex justify-content-between justify-content-xxl-around px-3 pb-3">
-                            <div class="trip-info">
-                                <i class="fa-solid fa-clock"></i>
+                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                                <!-- <i class="fa-solid fa-clock"></i> -->
                                 <span>Half day</span>
                             </div>
-                            <div class="trip-info">
-                                <i class="fa-solid fa-tachometer"></i>
+                            <div class="trip-info mx-1 p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                                <!-- <i class="fa-solid fa-tachometer"></i> -->
                                 <span>Moderate</span>
                             </div>
-                            <div class="trip-info">
-                                <i class="fa-solid fa-bicycle"></i>
+                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                                <!-- <i class="fa-solid fa-bicycle"></i> -->
                                 <span>E-bikes available</span>
                             </div>
                         </div>
@@ -97,16 +97,16 @@
                         </div>
                         <h4 class="px-4 py-2">Smith Rock</h4>
                         <div class="trip-info-container d-flex justify-content-between justify-content-xxl-around px-3 pb-3">
-                            <div class="trip-info">
-                                <i class="fa-solid fa-clock"></i>
+                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                                <!-- <i class="fa-solid fa-clock"></i> -->
                                 <span>4 day</span>
                             </div>
-                            <div class="trip-info">
-                                <i class="fa-solid fa-tachometer"></i>
+                            <div class="trip-info mx-1 p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                                <!-- <i class="fa-solid fa-tachometer"></i> -->
                                 <span>Moderate</span>
                             </div>
-                            <div class="trip-info">
-                                <i class="fa-solid fa-bicycle"></i>
+                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                                <!-- <i class="fa-solid fa-bicycle"></i> -->
                                 <span>Road Bikes only</span>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
     </div>
 </section>
 
-<section id="inspirational-section" class="col-12 vh-40 d-flex justify-content-start align-items-end my-3 py-5">
+<section id="inspirational-section" class="col-12 vh-40 d-flex justify-content-start align-items-end mt-3 mb-0 py-sm-5 py-2">
     <!-- <div class="img-container">
         <img class="img" src="./img/test.jpg" />
     </div> -->
@@ -127,7 +127,7 @@
     
 </section>
 
-<section>
+<!-- <section>
     <Splide aria-label="Client Testimonials" class="z-reset" hasTrack={ false } options={ {
         type: 'loop',
         perPage: 2.5,
@@ -176,17 +176,12 @@
             </SplideSlide>
             
         </SplideTrack>
-        <!-- <div class="splide__progress">
-            <div class="splide__progress__bar" />
-          </div> -->
         <div class="splide__arrows">
-            <!-- <button class="splide__arrow splide__arrow--prev">&lt;</button>
-            <button class="splide__arrow splide__arrow--next">&gt;</button> -->
             <button class="splide__arrow splide__arrow--prev"><i class="fa-solid fa-caret-left"></i></button>
             <button class="splide__arrow splide__arrow--next"><i class="fa-solid fa-caret-right"></i></button>
         </div>
         </Splide>
-</section>
+</section> -->
 
 <style>
     section {
@@ -195,54 +190,6 @@
     }
     
     
-    .hero {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        padding: 0;
-        z-index: 0;
-    }
-
-    
-
-    .hero .img-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        object-position: center;
-        box-shadow: none;
-        /* box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.5); */
-        /* background-image: url(../img/hero-2.jpg); */
-    }
-
-    .hero-img {
-        color: linear-gradient(
-            rgba(175, 173, 172, 0.5),
-            rgba(0, 0, 0, 0.5)
-        )
-    }
-
-    .img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: all var(--animation-duration-long) ease-in-out;
-    }
-
-    #hero-tagline-container {
-        position: absolute;
-        top: 77%;
-        left: 0%;
-        width: 100%;
-        text-align: center;
-        /* background-color: rgba(var(--color-dark-o), 0.8);
-        width: fit-content; */
-    }
-    
     #hero-tagline-container > h1 {
         font-family: var(--font-hero);
         /* font-size: 3rem; */
@@ -250,6 +197,10 @@
         color: var(--color-light);
         /* text-shadow: 2px 2px 4px rgba(0,0,0,0.5); */
         opacity: 1;
+    }
+
+    #hero-tagline-container > .btn {
+        z-index: 1;
     }
 
 
@@ -311,7 +262,7 @@
         /* height: 40vh; */
         width: 100%;
         height: 100%;
-        transition: all var(--animation-duration-long) ease-in-out;
+        transition: all var(--animation-duration) ease-in-out;
         background-size: cover;
         background-position: center;
         /* position: absolute;
@@ -324,7 +275,7 @@
 
     .trip-preview:hover .trip-preview-img, .trip-preview:focus .trip-preview-img {
         transform: scale(1.10);
-        transition: all var(--animation-duration-long) ease-in-out;
+        transition: all var(--animation-duration) ease-in-out;
         cursor: pointer;
     }
 
@@ -341,6 +292,7 @@
         right: 2vw;
         /* bottom: 6vw; */
         width: fit-content;
+        font-family: var(--font-hero);
     }
 
     .trip-info-container {
@@ -361,6 +313,10 @@
         height: 100%;
         /* z-index: -1; */
         
+    }
+
+    .trip-info span {
+        line-height: 1rem;
     }
 
     .trip-preview:hover .trip-info-container, .trip-preview:focus .trip-info-container  {

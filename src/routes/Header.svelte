@@ -20,40 +20,43 @@
 <!-- hamburger menu below lg screens 992px -->
 
 
-<header class="col-12 d-flex justify-content-between px-0 px-lg-5">
-    <div class="col-12 col-lg-4 col-xl-3 d-flex justify-content-start px-0 align-items-center logo-container">
-        <a href="/" class="mx-3 py-2"><img src="/img/logo-5.png" alt="oba-logo"></a>
-        <div class="logo-text-container d-flex align-items-center">
-            <h1 class="logo-text">Oregon Bicycle <br> Adventures, llc</h1>
+<header class="col-12 px-0 mx-0">
+    <div class="col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center">
+        <a class="col-9 col-sm-8 col-lg-4 col-xl-3 d-flex justify-content-start px-0 align-items-center logo-container" href="/">
+            <a href="/" class="ml-3 mr-2 mr-sm-4 py-2"><img src="/img/logo-5.png" alt="oba-logo"></a>
+            <div class="logo-text-container d-flex align-items-center">
+                <h1 class="logo-text px-2 px-sm-4 py-2">Oregon Bicycle <br> Adventures, llc</h1>
+            </div>
+            
+        </a>
+        <nav class="col-5 d-none d-lg-flex justify-content-between align-items-center">
+            <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours"><li>Tours</li></a>
+            <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined} href="/blog"><li>Blog</li></a>
+            <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined} href="/about"><li>About</li></a>
+            <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined} href="/contact"><li>Contact</li></a>
+        </nav>
+        <!-- <div class="col-10 col-sm-6 col-md-4 py-1 d-flex justify-content-center">
+            <a href="/" class=""><img src="/img/logo-1.png" alt="oba-logo"></a>
+        </div> -->
+        <div class="col-1 col-xxl-3 d-none d-lg-flex justify-content-end align-items-center align-content-center">
+            <!-- <i class="fa-solid fa-phone color-light my-0 "></i>
+            <p class="color-light my-0 mx-3">(503) 949-8766</p> -->
+            <button class="btn btn-primary">Book</button>
         </div>
-        
-    </div>
-    <nav class="col-5 d-none d-lg-flex justify-content-between">
-        <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours">Tours</a>
-        <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined} href="/blog">Blog</a>
-        <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined} href="/about">About</a>
-        <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined} href="/contact">Contact</a>
-    </nav>
-    <!-- <div class="col-10 col-sm-6 col-md-4 py-1 d-flex justify-content-center">
-        <a href="/" class=""><img src="/img/logo-1.png" alt="oba-logo"></a>
-    </div> -->
-    <div class="col-1 col-xxl-3 d-none d-lg-flex justify-content-end align-items-center align-content-center">
-        <!-- <i class="fa-solid fa-phone color-light my-0 "></i>
-        <p class="color-light my-0 mx-3">(503) 949-8766</p> -->
-        <button class="btn btn-primary">Book</button>
-    </div>
-    <div id="menuToggle" class="position-absolute px-3 d-lg-none">
-        <input type="checkbox" />
-        <span class=""></span>
-        <span class=""></span>
-        <span class=""></span>
+        <div id="menuToggle" class="px-3 d-lg-none">
+            <input type="checkbox" />
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
             <ul id="menu" class="">
-                <a class="d-flex justify-content-end align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours">Tours</a>
-                <a class="d-flex justify-content-end align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined} href="/blog">Blog</a>
-                <a class="d-flex justify-content-end align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined} href="/about">About</a>
-                <a class="d-flex justify-content-end align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined} href="/contact">Contact</a>
+                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours">Tours</a>
+                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined} href="/blog">Blog</a>
+                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined} href="/about">About</a>
+                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined} href="/contact">Contact</a>
             </ul>
         </div>
+    </div>
+    
 
 </header>
 
@@ -64,6 +67,9 @@
         padding-top: 2rem;
         background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
         width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
         /* overflow-x: hidden; */
     }
 
@@ -91,6 +97,11 @@
         margin: 0;
         z-index: 12;
         line-height: 30px;
+        text-decoration: none;
+    }
+
+    a.col-9 {
+        text-decoration: none;
     }
 
     .logo-container:before {
@@ -115,15 +126,52 @@
         opacity: 0.7;
     } */
 
-    a[aria-current='page'] {
-        border-bottom: solid 2px var(--color-secondary);
+
+    nav {
+        list-style-type: none;
     }
 
-    a {
+    /* a[aria-current='page'] {
+        border-bottom: solid 2px var(--color-secondary);
+    } */
+
+    nav a, #menu a {
         color: var(--color-light);
-        font-family: var(--font-body);
-        font-size: 1.5rem;
+        font-family: var(--font-header);
+        font-size: 1.3rem;
         z-index: 12;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+
+    .nav-item {
+        height: fit-content;
+    }
+
+    .nav-item li {
+        text-decoration: none;
+    }
+
+    
+
+    .nav-item li:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: var(--color-dark);
+        transition: width 0.3s;
+    }
+
+    a[aria-current='page'] > li:after {
+        width: 100%;
+    }
+    
+
+    .nav-item:hover :not(a[aria-current='page']):after {
+        width: 100%;
+        transition: width 0.3s;
     }
 
     .img-container {
@@ -154,7 +202,7 @@
     ul > a {
         text-decoration: none;
         color: #3e3f3c;
-        font-size: 1.3rem;
+        font-size: 16px;
         display: inline-block;
     }
 
@@ -165,23 +213,32 @@
     }
 
     #menuToggle, #menuToggle input, #menuToggle a, #menuToggle input {
-  display: none;
-}
+        display: none;
+        }
 
 
 @media screen and (max-width: 991px) {
-  ::-webkit-scrollbar {
+  header > .col-12 {
+    background-color: var(--color-primary);
+  }
+  
+  .logo-text {
+    font-size: 20px;
+  }
+
+    ::-webkit-scrollbar {
     width: 0;
   }
   
   #menuToggle
   {
-  right: 0;
+  /* right: 0; */
   display: block;
-  z-index: 1;
   -webkit-user-select: none;
   user-select: none;
-  transform: translate(0px, 70px);
+  position: relative;
+  padding-right: 1rem;
+  /* transform: translate(0px, 70px); */
   }
 
   #menuToggle a
@@ -271,11 +328,12 @@
   #menu
   {
   position: absolute;
-  right: -30px;
-  top: 50px;
-  width: 250px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  /* width: 250px;
+  margin: -100px 0 0 -50px; */
+  padding: 25px;
   padding-top: 125px;
   background: var(--color-dark);
   /* opacity: 0; */
