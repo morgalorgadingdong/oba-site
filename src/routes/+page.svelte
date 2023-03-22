@@ -117,7 +117,26 @@
     </div>
 </section>
 
-<section id="inspirational-section" class="col-12 vh-40 d-flex justify-content-start align-items-end mt-3 mb-0 py-sm-5 py-2">
+<section id="why-choose-us" class="col-12 d-flex justify-content-center py-5 mb-0">
+    <div class="col-12 col-md-10 d-flex justify-content-between flex-wrap">
+        <h2 class="col-12 text-left">Why book with us</h2>
+        <div class="col-12 col-md-3">
+            <h4>Locally Based</h4>
+            <p>Oregon Bicycle Adventures is proudly locally based out of Bend Oregon. As lifelong Oregonians, We have decades of experience exploring the hidden gems of Oregon. Our insider knowledge of the state allows us to create unique and unforgettable experiences that showcase the best of what Oregon has to offer.</p>
+        </div>
+        <div class="col-12 col-md-3">
+            <h4>Small Groups</h4>
+            <p>At Oregon Bicycle Adventures, we believe that smaller is better. We keep our group sizes intentionally small, with a maximum of 5 riders per guide. This allows us to provide a more personalized experience, catered to the needs and interests of each individual rider.</p>
+        </div>
+        <div class="col-12 col-md-3">
+            <h4>Expert Guidance</h4>
+            <p>With experience in guiding, outdoor coaching, and even bicycling across the USA, we are experts in the field of bicycle touring. From route planning to bike maintenance, we provide the guidance and support needed to ensure that every trip is safe, enjoyable, and memorable.</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="inspirational-section" class="col-12 vh-40 d-flex justify-content-start align-items-end mt-0 mb-0 py-sm-5 py-2">
     <!-- <div class="img-container">
         <img class="img" src="./img/test.jpg" />
     </div> -->
@@ -340,6 +359,20 @@
     #tour4 {
         background-image: url('$lib/img/tour4-cover.jpg');
 
+    }
+
+
+    #why-choose-us {
+        background-color: var(--color-primary);
+        color: var(--color-light);
+    }
+
+    #why-choose-us h2 {
+        font-family: var(--font-header);
+        font-size: 2rem;
+        color: var(--color-light);
+        opacity: 1;
+        text-transform: uppercase;
     }
 
     #inspirational-section {
