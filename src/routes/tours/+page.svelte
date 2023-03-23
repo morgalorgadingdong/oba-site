@@ -1,4 +1,8 @@
 <script>
+    import TourCard from "../TourCard.svelte";
+    import { tours } from "../tours";
+    
+    
     let view = 'calendar';
 
     function toggleCalendarView() {
@@ -35,12 +39,22 @@
             <h3>This is where the Calender will go</h3>
         </div>
     {:else if view == 'singleDay'}
-        <div id="singleDayView" class="col-12 col-md-8 px-0">
-            <h3>Single day trips go here</h3>
+        <div id="singleDayView" class="col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
+            <h3 class="col-12">Single day trips go here</h3>
+            {#each tours as tour}
+                {#if tour.type == 'Single Day'}
+                    <TourCard {tour}/>
+                {/if}
+            {/each}
         </div>
     {:else if view == 'multiDay'}
         <div id="multiDayView" class="col-12 col-md-8 px-0">
-            <h3>Multi day trips go here</h3>
+            <h3 class="col-12">Multi day trips go here</h3>
+            {#each tours as tour}
+                {#if tour.type == 'Multi Day'}
+                    <TourCard {tour}/>
+                {/if}
+            {/each}
         </div>
     {/if}
     
@@ -70,6 +84,10 @@
     .hero .img-container {
         background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
         z-index: 1;
+    }
+
+    section {
+        transition: all 0.5s ease;
     }
 
 </style>

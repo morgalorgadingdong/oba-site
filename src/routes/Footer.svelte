@@ -2,7 +2,7 @@
     <div class="col-12 d-flex justify-content-between align-content-center align-items-center py-5">
         <div class="col-2 col-md-3 px-0 order-md-2">
             <div class="img-container">
-                <img class="img" src="./img/logo-6.png" />
+                <img class="img" src="/img/logo-6.png" />
             </div>
         </div>
         <div class="col-7 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap">

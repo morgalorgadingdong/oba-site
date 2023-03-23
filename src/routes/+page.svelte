@@ -1,6 +1,8 @@
 <script>
     import {Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
     import '@splidejs/svelte-splide/css';
+    import TourCard from "./TourCard.svelte";
+    import { tours } from "./tours";
 </script>
 
 <div class="hero col-12 d-flex flex-column justify-content-end">
@@ -22,97 +24,18 @@
 </div> -->
 
 
+
+
+
 <section id="tours" class="col-12 my-0">
     <div class="px-0">
         <!-- <h2 class="col-12">Tours</h2> -->
         <div class="d-flex justify-content-center col-12 px-0 flex-wrap">
-            <!-- <div class="col-4 p-3">
-                <div class="col-12 trip-preview-container">
-                    <div id="tour1" class="col-12 trip-preview"></div>
-                    <div class="trip-preview-text-container py-3 px-3">
-                        <h4>Old McKenzie Hwy</h4>
-                        <p>Short blurb about how cool this trip is</p>
-                        <p>Duration: Half day</p>
-                        <p>Cost: $ 97</p>
-                        <p>Difficulty: Beginner</p>
-                        <p>Ebikes available</p>
-                    </div>
-                </div>
-            </div> -->
-            <div class="col-12 col-md-4 p-3">
-                <div class="col-12 trip-preview-container">
-                    <div class="trip-preview d-flex flex-column justify-content-end py-2">
-                        <div class="trip-preview-img-container">
-                            <div id="tour1" class="trip-preview-img"></div>
-                        </div>
-                        <h4 class="px-4 py-2">McKenzie Pass</h4>
-                        <div class="trip-info-container d-flex justify-content-between justify-content-xxl-around px-3 pb-3">
-                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                                <!-- <i class="fa-solid fa-clock"></i> -->
-                                <span>Half day</span>
-                            </div>
-                            <div class="trip-info mx-1 p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                                <!-- <i class="fa-solid fa-tachometer"></i> -->
-                                <span>Difficult</span>
-                            </div>
-                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                                <!-- <i class="fa-solid fa-bicycle"></i> -->
-                                <span>E-bikes available</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 p-3">
-                <div class="col-12 trip-preview-container">
-                    <div class="trip-preview d-flex flex-column justify-content-end py-2">
-                        <div class="trip-preview-img-container">
-                            <div id="tour2" class="trip-preview-img"></div>
-                        </div>
-                        <h4 class="px-4 py-2">Twin Bridges</h4>
-                        <div class="trip-info-container d-flex justify-content-between justify-content-xxl-around px-3 pb-3">
-                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                                <!-- <i class="fa-solid fa-clock"></i> -->
-                                <span>Half day</span>
-                            </div>
-                            <div class="trip-info mx-1 p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                                <!-- <i class="fa-solid fa-tachometer"></i> -->
-                                <span>Moderate</span>
-                            </div>
-                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                                <!-- <i class="fa-solid fa-bicycle"></i> -->
-                                <span>E-bikes available</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 p-3">
-                <div class="col-12 trip-preview-container">
-                    <div class="trip-preview d-flex flex-column justify-content-end py-2">
-                        <div class="trip-preview-img-container">
-                            <div id="tour3" class="trip-preview-img"></div>
-                        </div>
-                        <h4 class="px-4 py-2">Smith Rock</h4>
-                        <div class="trip-info-container d-flex justify-content-between justify-content-xxl-around px-3 pb-3">
-                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                                <!-- <i class="fa-solid fa-clock"></i> -->
-                                <span>4 day</span>
-                            </div>
-                            <div class="trip-info mx-1 p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                                <!-- <i class="fa-solid fa-tachometer"></i> -->
-                                <span>Moderate</span>
-                            </div>
-                            <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                                <!-- <i class="fa-solid fa-bicycle"></i> -->
-                                <span>Road Bikes only</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {#each tours as tour}
+                {#if tour.featured == true}    
+                    <TourCard { tour } />
+                {/if}
+            {/each}
         </div>
     </div>
 </section>
