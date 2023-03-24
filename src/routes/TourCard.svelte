@@ -9,7 +9,7 @@
 </script>
 
 
-<div class="col-12 col-lg-4 p-3">
+<div class="col-12 col-md-8 col-lg-6 col-xl-4 p-3">
     <a class="col-12 trip-preview-container" href={'/tours/' + tour.title}>
         <div class="trip-preview d-flex flex-column justify-content-end py-2">
             <div class="trip-preview-img-container">

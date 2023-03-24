@@ -1,6 +1,6 @@
-<form id="submissionForm" class="d-flex justify-content-center flexWrap col-12 col-md-6" name="netlify-form-example" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+<form id="submissionForm" class="d-flex justify-content-center flex-wrap col-12 col-md-6" name="netlify-form-example" method="POST" netlify-honeypot="bot-field" data-netlify="true">
     <input type="hidden" name="form-name" value="netlify-form-example" />
-    <div class="fields d-flex justify-content-center  flexWrap">
+    <div class="fields d-flex justify-content-center  flex-wrap">
         <div class="field col-12">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" required/>
@@ -24,6 +24,10 @@
 </form>
 
 <style>
+ul {
+    list-style: none;
+}
+
 #submissionForm{
     /* min-height: 78vh; */
     max-width: 600px;

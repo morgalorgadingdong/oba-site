@@ -49,6 +49,7 @@
             <span class=""></span>
             <span class=""></span>
             <ul id="menu" class="">
+                <a class="col-12 d-flex justify-content-center" href=""><button class="btn btn-secondary">Book</button></a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours">Tours</a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined} href="/blog">Blog</a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined} href="/about">About</a>

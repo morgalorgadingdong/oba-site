@@ -27,16 +27,14 @@
 
 
 
-<section id="tours" class="col-12 my-0">
-    <div class="px-0">
-        <!-- <h2 class="col-12">Tours</h2> -->
-        <div class="d-flex justify-content-center col-12 px-0 flex-wrap">
-            {#each tours as tour}
-                {#if tour.featured == true}    
-                    <TourCard { tour } />
-                {/if}
-            {/each}
-        </div>
+<section id="tours" class="col-12 my-0 py-5 d-flex justify-content-center px-0">
+    <!-- <h2 class="col-12">Tours</h2> -->
+    <div class="d-flex justify-content-center col-12 px-0 flex-wrap">
+        {#each tours as tour}
+            {#if tour.featured == true}    
+                <TourCard { tour } />
+            {/if}
+        {/each}
     </div>
 </section>
 
@@ -64,7 +62,7 @@
         <img class="img" src="./img/test.jpg" />
     </div> -->
     <div class="col-12 col-md-10">
-        <span class="font-hero">"Four wheels moves the body, two wheels moves the soul"</span>
+        <span class="font-hero">"Four wheels move the body, two wheels move the soul"</span>
     </div>
     
 </section>

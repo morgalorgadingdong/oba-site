@@ -4,6 +4,7 @@
 
 <div class="vh-60 hero col-12 d-flex flex-column justify-content-end">
     <div class="img-container">
+        <div class="img-overlay"></div>
         <img class="hero-img img" src="./img/contact.jpg"/>
     </div>
     <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5">
@@ -13,7 +14,7 @@
 
 <section>
     <div class="content-container d-flex justify-content-center flex-wrap center text-start px-3" id="reserveForm">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 pt-5">
             
             <p class="col-12">Phone: (503) 949-8766</p>
             <p class="col-12">Email: info@oregonbicycleadventures.com</p>

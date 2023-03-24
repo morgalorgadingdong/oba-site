@@ -6,6 +6,7 @@
 
 <div class="vh-60 hero col-12 d-flex flex-column justify-content-end">
     <div class="img-container">
+        <div class="img-overlay"></div>
         <img class="hero-img img" src="./img/blog.jpg"/>
     </div>
     <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5">
@@ -21,3 +22,9 @@
         {/each}
     </div>
 </section>
+
+<style>
+    .hero-img {
+        object-position: center;
+    }
+</style>

@@ -21,6 +21,7 @@
 
 <div class="vh-60 hero col-12 d-flex flex-column justify-content-end">
     <div class="img-container">
+        <div class="img-overlay"></div>
         <img class="hero-img img" src="./img/tours-2.jpg"/>
     </div>
     <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5">
@@ -29,10 +30,16 @@
 </div>
 
 <section class="col-12 d-flex justify-content-center flex-wrap my-5">
-    <div class="col-12 col-md-8 px-0 d-flex justify-content-between">
-        <button class="view-toggle btn {view === 'calendar' ? 'active' : ''}" on:click={toggleCalendarView}>Calendar view</button>
-        <button class="view-toggle btn {view === 'singleDay' ? 'active' : ''}" on:click={toggleSingleDayView}>Single Day Tours</button>
-        <button class="view-toggle btn {view === 'multiDay' ? 'active' : ''}" on:click={toggleMultiDayView}>MultiDay Tours</button>
+    <div class="col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
+        <div class="col-12 col-sm-4 d-flex justify-content-start pl-3 mb-3">
+            <button class="view-toggle btn {view === 'calendar' ? 'active' : ''}" on:click={toggleCalendarView}>Calendar view</button>
+        </div>
+        <div class="col-12 col-sm-4 d-flex justify-content-start pl-3 mb-3">
+            <button class="view-toggle btn {view === 'singleDay' ? 'active' : ''}" on:click={toggleSingleDayView}>Single Day Tours</button>
+        </div>
+        <div class="col-12 col-sm-4 d-flex justify-content-start pl-3 mb-3">
+            <button class="view-toggle btn {view === 'multiDay' ? 'active' : ''}" on:click={toggleMultiDayView}>MultiDay Tours</button>
+        </div>
     </div>
     {#if view == 'calendar'}
         <div id="calendarView" class="col-12 col-md-8 px-0">
@@ -40,7 +47,6 @@
         </div>
     {:else if view == 'singleDay'}
         <div id="singleDayView" class="col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
-            <h3 class="col-12">Single day trips go here</h3>
             {#each tours as tour}
                 {#if tour.type == 'Single Day'}
                     <TourCard {tour}/>
@@ -49,7 +55,6 @@
         </div>
     {:else if view == 'multiDay'}
         <div id="multiDayView" class="col-12 col-md-8 px-0">
-            <h3 class="col-12">Multi day trips go here</h3>
             {#each tours as tour}
                 {#if tour.type == 'Multi Day'}
                     <TourCard {tour}/>
@@ -81,10 +86,10 @@
         z-index: -1;
     } */
 
-    .hero .img-container {
-        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
-        z-index: 1;
+    .hero-img {
+        object-position: left;
     }
+
 
     section {
         transition: all 0.5s ease;
