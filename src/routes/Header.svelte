@@ -50,10 +50,10 @@
             <span class=""></span>
             <ul id="menu" class="">
                 <a class="col-12 d-flex justify-content-center" href=""><button class="btn btn-secondary">Book</button></a>
-                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours">Tours</a>
-                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined} href="/blog">Blog</a>
-                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined} href="/about">About</a>
-                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined} href="/contact">Contact</a>
+                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page-mobile' : undefined} href="/tours"><li>Tours</li></a>
+                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page-mobile' : undefined} href="/blog"><li>Blog</li></a>
+                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page-mobile' : undefined} href="/about"><li>About</li></a>
+                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page-mobile' : undefined} href="/contact"><li>Contact</li></a>
             </ul>
         </div>
     </div>
@@ -169,6 +169,13 @@
         width: 100%;
     }
     
+    a[aria-current='page-mobile'] > li:after {
+        background-color: var(--color-light);
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+    }
 
     .nav-item:hover :not(a[aria-current='page']):after {
         width: 100%;

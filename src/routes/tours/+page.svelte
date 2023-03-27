@@ -31,13 +31,13 @@
 
 <section class="col-12 d-flex justify-content-center flex-wrap my-5">
     <div class="col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
-        <div class="col-12 col-sm-4 d-flex justify-content-start pl-3 mb-3">
+        <div class="col-12 col-sm-4 d-flex justify-content-start justify-content-md-center pl-3 mb-3">
             <button class="view-toggle btn {view === 'calendar' ? 'active' : ''}" on:click={toggleCalendarView}>Calendar view</button>
         </div>
-        <div class="col-12 col-sm-4 d-flex justify-content-start pl-3 mb-3">
+        <div class="col-12 col-sm-4 d-flex justify-content-start justify-content-md-center pl-3 mb-3">
             <button class="view-toggle btn {view === 'singleDay' ? 'active' : ''}" on:click={toggleSingleDayView}>Single Day Tours</button>
         </div>
-        <div class="col-12 col-sm-4 d-flex justify-content-start pl-3 mb-3">
+        <div class="col-12 col-sm-4 d-flex justify-content-start justify-content-md-center pl-3 mb-3">
             <button class="view-toggle btn {view === 'multiDay' ? 'active' : ''}" on:click={toggleMultiDayView}>MultiDay Tours</button>
         </div>
     </div>
