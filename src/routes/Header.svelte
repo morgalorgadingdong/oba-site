@@ -23,9 +23,9 @@
 <header class="col-12 px-0 mx-0">
     <div class="col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center">
         <a class="col-9 col-sm-8 col-lg-4 col-xl-3 d-flex justify-content-start px-0 align-items-center logo-container" href="/">
-            <a href="/" class="ml-3 mr-2 mr-sm-4 py-2"><img src="/img/logo-5.png" alt="oba-logo"></a>
+            <img src="/img/logo-5.png" alt="oba-logo" class="ml-3 mr-0 mr-sm-4 p-2 p-lg-0" />
             <div class="logo-text-container d-flex align-items-center">
-                <h1 class="logo-text px-2 px-sm-4 py-2">Oregon Bicycle <br> Adventures, llc</h1>
+                <h1 class="logo-text px-2 px-sm-4 py-0 my-2">Oregon Bicycle <br> Adventures, llc</h1>
             </div>
             
         </a>
@@ -41,7 +41,8 @@
         <div class="col-1 col-xxl-3 d-none d-lg-flex justify-content-end align-items-center align-content-center">
             <!-- <i class="fa-solid fa-phone color-light my-0 "></i>
             <p class="color-light my-0 mx-3">(503) 949-8766</p> -->
-            <button class="btn btn-primary">Book</button>
+            <!-- FareHarbor book button -->
+            <a href="https://fareharbor.com/embeds/book/oregonbicycleadventures/?full-items=yes"><button class="btn btn-primary">Book</button></a>
         </div>
         <div id="menuToggle" class="px-3 d-lg-none">
             <input type="checkbox" />

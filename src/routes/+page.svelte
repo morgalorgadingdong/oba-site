@@ -1,5 +1,6 @@
 <script>
     import {Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
+    import { browser } from '$app/environment';
     import '@splidejs/svelte-splide/css';
     import TourCard from "./TourCard.svelte";
     import { tours } from "./tours";
@@ -22,9 +23,6 @@
         <button class="btn btn-secondary">Learn More</button>
     </div>
 </div> -->
-
-
-
 
 
 <section id="tours" class="col-12 my-0 py-5 d-flex justify-content-center px-0">

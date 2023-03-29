@@ -1,8 +1,12 @@
 <script>
     import TourCard from "../TourCard.svelte";
     import { tours } from "../tours";
-    
-    
+    import { browser } from '$app/environment';
+    import Calendar from "../Calendar.svelte";
+
+
+    let url = 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/?fallback=simple&full-items=yes'
+
     let view = 'calendar';
 
     function toggleCalendarView() {
@@ -17,6 +21,7 @@
         console.log('toggleMultiDayView called')
         view = 'multiDay';
     }
+
 </script>
 
 <div class="vh-60 hero col-12 d-flex flex-column justify-content-end">
@@ -43,7 +48,11 @@
     </div>
     {#if view == 'calendar'}
         <div id="calendarView" class="col-12 col-md-8 px-0">
-            <h3>This is where the Calender will go</h3>
+            <!-- FareHarbor calendar -->
+            {#if browser}
+                <Calendar {url}/>
+            {/if}
+            
         </div>
     {:else if view == 'singleDay'}
         <div id="singleDayView" class="col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
