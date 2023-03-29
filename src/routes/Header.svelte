@@ -50,7 +50,7 @@
             <span class=""></span>
             <span class=""></span>
             <ul id="menu" class="">
-                <a class="col-12 d-flex justify-content-center" href=""><button class="btn btn-secondary">Book</button></a>
+                <a class="col-12 d-flex justify-content-center" href="https://fareharbor.com/embeds/book/oregonbicycleadventures/?full-items=yes"><button class="btn btn-secondary">Book</button></a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page-mobile' : undefined} href="/tours"><li>Tours</li></a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page-mobile' : undefined} href="/blog"><li>Blog</li></a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page-mobile' : undefined} href="/about"><li>About</li></a>
