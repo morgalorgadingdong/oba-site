@@ -5,6 +5,7 @@ export const tours = [
         type: 'Single Day',
         duration: 'Half Day',
         difficulty: 'Difficult',
+        price: '$ 107',
         ebikes: true,
         featured: true,
         featuredIndex: 1,
@@ -15,7 +16,7 @@ export const tours = [
         meals: false,
         lodging: false,
         bannerAlt: '',
-
+        calendarURL: 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451357/?fallback=simple&full-items=yes&flow=928317'
     },
     {
         id: 2,
@@ -23,6 +24,7 @@ export const tours = [
         type: 'Single Day',
         duration: 'Half Day',
         difficulty: 'Moderate',
+        price: '$ 107',
         ebikes: true,
         featured: true,
         featuredIndex: 2,
@@ -31,7 +33,9 @@ export const tours = [
         Option to stop at The Bite in Tumalo to try some local food carts and beers!`,
         pics: 2,
         meals: false,
-        lodging: false
+        lodging: false,
+        bannerAlt: '',
+        calendarURL: 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451510/?fallback=simple&full-items=yes&flow=928317'
     },
     {
         id: 3,
@@ -39,6 +43,7 @@ export const tours = [
         type: 'Multi Day',
         duration: '3 Days',
         difficulty: 'Moderate',
+        price: 'TBD',
         ebikes: false,
         featured: true,
         featuredIndex: 3,
@@ -47,6 +52,8 @@ export const tours = [
         Option to stop at The Bite in Tumalo to try some local food carts and beers!`,
         pics: 2,
         meals: true,
-        lodging: true
+        lodging: true,
+        bannerAlt: '',
+        calendarURL: ''
     }
 ]

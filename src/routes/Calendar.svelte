@@ -1,7 +1,6 @@
 <script>
     import { browser } from '$app/environment';
     import { onMount } from 'svelte';
-    import { afterUpdate } from 'svelte';
     /**
    * @type {any}
    */
@@ -29,7 +28,6 @@
     function iframeLoaded() {
       console.log('test')
       iFrameID = document.getElementById('idIframe');
-      
       if(iFrameID) {
         // iFrameID.addEventListener("load", iframeLoaded);    
         // iFrameID.contentWindow.document.body.addEventListener("click", iframeLoaded);
@@ -46,14 +44,13 @@
 </script>
 
 <!-- svelte-ignore a11y-missing-attribute -->
-<iframe id="idIframe" src="about:blank" bind:this={frame} style="width: 100%; height: 100%; border: none;" />
+<iframe id="idIframe" src="about:blank" bind:this={frame}/>
 
 
 <style>
     iframe {
         width: 100%;
-        /* min-height: 1500px; */
-        height: fit-content;
+        height: 800px;
         border: none;
         overflow: hidden;
     }

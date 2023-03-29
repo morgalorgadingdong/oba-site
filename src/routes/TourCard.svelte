@@ -20,11 +20,11 @@
             <div class="trip-info-container d-flex justify-content-between justify-content-xxl-around px-3 pb-3">
                 <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-clock"></i> -->
-                    <span>{tour.duration}</span>
+                    <span>{tour.price}</span>
                 </div>
                 <div class="trip-info mx-1 p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-tachometer"></i> -->
-                    <span>{tour.difficulty}</span>
+                    <span>{tour.duration}</span>
                 </div>
                 <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-bicycle"></i> -->
@@ -154,4 +154,14 @@
         transform: translateX(1.5vw);
         transition: all var(--animation-duration) ease-in-out; 
     }
+
+
+    @media (max-width: 768px) { 
+        .trip-preview .trip-info-container {
+            transform: translateY(0%);
+            transition: all var(--animation-duration) ease-in-out;
+            opacity: 1;
+        }
+    }
+
 </style>
