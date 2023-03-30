@@ -17,6 +17,8 @@
     // let imgSrccover = `../img/blogs/${blog.Number}. ${blog.Title}/blog${blog.id}-cover.jpg`;
     let imgSrcCover = `../../img/tours/${tour.id}. ${tour.title}/tour${tour.id}-cover.jpg`;
     let currentImg = 1;
+
+    
     // let testBlog = blogs[1]
     // let prevBlog
     // let nextBlog
@@ -29,16 +31,16 @@
 
 </script>
 
+
+
 <section>
-    <div class="tourCover col-12 px-0">
+    <div id="tourCover" class="col-12 px-0">
         <img src = {imgSrcCover} alt="{tour.coverAlt}" class="coverImg" />
         <h2 class="col-12 text-left px-3 pb-1">{tour.title}</h2>
     </div>
-    <div class="">
-        <aside class="col-md-4">
-            <Calendar {url} />
-        </aside>
-        <div id="" class="d-flex flex-wrap justify-content-center content-container text-start center mb-5" >            
+    <div class="d-flex align-items-start">
+        
+        <div id="tour-info-container" class="col-md-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5" >            
             <div class="col-12 tour-header d-flex align-content-center justify-content-start flex-wrap">
                
             </div>
@@ -63,6 +65,21 @@
                 {/each}
             </div> -->
         </div>
+        <aside id="calendar-aside" class="col-md-4 m-0">
+            <div class="px-0 mx-0 col-12">
+                <div id="aside-topsection" class="col-12 mx-0 px-0">
+                    <img src="../../img/tour2-cover.jpg" alt="calendar" class="col-12 px-0" />
+                    <div class="col-12 d-flex justify-content-center my-3">
+                        <button class="btn btn-primary">Book now</button>
+                    </div>    
+                </div>
+                <div id="aside-bottomsection" class="col-12 mx-0 px-0">
+                    <Calendar {url} />
+                </div>
+                
+            </div>
+            
+        </aside>
     </div>
     
     
@@ -72,7 +89,34 @@
 </section>
  <!-- <p on:click={reloadPage(nextBlog.Title)}>{nextBlog.Title}</p> -->
 
+ <!-- <svelte:head>
+    <script src="../js/tours.js" crossorigin="anonymous"></script>
+</svelte:head> -->
+
 <style>
+    #tour-info-container {
+        border: solid black 2px;
+        height: 150vh;
+    }
+
+    #calendar-aside {
+        height: 100%;
+    }
+
+    #aside-topsection {
+        border: solid black 2px;
+    }
+
+    #aside-bottomsection {
+        border: solid black 2px;
+    }
+
+    #aside-topsection > img {
+        object-fit: cover;
+        
+        overflow: hidden;
+    }
+    
     .tour-text {
         font-size: 1.2rem;
         line-height: 1.5rem;
@@ -88,7 +132,7 @@
         aspect-ratio: 1/1;
     }
 
-    .tourCover {
+    #tourCover {
         background-color: black;
         height: 60vh;
         /* max-height: 300px; */
@@ -100,7 +144,7 @@
         /* background-position: center; */
     }
 
-    .tourCover > img {
+    #tourCover > img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -124,6 +168,21 @@
 aside {
     border: solid 2px black;
     height: 500px;
+}
+
+aside {
+  position: relative;
+  top: -20vh;
+  margin: 20px;
+  padding-right: 5vw;
+  padding-left: 0;
+  border: 1px solid #ccc;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  background-color: red;
 }
 
 .tourDate {
@@ -151,11 +210,11 @@ a {
 }
 
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     aside {
         position: fixed;
         top: 40vh;
         right: 2vw;
     }
-}
+} */
 </style>

@@ -1,4 +1,4 @@
-<footer class="col-12 vh-50 d-flex align-content-center pt-5 pb-3">
+<footer id="footer" class="col-12 vh-50 d-flex align-content-center pt-5 pb-3">
     <div class="col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5">
         <div class="col-12 col-md-3 px-0 order-md-2">
             <div class="img-container">

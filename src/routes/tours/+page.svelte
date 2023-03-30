@@ -17,10 +17,10 @@
         console.log('toggleSingleDayView called')
         view = 'singleDay';
     }
-    function toggleMultiDayView() {
-        console.log('toggleMultiDayView called')
-        view = 'multiDay';
-    }
+    // function toggleMultiDayView() {
+    //     console.log('toggleMultiDayView called')
+    //     view = 'multiDay';
+    // }
 
 </script>
 
@@ -35,16 +35,16 @@
 </div>
 
 <section class="col-12 d-flex justify-content-center flex-wrap my-5">
-    <div class="col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
-        <div class="col-12 col-sm-4 d-flex justify-content-start justify-content-md-center pl-3 mb-3">
-            <button class="view-toggle btn {view === 'calendar' ? 'active' : ''}" on:click={toggleCalendarView}>Calendar view</button>
+    <div class="toggle-container col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
+        <div class="col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3">
+            <button class="view-toggle btn {view === 'calendar' ? 'active' : ''}" on:click={toggleCalendarView}>By Date</button>
         </div>
-        <div class="col-12 col-sm-4 d-flex justify-content-start justify-content-md-center pl-3 mb-3">
-            <button class="view-toggle btn {view === 'singleDay' ? 'active' : ''}" on:click={toggleSingleDayView}>Single Day Tours</button>
+        <div class="col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3">
+            <button class="view-toggle btn {view === 'singleDay' ? 'active' : ''}" on:click={toggleSingleDayView}>By Tour</button>
         </div>
-        <div class="col-12 col-sm-4 d-flex justify-content-start justify-content-md-center pl-3 mb-3">
+        <!-- <div class="col-12 col-sm-4 d-flex justify-content-start justify-content-md-center pl-3 mb-3">
             <button class="view-toggle btn {view === 'multiDay' ? 'active' : ''}" on:click={toggleMultiDayView}>MultiDay Tours</button>
-        </div>
+        </div> -->
     </div>
     {#if view == 'calendar'}
         <div id="calendarView" class="col-12 col-md-8 px-0">
@@ -56,20 +56,23 @@
         </div>
     {:else if view == 'singleDay'}
         <div id="singleDayView" class="col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
+            <div class="filter-container">
+
+            </div>
             {#each tours as tour}
-                {#if tour.type == 'Single Day'}
+                <!-- {#if tour.type == 'Single Day'} -->
                     <TourCard {tour}/>
-                {/if}
+                <!-- {/if} -->
             {/each}
         </div>
-    {:else if view == 'multiDay'}
+    <!-- {:else if view == 'multiDay'}
         <div id="multiDayView" class="col-12 col-md-8 px-0">
             {#each tours as tour}
                 {#if tour.type == 'Multi Day'}
                     <TourCard {tour}/>
                 {/if}
             {/each}
-        </div>
+        </div> -->
     {/if}
     
 </section>
@@ -102,6 +105,10 @@
 
     section {
         transition: all 0.5s ease;
+    }
+
+    section > .toggle-container {
+        border-bottom: 2px solid var(--color-primary);
     }
 
 </style>

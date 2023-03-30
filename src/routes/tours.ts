@@ -6,12 +6,27 @@ export const tours = [
         duration: 'Half Day',
         difficulty: 'Difficult',
         price: '$ 107',
+        ages: '12+',
         ebikes: true,
         featured: true,
         featuredIndex: 1,
         description: `Experience the awe-inspiring beauty of McKenzie Pass on a guided bicycle tour. The climb to the top is not for the faint of heart, but the reward is worth it. You'll be greeted by a lava-rock moonscape that spreads out before you for miles, a view unlike anything you've probably ever encountered on a bike ride. Along the way, you'll follow an 1860s wagon route and pass through Windy Point, where you'll get a great view of Mt. Washington and your first look at the vast, 2,000-year-old lava flow. At the summit, you'll be able to explore the lava-rock-constructed Dee Wright Observatory, which provides 360-degree views of mountains, buttes and other topography. Don't miss out on this unforgettable experience!
 
         Water and snacks provided.`,
+        importantInfo: '',
+        whatsIncluded: '',
+        highlights: [
+            'Lava-rock moonscape',
+            'Dee Wright Observatory',
+            'Windy Point'
+        ],
+        reviews: [
+            {
+                name: 'John Doe',
+                rating: 5,
+                review: 'This was a great tour! The guide was very knowledgeable and friendly. I would definitely recommend this tour to anyone looking for a fun and unique experience.'
+            },
+        ],
         pics: 2,
         meals: false,
         lodging: false,
@@ -25,6 +40,7 @@ export const tours = [
         duration: 'Half Day',
         difficulty: 'Moderate',
         price: '$ 107',
+        ages: '12+',
         ebikes: true,
         featured: true,
         featuredIndex: 2,

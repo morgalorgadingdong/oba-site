@@ -462,3 +462,23 @@ z-index: 1;
 
   }
  }
+
+
+
+
+
+ .fixed {
+  position: fixed;
+  top: 0;
+}
+
+#aside-bottomsection.fixed {
+  width: calc(33.3% - 5vw);
+  z-index: 1;
+  height: fit-content;
+}
+
+#aside-bottomsection.fixed.bottom {
+  position: absolute;
+  bottom: 0;
+}
