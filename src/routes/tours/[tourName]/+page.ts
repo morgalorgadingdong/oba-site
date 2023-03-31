@@ -1,3 +1,5 @@
+export const csr = true;
+
 export const load = ({ params }) => {
     console.log('page reload', params)
     return {

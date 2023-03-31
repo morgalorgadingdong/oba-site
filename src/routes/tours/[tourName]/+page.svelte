@@ -9,6 +9,7 @@
     tours.forEach(item => {
         if (item.title == data.tourName) {
             tour = item;
+            console.log(tour)
         }
     })
 
@@ -43,7 +44,7 @@
 
 
         <div id="hero-tagline-container" class="d-flex justify-content-start flex-wrap p-3 pb-3 pb-md-5">
-            <h1 class="hero-tagline col-6 font-logo">{tour.title}</h1>
+            <h1 class="hero-tagline font-logo col-12 col-lg-8 text-left text-md-center">{tour.title}</h1>
         </div>
     </div>
     <div class="d-flex align-items-start flex-wrap">
