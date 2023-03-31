@@ -2,9 +2,29 @@
 	import { tours } from "../../tours"; 
     export let data;
     import Calendar from "../../Calendar.svelte";
+    import { onMount } from "svelte";
     //  export let blog;
     //  export const slug = blog;
     
+    /**
+   * @type {{ id: number; title: string; nickname: string; type: string; duration: string; difficulty: string; difficultyRating: number; price: string; ages: string; 
+  //  export let blog;
+  //  export const slug = blog;
+  distance: string; //  export const slug = blog;
+   //  export const slug = blog;
+  elevationGain: string; ebikes: boolean; featured: boolean; featuredIndex: number; description: { content: string; // if (blog.Number <= blogs.length+1) {
+   }[]; whatToBring: string; mettingLocation: string; importantInfo: string; whatsIncluded: string; highlights: string[]; reviews: { name: string; rating: number; review: string; }[]; pics: number; meals: boolean; lodging: boolean; bannerAlt: string; calendarURL: string; } | { id: number; title: string; nickname: string; type: string; duration: string; difficulty: string; price: string; ages: string; ebikes: boolean; featured: boolean; featuredIndex: number; description: { content: string; }[]; pics: number; meals: boolean; lodging: boolean; bannerAlt: string; calendarURL: string; difficultyRating?: undefined; 
+  //  export let blog;
+  //  export const slug = blog;
+  distance?: undefined; //  export const slug = blog;
+   //  export const slug = blog;
+  elevationGain?: undefined; whatToBring?: undefined; mettingLocation?: undefined; importantInfo?: undefined; whatsIncluded?: undefined; highlights?: undefined; reviews?: undefined; } | { id: number; title: string; nickname: string; type: string; duration: string; difficulty: string; price: string; ebikes: boolean; featured: boolean; featuredIndex: number; description: { content: string; }[]; pics: number; meals: boolean; lodging: boolean; bannerAlt: string; calendarURL: string; difficultyRating?: undefined; ages?: undefined; 
+  //  export let blog;
+  //  export const slug = blog;
+  distance?: undefined; //  export const slug = blog;
+   //  export const slug = blog;
+  elevationGain?: undefined; whatToBring?: undefined; mettingLocation?: undefined; importantInfo?: undefined; whatsIncluded?: undefined; highlights?: undefined; reviews?: undefined; }}
+   */
     let tour
     tours.forEach(item => {
         if (item.title == data.tourName) {
@@ -13,8 +33,15 @@
         }
     })
 
+    /**
+   * @type {string}
+   */
     let url = tour.calendarURL;
-    
+    // onMount(async () => {
+    //     url = tour.calendarURL;
+    // })
+
+
     // let imgSrccover = `../img/blogs/${blog.Number}. ${blog.Title}/blog${blog.id}-cover.jpg`;
     let imgSrcCover = `../../img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-cover.jpg`;
     let currentImg = 1;
