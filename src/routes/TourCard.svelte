@@ -3,7 +3,7 @@
 	 * @type {{ }}
 	 */
     export let tour;
-    let imgSrc = `./img/tours/${tour.id}. ${tour.title}/tour${tour.id}-cover.jpg`;
+    let imgSrc = `./img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-cover.jpg`;
     // let imgSrc = `./img/test.jpg`;
     // console.log(imgSrc)
 </script>

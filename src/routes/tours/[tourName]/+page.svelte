@@ -15,7 +15,7 @@
     let url = tour.calendarURL;
     
     // let imgSrccover = `../img/blogs/${blog.Number}. ${blog.Title}/blog${blog.id}-cover.jpg`;
-    let imgSrcCover = `../../img/tours/${tour.id}. ${tour.title}/tour${tour.id}-cover.jpg`;
+    let imgSrcCover = `../../img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-cover.jpg`;
     let currentImg = 1;
 
     
@@ -42,8 +42,8 @@
         
 
 
-        <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5">
-            <h1 class="hero-tagline col-12 font-logo">{tour.title}</h1>
+        <div id="hero-tagline-container" class="d-flex justify-content-start flex-wrap p-3 pb-3 pb-md-5">
+            <h1 class="hero-tagline col-6 font-logo">{tour.title}</h1>
         </div>
     </div>
     <div class="d-flex align-items-start flex-wrap">
@@ -70,7 +70,9 @@
             <!-- Tour Description -->
                 <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                     <h3 class="font-logo text-left">Description</h3>
-                    <p class="col-12 text-left px-0 my-3 blog-text">{tour.description}</p>
+                    {#each tour.description as paragraph}
+                        <p class="col-12 text-left px-0 my-3 blog-text">{paragraph.content}</p>
+                    {/each}
                 </div>
 
                 <div class="tour-divider col-12 mb-5 mt-3"></div>
