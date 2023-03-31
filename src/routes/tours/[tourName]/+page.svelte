@@ -34,19 +34,51 @@
 
 
 <section>
-    <div id="tourCover" class="col-12 px-0">
-        <img src = {imgSrcCover} alt="{tour.coverAlt}" class="coverImg" />
-        <h2 class="col-12 text-left px-3 pb-1">{tour.title}</h2>
-    </div>
-    <div class="d-flex align-items-start">
+    <div id="" class="vh-60 hero col-12 d-flex flex-column justify-content-end">
+        <div class="img-container">
+            <div class="img-overlay"></div>
+            <img src = {imgSrcCover} alt="{tour.coverAlt}" class="hero-img img" />
+        </div>
         
-        <div id="tour-info-container" class="col-md-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5" >            
-            <div class="col-12 tour-header d-flex align-content-center justify-content-start flex-wrap">
-               
+
+
+        <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5">
+            <h1 class="hero-tagline col-12 font-logo">{tour.title}</h1>
+        </div>
+    </div>
+    <div class="d-flex align-items-start flex-wrap">
+        
+        <div id="tour-info-container" class="col-12 col-md-7 col-lg-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5" >            
+               <!-- Tour Quick Details -->
+            <div id="quick-details-container" class="col-10 d-fex justify-content-start flex-wrap p-3 my-3">
+                <h3 class="font-logo">Quick Details</h3>
+                <ul class="d-flex justify-content-start mb-1 flex-wrap col-12">
+                    <li>Price: {tour.price}</li>
+                    <li>Duration: {tour.duration}</li>
+                    <li>Distance: {tour.distance}</li>
+                    <!-- <li>Elevation Gain: {tour.elevationGain}</li> -->
+                    <li>Difficulty(1-5): {tour.difficultyRating}</li>
+                    <li>Ages: {tour.ages}</li>
+                    {#if tour.ebikes}
+                        <li>E-bikes available</li>
+                    {:else}
+                        <li>E-bikes not available</li>
+                    {/if}
+                </ul>
             </div>
-            <div class="col-12 px-3">
-                <div class="tour-divider col-12 tour-header-divider"></div>
-            </div>
+            <div class="tour-divider col-12 mb-5 mt-3"></div>
+            <!-- Tour Description -->
+                <div class="col-12 d-flex justify-content-start flex-wrap px-3">
+                    <h3 class="font-logo text-left">Description</h3>
+                    <p class="col-12 text-left px-0 my-3 blog-text">{tour.description}</p>
+                </div>
+
+                <div class="tour-divider col-12 mb-5 mt-3"></div>
+                
+                <div class="col-12 d-flex justify-content-start flex-wrap px-3">
+                    <h3 class="font-logo text-left">What to bring</h3>
+                    <p class="col-12 text-left px-0 my-3 blog-text">{tour.whatToBring}</p>
+                </div>
             <!-- <div class="col-12 d-flex justify-content-center flex-wrap mt-3 px-3">
                 {#each blog.Sections as Section}
                     {#if Section.Type == 'text'}
@@ -65,15 +97,15 @@
                 {/each}
             </div> -->
         </div>
-        <aside id="calendar-aside" class="col-md-4 m-0">
-            <div class="px-0 mx-0 col-12">
-                <div id="aside-topsection" class="col-12 mx-0 px-0">
-                    <img src="../../img/tour2-cover.jpg" alt="calendar" class="col-12 px-0" />
+        <aside id="calendar-aside" class="col-md-5 col-lg-4 m-0 p-3 p-lg-0">
+            <div class="px-0 mx-0 col-12 d-flex flex-wrap">
+                <div id="aside-topsection" class="col-12 mx-0 px-0 order-2 order-md-1">
+                    <img src="../../img/tour1-cover.jpg" alt="calendar" class="col-12 px-0 d-none d-md-inline" />
                     <div class="col-12 d-flex justify-content-center my-3">
                         <button class="btn btn-primary">Book now</button>
                     </div>    
                 </div>
-                <div id="aside-bottomsection" class="col-12 mx-0 px-0">
+                <div id="aside-bottomsection" class="col-12 mx-0 px-0 order-1 order-md-2">
                     <Calendar {url} />
                 </div>
                 
@@ -83,7 +115,7 @@
     </div>
     
     
-    <a href="/tours" class=""><div class="button my-5">All tours</div></a>
+    <!-- <a href="/tours" class=""><div class="button my-5">All tours</div></a> -->
     <!-- <a href={'./'+testBlog.Title}>{testBlog.Title}</a>  -->
     <!-- <p on:click={blog = testBlog}>{testBlog.Title}</p> -->
 </section>
@@ -94,21 +126,50 @@
 </svelte:head> -->
 
 <style>
+    #quick-details-container li {
+        padding: 0.7rem;
+        background-color: var(--color-primary-dark);
+        /* border-radius: 6px; */
+        /* border: solid 1px white; */
+        margin: 0.5rem;
+    }
+    
+    #quick-details-container ul {
+        list-style: none;
+    }
+    #quick-details-container {
+        /* border: solid black 2px; */
+        height: fit-content;
+        background-color: var(--color-primary);
+        /* border-radius: 6px; */
+    }
+
+    #quick-details-container * {
+        color: white;
+    }
+    
     #tour-info-container {
-        border: solid black 2px;
-        height: 150vh;
+        /* border: solid black 2px; */
     }
 
     #calendar-aside {
         height: 100%;
     }
 
-    #aside-topsection {
-        border: solid black 2px;
+    #calendar-aside > div {
+        border-radius: 6px;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        overflow: hidden;
+    }
+
+    #aside-topsection > img {
+        aspect-ratio: 3/2;
+        /* border: solid black 2px; */
     }
 
     #aside-bottomsection {
-        border: solid black 2px;
+        /* border: solid black 2px; */
     }
 
     #aside-topsection > img {
@@ -132,19 +193,14 @@
         aspect-ratio: 1/1;
     }
 
-    #tourCover {
+    /* #tourCover {
         background-color: black;
         height: 60vh;
-        /* max-height: 300px; */
-        /* background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; */
         position: relative;
         margin: auto;
-        /* background-position: center; */
-    }
+    } */
 
-    #tourCover > img {
+    #tourCover img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -156,6 +212,13 @@
         /* mask-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
         -webkit-mask-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0)); */
     }
+
+    #tourCover > h2 {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        color: white;
+    }
 /* #toursContainer {
     display: flex;
     gap: 15px;
@@ -166,7 +229,7 @@
 }
 
 aside {
-    border: solid 2px black;
+    /* border: solid 2px black; */
     height: 500px;
 }
 
@@ -174,9 +237,8 @@ aside {
   position: relative;
   top: -20vh;
   margin: 20px;
-  padding-right: 5vw;
+  padding-right: 4vw !important;
   padding-left: 0;
-  border: 1px solid #ccc;
 }
 
 .fixed {
@@ -210,11 +272,24 @@ a {
 }
 
 
-/* @media (min-width: 992px) {
+/* @media (max-width: 767px) {
     aside {
-        position: fixed;
-        top: 40vh;
-        right: 2vw;
+        top: 0;
+    }
+
+    #calendar-aside > div {
+        box-shadow: none;
     }
 } */
+
+@media (max-width: 992px) {
+    aside {
+        top: 0;
+        padding-right: 0;
+    }
+
+    #calendar-aside > div {
+        box-shadow: none;
+    }
+}
 </style>

@@ -5,4 +5,6 @@ export const load = ({ params }) => {
     }
 }
 
+export const csr = true;
+
 export const prerender = true;

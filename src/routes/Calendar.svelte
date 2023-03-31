@@ -45,8 +45,7 @@
 
 </script>
 
-<svelte:window
-	on:mouseenter={iframeLoaded}
+<svelte:body
     on:scroll={iframeLoaded}
     on:click={iframeLoaded}
     />
@@ -57,7 +56,7 @@
 <style>
     iframe {
         width: 100%;
-        height: 800px;
+        height: 400px;
         border: none;
         overflow: hidden;
     }

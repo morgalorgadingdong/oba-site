@@ -82,6 +82,10 @@
   font-family: var(--font-hero);
 }
 
+.font-logo {
+  font-family: var(--font-logo);
+}
+
 
 /* Box Model Hack */
 * {
@@ -395,7 +399,7 @@ z-index: 1;
 }
 
 
-.hero .img-overlay {
+.img-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -473,12 +477,14 @@ z-index: 1;
 }
 
 #aside-bottomsection.fixed {
-  width: calc(33.3% - 5vw);
+  width: calc(33.3% - 4vw);
   z-index: 1;
   height: fit-content;
+  /* transition: all 0.5s ease; */
 }
 
 #aside-bottomsection.fixed.bottom {
   position: absolute;
   bottom: 0;
+  transition: all 0.5s ease;
 }
