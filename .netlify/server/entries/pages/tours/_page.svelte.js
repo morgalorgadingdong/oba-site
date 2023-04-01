@@ -1,18 +1,20 @@
 import { c as create_ssr_component, e as escape } from "../../../chunks/index.js";
-/* empty css                                                      */const _page_svelte_svelte_type_style_lang = "";
+/* empty css                                                      *//* empty css                                                      */const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "h1.svelte-s1hvzt.svelte-s1hvzt{font-family:var(--font-hero);z-index:2}.btn.active.svelte-s1hvzt.svelte-s1hvzt{background-color:var(--color-primary);color:var(--color-light)}.btn.svelte-s1hvzt.svelte-s1hvzt{outline:none;border:none}.hero.svelte-s1hvzt .img-container.svelte-s1hvzt{background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));z-index:1}section.svelte-s1hvzt.svelte-s1hvzt{transition:all 0.5s ease}",
+  code: "h1.svelte-113yya0.svelte-113yya0{font-family:var(--font-hero);z-index:2}.btn.active.svelte-113yya0.svelte-113yya0{background-color:var(--color-primary);color:var(--color-light)}.btn.svelte-113yya0.svelte-113yya0{outline:none;border:none}.hero-img.svelte-113yya0.svelte-113yya0{object-position:left}section.svelte-113yya0.svelte-113yya0{transition:all 0.5s ease}section.svelte-113yya0>.toggle-container.svelte-113yya0{border-bottom:2px solid var(--color-primary)}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="${"vh-60 hero col-12 d-flex flex-column justify-content-end svelte-s1hvzt"}"><div class="${"img-container svelte-s1hvzt"}"><img class="${"hero-img img"}" src="${"./img/tours-2.jpg"}"></div>
-    <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline col-12 svelte-s1hvzt"}">Tours</h1></div></div>
+  return `<div class="${"vh-60 hero col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"img-overlay"}"></div>
+        <img class="${"hero-img img svelte-113yya0"}" src="${"./img/tours-2.jpg"}"></div>
+    <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline col-12 svelte-113yya0"}">Tours</h1></div></div>
 
-<section class="${"col-12 d-flex justify-content-center flex-wrap my-5 svelte-s1hvzt"}"><div class="${"col-12 col-md-8 px-0 d-flex justify-content-between"}"><button class="${"view-toggle btn " + escape("active", true) + " svelte-s1hvzt"}">Calendar view</button>
-        <button class="${"view-toggle btn " + escape("", true) + " svelte-s1hvzt"}">Single Day Tours</button>
-        <button class="${"view-toggle btn " + escape("", true) + " svelte-s1hvzt"}">MultiDay Tours</button></div>
-    ${`<div id="${"calendarView"}" class="${"col-12 col-md-8 px-0"}"><h3>This is where the Calender will go</h3></div>`}
+<section class="${"col-12 d-flex justify-content-center flex-wrap my-5 svelte-113yya0"}"><div class="${"toggle-container col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap svelte-113yya0"}"><div class="${"col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3"}"><button class="${"view-toggle btn " + escape("active", true) + " svelte-113yya0"}">By Date</button></div>
+        <div class="${"col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3"}"><button class="${"view-toggle btn " + escape("", true) + " svelte-113yya0"}">By Tour</button></div>
+        </div>
+    ${`<div id="${"calendarView"}" class="${"col-12 col-md-8 px-0"}">
+            ${``}</div>`}
     
 </section>`;
 });

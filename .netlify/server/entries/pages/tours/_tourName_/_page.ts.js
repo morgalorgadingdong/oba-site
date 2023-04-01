@@ -1,11 +1,13 @@
+const csr = true;
 const load = ({ params }) => {
   console.log("page reload", params);
   return {
     tourName: params.tourName
   };
 };
-const prerender = true;
+const prerender = false;
 export {
+  csr,
   load,
   prerender
 };

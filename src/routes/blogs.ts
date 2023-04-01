@@ -116,11 +116,6 @@ export const blogs = [
                         number: 1,
                         caption: '',
                         alt: '',
-                    },
-                    {
-                        number: 2,
-                        caption: '',
-                        alt: '',
                     }
                 ]
             },
