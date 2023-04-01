@@ -3,20 +3,26 @@
 	 * @type {{ }}
 	 */
     export let blog;
-    let imgSrc = `./img/blog/${blog.id}. ${blog.Title}/blog${blog.id}-banner.jpg`;
+    let imgSrc
+    if (blog.transAmBlog) {
+        console.log('transam')
+        imgSrc = `../../img/blog/transam/week ${blog.week}/week${blog.week}-banner.jpg`
+    } else {
+        imgSrc = `../../img/blog/${blog.id}. ${blog.title}/blog${blog.id}-banner.jpg`;
+    }
     // let imgSrc = `./img/test.jpg`;
     // console.log(imgSrc)
 </script>
 <div class="blog-preview col-12 mb-5">
     <div class="img-container">
-        <a href={'./blog/' + blog.Title}><img src="{ imgSrc }" class="img" alt=""></a>
+        <a href={'./blog/' + blog.title}><img src="{ imgSrc }" class="img" alt=""></a>
     </div>
     <div class="blog-info col-12 d-flex justify-content-between align-items-center">
-        <h3 class="blog-title my-2">{blog.Title}</h3>
-        <p class="blog-date m-0">{blog.Date}</p>
+        <h3 class="blog-title my-2">{blog.title}</h3>
+        <p class="blog-date m-0">{blog.date}</p>
     </div>
     <div id="blog-category-container" class="category-container col-12 d-flex justify-content-center">
-        {#each blog.Categories as category}
+        {#each blog.categories as category}
             <span class="category">{category}</span>
         {/each}
     </div>

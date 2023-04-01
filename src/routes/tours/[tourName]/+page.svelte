@@ -76,7 +76,7 @@
     </div>
     <div class="d-flex align-items-start flex-wrap">
         
-        <div id="tour-info-container" class="col-12 col-md-7 col-lg-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5" >            
+        <div id="tour-info-container" class="col-12 col-md-7 col-lg-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5 px-lg-5" >            
                <!-- Tour Quick Details -->
             <div id="quick-details-container" class="col-10 d-fex justify-content-start flex-wrap p-3 my-3">
                 <h3 class="font-logo">Quick Details</h3>
@@ -96,12 +96,12 @@
             </div>
             <div class="tour-divider col-12 mb-5 mt-3"></div>
             <!-- Tour Description -->
-                <div class="col-12 d-flex justify-content-start flex-wrap px-3">
-                    <h3 class="font-logo text-left">Description</h3>
-                    {#each tour.description as paragraph}
-                        <p class="col-12 text-left px-0 my-3 blog-text">{paragraph.content}</p>
-                    {/each}
-                </div>
+            <div class="col-12 d-flex justify-content-start flex-wrap px-3">
+                <h3 class="font-logo text-left">Description</h3>
+                {#each tour.description as paragraph}
+                    <p class="col-12 text-left px-0 my-3 blog-text">{paragraph.content}</p>
+                {/each}
+            </div>
 
                 <div class="tour-divider col-12 mb-5 mt-3"></div>
                 

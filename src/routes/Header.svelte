@@ -1,5 +1,18 @@
 <script>
     import { page } from '$app/stores';
+    import { onMount } from 'svelte';
+    
+    /**
+     * @type {any}
+     */
+    let headerToggle = false
+
+    function closeMenu() {
+        headerToggle = false
+    }
+
+
+
 </script>
 
 <!-- Header v1 -->
@@ -19,13 +32,14 @@
 
 <!-- hamburger menu below lg screens 992px -->
 
+<svelte:body on:click={closeMenu} />
 
 <header class="col-12 px-0 mx-0">
     <div class="col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center">
         <a class="col-9 col-sm-8 col-lg-4 col-xl-3 d-flex justify-content-start px-0 align-items-center logo-container" href="/">
             <img src="/img/logo-5.png" alt="oba-logo" class="ml-3 mr-0 mr-sm-4 p-2 p-lg-0" />
             <div class="logo-text-container d-flex align-items-center">
-                <h1 class="logo-text px-2 px-sm-4 py-0 my-2">Oregon Bicycle <br> Adventures, llc</h1>
+                <h1 class="logo-text px-2 px-sm-4 py-0 my-2">Oregon Bicycle <br> Adventures</h1>
             </div>
             
         </a>
@@ -45,7 +59,7 @@
             <a href="https://fareharbor.com/embeds/book/oregonbicycleadventures/?full-items=yes"><button class="btn btn-primary">Book</button></a>
         </div>
         <div id="menuToggle" class="px-3 d-lg-none">
-            <input type="checkbox" />
+            <input type="checkbox" bind:checked={headerToggle}/>
             <span class=""></span>
             <span class=""></span>
             <span class=""></span>
@@ -58,8 +72,6 @@
             </ul>
         </div>
     </div>
-    
-
 </header>
 
 <style>
