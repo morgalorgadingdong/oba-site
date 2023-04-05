@@ -59,13 +59,13 @@ export const blogs = [
                         number: 2,
                         caption: '',
                         alt: '',
-                    },
-                    {
-                        video: true,
-                        number: 3,
-                        caption: '',
-                        alt: '',
                     }
+                    // {
+                    //     video: true,
+                    //     number: 3,
+                    //     caption: '',
+                    //     alt: '',
+                    // }
                 ]
             },
             {
@@ -211,7 +211,7 @@ export const blogs = [
         week: 0,
         date: "03/06/2023",
         Author: 'Morgan Folz',
-        published: true,
+        published: false,
         transAmBlog: false,
         bannerSrc: '',
         bannerAlt: '',

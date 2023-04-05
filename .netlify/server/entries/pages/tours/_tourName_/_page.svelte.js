@@ -1,7 +1,7 @@
 import { c as create_ssr_component, d as add_attribute, e as escape, f as each, v as validate_component } from "../../../../chunks/index.js";
 import { t as tours } from "../../../../chunks/tours.js";
 /* empty css                                                         */const css$1 = {
-  code: "iframe.svelte-1epokvy{width:100%;height:400px;border:none;overflow:hidden}",
+  code: "iframe.svelte-13nqlle{width:100%;height:400px;border:none;overflow:hidden;transition:all 0.5s ease-in-out}",
   map: null
 };
 const Calendar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -13,7 +13,7 @@ const Calendar = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   return `
 
 
-<iframe id="${"idIframe"}" src="${"about:blank"}" class="${"svelte-1epokvy"}"${add_attribute("this", frame, 0)}></iframe>`;
+<iframe id="${"idIframe"}" src="${"about:blank"}" class="${"svelte-13nqlle"}"${add_attribute("this", frame, 0)}></iframe>`;
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {

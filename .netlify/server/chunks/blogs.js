@@ -47,15 +47,23 @@ const blogs = [
         ],
         images: [
           {
+            video: false,
             number: 1,
             caption: `"I've made a huge mistake" - Mike`,
             alt: ""
           },
           {
+            video: false,
             number: 2,
             caption: "",
             alt: ""
           }
+          // {
+          //     video: true,
+          //     number: 3,
+          //     caption: '',
+          //     alt: '',
+          // }
         ]
       },
       {
@@ -79,11 +87,13 @@ const blogs = [
         ],
         images: [
           {
+            video: false,
             number: 1,
             caption: "",
             alt: ""
           },
           {
+            video: false,
             number: 2,
             caption: "",
             alt: ""
@@ -111,7 +121,14 @@ const blogs = [
         ],
         images: [
           {
+            video: false,
             number: 1,
+            caption: "",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 2,
             caption: "",
             alt: ""
           }
@@ -135,6 +152,102 @@ const blogs = [
         ]
       }
     ]
+  },
+  {
+    id: 1,
+    title: "Let's Bike Across America",
+    week: 0,
+    date: "03/06/2023",
+    Author: "Morgan Folz",
+    published: true,
+    transAmBlog: true,
+    bannerSrc: "",
+    bannerAlt: "",
+    bannerCaption: "",
+    categories: [
+      "TransAmerica Trail"
+    ],
+    sections: [
+      {
+        type: "text",
+        content: `"I'm quitting my job and biking across America next year" Mike told me during one of our weekly Zoom calls. It was May 2020, the COVID-19 pandemic had been in full swing for two months. Mike, our friend Rachel, and myself had started having virtual dinner every week to stay connected and spice up the quarantine life. Each week it was one person's responsibility to choose a recipe for us all to cook together (virtually) and then give a presentation to the other two. There were no rules on what you could present, but it had to be interesting and educational. Topics ranged from Blue zones, to financial tips, to Energy Generation and Consumption (did you know that the average US citizen consumes enough energy in a year to launch 55 Silverback gorillas into space?).`
+      },
+      // {
+      //     type: 'img',
+      //     caption: `One of the many zoom happy hour calls we had during the spring of 2020.`,
+      //     src: '',
+      //     alt: 'A picture of 9 people on a zoom call',
+      // },
+      {
+        type: "text",
+        content: `Anywho, I forget the topic this week, Mike's declaration was far more monumental. Mike and I had been talking about biking across America ever since we both read "Changing Cadence" by Michael Dillon about 4 years prior. Apparently, all it took was a global pandemic for us to finally get our asses in gear.`
+      },
+      {
+        type: "text",
+        content: `But I had my hesitations. Quitting my job to bicycle across the country did not seem like the most prudent idea in the middle of a global pandemic. Was I really prepared to leave my job, my health insurance, my security? The COVID pandemic reminded me that things could get much worse, and that our safety and well-being are not guaranteed. "Now is not the time to be throwing caution to the wind and living out my fantasies Alexander Supertramp style" I thought. "I should be saving every penny I can while simultaneously building up a dry food and water storage."`
+      },
+      {
+        type: "divider"
+      },
+      {
+        type: "text",
+        content: `COVID wore on, and I damn near went mad working from home (turns out construction management is incredibly dry work to do from your bedroom). As I'm sure is the case with many, COVID spurred a lot of reflection in me, and I came to the conclusion that I needed to make some drastic changes in my life. It had been 4 years since I graduated college, and I felt like I had accomplished nothing in that time besides pad my bank account and lose some hair. Don't get me wrong, I had made some incredible memories in those 4 years, but those memories were few and far between. I realized most of my day-to-day life left me feeling more dead than alive. When I graduated college, life felt like it had limitless opportunities. But as I looked at the current trajectory of my life/career, I wasn't excited at all. I felt nothing.`
+      },
+      {
+        type: "text",
+        content: `"Alright, I'm in"`
+      }
+    ]
+    //    
+    // ]
+  },
+  {
+    id: 1,
+    title: "Post 1",
+    week: 0,
+    date: "03/06/2023",
+    Author: "Morgan Folz",
+    published: false,
+    transAmBlog: false,
+    bannerSrc: "",
+    bannerAlt: "",
+    bannerCaption: "",
+    categories: [
+      "TransAmerica Trail"
+    ],
+    sections: [
+      {
+        type: "text",
+        content: `"I'm quitting my job and biking across America next year" Mike told me during one of our weekly Zoom calls. It was May 2020, the COVID-19 pandemic had been in full swing for two months. Mike, our friend Rachel, and myself had started having virtual dinner every week to stay connected and spice up the quarantine life. Each week it was one person's responsibility to choose a recipe for us all to cook together (virtually) and then give a presentation to the other two. There were no rules on what you could present, but it had to be interesting and educational. Topics ranged from Blue zones, to financial tips, to Energy Generation and Consumption (did you know that the average US citizen consumes enough energy in a year to launch 55 Silverback gorillas into space?).`
+      },
+      {
+        type: "img",
+        caption: `One of the many zoom happy hour calls we had during the spring of 2020.`,
+        src: "",
+        alt: "A picture of 12 people on a zoom call"
+      },
+      {
+        type: "text",
+        content: `Anywho, I forget the topic this week, Mike's declaration was far more monumental. Mike and I had been talking about biking across America ever since we both read "Changing Cadence" by Michael Dillon about 4 years prior. Apparently, all it took was a global pandemic for us to finally get our asses in gear.`
+      },
+      {
+        type: "text",
+        content: `But I had my hesitations. Quitting my job to bicycle across the country did not seem like the most prudent idea in the middle of a global pandemic. Was I really prepared to leave my job, my health insurance, my security? The COVID pandemic reminded me that things could get much worse, and that our safety and well-being are not guaranteed. "Now is not the time to be throwing caution to the wind and living out my fantasies Alexander Supertramp style" I thought. "I should be saving every penny I can while simultaneously building up a dry food and water storage."`
+      },
+      {
+        type: "divider"
+      },
+      {
+        type: "text",
+        content: `COVID wore on, and I damn near went mad working from home (turns out construction management is incredibly dry work to do from your bedroom). As I'm sure is the case with many, COVID spurred a lot of reflection in me, and I came to the conclusion that I needed to make some drastic changes in my life. It had been 4 years since I graduated college, and I felt like I had accomplished nothing in that time besides pad my bank account and lose some hair. Don't get me wrong, I had made some incredible memories in those 4 years, but those memories were few and far between. I realized most of my day-to-day life left me feeling more dead than alive. When I graduated college, life felt like it had limitless opportunities. But as I looked at the current trajectory of my life/career, I wasn't excited at all. I felt nothing.`
+      },
+      {
+        type: "text",
+        content: `"Alright, I'm in"`
+      }
+    ]
+    //    
+    // ]
   },
   {
     id: 0,
