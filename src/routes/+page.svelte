@@ -49,7 +49,7 @@
         </div>
         <div class="col-12 col-md-3">
             <h4>Expert Guidance</h4>
-            <p>With experience in guiding, outdoor coaching, and even bicycling across the USA, we are experts in the field of bicycle touring. From route planning to bike maintenance, we provide the guidance and support needed to ensure that every trip is safe, enjoyable, and memorable.</p>
+            <p>With experience in guiding, outdoor coaching, and multi-month bicycle tours, we are experts in the field of bicycle touring. From route planning to bike maintenance, we provide the guidance and support needed to ensure that every trip is safe, enjoyable, and memorable.</p>
         </div>
     </div>
 

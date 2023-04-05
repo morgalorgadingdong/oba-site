@@ -17,16 +17,16 @@
                 <!-- <div id="tour2" class="trip-preview-img"></div> -->
             </div>
             <h4 class="px-4 py-2">{tour.title}</h4>
-            <div class="trip-info-container d-flex justify-content-between justify-content-xxl-around px-3 pb-3">
-                <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+            <div class="trip-info-container d-none d-md-flex justify-content-between justify-content-xxl-around px-3 pb-3">
+                <div class="trip-info p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-clock"></i> -->
                     <span>{tour.price}</span>
                 </div>
-                <div class="trip-info mx-1 p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                <div class="trip-info mx-1 p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-tachometer"></i> -->
                     <span>{tour.duration}</span>
                 </div>
-                <div class="trip-info p-1 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                <div class="trip-info p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-bicycle"></i> -->
                     {#if tour.ebikes}
                         <span>E-bikes available</span>
@@ -36,11 +36,32 @@
                 </div>
             </div>
         </div>
+        <div class="trip-info-container-mobile col-12 d-flex d-md-none justify-content-between justify-content-xxl-around px-3 pb-3">
+            <div class="p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                <!-- <i class="fa-solid fa-clock"></i> -->
+                <span>{tour.price}</span>
+            </div>
+            <div class="mx-1 p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                <!-- <i class="fa-solid fa-tachometer"></i> -->
+                <span>{tour.duration}</span>
+            </div>
+            <div class="p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                <!-- <i class="fa-solid fa-bicycle"></i> -->
+                {#if tour.ebikes}
+                    <span>E-bikes available</span>
+                {:else}
+                    <span>E-bikes not available</span>
+                {/if}
+            </div>
+        </div>
     </a>
 </div>
 
 
 <style>
+    .trip-info-container-mobile {
+        color: var(--color-primary-dark);
+    }
     .trip-preview-container {
         /* height: 40vh; */
         /* aspect-ratio: 1/1; */

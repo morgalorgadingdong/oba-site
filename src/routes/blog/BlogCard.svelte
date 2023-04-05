@@ -6,7 +6,12 @@
     let imgSrc
     if (blog.transAmBlog) {
         console.log('transam')
-        imgSrc = `../../img/blog/transam/week ${blog.week}/week${blog.week}-banner.jpg`
+        if (blog.sections[0].type == 'intro' || blog.sections[0].type == 'day') {
+            imgSrc = `../../img/blog/transam/week ${blog.week}/week${blog.week}-banner.jpg`
+        } else {
+            imgSrc = `../../img/blog/transam/${blog.title}/${blog.title}-banner.jpg`
+        }
+        
     } else {
         imgSrc = `../../img/blog/${blog.id}. ${blog.title}/blog${blog.id}-banner.jpg`;
     }

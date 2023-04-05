@@ -36,19 +36,22 @@
             if (newheight > 380) {
                 iFrameID.style.height = newheight + "px";
             }
-            
             // console.log(iFrameID.style.height)
-      }
+            setTimeout(() => {
+                iframeLoaded()
+            }
+                , 1000)
+        }
   }
 
 
 
 </script>
 
-<svelte:body
+<!-- <svelte:body
     on:scroll={iframeLoaded}
     on:click={iframeLoaded}
-    />
+    /> -->
 
 <!-- svelte-ignore a11y-missing-attribute -->
 <iframe id="idIframe" src="about:blank" bind:this={frame}/>
@@ -59,6 +62,7 @@
         height: 400px;
         border: none;
         overflow: hidden;
+        transition: all 0.5s ease-in-out;
     }
 
 

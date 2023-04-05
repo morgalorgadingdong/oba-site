@@ -1,6 +1,6 @@
 <script>
     import { blogs } from '../blogs'
-    import BlogPreview from './BlogPreview.svelte'
+    import BlogCard from './BlogCard.svelte'
 </script>
 
 
@@ -17,7 +17,7 @@
     <div class="col-12 col-md-8 col-lg-6 d-flex justify-content-center flex-wrap content-container mt-4">
         {#each blogs as blog}
             {#if blog.published == true}  
-                <BlogPreview { blog } />
+                <BlogCard { blog } />
             {/if}
         {/each}
     </div>

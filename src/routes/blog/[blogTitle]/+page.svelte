@@ -13,17 +13,24 @@
         }
     })
 
+    console.log(blog)
+
     let transAmTotalDistance = 4323
 
     // let imgSrcBanner = `../img/blogs/${blog.Number}. ${blog.Title}/blog${blog.id}-banner.jpg`;
     let imgSrcBanner
     if (blog.transAmBlog) {
         console.log('transam')
-        imgSrcBanner = `../../img/blog/transam/week ${blog.week}/week${blog.week}-banner.jpg`
+        if (blog.sections[0].type == 'intro' || blog.sections[0].type == 'day') {
+            imgSrcBanner = `../../img/blog/transam/week ${blog.week}/week${blog.week}-banner.jpg`
+        } else {
+            imgSrcBanner = `../../img/blog/transam/${blog.title}/${blog.title}-banner.jpg`
+        }
+        
     } else {
         imgSrcBanner = `../../img/blog/${blog.id}. ${blog.title}/blog${blog.id}-banner.jpg`;
     }
-    let currentImg = 1;
+    let currentImg = 0;
     let testBlog = blogs[1]
     let prevBlog
     let nextBlog
@@ -34,6 +41,13 @@
     //     nextBlog = blogs[blog.Number + 1]
     // }
 
+    // const videos = document.querySelectorAll('video');
+    // const videos
+    // videos.forEach(video => {
+    //     video.removeAttribute('controls');
+    // })
+// ./img/blogs/transam/Let's Bike Across America/Let's Bike Across America-1.jpg
+// .\img\blog\transam\Let's Bike Across America\Let's Bike Across America-1.jpg"
 </script>
 
 <section>
@@ -90,15 +104,26 @@
                                         drag: 'free',
                                         snap: true
                                     } }>
-                                    <SplideTrack>
+                                    <SplideTrack class="carousel">
                                         {#each section.images as image}
+                                            
+                                            {#if image.video}
+                                            <SplideSlide class="my-3 mt-0 transam-day-pic">
+                                                <div class="video-container d-flex justify-content-center">
+                                                    <video src='../../img/blog/transam/week {blog.week}/day{section.day}-{image.number}.mp4' alt={image.alt} class="transam-day-vid" controls></video>
+                                                    <p>{image.caption}</p>
+                                                </div>
+                                            </SplideSlide>
+                                            {:else}
                                             <SplideSlide class="my-3 mt-0 transam-day-pic">
                                                 <img src='../../img/blog/transam/week {blog.week}/day{section.day}-{image.number}.jpg' alt={image.alt} class="" />
                                                 <p>{image.caption}</p>
                                             </SplideSlide>
+                                            {/if}
+                                        
                                         {/each}
                                             
-                                        </SplideTrack>
+                                    </SplideTrack>
                                         <div class="splide__arrows">
                                             <button class="splide__arrow splide__arrow--prev"><i class="fa-solid fa-caret-left"></i></button>
                                             <button class="splide__arrow splide__arrow--next"><i class="fa-solid fa-caret-right"></i></button>
@@ -112,6 +137,24 @@
                                         <h5 class="text-left col-12">{reflection.heading}</h5>
                                         <p>{reflection.content}</p>
                                     {/each}
+                                {:else if section.type == 'text'}
+                                    <p class="col-12 text-left px-0 my-3 blog-text">{section.content}</p>
+                                {:else if section.type == 'img'}
+                                    <img src="./img/blogs/transam/{blog.title}/{blog.title}-{currentImg}.jpg" alt="{section.alt}" class="col-10 col-md-8 mt-5 blog-img" />
+                                    <span class="col-12 text-center mb-5">{section.caption} <a href="{section.src}">source</a></span>
+                                    { currentImg = currentImg + 1}  
+                                {:else if section.type == 'divider'}
+                                    <div class="mt-5 pb-5 blog-divider col-8"></div>
+                                {:else if section.type == 'highlight'}
+                                    <p class="text-center blog-highlight p-5 col-12 col-lg-8 my-5">{section.content}</p>
+                                {:else if section.type == 'heading'}
+                                    <h4 class="text-start col-12 mt-3 mb-0">{section.content}</h4>
+                                {:else if section.Type == 'list'}
+                                    <ul class="text-start col-12 col-lg-8 my-3 mb-0 d-flex flex-wrap">
+                                        {#each section.listItems as item}
+                                            <li class="blog-text my-2 col-12">{item.content}</li>
+                                        {/each}
+                                    </ul>
                                 {/if}
                             {/each}
                 {:else}
@@ -153,6 +196,23 @@
  <!-- <p on:click={reloadPage(nextBlog.Title)}>{nextBlog.Title}</p> -->
 
 <style>
+    .video-container video {
+        position: absolute;
+        top: 0;
+        /* left: 0; */
+        /* width: 100%; */
+        height: 95%;
+        margin: 0 auto;
+    }
+    .video-container {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        /* padding-bottom: 56.25%; */
+        height: 100%; 
+        overflow: hidden;
+    }
+
     .transam-day-pics img {
         width: 100%;
         aspect-ratio: 2/3;

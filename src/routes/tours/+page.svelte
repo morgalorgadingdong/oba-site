@@ -35,7 +35,7 @@
 </div>
 
 <section class="col-12 d-flex justify-content-center flex-wrap my-5">
-    <div class="toggle-container col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
+    <div class="toggle-container col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap mb-5">
         <div class="col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3">
             <button class="view-toggle btn {view === 'calendar' ? 'active' : ''}" on:click={toggleCalendarView}>By Date</button>
         </div>
@@ -55,7 +55,7 @@
             
         </div>
     {:else if view == 'singleDay'}
-        <div id="singleDayView" class="col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap">
+        <div id="singleDayView" class="col-12 col-xxl-8 px-0 d-flex justify-content-center justify-content-xl-between flex-wrap">
             <div class="filter-container">
 
             </div>
