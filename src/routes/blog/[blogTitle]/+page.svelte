@@ -55,38 +55,51 @@
         <img src = {imgSrcBanner} alt="{blog.bannerAlt}" class="bannerImg" />
     </div>
     <div id="" class="d-flex flex-wrap justify-content-center content-container text-start center mb-5" >            
-        <div class="col-12 blog-header d-flex align-content-center justify-content-start flex-wrap">
+        <div class="col-12 blog-header d-flex align-content-center justify-content-start flex-wrap my-3">
             <h2 class="col-12 text-left px-3 pb-1">{blog.title}</h2>
             <p class="blogDate col-12 text-left px-3">Published by {blog.author} on {blog.date}</p>
+            {#if blog.transAmBlog}
+                <span class="mx-3">{blog.sections[0].dateRange}</span>    
+                <span class="mx-3">{blog.sections[0].startingPoint} -&#62; {blog.sections[0].endingPoint}</span>
+                <span class="mx-3">{blog.sections[0].totalMilage} miles down</span>
+                <span class="mx-3">{blog.sections[0].milageLeft} miles to go</span>
+            {/if}
         </div>
         <div class="col-12 px-3">
             <div class="blog-divider col-12 blog-header-divider"></div>
         </div>
-        <div class="col-12 col-lg-8 d-flex justify-content-center flex-wrap mt-3 px-3">
+        <div class="col-12 d-flex justify-content-center flex-wrap mt-3 px-3">
             {#if blog.transAmBlog}
                 {#each blog.sections as section}
                     {#if section.type == 'intro'}
-                    <div class="col-12 d-flex justify-content-start flex-wrap">
-                        <h3 class="col-12">{section.startingPoint} -&#62; {section.endingPoint}</h3>
-                        <p class="mx-3">{section.dateRange} miles down</p>
-                        <p class="mx-3">{section.totalMilage} miles down</p>
-                        <p class="mx-3">{section.milageLeft} miles to go</p>
-                    </div>    
+                        {#if section.text}
+                        <div class="col-12 d-flex justify-content-start flex-wrap">
+                            <p class="col-12">{section.text}</p>
+                        </div>    
                     
                         <div class="mt-5 pb-5 blog-divider col-12"></div>
+                        {/if}
                     {:else if section.type == 'day'}
                         <div class="transam-day-upper col-12 col-md-6">
-                            <h3>Day {section.day}: {section.startingPoint} -&#62; {section.endingPoint}</h3>
+                            <h3>Day {section.day}: {section.startingPoint} {#if section.endingPoint} -&#62; {section.endingPoint} {/if}</h3>                            
                             <p>{section.distance} miles, {section.elevation} ft of climb</p>
-                            <p>Difficulty: {section.difficulty}</p>
-                            <p>Safety: {section.safety}</p>
-                        
+                            {#if section.distance}
+                                <p>Difficulty: {section.difficulty}</p>
+                            {/if}
+                            {#if section.safety}
+                                <p>Safety: {section.safety}</p>
+                            {/if}
+                            {#if section.text}
+                                <p>{section.text}</p>
+                            {/if}
+                            {#if section.notes}
                             <p>Notes</p>
                             <ul>
                                 {#each section.notes as note}
                                     <li>{note}</li>
                                 {/each}
                             </ul>
+                            {/if}
                         </div>
                             <div class="transam-day-pics col-12 col-md-6">
                                 <Splide aria-label="" class="z-reset" hasTrack={ false } options={ {
@@ -267,7 +280,7 @@
 } */
 
 .blog-header {
-    height: 23vh;
+    min-height: 23vh;
 }
 
 .blogDate {

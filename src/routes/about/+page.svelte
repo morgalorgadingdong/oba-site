@@ -10,11 +10,13 @@
 
 <section class="col-12 d-flex justify-content-center flex-wrap p-5">
     <!-- <h2>Our story</h2> -->
-    <p>Oregon Bicycle Adventures was founded by two friends, Carl and Morgan, who share a passion for exploring the great outdoors on two wheels. The seeds for Oregon Bicycle Adventures were first planted way back in 2016, when Carl started his own winery tour company and discovered his love for creating fun, memorable experiences for people. For Morgan, it was in 2021 when he left his career as a mechanical engineer to pursue his dream of biking across the country and found a sense of freedom and adventure he'd never experienced.</p>
+    <div class="col-12 col-md-10 col-lg-8">
+        <p>Oregon Bicycle Adventures was founded by two friends, Carl and Morgan, who share a passion for exploring the great outdoors on two wheels. The seeds for Oregon Bicycle Adventures were first planted way back in 2016, when Carl started his own winery tour company and discovered his love for creating fun, memorable experiences for people. For Morgan, it was in 2021 when he left his career as a mechanical engineer to pursue his dream of biking across the country and found a sense of freedom and adventure he'd never experienced.</p>
 
-    <p>Based out of Bend, we are perfectly situated to offer trips throughout the state, showcasing the best of what Oregon has to offer. Morgan was born and raised in Oregon, and spent his childhood exploring and camping all over the state. Carl moved here in 2017 and has been hooked on the outdoor lifestyle ever since. Together, they bring their combined knowledge, expertise, and passion to create unforgettable cycling experiences for our guests.</p>
+        <p>Based out of Bend, we are perfectly situated to offer trips throughout the state, showcasing the best of what Oregon has to offer. Morgan was born and raised in Oregon, and spent his childhood exploring and camping all over the state. Carl moved here in 2017 and has been hooked on the outdoor lifestyle ever since. Together, they bring their combined knowledge, expertise, and passion to create unforgettable cycling experiences for our guests.</p>
         
-    <p>Whether you're a seasoned cyclist or a beginner, our goal is to provide you with a unique and authentic Oregon experience. We keep our group sizes small and our trips personalized, so you can see the sights and explore the hidden gems of Oregon at your own pace. We believe that there's no better way to see the world than from the saddle of a bicycle, and we can't wait to share our love of cycling with you.</p>
+        <p>Whether you're a seasoned cyclist or a beginner, our goal is to provide you with a unique and authentic Oregon experience. We keep our group sizes small and our trips personalized, so you can see the sights and explore the hidden gems of Oregon at your own pace. We believe that there's no better way to see the world than from the saddle of a bicycle, and we can't wait to share our love of cycling with you.</p>
+    </div>
 </section>
 
 <section class="col-12 d-flex justify-content-center flex-wrap p-5">

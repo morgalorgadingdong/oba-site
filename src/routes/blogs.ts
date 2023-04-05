@@ -25,8 +25,46 @@ export const blogs = [
                 milage: 365,
                 totalMilage: 365,
                 milageLeft: 3958,
-                text: ''
+                text: ``
                 
+            },
+            {
+                type: 'day',
+                day: 0,
+                date: '04/20/2021',
+                startingPoint: 'Yorktown, VA',
+                endingPoint: '',
+                distance: 0,
+                elevation: 0,
+                difficulty: '',
+                safety: '',
+                lodging: '',
+                lodgingLink: '',
+                strava: '',
+                text: `The scale of what is in front of us is hard to comprehend. After spending 5 days driving out here I cannot fathom traveling all of those miles back by bike. The distance is beyond what my mind can intuitively grasp, it’s just a number at this point. 4200 miles. 75 days. How do you mentally prepare for this?
+
+                We spent the evening eating burgers and playing cards my parents at our warm showers. When it was time to hit the hay, I felt like a kid on Christmas eve. I couldn’t get my mind to slow down. I did some journaling until I could fall asleep. I’ll share one line that I think accurately sums up how I felt: “I'm excited. I'm nervous. I'm alive.”`,
+                notes: '',
+                images: [
+                    {
+                        video: false,
+                        number: 1,
+                        caption: `"I've made a huge mistake" - Mike`,
+                        alt: '',
+                    },
+                    {
+                        video: false,
+                        number: 2,
+                        caption: '',
+                        alt: '',
+                    }
+                    // {
+                    //     video: true,
+                    //     number: 3,
+                    //     caption: '',
+                    //     alt: '',
+                    // }
+                ]
             },
             {
                 type: 'day',
