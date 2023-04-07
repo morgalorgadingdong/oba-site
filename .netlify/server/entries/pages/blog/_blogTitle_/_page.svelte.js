@@ -134,7 +134,7 @@ const SplideSlide = create_ssr_component(($$result, $$props, $$bindings, slots) 
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".video-container.svelte-1s0vhaw video.svelte-1s0vhaw{position:absolute;top:0;height:95%;margin:0 auto}.video-container.svelte-1s0vhaw.svelte-1s0vhaw{position:relative;padding:0;margin:0;height:100%;overflow:hidden}.transam-day-pics.svelte-1s0vhaw img.svelte-1s0vhaw{width:100%;aspect-ratio:2/3;max-height:80vh;object-fit:cover;object-position:center}.blog-text.svelte-1s0vhaw.svelte-1s0vhaw{font-size:1.2rem;line-height:1.5rem;font-family:var(--bs-body-font-family)}.blog-img.svelte-1s0vhaw.svelte-1s0vhaw{object-fit:cover;margin:0;position:relative;left:0;top:0;aspect-ratio:1/1}.blogBanner.svelte-1s0vhaw.svelte-1s0vhaw{background-color:black;height:50vh;max-height:300px;position:relative;margin:auto}.blogBanner.svelte-1s0vhaw>img.svelte-1s0vhaw{width:100%;height:100%;object-fit:cover;margin:0;position:absolute;left:0;top:0}.blog-header.svelte-1s0vhaw.svelte-1s0vhaw{height:23vh}.blogDate.svelte-1s0vhaw.svelte-1s0vhaw{color:#afadac}.blog-header-divider.svelte-1s0vhaw.svelte-1s0vhaw{margin-bottom:40px}a.svelte-1s0vhaw.svelte-1s0vhaw{color:black}.blog-highlight.svelte-1s0vhaw.svelte-1s0vhaw{font-size:1.5rem;font-weight:600;color:black;font-style:italic;background-color:rgb(175, 173, 172, 0.1)}.blog-divider.svelte-1s0vhaw.svelte-1s0vhaw{border-top:black solid 2px}",
+  code: ".video-container.svelte-18qidi5 video.svelte-18qidi5{position:absolute;top:0;height:95%;margin:0 auto}.video-container.svelte-18qidi5.svelte-18qidi5{position:relative;padding:0;margin:0;height:100%;overflow:hidden}.transam-day-pics.svelte-18qidi5 img.svelte-18qidi5{width:100%;aspect-ratio:2/3;max-height:80vh;object-fit:cover;object-position:center}.blog-text.svelte-18qidi5.svelte-18qidi5{font-size:1.2rem;line-height:1.5rem;font-family:var(--bs-body-font-family)}.blog-img.svelte-18qidi5.svelte-18qidi5{object-fit:cover;margin:0;position:relative;left:0;top:0;aspect-ratio:1/1}.blogBanner.svelte-18qidi5.svelte-18qidi5{background-color:black;height:50vh;max-height:300px;position:relative;margin:auto}.blogBanner.svelte-18qidi5>img.svelte-18qidi5{width:100%;height:100%;object-fit:cover;margin:0;position:absolute;left:0;top:0}.blog-header.svelte-18qidi5.svelte-18qidi5{min-height:23vh}.blogDate.svelte-18qidi5.svelte-18qidi5{color:#afadac}.blog-header-divider.svelte-18qidi5.svelte-18qidi5{margin-bottom:40px}a.svelte-18qidi5.svelte-18qidi5{color:black}.blog-highlight.svelte-18qidi5.svelte-18qidi5{font-size:1.5rem;font-weight:600;color:black;font-style:italic;background-color:rgb(175, 173, 172, 0.1)}.blog-divider.svelte-18qidi5.svelte-18qidi5{border-top:black solid 2px}",
   map: null
 };
 let currentImg = 0;
@@ -162,27 +162,28 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
   $$result.css.add(css);
-  return `<section><div class="${"vh-60 blogBanner col-12 px-0 svelte-1s0vhaw"}"><img${add_attribute("src", imgSrcBanner, 0)}${add_attribute("alt", blog.bannerAlt, 0)} class="${"bannerImg svelte-1s0vhaw"}"></div>
-    <div id="${""}" class="${"d-flex flex-wrap justify-content-center content-container text-start center mb-5"}"><div class="${"col-12 blog-header d-flex align-content-center justify-content-start flex-wrap svelte-1s0vhaw"}"><h2 class="${"col-12 text-left px-3 pb-1"}">${escape(blog.title)}</h2>
-            <p class="${"blogDate col-12 text-left px-3 svelte-1s0vhaw"}">Published by ${escape(blog.author)} on ${escape(blog.date)}</p></div>
-        <div class="${"col-12 px-3"}"><div class="${"blog-divider col-12 blog-header-divider svelte-1s0vhaw"}"></div></div>
-        <div class="${"col-12 col-lg-8 d-flex justify-content-center flex-wrap mt-3 px-3"}">${blog.transAmBlog ? `${each(blog.sections, (section) => {
-    return `${section.type == "intro" ? `<div class="${"col-12 d-flex justify-content-start flex-wrap"}"><h3 class="${"col-12"}">${escape(section.startingPoint)} -&gt; ${escape(section.endingPoint)}</h3>
-                        <p class="${"mx-3"}">${escape(section.dateRange)} miles down</p>
-                        <p class="${"mx-3"}">${escape(section.totalMilage)} miles down</p>
-                        <p class="${"mx-3"}">${escape(section.milageLeft)} miles to go</p></div>    
+  return `<section><div class="${"vh-60 blogBanner col-12 px-0 svelte-18qidi5"}"><img${add_attribute("src", imgSrcBanner, 0)}${add_attribute("alt", blog.bannerAlt, 0)} class="${"bannerImg svelte-18qidi5"}"></div>
+    <div id="${""}" class="${"d-flex flex-wrap justify-content-center content-container text-start center mb-5"}"><div class="${"col-12 blog-header d-flex align-content-center justify-content-start flex-wrap my-3 svelte-18qidi5"}"><h2 class="${"col-12 text-left px-3 pb-1"}">${escape(blog.title)}</h2>
+            <p class="${"blogDate col-12 text-left px-3 svelte-18qidi5"}">Published by ${escape(blog.author)} on ${escape(blog.date)}</p>
+            ${blog.transAmBlog ? `<span class="${"mx-3"}">${escape(blog.sections[0].dateRange)}</span>    
+                <span class="${"mx-3"}">${escape(blog.sections[0].startingPoint)} -&gt; ${escape(blog.sections[0].endingPoint)}</span>
+                <span class="${"mx-3"}">${escape(blog.sections[0].totalMilage)} miles down</span>
+                <span class="${"mx-3"}">${escape(blog.sections[0].milageLeft)} miles to go</span>` : ``}</div>
+        <div class="${"col-12 px-3"}"><div class="${"blog-divider col-12 blog-header-divider svelte-18qidi5"}"></div></div>
+        <div class="${"col-12 d-flex justify-content-center flex-wrap mt-3 px-3"}">${blog.transAmBlog ? `${each(blog.sections, (section) => {
+    return `${section.type == "intro" ? `${section.text ? `<div class="${"col-12 d-flex justify-content-start flex-wrap"}"><p class="${"col-12"}">${escape(section.text)}</p></div>    
                     
-                        <div class="${"mt-5 pb-5 blog-divider col-12 svelte-1s0vhaw"}"></div>` : `${section.type == "day" ? `<div class="${"transam-day-upper col-12 col-md-6"}"><h3>Day ${escape(section.day)}: ${escape(section.startingPoint)} -&gt; ${escape(section.endingPoint)}</h3>
+                        <div class="${"mt-5 pb-5 blog-divider col-12 svelte-18qidi5"}"></div>` : ``}` : `${section.type == "day" ? `<div class="${"transam-day-upper col-12 col-md-6"}"><h3>Day ${escape(section.day)}: ${escape(section.startingPoint)} ${section.endingPoint ? `-&gt; ${escape(section.endingPoint)} ` : ``}</h3>                            
                             <p>${escape(section.distance)} miles, ${escape(section.elevation)} ft of climb</p>
-                            <p>Difficulty: ${escape(section.difficulty)}</p>
-                            <p>Safety: ${escape(section.safety)}</p>
-                        
-                            <p>Notes</p>
+                            ${section.distance ? `<p>Difficulty: ${escape(section.difficulty)}</p>` : ``}
+                            ${section.safety ? `<p>Safety: ${escape(section.safety)}</p>` : ``}
+                            ${section.text ? `<p>${escape(section.text)}</p>` : ``}
+                            ${section.notes ? `<p>Notes</p>
                             <ul>${each(section.notes, (note) => {
       return `<li>${escape(note)}</li>`;
     })}
-                            </ul></div>
-                            <div class="${"transam-day-pics col-12 col-md-6 svelte-1s0vhaw"}">${validate_component(Splide_1, "Splide").$$render(
+                            </ul>` : ``}</div>
+                            <div class="${"transam-day-pics col-12 col-md-6 svelte-18qidi5"}">${validate_component(Splide_1, "Splide").$$render(
       $$result,
       {
         "aria-label": "",
@@ -205,13 +206,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
               return `${each(section.images, (image) => {
                 return `${image.video ? `${validate_component(SplideSlide, "SplideSlide").$$render($$result, { class: "my-3 mt-0 transam-day-pic" }, {}, {
                   default: () => {
-                    return `<div class="${"video-container d-flex justify-content-center svelte-1s0vhaw"}"><video src="${"../../img/blog/transam/week " + escape(blog.week, true) + "/day" + escape(section.day, true) + "-" + escape(image.number, true) + ".mp4"}"${add_attribute("alt", image.alt, 0)} class="${"transam-day-vid svelte-1s0vhaw"}" controls></video>
+                    return `<div class="${"video-container d-flex justify-content-center svelte-18qidi5"}"><video src="${"../../img/blog/transam/week " + escape(blog.week, true) + "/day" + escape(section.day, true) + "-" + escape(image.number, true) + ".mp4"}"${add_attribute("alt", image.alt, 0)} class="${"transam-day-vid svelte-18qidi5"}" controls></video>
                                                     <p>${escape(image.caption)}</p></div>
                                             `;
                   }
                 })}` : `${validate_component(SplideSlide, "SplideSlide").$$render($$result, { class: "my-3 mt-0 transam-day-pic" }, {}, {
                   default: () => {
-                    return `<img src="${"../../img/blog/transam/week " + escape(blog.week, true) + "/day" + escape(section.day, true) + "-" + escape(image.number, true) + ".jpg"}"${add_attribute("alt", image.alt, 0)} class="${" svelte-1s0vhaw"}">
+                    return `<img src="${"../../img/blog/transam/week " + escape(blog.week, true) + "/day" + escape(section.day, true) + "-" + escape(image.number, true) + ".jpg"}"${add_attribute("alt", image.alt, 0)} class="${" svelte-18qidi5"}">
                                                 <p>${escape(image.caption)}</p>
                                             `;
                   }
@@ -227,24 +228,24 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       }
     )}</div>
-                                <div class="${"mt-5 pb-5 blog-divider col-12 svelte-1s0vhaw"}"></div>` : `${section.type == "reflections" ? `<h3 class="${"col-12 text-center"}">Reflections</h3>
+                                <div class="${"mt-5 pb-5 blog-divider col-12 svelte-18qidi5"}"></div>` : `${section.type == "reflections" ? `<h3 class="${"col-12 text-center"}">Reflections</h3>
                                     ${each(section.content, (reflection) => {
       return `<h5 class="${"text-left col-12"}">${escape(reflection.heading)}</h5>
                                         <p>${escape(reflection.content)}</p>`;
-    })}` : `${section.type == "text" ? `<p class="${"col-12 text-left px-0 my-3 blog-text svelte-1s0vhaw"}">${escape(section.content)}</p>` : `${section.type == "img" ? `<img src="${"./img/blogs/transam/" + escape(blog.title, true) + "/" + escape(blog.title, true) + "-" + escape(currentImg, true) + ".jpg"}"${add_attribute("alt", section.alt, 0)} class="${"col-10 col-md-8 mt-5 blog-img svelte-1s0vhaw"}">
-                                    <span class="${"col-12 text-center mb-5"}">${escape(section.caption)} <a${add_attribute("href", section.src, 0)} class="${"svelte-1s0vhaw"}">source</a></span>
-                                    ${escape(currentImg = currentImg + 1)}` : `${section.type == "divider" ? `<div class="${"mt-5 pb-5 blog-divider col-8 svelte-1s0vhaw"}"></div>` : `${section.type == "highlight" ? `<p class="${"text-center blog-highlight p-5 col-12 col-lg-8 my-5 svelte-1s0vhaw"}">${escape(section.content)}</p>` : `${section.type == "heading" ? `<h4 class="${"text-start col-12 mt-3 mb-0"}">${escape(section.content)}</h4>` : `${section.Type == "list" ? `<ul class="${"text-start col-12 col-lg-8 my-3 mb-0 d-flex flex-wrap"}">${each(section.listItems, (item) => {
-      return `<li class="${"blog-text my-2 col-12 svelte-1s0vhaw"}">${escape(item.content)}</li>`;
+    })}` : `${section.type == "text" ? `<p class="${"col-12 text-left px-0 my-3 blog-text svelte-18qidi5"}">${escape(section.content)}</p>` : `${section.type == "img" ? `<img src="${"./img/blogs/transam/" + escape(blog.title, true) + "/" + escape(blog.title, true) + "-" + escape(currentImg, true) + ".jpg"}"${add_attribute("alt", section.alt, 0)} class="${"col-10 col-md-8 mt-5 blog-img svelte-18qidi5"}">
+                                    <span class="${"col-12 text-center mb-5"}">${escape(section.caption)} <a${add_attribute("href", section.src, 0)} class="${"svelte-18qidi5"}">source</a></span>
+                                    ${escape(currentImg = currentImg + 1)}` : `${section.type == "divider" ? `<div class="${"mt-5 pb-5 blog-divider col-8 svelte-18qidi5"}"></div>` : `${section.type == "highlight" ? `<p class="${"text-center blog-highlight p-5 col-12 col-lg-8 my-5 svelte-18qidi5"}">${escape(section.content)}</p>` : `${section.type == "heading" ? `<h4 class="${"text-start col-12 mt-3 mb-0"}">${escape(section.content)}</h4>` : `${section.Type == "list" ? `<ul class="${"text-start col-12 col-lg-8 my-3 mb-0 d-flex flex-wrap"}">${each(section.listItems, (item) => {
+      return `<li class="${"blog-text my-2 col-12 svelte-18qidi5"}">${escape(item.content)}</li>`;
     })}
                                     </ul>` : ``}`}`}`}`}`}`}`}`}`;
   })}` : `
 
             ${each(blog.sections, (section) => {
-    return `${section.type == "text" ? `<p class="${"col-12 text-left px-0 my-3 blog-text svelte-1s0vhaw"}">${escape(section.Content)}</p>` : `${section.type == "img" ? `<img src="${"./img/blogs/" + escape(blog.number, true) + ". " + escape(blog.title, true) + "/blog" + escape(blog.id, true) + "-" + escape(currentImg, true) + ".jpg"}"${add_attribute("alt", section.alt, 0)} class="${"col-10 col-md-8 mt-5 blog-img svelte-1s0vhaw"}">
-                    <span class="${"col-12 text-center mb-5"}">${escape(section.caption)} <a${add_attribute("href", section.src, 0)} class="${"svelte-1s0vhaw"}">source</a></span>
-                    ${escape(currentImg = currentImg + 1)}` : `${section.type == "divider" ? `<div class="${"mt-5 pb-5 blog-divider col-8 svelte-1s0vhaw"}"></div>` : `${section.type == "highlight" ? `<p class="${"text-center blog-highlight p-5 col-12 col-lg-8 my-5 svelte-1s0vhaw"}">${escape(section.content)}</p>` : `${section.type == "heading" ? `<h4 class="${"text-start col-12 mt-3 mb-0"}">${escape(section.content)}</h4>` : ``}`}`}`}`}`;
+    return `${section.type == "text" ? `<p class="${"col-12 text-left px-0 my-3 blog-text svelte-18qidi5"}">${escape(section.Content)}</p>` : `${section.type == "img" ? `<img src="${"./img/blogs/" + escape(blog.number, true) + ". " + escape(blog.title, true) + "/blog" + escape(blog.id, true) + "-" + escape(currentImg, true) + ".jpg"}"${add_attribute("alt", section.alt, 0)} class="${"col-10 col-md-8 mt-5 blog-img svelte-18qidi5"}">
+                    <span class="${"col-12 text-center mb-5"}">${escape(section.caption)} <a${add_attribute("href", section.src, 0)} class="${"svelte-18qidi5"}">source</a></span>
+                    ${escape(currentImg = currentImg + 1)}` : `${section.type == "divider" ? `<div class="${"mt-5 pb-5 blog-divider col-8 svelte-18qidi5"}"></div>` : `${section.type == "highlight" ? `<p class="${"text-center blog-highlight p-5 col-12 col-lg-8 my-5 svelte-18qidi5"}">${escape(section.content)}</p>` : `${section.type == "heading" ? `<h4 class="${"text-start col-12 mt-3 mb-0"}">${escape(section.content)}</h4>` : ``}`}`}`}`}`;
   })}`}</div></div>
-    <div class="${"col-12 d-flex justify-content-center"}"><a href="${"/blog"}" class="${" svelte-1s0vhaw"}"><div class="${"button my-5"}">Back to Blogs</div></a></div>
+    <div class="${"col-12 d-flex justify-content-center"}"><a href="${"/blog"}" class="${" svelte-18qidi5"}"><div class="${"button my-5"}">Back to Blogs</div></a></div>
     
     
     </section>
