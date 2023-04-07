@@ -199,7 +199,7 @@ export const blogs = [
         week: 0,
         date: "03/06/2023",
         Author: 'Morgan Folz',
-        published: true,
+        published: false,
         transAmBlog: true,
         bannerSrc: '',
         bannerAlt: '',
