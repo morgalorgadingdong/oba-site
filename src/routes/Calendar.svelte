@@ -40,7 +40,7 @@
             setTimeout(() => {
                 iframeLoaded()
             }
-                , 1000)
+                , 500)
         }
   }
 
