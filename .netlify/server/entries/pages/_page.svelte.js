@@ -30,25 +30,26 @@ const TourCard = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "section.svelte-1afbk0a.svelte-1afbk0a{margin:1rem 0}#hero-tagline-container.svelte-1afbk0a>h1.svelte-1afbk0a{font-family:var(--font-hero);color:var(--color-light);opacity:1}#hero-tagline-container.svelte-1afbk0a>.btn.svelte-1afbk0a{z-index:1}section#tours.svelte-1afbk0a.svelte-1afbk0a{padding:0}.hero-tagline.svelte-1afbk0a.svelte-1afbk0a{text-shadow:2px 2px 4px rgba(0,0,0,0.5);opacity:1}#why-choose-us.svelte-1afbk0a.svelte-1afbk0a{background-color:var(--color-primary);color:var(--color-light)}#why-choose-us.svelte-1afbk0a h2.svelte-1afbk0a{font-family:var(--font-header);font-size:2rem;color:var(--color-light);opacity:1;text-transform:uppercase}#inspirational-section.svelte-1afbk0a.svelte-1afbk0a{background-image:url('$lib/img/hero-3.jpg');background-position:center;background-size:cover}#inspirational-section.svelte-1afbk0a span.svelte-1afbk0a{color:var(--color-light);font-size:40px}",
+  code: "section.svelte-k53dcm.svelte-k53dcm{margin:1rem 0}#hero-tagline-container.svelte-k53dcm>h1.svelte-k53dcm{font-family:var(--font-hero);color:var(--color-light);opacity:1}#hero-tagline-container.svelte-k53dcm>.btn.svelte-k53dcm{z-index:1}section#tours.svelte-k53dcm.svelte-k53dcm{padding:0}.hero-tagline.svelte-k53dcm.svelte-k53dcm{text-shadow:2px 2px 4px rgba(0,0,0,0.5);opacity:1}#why-choose-us.svelte-k53dcm.svelte-k53dcm{background-color:var(--color-primary);color:var(--color-light)}#why-choose-us.svelte-k53dcm h2.svelte-k53dcm{font-family:var(--font-header);font-size:2rem;color:var(--color-light);opacity:1;text-transform:uppercase}#inspirational-section.svelte-k53dcm.svelte-k53dcm{background-image:url('$lib/img/hero-3.jpg');background-position:center;background-size:cover}#inspirational-section.svelte-k53dcm span.svelte-k53dcm{color:var(--color-light);font-size:40px}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="${"hero col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><img class="${"hero-img img"}" src="${"./img/hero-2.jpg"}"></div>
-    <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-5 svelte-1afbk0a"}"><h1 class="${"hero-tagline col-12 mb-4 svelte-1afbk0a"}">Discover the best of Oregon on two wheels.</h1>
-        <button class="${"btn btn-primary svelte-1afbk0a"}">Tours</button></div></div>
+  return `<div class="${"hero col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"hero-img"}"></div>
+        </div>
+    <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-5 svelte-k53dcm"}"><h1 class="${"hero-tagline col-12 mb-4 svelte-k53dcm"}">Discover the best of Oregon on two wheels.</h1>
+        <button class="${"btn btn-primary svelte-k53dcm"}">Tours</button></div></div>
 
 
 
 
 
-<section id="${"tours"}" class="${"col-12 my-0 py-5 d-flex justify-content-center px-0 svelte-1afbk0a"}">
+<section id="${"tours"}" class="${"col-12 my-0 py-5 d-flex justify-content-center px-0 svelte-k53dcm"}">
     <div class="${"d-flex justify-content-center col-12 px-0 flex-wrap"}">${each(tours, (tour) => {
     return `${tour.featured == true ? `${validate_component(TourCard, "TourCard").$$render($$result, { tour }, {}, {})}` : ``}`;
   })}</div></section>
 
-<section id="${"why-choose-us"}" class="${"col-12 d-flex justify-content-center py-5 mb-0 svelte-1afbk0a"}"><div class="${"col-12 col-md-10 d-flex justify-content-between flex-wrap"}"><h2 class="${"col-12 text-left svelte-1afbk0a"}">Why book with us</h2>
+<section id="${"why-choose-us"}" class="${"col-12 d-flex justify-content-center py-5 mb-0 svelte-k53dcm"}"><div class="${"col-12 col-md-10 d-flex justify-content-between flex-wrap"}"><h2 class="${"col-12 text-left svelte-k53dcm"}">Why book with us</h2>
         <div class="${"col-12 col-md-3"}"><h4>Locally Based</h4>
             <p>Oregon Bicycle Adventures is proudly locally based out of Bend Oregon. As lifelong Oregonians, We have decades of experience exploring the hidden gems of Oregon. Our insider knowledge of the state allows us to create unique and unforgettable experiences that showcase the best of what Oregon has to offer.</p></div>
         <div class="${"col-12 col-md-3"}"><h4>Small Groups</h4>
@@ -56,8 +57,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <div class="${"col-12 col-md-3"}"><h4>Expert Guidance</h4>
             <p>With experience in guiding, outdoor coaching, and multi-month bicycle tours, we are experts in the field of bicycle touring. From route planning to bike maintenance, we provide the guidance and support needed to ensure that every trip is safe, enjoyable, and memorable.</p></div></div></section>
 
-<section id="${"inspirational-section"}" class="${"col-12 vh-40 d-flex justify-content-start align-items-end mt-0 mb-0 py-sm-5 py-2 svelte-1afbk0a"}">
-    <div class="${"col-12 col-md-10"}"><span class="${"font-hero svelte-1afbk0a"}">&quot;Four wheels move the body, two wheels move the soul&quot;</span></div></section>
+<section id="${"inspirational-section"}" class="${"col-12 vh-40 d-flex justify-content-start align-items-end mt-0 mb-0 py-sm-5 py-2 svelte-k53dcm"}">
+    <div class="${"col-12 col-md-10"}"><span class="${"font-hero svelte-k53dcm"}">&quot;Four wheels move the body, two wheels move the soul&quot;</span></div></section>
 
 `;
 });

@@ -58,7 +58,7 @@
         <div class="col-12 blog-header d-flex align-content-center justify-content-start flex-wrap my-3">
             <h2 class="col-12 text-left px-3 pb-1">{blog.title}</h2>
             <p class="blogDate col-12 text-left px-3">Published by {blog.author} on {blog.date}</p>
-            {#if blog.transAmBlog}
+            {#if blog.transAmBlog && blog.sections[0].type == 'intro'}
                 <span class="mx-3">{blog.sections[0].dateRange}</span>    
                 <span class="mx-3">{blog.sections[0].startingPoint} -&#62; {blog.sections[0].endingPoint}</span>
                 <span class="mx-3">{blog.sections[0].totalMilage} miles down</span>

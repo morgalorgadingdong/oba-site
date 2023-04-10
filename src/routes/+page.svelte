@@ -8,7 +8,8 @@
 
 <div class="hero col-12 d-flex flex-column justify-content-end">
     <div class="img-container">
-        <img class="hero-img img" src="./img/hero-2.jpg"/>
+        <div class="hero-img"></div>
+        <!-- <img class="hero-img img" src="./img/hero-7.jpg"/> -->
     </div>
     <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-5">
         <h1 class="hero-tagline col-12 mb-4">Discover the best of Oregon on two wheels.</h1>
@@ -128,6 +129,12 @@
         margin: 1rem 0;
     }
     
+    /* .hero-img {
+        background-image: url(../img/hero-7.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    } */
     
     #hero-tagline-container > h1 {
         font-family: var(--font-hero);

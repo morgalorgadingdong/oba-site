@@ -165,7 +165,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<section><div class="${"vh-60 blogBanner col-12 px-0 svelte-18qidi5"}"><img${add_attribute("src", imgSrcBanner, 0)}${add_attribute("alt", blog.bannerAlt, 0)} class="${"bannerImg svelte-18qidi5"}"></div>
     <div id="${""}" class="${"d-flex flex-wrap justify-content-center content-container text-start center mb-5"}"><div class="${"col-12 blog-header d-flex align-content-center justify-content-start flex-wrap my-3 svelte-18qidi5"}"><h2 class="${"col-12 text-left px-3 pb-1"}">${escape(blog.title)}</h2>
             <p class="${"blogDate col-12 text-left px-3 svelte-18qidi5"}">Published by ${escape(blog.author)} on ${escape(blog.date)}</p>
-            ${blog.transAmBlog ? `<span class="${"mx-3"}">${escape(blog.sections[0].dateRange)}</span>    
+            ${blog.transAmBlog && blog.sections[0].type == "intro" ? `<span class="${"mx-3"}">${escape(blog.sections[0].dateRange)}</span>    
                 <span class="${"mx-3"}">${escape(blog.sections[0].startingPoint)} -&gt; ${escape(blog.sections[0].endingPoint)}</span>
                 <span class="${"mx-3"}">${escape(blog.sections[0].totalMilage)} miles down</span>
                 <span class="${"mx-3"}">${escape(blog.sections[0].milageLeft)} miles to go</span>` : ``}</div>

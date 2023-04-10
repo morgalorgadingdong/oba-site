@@ -1,6 +1,7 @@
 <script>
     import { blogs } from '../blogs'
     import BlogCard from './BlogCard.svelte'
+    import BlogCard2 from './BlogCard2.svelte'
 </script>
 
 
@@ -14,10 +15,10 @@
     </div>
 </div>
 <section class="col-12 d-flex justify-content-center flex-wrap my-5">
-    <div class="col-12 col-md-8 col-lg-6 d-flex justify-content-center flex-wrap content-container mt-4">
+    <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4">
         {#each blogs as blog}
             {#if blog.published == true}  
-                <BlogCard { blog } />
+                <BlogCard2 { blog } />
             {/if}
         {/each}
     </div>

@@ -20,7 +20,7 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 
-<header class="${"col-12 px-0 mx-0 svelte-1h6u1uk"}"><div class="${"col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center svelte-1h6u1uk"}"><a class="${"col-9 col-sm-8 col-lg-4 col-xl-3 d-flex justify-content-start px-0 align-items-center logo-container svelte-1h6u1uk"}" href="${"/"}"><img src="${"/img/logo-11.png"}" alt="${"oba-logo"}" class="${"ml-3 mr-0 p-2 pr-sm-0 p-sm-3 p-lg-0 svelte-1h6u1uk"}"> 
+<header class="${"col-12 px-0 mx-0 svelte-1h6u1uk"}"><div class="${"col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center svelte-1h6u1uk"}"><a class="${"col-9 col-sm-8 col-lg-4 col-xl-3 d-flex justify-content-start px-0 align-items-center logo-container svelte-1h6u1uk"}" href="${"/"}"><img src="${"/img/logo-12.png"}" alt="${"oba-logo"}" class="${"ml-3 mr-0 p-2 pr-sm-0 p-sm-3 p-lg-2 svelte-1h6u1uk"}"> 
             
             <div class="${"logo-text-container d-flex align-items-center svelte-1h6u1uk"}"><h1 class="${"logo-text px-2 px-sm-4 py-0 my-2 svelte-1h6u1uk"}">Oregon Bicycle <br class="${"svelte-1h6u1uk"}"> Adventures</h1></div></a>
         <nav class="${"col-5 d-none d-lg-flex justify-content-between align-items-center svelte-1h6u1uk"}"><a class="${"nav-item d-flex justify-content-center align-items-center svelte-1h6u1uk"}"${add_attribute(
@@ -81,7 +81,7 @@ const css$1 = {
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<footer id="${"footer"}" class="${"col-12 vh-50 d-flex align-content-center pt-5 pb-3 svelte-e4aatn"}"><div class="${"col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5 svelte-e4aatn"}"><div class="${"col-12 col-md-3 px-0 order-md-2 d-flex justify-content-center flex-wrap"}"><div class="${"img-container col-6 svelte-e4aatn"}"><img class="${"img"}" src="${"/img/logo-11.png"}"></div>
+  return `<footer id="${"footer"}" class="${"col-12 vh-50 d-flex align-content-center pt-5 pb-3 svelte-e4aatn"}"><div class="${"col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5 svelte-e4aatn"}"><div class="${"col-12 col-md-3 px-0 order-md-2 d-flex justify-content-center flex-wrap"}"><div class="${"img-container col-6 svelte-e4aatn"}"><img class="${"img"}" src="${"/img/logo-12.png"}"></div>
             <h4 class="${"font-hero text-center py-3 svelte-e4aatn"}">Oregon Bicycle Adventures LLC</h4></div>
         <div class="${"col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap"}"><p class="${"svelte-e4aatn"}">Oregon Bicycle Adventures, LLC</p>
             

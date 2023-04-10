@@ -1,11 +1,12 @@
 import { c as create_ssr_component, d as add_attribute, e as escape, f as each, v as validate_component } from "../../../chunks/index.js";
 import { b as blogs } from "../../../chunks/blogs.js";
 const BlogCard_svelte_svelte_type_style_lang = "";
+const BlogCard2_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "a.svelte-6nkbku.svelte-6nkbku{text-decoration:none;color:black}#blog-category-container.svelte-6nkbku.svelte-6nkbku{opacity:0;transform:translateY(-100%);transition:all 0.5s ease-in-out}#blog-category-container.svelte-6nkbku .category.svelte-6nkbku{padding:0.5rem 1rem 0.5rem 1rem;margin:0 0.5rem 0 0.5rem;transition:all 0.5s ease-in-out;box-shadow:-2px 2px 4px 0px rgba(0,0,0,0.5)}.blog-preview.svelte-6nkbku:hover>#blog-category-container.svelte-6nkbku{opacity:1;transform:translateY(0%);transition:all 0.5s ease-in-out}.img-container.svelte-6nkbku.svelte-6nkbku{position:relative;width:100%;aspect-ratio:3/2;overflow:hidden;object-position:center;box-shadow:-2px 2px 4px 0px rgba(0,0,0,0.5)}.img.svelte-6nkbku.svelte-6nkbku{width:100%;height:100%;object-fit:cover;object-position:center;transition:all 0.5s ease-in-out}",
+  code: "a.svelte-kesc64.svelte-kesc64{text-decoration:none;color:black}.card.svelte-kesc64.svelte-kesc64{margin:1rem}.card-body.svelte-kesc64.svelte-kesc64{padding:0}.card-img-top.svelte-kesc64.svelte-kesc64{width:100%;height:15rem;padding:0;background-size:cover;background-position:center;border-bottom:solid 4px var(--color-primary)}.card-img-top.svelte-kesc64>img.svelte-kesc64,.card-img-left.svelte-kesc64>img.svelte-kesc64{width:100%;height:100%;object-fit:cover;margin:0}.card-img-left.svelte-kesc64.svelte-kesc64{aspect-ratio:3/2;padding:0;background-size:cover;background-position:center}.blogDate.svelte-kesc64.svelte-kesc64{color:#afadac;width:fit-content}.blogDescription.svelte-kesc64.svelte-kesc64{white-space:nowrap;padding:0;overflow:hidden;word-wrap:break-word;text-overflow:ellipsis;font-size:14px}.card-title-container.svelte-kesc64.svelte-kesc64{border-bottom:solid 2px var(--color-primary)}",
   map: null
 };
-const BlogCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+const BlogCard2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { blog } = $$props;
   let imgSrc;
   if (blog.transAmBlog) {
@@ -21,13 +22,28 @@ const BlogCard = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   if ($$props.blog === void 0 && $$bindings.blog && blog !== void 0)
     $$bindings.blog(blog);
   $$result.css.add(css$1);
-  return `<div class="${"blog-preview col-12 mb-5 svelte-6nkbku"}"><div class="${"img-container svelte-6nkbku"}"><a${add_attribute("href", "./blog/" + blog.title, 0)} class="${"svelte-6nkbku"}"><img${add_attribute("src", imgSrc, 0)} class="${"img svelte-6nkbku"}" alt="${""}"></a></div>
-    <div class="${"blog-info col-12 d-flex justify-content-between align-items-center"}"><h3 class="${"blog-title my-2"}">${escape(blog.title)}</h3>
-        <p class="${"blog-date m-0"}">${escape(blog.date)}</p></div>
-    <div id="${"blog-category-container"}" class="${"category-container col-12 d-flex justify-content-center svelte-6nkbku"}">${each(blog.categories, (category) => {
-    return `<span class="${"category svelte-6nkbku"}">${escape(category)}</span>`;
-  })}</div>
-</div>`;
+  return `<a${add_attribute("href", "./blog/" + blog.title, 0)} class="${"col-12 col-md-5 d-lg-none my-3 svelte-kesc64"}" data-sveltekit-preload-data="${"hover"}"><div class="${"col-12 card mx-0 px-0 svelte-kesc64"}"><div class="${"card-body svelte-kesc64"}"><div class="${"card-img-top svelte-kesc64"}"><img${add_attribute("src", imgSrc, 0)}${add_attribute("alt", blog.title, 0)} class="${"svelte-kesc64"}">
+                
+                
+                </div>
+            
+            <div class="${"col-12 px-2"}"><h5 class="${"card-title pt-3 d-inline-block"}">${escape(blog.title)}</h5>
+                <p class="${"blogDate col-12 text-left px-0 d-inline-block svelte-kesc64"}">${escape(blog.date)}</p>
+                ${blog.sections[0].type == "text" ? `<p class="${"blogDescription col-12 text-left px-0 svelte-kesc64"}">${escape(blog.sections[0].content)}</p>` : `${blog.sections[0].type == "intro" ? `<p class="${"blogDescription col-12 text-left px-0 svelte-kesc64"}">${escape(blog.sections[0].startingPoint)} -&gt; ${escape(blog.sections[0].endingPoint)}</p>` : ``}`}
+                <a${add_attribute("href", "./blog/" + blog.title, 0)} class="${"svelte-kesc64"}">Read More</a></div></div></div></a>
+
+<a${add_attribute("href", "./blog/" + blog.title, 0)} class="${"col-12 d-none d-lg-inline my-5 svelte-kesc64"}" data-sveltekit-preload-data="${"hover"}"><div class="${"col-12 d-flex flex-wrap"}"><div class="${"card-img-left col-4 svelte-kesc64"}"><img${add_attribute("src", imgSrc, 0)}${add_attribute("alt", blog.title, 0)} class="${"svelte-kesc64"}">
+            
+            
+            </div>
+        
+        <div class="${"col-8 px-2 d-flex align-content-center justify-content-start flex-wrap px-3"}"><div class="${"col-12 d-flex justify-content-between card-title-container px-0 svelte-kesc64"}"><h5 class="${"card-title text-left py-1 pl-0"}">${escape(blog.title)}</h5>
+                <p class="${"blogDate text-left px-0 svelte-kesc64"}">${escape(blog.date)}</p></div>
+            
+            ${blog.sections[0].type == "text" ? `<p class="${"blogDescription col-12 text-left px-0 svelte-kesc64"}">${escape(blog.sections[0].content)}</p>` : `${blog.sections[0].type == "intro" ? `<div class="${"col-12 d-flex justify-content-between px-0 mb-3"}"><span class="${"text-left px-0"}">${escape(blog.sections[0].startingPoint)} -&gt; ${escape(blog.sections[0].endingPoint)}</span>
+                        <span class="${"mx-3"}">${escape(blog.sections[0].totalMilage)} miles</span></div>` : ``}`}
+            <a class="${"col-12 text-center d-none d-lg-inline svelte-kesc64"}"${add_attribute("href", "./blog/" + blog.title, 0)}>Read More</a></div></div>
+</a>`;
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
@@ -39,8 +55,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="${"vh-60 hero col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"img-overlay"}"></div>
         <img class="${"hero-img img svelte-1g9ry2c"}" src="${"./img/blog.jpg"}"></div>
     <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline col-12"}">Blog</h1></div></div>
-<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><div class="${"col-12 col-md-8 col-lg-6 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(blogs, (blog) => {
-    return `${blog.published == true ? `${validate_component(BlogCard, "BlogCard").$$render($$result, { blog }, {}, {})}` : ``}`;
+<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><div class="${"col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(blogs, (blog) => {
+    return `${blog.published == true ? `${validate_component(BlogCard2, "BlogCard2").$$render($$result, { blog }, {}, {})}` : ``}`;
   })}</div>
 </section>`;
 });
