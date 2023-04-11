@@ -41,7 +41,8 @@ const BlogCard2 = create_ssr_component(($$result, $$props, $$bindings, slots) =>
                 <p class="${"blogDate text-left px-0 svelte-kesc64"}">${escape(blog.date)}</p></div>
             
             ${blog.sections[0].type == "text" ? `<p class="${"blogDescription col-12 text-left px-0 svelte-kesc64"}">${escape(blog.sections[0].content)}</p>` : `${blog.sections[0].type == "intro" ? `<div class="${"col-12 d-flex justify-content-between px-0 mb-3"}"><span class="${"text-left px-0"}">${escape(blog.sections[0].startingPoint)} -&gt; ${escape(blog.sections[0].endingPoint)}</span>
-                        <span class="${"mx-3"}">${escape(blog.sections[0].totalMilage)} miles</span></div>` : ``}`}
+                        <span class="${"mx-3"}">${escape(blog.sections[0].totalMilage)} miles</span></div>
+                    <p>${escape(blog.sections[0].text)}</p>` : ``}`}
             <a class="${"col-12 text-center d-none d-lg-inline svelte-kesc64"}"${add_attribute("href", "./blog/" + blog.title, 0)}>Read More</a></div></div>
 </a>`;
 });

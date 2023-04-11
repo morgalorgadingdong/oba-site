@@ -12,16 +12,23 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <p>Whether you&#39;re a seasoned cyclist or a beginner, our goal is to provide you with a unique and authentic Oregon experience. We keep our group sizes small and our trips personalized, so you can see the sights and explore the hidden gems of Oregon at your own pace. We believe that there&#39;s no better way to see the world than from the saddle of a bicycle, and we can&#39;t wait to share our love of cycling with you.</p></div></section>
 
 <section class="${"col-12 d-flex justify-content-center flex-wrap p-5"}"><h2>Get to know us</h2>
-    <div class="${"col-12 d-flex justify-content-between flex-wrap align-items-center mb-5"}"><div class="${"col-12 col-lg-6 p-3"}"><h3>Morgan</h3>
-            <ul><li>Got ran over by a tractor when he was 16</li>
-                <li>Coaches snowboarding and mountain biking on the side</li>
-                <li>Makes a mean quesodilla</li>
-                <li>Has never correctly spelt &quot;Entrepeneur&quot; on his first try</li>
-                <li></li>
-                <li></li></ul></div>
-        <div class="${"col-12 col-lg-6 p-3"}"><img src="${"./img/morgan.jpg"}" alt="${"Morgan"}" class="${"img vh-50"}"></div></div>
-    <div class="${"col-12 d-flex justify-content-between flex-wrap"}"><div class="${"col-12 col-lg-6 p-3"}"><img src="${"./img/carl.jpg"}" alt="${"Carl"}" class="${"img vh-50"}"></div>
-        <div class="${"col-12 col-lg-6 p-3"}"><h3>Carl</h3>
+    <div class="${"col-12 d-flex justify-content-between flex-wrap align-items-center mb-5"}"><div class="${"col-12 col-lg-4 p-3"}"><img src="${"./img/morgan.jpg"}" alt="${"Morgan"}" class="${"img vh-50"}"></div>
+        <div class="${"col-12 col-lg-8 p-3"}"><h3>Morgan</h3>
+            <p>Co-owner and guide</p>
+            <ul><li>Hometown: Salem,  Oregon</li>
+                <li>Favorite trail snack: Peanut butter and nutella tortilla wrap</li>
+                <li>Favorite post ride treat: </li>
+                <li>Favorite Oregon Ride: Mckenzie Pass</li>
+                <li>A hobby (besides biking): </li>
+                <li>Secret talent: My excel vba skills are out of control</li>
+                <li>A song: Jersey Giant by Tyler Childers</li>
+                <li>A book: Tribe by Sebastian Junger</li>
+                <li>A movie: Dune</li>
+                <li>A quote: &quot;The mystery of life isn&#39;t a problem to solve, but a reality to experience&quot; Frank Herbert</li>
+                <li>A fun fact: </li></ul></div></div>
+    <div class="${"col-12 d-flex justify-content-between flex-wrap"}"><div class="${"col-12 col-lg-4 p-3"}"><img src="${"./img/carl.jpg"}" alt="${"Carl"}" class="${"img vh-50"}"></div>
+        <div class="${"col-12 col-lg-8 p-3"}"><h3>Carl</h3>
+            <p>Co-owner and guide</p>
             <ul><li>Never cried in a movie (self proclaimed)</li>
                 <li>US History buff</li>
                 <li>Regular buff</li>

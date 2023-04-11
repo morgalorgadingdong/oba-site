@@ -64,7 +64,7 @@
                         <span class="text-left px-0">{blog.sections[0].startingPoint} -&#62; {blog.sections[0].endingPoint}</span>
                         <span class="mx-3">{blog.sections[0].totalMilage} miles</span>
                     </div>
-                    
+                    <p>{blog.sections[0].text}</p>
                 {/if}
             <a class="col-12 text-center d-none d-lg-inline" href={'./blog/' + blog.title}>Read More</a>
         </div>

@@ -22,27 +22,35 @@
 <section class="col-12 d-flex justify-content-center flex-wrap p-5">
     <h2>Get to know us</h2>
     <div class="col-12 d-flex justify-content-between flex-wrap align-items-center mb-5">
-        <div class="col-12 col-lg-6 p-3">
-            <h3>Morgan</h3>
-            <ul>
-                <li>Got ran over by a tractor when he was 16</li>
-                <li>Coaches snowboarding and mountain biking on the side</li>
-                <li>Makes a mean quesodilla</li>
-                <li>Has never correctly spelt "Entrepeneur" on his first try</li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="col-12 col-lg-6 p-3">
+        <div class="col-12 col-lg-4 p-3">
             <img src="./img/morgan.jpg" alt="Morgan" class="img vh-50">
         </div>
+        <div class="col-12 col-lg-8 p-3">
+            <h3>Morgan</h3>
+            <p>Co-owner and guide</p>
+            <ul>
+                <li>Hometown: Salem,  Oregon</li>
+                <li>Favorite trail snack: Peanut butter and nutella tortilla wrap</li>
+                <li>Favorite post ride treat: </li>
+                <li>Favorite Oregon Ride: Mckenzie Pass</li>
+                <li>A hobby (besides biking): </li>
+                <li>Secret talent: My excel vba skills are out of control</li>
+                <li>A song: Jersey Giant by Tyler Childers</li>
+                <li>A book: Tribe by Sebastian Junger</li>
+                <li>A movie: Dune</li>
+                <li>A quote: "The mystery of life isn't a problem to solve, but a reality to experience" Frank Herbert</li>
+                <li>A fun fact: </li>
+            </ul>
+        </div>
+        
     </div>
     <div class="col-12 d-flex justify-content-between flex-wrap">
-        <div class="col-12 col-lg-6 p-3">
+        <div class="col-12 col-lg-4 p-3">
             <img src="./img/carl.jpg" alt="Carl" class="img vh-50">
         </div>
-        <div class="col-12 col-lg-6 p-3">
+        <div class="col-12 col-lg-8 p-3">
             <h3>Carl</h3>
+            <p>Co-owner and guide</p>
             <ul>
                 <li>Never cried in a movie (self proclaimed)</li>
                 <li>US History buff</li>

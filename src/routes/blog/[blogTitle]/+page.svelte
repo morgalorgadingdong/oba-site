@@ -68,7 +68,7 @@
         <div class="col-12 px-3">
             <div class="blog-divider col-12 blog-header-divider"></div>
         </div>
-        <div class="col-12 d-flex justify-content-center flex-wrap mt-3 px-3">
+        <div class="col-12 d-flex justify-content-center flex-wrap mt-3 px-0 px-sm-3">
             {#if blog.transAmBlog}
                 {#each blog.sections as section}
                     {#if section.type == 'intro'}
@@ -80,14 +80,23 @@
                         <div class="mt-5 pb-5 blog-divider col-12"></div>
                         {/if}
                     {:else if section.type == 'day'}
-                        <div class="transam-day-upper col-12 col-md-6">
-                            <h3>Day {section.day}: {section.startingPoint} {#if section.endingPoint} -&#62; {section.endingPoint} {/if}</h3>                            
-                            <p>{section.distance} miles, {section.elevation} ft of climb</p>
+                      
+                    <div class="transam-day-upper col-12 col-md-6">
+                        <h3>Day {section.day}: {section.startingPoint} {#if section.endingPoint} -&#62; {section.endingPoint} {/if}</h3>                            
+                            <p>{section.distance} miles, {section.elevation} ft of climb</p>    
+                        <!-- <h4>Summary</h4> -->
                             {#if section.distance}
                                 <p>Difficulty: {section.difficulty}</p>
                             {/if}
                             {#if section.safety}
                                 <p>Safety: {section.safety}</p>
+                            {/if}
+                            {#if section.lodging}
+                                {#if section.lodgingLink}
+                                    <p>Lodging: <a href={section.lodgingLink} target="_blank" rel="noreferrer">{section.lodging}</a></p>
+                                {:else}
+                                    <p>Lodging: {section.lodging}</p>
+                                {/if}
                             {/if}
                             {#if section.text}
                                 <p>{section.text}</p>
@@ -123,14 +132,14 @@
                                             {#if image.video}
                                             <SplideSlide class="my-3 mt-0 transam-day-pic">
                                                 <div class="video-container d-flex justify-content-center">
-                                                    <video src='../../img/blog/transam/week {blog.week}/day{section.day}-{image.number}.mp4' alt={image.alt} class="transam-day-vid" controls></video>
-                                                    <p>{image.caption}</p>
+                                                    <video src='../../img/blog/transam/week {blog.week}/day{section.day}/day{section.day}-{image.number}.mp4' alt={image.alt} class="transam-day-vid" controls></video>
+                                                    <p class="col-12 text-center">{image.caption}</p>
                                                 </div>
                                             </SplideSlide>
                                             {:else}
                                             <SplideSlide class="my-3 mt-0 transam-day-pic">
-                                                <img src='../../img/blog/transam/week {blog.week}/day{section.day}-{image.number}.jpg' alt={image.alt} class="" />
-                                                <p>{image.caption}</p>
+                                                <img src='../../img/blog/transam/week {blog.week}/day{section.day}/day{section.day}-{image.number}.jpg' alt={image.alt} class="" />
+                                                <p class="col-12 text-center">{image.caption}</p>
                                             </SplideSlide>
                                             {/if}
                                         
@@ -143,33 +152,40 @@
                                         </div>
                                     </Splide>
                                 </div>
+                                <div class="col-12 my-3">
+                        
+                                    {#if section.strava}
+                                        <a class="col-12 p-0 m-0" href={section.strava} target="_blank" rel="noreferrer"><img src="../../img/blog/transam/week {blog.week}/day{section.day}/day{section.day}-map.jpg" alt="Map of route" class="col-12"/></a>
+                                        <a class="col-12 p-0 m-0" href={section.strava} target="_blank" rel="noreferrer"><img src="../../img/blog/transam/week {blog.week}/day{section.day}/day{section.day}-elevation.jpg" alt="Elevation view of route" class="col-12"/></a>
+                                    {/if}
+                                    
+                                    </div>  
                                 <div class="mt-5 pb-5 blog-divider col-12"></div>
-                                {:else if section.type == 'reflections'}
-                                    <h3 class="col-12 text-center">Reflections</h3>
-                                    {#each section.content as reflection}
-                                        <h5 class="text-left col-12">{reflection.heading}</h5>
-                                        <p>{reflection.content}</p>
+                            {:else if section.type == 'reflections'}
+                                <h3 class="col-12 text-center">Thoughts</h3>
+                                {#each section.content as reflection}
+                                    <h5 class="text-left col-12 px-0">{reflection.heading}</h5>
+                                    <p>{reflection.content}</p>
+                                {/each}
+                            {:else if section.type == 'text'}
+                                <p class="col-12 text-left px-0 my-3 blog-text">{section.content}</p>
+                            {:else if section.type == 'img'}
+                                <img src="../../img/blog/transam/{blog.title}/{blog.title}-{section.number}.jpg" alt="{section.alt}" class="col-10 col-md-8 mt-5 blog-img {section.class}" />
+                                <span class="col-12 text-center mb-5">{section.caption}</span>
+                            {:else if section.type == 'divider'}
+                                <div class="mt-5 pb-5 blog-divider col-8"></div>
+                            {:else if section.type == 'highlight'}
+                                <p class="text-center blog-highlight p-5 col-12 col-lg-8 my-5">{section.content}</p>
+                            {:else if section.type == 'heading'}
+                                <h4 class="text-start col-12 mt-3 mb-0">{section.content}</h4>
+                            {:else if section.type == 'list'}
+                                <ul class="text-start col-12 col-lg-8 my-3 mb-0 d-flex flex-wrap">
+                                    {#each section.listItems as item}
+                                        <li class="my-2 col-12 blog-text">{item}</li>
                                     {/each}
-                                {:else if section.type == 'text'}
-                                    <p class="col-12 text-left px-0 my-3 blog-text">{section.content}</p>
-                                {:else if section.type == 'img'}
-                                    <img src="./img/blogs/transam/{blog.title}/{blog.title}-{currentImg}.jpg" alt="{section.alt}" class="col-10 col-md-8 mt-5 blog-img" />
-                                    <span class="col-12 text-center mb-5">{section.caption} <a href="{section.src}">source</a></span>
-                                    { currentImg = currentImg + 1}  
-                                {:else if section.type == 'divider'}
-                                    <div class="mt-5 pb-5 blog-divider col-8"></div>
-                                {:else if section.type == 'highlight'}
-                                    <p class="text-center blog-highlight p-5 col-12 col-lg-8 my-5">{section.content}</p>
-                                {:else if section.type == 'heading'}
-                                    <h4 class="text-start col-12 mt-3 mb-0">{section.content}</h4>
-                                {:else if section.Type == 'list'}
-                                    <ul class="text-start col-12 col-lg-8 my-3 mb-0 d-flex flex-wrap">
-                                        {#each section.listItems as item}
-                                            <li class="blog-text my-2 col-12">{item.content}</li>
-                                        {/each}
-                                    </ul>
-                                {/if}
-                            {/each}
+                                </ul>
+                            {/if}
+                        {/each}
                 {:else}
                                 <!-- <p class="col-12 text-left px-0 my-3 blog-text">{section.content}</p>
                                 {:else if section.type == 'img'}
@@ -193,7 +209,13 @@
                     <p class="text-center blog-highlight p-5 col-12 col-lg-8 my-5">{section.content}</p>
                 {:else if section.type == 'heading'}
                     <h4 class="text-start col-12 mt-3 mb-0">{section.content}</h4>
-                {/if}
+                {:else if section.Type == 'list'}
+                                <ul class="text-start col-12 col-lg-8 my-3 mb-0 d-flex flex-wrap">
+                                    {#each section.listItems as item}
+                                        <li class="blog-text my-2 col-12">{item}</li>
+                                    {/each}
+                                </ul>
+                            {/if}
             {/each}
         {/if}
         </div>
@@ -209,6 +231,9 @@
  <!-- <p on:click={reloadPage(nextBlog.Title)}>{nextBlog.Title}</p> -->
 
 <style>
+    
+
+
     .video-container video {
         position: absolute;
         top: 0;
