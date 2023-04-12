@@ -4,7 +4,7 @@ export const blogs = [
         id: 1,
         title: "Biking The TransAm Week 1 - All Rainbows and Warmshowers",
         week: 1,
-        date: "4/1/2023",
+        date: "4/10/2023",
         author: 'Morgan Folz',
         published: true,
         transAmBlog: true,
@@ -668,7 +668,7 @@ export const blogs = [
         id: 1,
         title: "Biking The TransAm Week 0 - Roadtrip",
         week: 0,
-        date: "03/06/2023",
+        date: "04/03/2023",
         Author: 'Morgan Folz',
         published: true,
         transAmBlog: true,
@@ -710,7 +710,7 @@ export const blogs = [
             },
             {
                 type: 'text',
-                content: `And that’s about it. It makes me a little sad to realize I spent the majority of the cross country road trip too preoccupied with other activities to look out the window much, but I tell myself it’s ok because I’m about to have 10 weeks of nothing to do besides look at the scenery as I bike back. I'll leave you with some of my favorite photos from the journey.` 
+                content: `And that’s about it. It makes me a little sad to realize I spent the majority of the cross country road trip too preoccupied with other activities to look out the window much, but I tell myself it’s ok because I’m about to have 10 weeks of nothing to do besides look at the scenery as I bike back.` 
             },
             {
                 type: 'img', 
@@ -874,7 +874,7 @@ export const blogs = [
         id: 1,
         title: "Let's Bike Across America",
         week: 0,
-        date: "03/06/2023",
+        date: "03/27/2023",
         Author: 'Morgan Folz',
         published: true,
         transAmBlog: true,
