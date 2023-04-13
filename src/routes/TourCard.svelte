@@ -135,10 +135,21 @@
         /* transform: translateY(-300%); */
         z-index: 3;
         position: relative;
-        right: 1.5vw;
+        /* right: 1.5vw; */
         /* bottom: 6vw; */
         width: fit-content;
         font-family: var(--font-hero);
+    }
+
+    @media (min-width: 768px) {
+        .trip-preview-container h4 {
+            /* bottom: 15%; */
+            right: 1.5vw;
+        }
+        .trip-preview:hover h4, .trip-preview:focus h4 {
+        transform: translateX(1.5vw);
+        transition: all var(--animation-duration) ease-in-out; 
+    }
     }
 
     .trip-info-container {
@@ -171,10 +182,7 @@
         opacity: 1;
     }
 
-    .trip-preview:hover h4, .trip-preview:focus h4 {
-        transform: translateX(1.5vw);
-        transition: all var(--animation-duration) ease-in-out; 
-    }
+    
 
 
     @media (max-width: 768px) { 

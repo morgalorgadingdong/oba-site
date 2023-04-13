@@ -52,7 +52,7 @@
         </div>
         <!-- <div class="card-img-top"></div> -->
         <div class="col-8 px-2 d-flex align-content-center justify-content-start flex-wrap px-3">
-            <div class="col-12 d-flex justify-content-between card-title-container px-0">
+            <div class="col-12 d-flex justify-content-between align-items-center card-title-container px-0">
                 <h5 class="card-title text-left py-1 pl-0">{blog.title}</h5>
                 <p class="blogDate text-left px-0" >{blog.date}</p>
             </div>

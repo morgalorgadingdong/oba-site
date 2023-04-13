@@ -14,6 +14,10 @@
   background: var(--color-primary)!important;
 }
 
+button:focus {
+  box-shadow: none !important;
+}
+
 /*****************************
     Typography
 *****************************/

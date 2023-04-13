@@ -2,7 +2,7 @@
     <div class="col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5">
         <div class="col-12 col-md-3 px-0 order-md-2 d-flex justify-content-center flex-wrap">
             <div class="img-container col-6">
-                <img class="img" src="/img/logo-12.png" />
+                <img class="img" src="/img/logo-13.png" />
             </div>
             <h4 class="font-hero text-center py-3">Oregon Bicycle Adventures LLC</h4>
         </div>
@@ -43,6 +43,7 @@
 
     footer {
         background-color: var(--color-dark);
+        /* background-color: black; */
     }
 
     footer p, footer i, footer h4 {

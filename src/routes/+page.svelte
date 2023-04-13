@@ -13,7 +13,7 @@
     </div>
     <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-5">
         <h1 class="hero-tagline col-12 mb-4">Discover the best of Oregon on two wheels.</h1>
-        <button class="btn btn-primary">Tours</button>
+        <a href="/tours"><button class="btn btn-primary">Tours</button></a>
     </div>
 </div>
 <!-- <div class="hero-spacer"></div> -->
@@ -145,7 +145,7 @@
         opacity: 1;
     }
 
-    #hero-tagline-container > .btn {
+    #hero-tagline-container a {
         z-index: 1;
     }
 
