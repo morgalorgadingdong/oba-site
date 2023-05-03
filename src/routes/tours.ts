@@ -81,11 +81,13 @@ export const tours = [
                 content: `With low traffic volume and bike lanes, this ride is suitable for most fitness levels, from late March through October.`
             }
         ],
+        whatsProvided: ['Bike', 'Helmet', 'Water', 'Picnic', 'Shuttle back to start', 'Support vehicle', 'Storage for personal items'],
         whatToBring: "Comfortable, weather appropriate athletic clothes, phone/camera, and a sense of adventure!",
         pics: 2,
         meals: false,
         lodging: false,
         bannerAlt: '',
+        ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42761311&title=Twin%20Bridges%20Scenic%20Tour&sampleGraph=true&privacyCode=TVa5OuPX2YDtzuBy`,
         calendarURL: 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451510/?fallback=simple&full-items=yes&flow=928317'
     },
     {

@@ -80,7 +80,6 @@
 
 <style>
     h1 {
-        font-family: var(--font-hero);
         z-index: 2;
     }
 

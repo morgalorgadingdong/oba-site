@@ -36,13 +36,12 @@
 
 <header class="col-12 px-0 mx-0">
     <div class="col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center">
-        <a class="col-9 col-sm-8 col-lg-4 col-xl-3 d-flex justify-content-start px-0 align-items-center logo-container" href="/">
-            <img src="/img/logo-13.png" alt="oba-logo" class="ml-3 mr-0 p-2 pr-sm-0 p-sm-3 p-lg-2" /> 
-            <!-- mr-sm-4 -->
+        <a class="pr-5 d-flex justify-content-start px-0 align-items-center logo-container" href="/">
+            <!-- <img src="/img/logo-13.png" alt="oba-logo" class="ml-3 mr-0 p-2 pr-sm-0 p-sm-3 p-lg-2" /> 
             <div class="logo-text-container d-flex align-items-center">
                 <h1 class="logo-text px-2 px-sm-4 py-0 my-2">Oregon Bicycle <br> Adventures</h1>
-            </div>
-            
+            </div> -->
+            <img src="/img/OBA_PrimaryLogo_WhiteType.png" alt="oba-logo" class="ml-3 mr-0 p-2 p-sm-3 p-lg-2" />
         </a>
         <nav class="col-5 d-none d-lg-flex justify-content-between align-items-center">
             <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours"><li>Tours</li></a>
@@ -201,7 +200,6 @@
     }
 
     img {
-        aspect-ratio: 1/1;
         max-height: 100px;
         height: 100%;
         position: relative;
@@ -293,7 +291,7 @@
   {
   display: block;
   width: 33px;
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-light);
   height: 4px;
   margin-bottom: 5px;
   position: relative;

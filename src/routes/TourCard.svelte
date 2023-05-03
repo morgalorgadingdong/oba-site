@@ -48,11 +48,7 @@
             </div>
             <div class="p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                 <!-- <i class="fa-solid fa-bicycle"></i> -->
-                {#if tour.ebikes}
-                    <span>E-bikes available</span>
-                {:else}
-                    <span>E-bikes not available</span>
-                {/if}
+                <span>Difficulty (1-5): {tour.difficultyRating}</span>
             </div>
         </div>
     </a>
@@ -139,7 +135,7 @@
         /* right: 1.5vw; */
         /* bottom: 6vw; */
         width: fit-content;
-        font-family: var(--font-hero);
+        font-family: var(--font-header);
     }
 
     @media (min-width: 768px) {

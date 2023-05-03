@@ -106,6 +106,11 @@
 
             <div class="tour-divider col-12 mb-5 mt-3"></div>
 
+
+            <div class="col-12 d-flex justify-content-start flex-wrap px-3">
+                <iframe class="my-3" src="{tour.ridewithgps}" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
+            </div>
+            <div class="tour-divider col-12 mb-5 mt-3"></div>
             <!-- {#if tour.highlights.length > 0}
             <div id="highlights-container" class="col-10 d-fex justify-content-start flex-wrap p-3 my-3">
                 <h3 class="font-logo text-left">Highlights</h3>
@@ -147,6 +152,17 @@
             <div class="tour-divider col-12 mb-5 mt-3"></div>
 
             {/if} -->
+
+            <div class="col-12 d-flex justify-content-start flex-wrap px-3">
+                <h3 class="font-logo text-left">What's provided</h3>
+                <ul class="col-12 mx-3">
+                    {#each tour.whatsProvided as item}
+                    <li class="col-12 text-left px-0 my-3 blog-text">{item}</li>
+                {/each}
+                </ul>
+                
+            </div>
+            <div class="tour-divider col-12 mb-5 mt-3"></div>
                 
                 <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                     <h3 class="font-logo text-left">What to bring</h3>
@@ -216,7 +232,7 @@
 
     #quick-details-container li {
         padding: 0.7rem;
-        background-color: var(--color-primary-dark);
+        background-color: var(--color-primary);
         /* border-radius: 6px; */
         /* border: solid 1px white; */
         margin: 0.5rem;
@@ -228,7 +244,7 @@
     #quick-details-container {
         /* border: solid black 2px; */
         height: fit-content;
-        background-color: var(--color-primary);
+        background-color: var(--color-background);
         /* border-radius: 6px; */
     }
 

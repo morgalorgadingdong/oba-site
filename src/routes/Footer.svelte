@@ -1,14 +1,13 @@
 <footer id="footer" class="col-12 vh-50 d-flex align-content-center pt-5 pb-3">
     <div class="col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5">
         <div class="col-12 col-md-3 px-0 order-md-2 d-flex justify-content-center flex-wrap">
-            <div class="img-container col-6">
-                <img class="img" src="/img/logo-13.png" />
+            <div class="img-container col-10">
+                <img class="img" src="/img/OBA_PrimaryLogo_WhiteType.png" />
             </div>
-            <h4 class="font-hero text-center py-3">Oregon Bicycle Adventures LLC</h4>
+            <!-- <h4 class="font-hero text-center py-3">Oregon Bicycle Adventures LLC</h4> -->
         </div>
-        <div class="col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap">
+        <div class="col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap py-3">
             <p>Oregon Bicycle Adventures, LLC</p>
-            <!-- <p>Name</p> -->
             <p>info@oregonbicycleadventures.com</p>
             <p>(503) 949-8766</p>
         </div>
@@ -27,7 +26,7 @@
     }
     
     footer {
-        border-bottom: solid 20px black;
+        border-bottom: solid 20px var(--color-dark);
     }
     
     i {
@@ -42,7 +41,7 @@
 
 
     footer {
-        background-color: var(--color-dark);
+        background-color: var(--color-primary);
         /* background-color: black; */
     }
 
