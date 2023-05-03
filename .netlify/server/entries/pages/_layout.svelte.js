@@ -20,7 +20,7 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 
-<header class="${"col-12 px-0 mx-0 svelte-1h6u1uk"}"><div class="${"col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center svelte-1h6u1uk"}"><a class="${"col-9 col-sm-8 col-lg-4 col-xl-3 d-flex justify-content-start px-0 align-items-center logo-container svelte-1h6u1uk"}" href="${"/"}"><img src="${"/img/logo-12.png"}" alt="${"oba-logo"}" class="${"ml-3 mr-0 p-2 pr-sm-0 p-sm-3 p-lg-2 svelte-1h6u1uk"}"> 
+<header class="${"col-12 px-0 mx-0 svelte-1h6u1uk"}"><div class="${"col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center svelte-1h6u1uk"}"><a class="${"col-9 col-sm-8 col-lg-4 col-xl-3 d-flex justify-content-start px-0 align-items-center logo-container svelte-1h6u1uk"}" href="${"/"}"><img src="${"/img/logo-13.png"}" alt="${"oba-logo"}" class="${"ml-3 mr-0 p-2 pr-sm-0 p-sm-3 p-lg-2 svelte-1h6u1uk"}"> 
             
             <div class="${"logo-text-container d-flex align-items-center svelte-1h6u1uk"}"><h1 class="${"logo-text px-2 px-sm-4 py-0 my-2 svelte-1h6u1uk"}">Oregon Bicycle <br class="${"svelte-1h6u1uk"}"> Adventures</h1></div></a>
         <nav class="${"col-5 d-none d-lg-flex justify-content-between align-items-center svelte-1h6u1uk"}"><a class="${"nav-item d-flex justify-content-center align-items-center svelte-1h6u1uk"}"${add_attribute(
@@ -76,20 +76,20 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Footer_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "footer.svelte-e4aatn.svelte-e4aatn,footer.svelte-e4aatn>.col-12.svelte-e4aatn{height:fit-content}footer.svelte-e4aatn.svelte-e4aatn{border-bottom:solid 20px black}i.svelte-e4aatn.svelte-e4aatn{font-size:1.5rem;color:var(black)}.img-container.svelte-e4aatn.svelte-e4aatn{box-shadow:none;width:100%}footer.svelte-e4aatn.svelte-e4aatn{background-color:var(--color-dark)}footer.svelte-e4aatn p.svelte-e4aatn,footer.svelte-e4aatn i.svelte-e4aatn,footer.svelte-e4aatn h4.svelte-e4aatn{color:var(--color-light)}",
+  code: "footer.svelte-1n6xgbv.svelte-1n6xgbv,footer.svelte-1n6xgbv>.col-12.svelte-1n6xgbv{height:fit-content}footer.svelte-1n6xgbv.svelte-1n6xgbv{border-bottom:solid 20px black}i.svelte-1n6xgbv.svelte-1n6xgbv{font-size:1.5rem;color:var(black)}.img-container.svelte-1n6xgbv.svelte-1n6xgbv{box-shadow:none;width:100%}footer.svelte-1n6xgbv.svelte-1n6xgbv{background-color:var(--color-dark)}footer.svelte-1n6xgbv p.svelte-1n6xgbv,footer.svelte-1n6xgbv i.svelte-1n6xgbv,footer.svelte-1n6xgbv h4.svelte-1n6xgbv{color:var(--color-light)}",
   map: null
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<footer id="${"footer"}" class="${"col-12 vh-50 d-flex align-content-center pt-5 pb-3 svelte-e4aatn"}"><div class="${"col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5 svelte-e4aatn"}"><div class="${"col-12 col-md-3 px-0 order-md-2 d-flex justify-content-center flex-wrap"}"><div class="${"img-container col-6 svelte-e4aatn"}"><img class="${"img"}" src="${"/img/logo-12.png"}"></div>
-            <h4 class="${"font-hero text-center py-3 svelte-e4aatn"}">Oregon Bicycle Adventures LLC</h4></div>
-        <div class="${"col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap"}"><p class="${"svelte-e4aatn"}">Oregon Bicycle Adventures, LLC</p>
+  return `<footer id="${"footer"}" class="${"col-12 vh-50 d-flex align-content-center pt-5 pb-3 svelte-1n6xgbv"}"><div class="${"col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5 svelte-1n6xgbv"}"><div class="${"col-12 col-md-3 px-0 order-md-2 d-flex justify-content-center flex-wrap"}"><div class="${"img-container col-6 svelte-1n6xgbv"}"><img class="${"img"}" src="${"/img/logo-13.png"}"></div>
+            <h4 class="${"font-hero text-center py-3 svelte-1n6xgbv"}">Oregon Bicycle Adventures LLC</h4></div>
+        <div class="${"col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap"}"><p class="${"svelte-1n6xgbv"}">Oregon Bicycle Adventures, LLC</p>
             
-            <p class="${"svelte-e4aatn"}">info@oregonbicycleadventures.com</p>
-            <p class="${"svelte-e4aatn"}">(503) 949-8766</p></div>
-        <div class="${"col-12 col-md-3 px-0 pt-3 order-md-3 d-flex align-content-center flex-wrap justify-content-around"}"><i class="${"fa-brands fa-instagram svelte-e4aatn"}" onclick="${"location.href='';"}" style="${"cursor: pointer;"}"></i>
-            <i class="${"fa-brands fa-facebook svelte-e4aatn"}" onclick="${"location.href='';"}" style="${"cursor: pointer;"}"></i>
-            <i class="${"fa-solid fa-envelope svelte-e4aatn"}" onclick="${"location.href='/contact';"}" style="${"cursor: pointer;"}"></i></div></div>
+            <p class="${"svelte-1n6xgbv"}">info@oregonbicycleadventures.com</p>
+            <p class="${"svelte-1n6xgbv"}">(503) 949-8766</p></div>
+        <div class="${"col-12 col-md-3 px-0 pt-3 order-md-3 d-flex align-content-center flex-wrap justify-content-around"}"><i class="${"fa-brands fa-instagram svelte-1n6xgbv"}" onclick="${"location.href='';"}" style="${"cursor: pointer;"}"></i>
+            <i class="${"fa-brands fa-facebook svelte-1n6xgbv"}" onclick="${"location.href='';"}" style="${"cursor: pointer;"}"></i>
+            <i class="${"fa-solid fa-envelope svelte-1n6xgbv"}" onclick="${"location.href='/contact';"}" style="${"cursor: pointer;"}"></i></div></div>
 </footer>`;
 });
 const _layout_svelte_svelte_type_style_lang = "";

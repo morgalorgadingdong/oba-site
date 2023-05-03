@@ -11,13 +11,13 @@
 
 <div class="col-12 col-md-8 col-lg-6 col-xl-4 p-3">
     <a class="col-12 trip-preview-container" href={'/tours/' + tour.title}>
-        <div class="trip-preview d-flex flex-column justify-content-end py-2">
+        <div class="trip-preview d-flex flex-column justify-content-end py-0">
             <div class="trip-preview-img-container">
                 <img src="{imgSrc}" alt="{tour.title}" class="trip-preview-img">
                 <!-- <div id="tour2" class="trip-preview-img"></div> -->
             </div>
             <h4 class="px-4 py-2">{tour.title}</h4>
-            <div class="trip-info-container d-none d-md-flex justify-content-between justify-content-xxl-around px-3 pb-3">
+            <div class="trip-info-container d-none d-md-flex justify-content-start justify-content-xxl-around px-3 pb-3">
                 <div class="trip-info p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-clock"></i> -->
                     <span>{tour.price}</span>
@@ -28,11 +28,12 @@
                 </div>
                 <div class="trip-info p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-bicycle"></i> -->
-                    {#if tour.ebikes}
+                    <span>Difficulty (1-5): {tour.difficultyRating}</span>
+                    <!-- {#if tour.available}
                         <span>E-bikes available</span>
                     {:else}
                         <span>E-bikes not available</span>
-                    {/if}
+                    {/if} -->
                 </div>
             </div>
         </div>

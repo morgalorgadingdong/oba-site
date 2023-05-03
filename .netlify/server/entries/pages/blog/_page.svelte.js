@@ -37,7 +37,7 @@ const BlogCard2 = create_ssr_component(($$result, $$props, $$bindings, slots) =>
             
             </div>
         
-        <div class="${"col-8 px-2 d-flex align-content-center justify-content-start flex-wrap px-3"}"><div class="${"col-12 d-flex justify-content-between card-title-container px-0 svelte-kesc64"}"><h5 class="${"card-title text-left py-1 pl-0"}">${escape(blog.title)}</h5>
+        <div class="${"col-8 px-2 d-flex align-content-center justify-content-start flex-wrap px-3"}"><div class="${"col-12 d-flex justify-content-between align-items-center card-title-container px-0 svelte-kesc64"}"><h5 class="${"card-title text-left py-1 pl-0"}">${escape(blog.title)}</h5>
                 <p class="${"blogDate text-left px-0 svelte-kesc64"}">${escape(blog.date)}</p></div>
             
             ${blog.sections[0].type == "text" ? `<p class="${"blogDescription col-12 text-left px-0 svelte-kesc64"}">${escape(blog.sections[0].content)}</p>` : `${blog.sections[0].type == "intro" ? `<div class="${"col-12 d-flex justify-content-between px-0 mb-3"}"><span class="${"text-left px-0"}">${escape(blog.sections[0].startingPoint)} -&gt; ${escape(blog.sections[0].endingPoint)}</span>

@@ -1,0 +1,33 @@
+Single day
+
+
+
+
+
+Multiday
+    Overview (quick details)
+        Quick Details
+            Price
+            Duration
+            Age ranges
+            Distance
+            difficulty
+            Ages
+            Trip Style (hotels, adventure, self guided)
+        Summary paragraph
+        Highlights
+        Media
+    Itenerary
+        Days/Nights
+        Details on what each day will hold, biking distance, activities, hotel stays
+    Calendar view?
+    Guest comments
+    Details on activity level
+    Details on trip style
+    What's included
+    What to pack
+    Book now button
+    Ask a question
+    Related blog post?
+
+    

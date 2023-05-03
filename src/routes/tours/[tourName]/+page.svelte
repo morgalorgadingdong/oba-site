@@ -3,6 +3,7 @@
     export let data;
     import Calendar from "../../Calendar.svelte";
     import { onMount } from "svelte";
+    import {Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
     //  export let blog;
     //  export const slug = blog;
     
@@ -87,11 +88,11 @@
                     <!-- <li>Elevation Gain: {tour.elevationGain}</li> -->
                     <li>Difficulty(1-5): {tour.difficultyRating}</li>
                     <li>Ages: {tour.ages}</li>
-                    {#if tour.ebikes}
+                    <!-- {#if tour.ebikes}
                         <li>E-bikes available</li>
                     {:else}
                         <li>E-bikes not available</li>
-                    {/if}
+                    {/if} -->
                 </ul>
             </div>
             <div class="tour-divider col-12 mb-5 mt-3"></div>
@@ -103,7 +104,49 @@
                 {/each}
             </div>
 
-                <div class="tour-divider col-12 mb-5 mt-3"></div>
+            <div class="tour-divider col-12 mb-5 mt-3"></div>
+
+            <!-- {#if tour.highlights.length > 0}
+            <div id="highlights-container" class="col-10 d-fex justify-content-start flex-wrap p-3 my-3">
+                <h3 class="font-logo text-left">Highlights</h3>
+                <Splide aria-label="Client Testimonials" class="z-reset" hasTrack={ false } options={ {
+                    type: 'loop',
+                    perPage: 3,
+                    breakpoints: {
+                        768: {
+                            perPage: 1.5,
+                        },
+                        576: {
+                            perPage: 1,
+                        }
+                    },
+                    focus: 'center',
+                    drag: 'free',
+                    snap: true
+                  } }>
+                  <SplideTrack>
+                    {#each tour.highlights as highlight}
+                        <SplideSlide class="my-3 mt-0">
+                            <div class="card">
+                                <p class="onehundo testimonialTextLong">"We could not have been happier with our experience working with Christine. Not only is Christine skilled and strategic regarding timing and price, but she advised on staging and updates that would make the most of our efforts. She was always available for questions, recommendations, or ideas and responded quickly. We had offers our first day on the market and ended up accepting well over our asking price... We definitely would not trust anyone else with our future real estate needs!"</p>
+                                <p class="onehundo testimonialTextAbbr">"We could not have been happier with our experience working with Christine. Not only is Christine skilled and strategic regarding timing and price, but she advised on staging and updates that would make the most of our efforts. She was always available for questions, recommendations, or ideas and responded quickly… We definitely would not trust anyone else with our future real estate needs!"</p>
+                                <br>
+                                <p class="onehundo testimonialText">Heather, Salem</p>
+                            </div>
+                        </SplideSlide>
+                    {/each}
+                        
+                    </SplideTrack>
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button class="splide__arrow splide__arrow--next"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                    </Splide>
+            </div>
+
+            <div class="tour-divider col-12 mb-5 mt-3"></div>
+
+            {/if} -->
                 
                 <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                     <h3 class="font-logo text-left">What to bring</h3>
@@ -156,6 +199,21 @@
 </svelte:head> -->
 
 <style>
+    #highlights-container li {
+        padding: 0.7rem;
+        background-color: var(--color-primary-dark);
+        /* border-radius: 6px; */
+        /* border: solid 1px white; */
+        margin: 0.5rem;
+    }
+    
+
+
+    #highlights-container ul {
+        list-style: none;
+    }
+
+
     #quick-details-container li {
         padding: 0.7rem;
         background-color: var(--color-primary-dark);

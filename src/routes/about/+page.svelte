@@ -8,10 +8,21 @@
     </div>
 </div>
 
-<section class="col-12 d-flex justify-content-center flex-wrap py-5">
+
+
+<section id="about-intro" class="col-12 d-flex justify-content-center flex-wrap py-5">
     <!-- <h2>Our story</h2> -->
     <div class="col-12 col-md-10 col-lg-8">
-        <p>Oregon Bicycle Adventures, founded by friends Carl and Morgan, is a locally owned and operated bicycle tour company dedicated to helping you explore the stunning outdoors of Oregon on two wheels. Based out of the scenic city of Bend, we are ideally positioned to organize trips throughout the state, highlighting the finest experiences Oregon has to offer. Our mission is to provide both seasoned cyclists and beginners with a distinctive and genuine Oregon adventure. By keeping our group sizes small and tailoring each trip to our guests' preferences, we ensure that everyone can discover the sights and hidden treasures of Oregon at a comfortable pace. At Oregon Bicycle Adventures, we believe there is no better way to experience the world than from the saddle of a bicycle, and we are eager to share our passion for bike touring with you.</p>
+        <p>Oregon Bicycle Adventures is a locally owned and operated bicycle tour company founded by friends Carl and Morgan. Our passion for cycling and exploring Oregon's diverse landscapes is at the heart of every tour we offer.</p>
+
+    </div>
+</section>
+
+<section id="mission-section" class="col-12 d-flex justify-content-center flex-wrap py-5">
+    <!-- <h2>Our story</h2> -->
+    <div class="col-12 col-md-10 col-lg-8">
+        <h2>Our Mission</h2>
+        <p id="mission-statement" class="pl-3">To deliver unforgettable tours that reveal Oregon's captivating beauty, while spreading the inspiration and growth that traveling by bicycle uniquely provides</p>
 
     </div>
 </section>
@@ -64,5 +75,20 @@
 </section>
 
 <style>
+    #mission-section {
+        background-color: var(--color-primary);
+        color: white;
+    }
+
+    #mission-statement {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    @media (min-width: 768px) {
+        p {
+        font-size: 1.3rem;
+        }
+    }
     
 </style>
