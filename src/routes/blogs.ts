@@ -7,7 +7,7 @@ export const blogs = [
         date: "4/17/2023",
         
         author: 'Morgan Folz',
-        published: true,
+        published: false,
         transAmBlog: true,
         bannerSrc: '',
         bannerAlt: '',
