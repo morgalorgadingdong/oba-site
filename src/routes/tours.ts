@@ -32,6 +32,7 @@ export const tours = [
                 content: `Water and snacks provided.`
             }
         ],
+        whatsProvided: ['Bike', 'Helmet', 'Water', 'Snacks', 'Storage for personal items'],
         whatToBring: "Comfortable, weather appropriate athletic clothes, phone/camera, and a sense of adventure!",
         mettingLocation: 'Bend, OR',
         importantInfo: '',
@@ -52,7 +53,8 @@ export const tours = [
         meals: false,
         lodging: false,
         bannerAlt: '',
-        calendarURL: 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451357/?fallback=simple&full-items=yes&flow=928317'
+        calendarURL: 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451357/?fallback=simple&full-items=yes&flow=928317',
+        ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42770639&sampleGraph=true&privacyCode=CEPHFlyV4wdGq6ag`
     },
     {
         id: 2,
@@ -75,7 +77,7 @@ export const tours = [
                 content: `Join us on a guided bicycle tour along the Twin Bridges Scenic Bikeway, a picturesque route that encapsulates the natural beauty of Central Oregon. Starting at Drake Park, you'll pedal through the bustling city of Bend before quickly escaping into the tranquil high desert fields and rock formations. Along the way, you'll cross two bridges over the Deschutes River and pass by wetlands, ranches, and hobby farms. Keep your eyes peeled for wildlife and birds that are unique to this area. After a series of short climbs, enjoy a long glide down and back to the start.`,
             },
             {
-                content: `Halfway through our ride, we'll take a break for a quick, yet delightful picnic, offering a chance to sample snacks that are unique to the area.`
+                content: `Partway through our ride, we'll take a break for a quick, yet delightful picnic, offering a chance to sample snacks that are unique to the area.`
             },
             {
                 content: `With low traffic volume and bike lanes, this ride is suitable for most fitness levels, from late March through October.`
@@ -97,22 +99,27 @@ export const tours = [
         type: 'Multi Day',
         duration: '3 Days',
         difficulty: 'Moderate',
-        difficultyRating: 3,
+        difficultyRating: 4,
+        distance: '109 miles',
+        miles: '109',
+        elevationGain: '4,200 ft',
+        ages: '12+',
         price: 'TBD',
         ebikes: false,
         featured: true,
         featuredIndex: 3,
         description: [
             {
-                content: `Join us on a guided bicycle tour along the Twin Bridges Scenic Bikeway, a picturesque route that encapsulates the natural beauty of Central Oregon. Starting at Drake Park, you'll pedal through the bustling city of Bend before quickly escaping into the tranquil high desert fields and rock formations. Along the way, you'll cross two bridges over the Deschutes River and pass by wetlands, ranches, and hobby farms. Keep your eyes peeled for wildlife and birds that are unique to this area. After a series of short climbs, enjoy a long glide down and back to the start. With low traffic volume and bike lanes, this ride is suitable for riders of all levels from late February through November.
-
-                Option to stop at The Bite in Tumalo to try some local food carts and beers!`
+                content: `Coming soon!`
             }
         ] ,
+        whatsProvided: ['Bike', 'Helmet', 'Water', 'All lunches and dinners', 'Snacks', 'Support vehicle', 'Storage for personal items'],
+        whatToBring: "Comfortable, weather appropriate athletic clothes, phone/camera, and a sense of adventure!",
         pics: 2,
         meals: true,
         lodging: true,
         bannerAlt: '',
-        calendarURL: ''
+        calendarURL: '',
+        ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42716795&sampleGraph=true&privacyCode=FQBtdqGEu1IyLSSp`
     }
 ]
