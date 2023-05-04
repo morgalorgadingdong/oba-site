@@ -12,8 +12,8 @@
             <p>(503) 949-8766</p>
         </div>
         <div class="col-12 col-md-3 px-0 pt-3 order-md-3 d-flex align-content-center flex-wrap justify-content-around">
-            <i class="fa-brands fa-instagram" onclick="location.href='';" style="cursor: pointer;"></i>
-            <i class="fa-brands fa-facebook" onclick="location.href='';" style="cursor: pointer;"></i>
+            <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/oregonbicycleadventures/';" style="cursor: pointer;"></i>
+            <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/profile.php?id=100092429499374';" style="cursor: pointer;"></i>
             <i class="fa-solid fa-envelope" onclick="location.href='/contact';" style="cursor: pointer;"></i>
         </div>
     </div>
