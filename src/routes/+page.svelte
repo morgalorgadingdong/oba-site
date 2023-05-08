@@ -42,7 +42,7 @@
         <h2 class="col-12 text-left">Why book with us</h2>
         <div class="col-12 col-md-3">
             <h4>Locally Based</h4>
-            <p>Oregon Bicycle Adventures is proudly locally based out of Bend Oregon. As lifelong Oregonians, We have decades of experience exploring the hidden gems of Oregon. Our insider knowledge of the state allows us to create unique and unforgettable experiences that showcase the best of what Oregon has to offer.</p>
+            <p>Oregon Bicycle Adventures is proudly locally based out of Bend, Oregon. As lifelong Oregonians, We have decades of experience exploring the hidden gems of Oregon. Our insider knowledge of the state allows us to create unique and unforgettable experiences that showcase the best of what Oregon has to offer.</p>
         </div>
         <div class="col-12 col-md-3">
             <h4>Small Groups</h4>

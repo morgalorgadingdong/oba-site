@@ -1,5 +1,523 @@
 const blogs = [
   {
+    id: 2,
+    title: "Biking The TransAm Week 2 - Trial by 10 Percent Grades",
+    week: 2,
+    date: "4/17/2023",
+    author: "Morgan Folz",
+    published: false,
+    transAmBlog: true,
+    bannerSrc: "",
+    bannerAlt: "",
+    categories: [
+      "TransAmerica Trail"
+    ],
+    sections: [
+      {
+        type: "intro",
+        day: "",
+        startingPoint: "Yorktown, VA",
+        endingPoint: "Blacksburg, VA",
+        startingDate: "04/21/2021",
+        endingDate: "04/27/2021",
+        dateRange: "April 28 -> May 4, 2021",
+        milage: 322,
+        totalMilage: 687,
+        milageLeft: 3636,
+        text: `This week was a doozy. I know the mileage looks low but the Appalachians are no joke, especially in eastern Kentucky. The never-ending rollercoaster of steep climbs and descents really wears you down, especially on a 90lb bike.
+
+                Speaking of Eastern Kentucky, let's talk about dogs. Everyone warned us to watch out for dogs in Kentucky, especially the eastern half. So far, our experience hasn't been that bad. We've been chased a couple times, but for the most part, all of the dogs along the route have been fenced or chained. I get the feeling that it used to be much worse, but I'm guessing the residents have figured out that they live on a heavily trafficked road for cyclists and as such have taken the necessary precautions to protect cyclists and their dogs. `
+      },
+      {
+        type: "day",
+        day: 8,
+        date: "04/21/2021",
+        startingPoint: "Blacksburg, VA",
+        endingPoint: "Fort Chiswell, VA",
+        distance: 54,
+        elevation: 3800,
+        difficulty: "3",
+        safety: "3",
+        lodging: "Pioneer Village RV Park",
+        lodgingLink: "https://goo.gl/maps/q5QDDC2YHYjCqFUq6",
+        strava: "",
+        text: ``,
+        notes: [
+          `Gah bike paths are so nice`,
+          `Where has Southern Pimento cheese been all my life?`,
+          `Overall a pretty enjoyable ride, not heavily trafficked by cars and fairly scenic`,
+          `Pioneer Village RV Park has a pretty nice walk up tent site area on the river and decent showers, would recommend`
+        ],
+        images: [
+          {
+            video: false,
+            number: 1,
+            caption: `Yorktown, VA`,
+            alt: "Dock looking out over water"
+          },
+          {
+            video: false,
+            number: 2,
+            caption: "First time loading up the bikes",
+            alt: "Bicycles with bags open and gear strung about"
+          },
+          {
+            video: false,
+            number: 4,
+            caption: "Our gracious Warm Showers Host John",
+            alt: "Smiling older gentleman"
+          },
+          {
+            video: false,
+            number: 3,
+            caption: "Pops grilling us up some burgers at our warm showers",
+            alt: "Grill on deck with view of water"
+          },
+          {
+            video: false,
+            number: 5,
+            caption: `Our home for the night. John's setting an incredibly high bar for future hosts.`,
+            alt: "Bicycles with bags open and gear strung about"
+          },
+          {
+            video: false,
+            number: 7,
+            caption: "Evening guitar strumming",
+            alt: "Morgan playing guitar"
+          },
+          {
+            video: false,
+            number: 6,
+            caption: "Evening guitar strumming",
+            alt: "Morgan playing guitar"
+          }
+          // {
+          //     video: true,
+          //     number: 3,
+          //     caption: '',
+          //     alt: '',
+          // }
+        ]
+      },
+      {
+        type: "day",
+        day: "9/10",
+        date: "04/22/2021",
+        startingPoint: "Fort Chiswell, VA",
+        endingPoint: "Marion, VA",
+        distance: 38,
+        elevation: 2500,
+        difficulty: 4,
+        safety: 2,
+        lodging: "Our Friend John and Natalies Place",
+        lodgingLink: "",
+        strava: "",
+        notes: [
+          `Congrats Natalie! Thank you for letting us be apart of your graduation celebrations!`,
+          `Marion is off route but a cute little town`,
+          `Biking in headwinds is so much harder than we imagined. Even though day 9 was only 38 miles it was an absolute GRIND to finish as we had 7-10mph headwinds in our face nearly the entire time.`,
+          `Experienced our first coal roll on the side of HWY 11`,
+          `Bristol seems like a really cool town`,
+          `Shoutout to Rochelle and Gary (Natalie's parents)!`
+        ],
+        images: [
+          {
+            video: false,
+            number: 1,
+            caption: `Dipping our rear tires in the "Atlantic Ocean"`,
+            alt: "Morgan and Mike with their rear tires in the water as the sun rises in the background"
+          },
+          // {
+          //     video: false,
+          //     number: 2,
+          //     caption: '',
+          //     alt: '',
+          // },
+          {
+            video: false,
+            number: 3,
+            caption: `"I've made a huge mistake" - Mike`,
+            alt: ""
+          },
+          {
+            video: false,
+            number: 4,
+            caption: "Obligatory Victory Monument photo. The official TransAm route starts/ends here.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 12,
+            caption: "",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 5,
+            caption: "So many cool historical buildings",
+            alt: "A classic colonial building"
+          },
+          {
+            video: false,
+            number: 6,
+            caption: "Stretch and flex baby",
+            alt: "Mike lunging on the Capital Trail"
+          },
+          {
+            video: false,
+            number: 7,
+            caption: "Lunch break. This would become our defaco lunch for the next 80 days.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 8,
+            caption: "Post ride beers.",
+            alt: "A smiling Mike with 2 beers on the table"
+          },
+          {
+            video: false,
+            number: 11,
+            caption: "",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 9,
+            caption: "First campspot",
+            alt: "A tent with a bike next to it in the woods"
+          },
+          {
+            video: false,
+            number: 10,
+            caption: `Taking in the view and discussing the fact that we essentially traveled 1% of the total distance we're going to travel.`,
+            alt: ""
+          }
+          // {
+          //     video: true,
+          //     number: 3,
+          //     caption: '',
+          //     alt: '',
+          // }
+        ]
+      },
+      {
+        type: "day",
+        day: 11,
+        date: "04/24/2021",
+        startingPoint: "Marion, VA",
+        endingPoint: "Rosedale, VA",
+        distance: 46,
+        elevation: 3600,
+        difficulty: 5,
+        safety: 3,
+        lodging: "Elk Garden Methodist Bike Hostel",
+        lodgingLink: "https://goo.gl/maps/9PrKf3nxXj2KCBmw9",
+        strava: "",
+        notes: [
+          `Hayters Gap - You see that long climb towards the end of our ride in the elevation profile? That's Hayters Gap. 4 miles, 1500 feet. It was the single toughest climb we had yet to encounter, and served as our metric for hard climbs for the rest of the trip`,
+          `My rear wheel spokes started coming loose again towards the end of the ride, and with the nearest bike shop a multiday bike ride away, it was time to learn how to true a wheel.`,
+          `The Bike Hostel in Rosedale is really nice and absolutely worth checking out. Seeing the guest log with all the previous cyclists entries, the maps with pin needles of where everyone is from, and the pictures and post cards sent from people after they complete their journey is really special. Makes you feel connected to something much bigger than yourself.`
+        ],
+        images: [
+          {
+            video: false,
+            number: 1,
+            caption: "Big bike. A monument built from salavaged steel to commemorate the completio of the Capital Trail.",
+            alt: "Mike and Morgan in front of a giant bike"
+          },
+          {
+            video: false,
+            number: 2,
+            caption: "Ephriam! We crossed paths with Ephriam on the Capital Trail, who whipped a U-turn to come talk to us as he instantly recognized what we were doing.",
+            alt: "A smiling older gentleman giving a thumbs up in bike gear"
+          },
+          {
+            video: false,
+            number: 3,
+            caption: "",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 4,
+            caption: "Post ride meal numero uno",
+            alt: "Mike with an empty plate and PBR on the table."
+          },
+          {
+            video: false,
+            number: 5,
+            caption: "We met up with Ephriam and his wife for post ride meal numero dos. He left us with this pound cake for the road.",
+            alt: "A pictue of a pound cake"
+          },
+          {
+            video: false,
+            number: 6,
+            caption: "Our Warm Showers host Deb!",
+            alt: "Mike, Morgan, and their host Deb holding up slices of Pound Cake"
+          },
+          {
+            video: false,
+            number: 8,
+            caption: "The dinner spread Deb put out for us. Post ride meal numero tres!",
+            alt: "Bread, jelly, peanut butter, cookies, all spread out on a kitchen table"
+          }
+        ]
+      },
+      {
+        type: "day",
+        day: 12,
+        date: "04/25/2021",
+        startingPoint: "Rosedale, VA",
+        endingPoint: "Wheelwright, KY",
+        distance: 87,
+        elevation: 7e3,
+        difficulty: 5,
+        safety: 2,
+        lodging: "Church in Wheelwright",
+        lodgingLink: "",
+        strava: "https://www.strava.com/activities/5179195342",
+        notes: [
+          `Absolute doozy of a day, definitely the hardest day so far`,
+          `At a gas station in Lookout, KY we had 2 seperate people give us the same erie warning. They both told us we were crazy and to watch out for methheads. "They'll put you in a ditch just to take what you got!"`,
+          `We have talked about this interaction with other cyclists though and no one had heard any stories of cyclists getting attacked by methheads.`,
+          `The stereotype about Kentucky dogs is holding up to be moderately true, although it seems most of them are chained or fenced so we only got chased once this day.`
+        ],
+        images: [
+          {
+            video: false,
+            number: 1,
+            caption: "I love scotch. Scotchy scotch scotch. Here it goes down, down into my belly.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 2,
+            caption: "Bob! I met Bob while waiting for Mike to order a breakfast Bagel in Richmond. Bob and I talked for just a few minutes but he instantly left an impression with his positive attitude and genuine interest in our trip",
+            alt: "Smiling man giving thumbs up"
+          },
+          // {
+          //     video: true,
+          //     number: 3,
+          //     caption: '',
+          //     alt: '',
+          // },
+          // {
+          //     video: false,
+          //     number: 4,
+          //     caption: '',
+          //     alt: '',
+          // },
+          {
+            video: false,
+            number: 5,
+            caption: "One of the 3 meals my parents made for us after our ride. This would be the last time I would see them until Oregon.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 6,
+            caption: "M & D, and their Dogs Rogan and Parker.",
+            alt: ""
+          }
+        ]
+      },
+      {
+        type: "day",
+        day: 13,
+        date: "04/26/2021",
+        startingPoint: "Wheelwright, KY",
+        endingPoint: "Hazard, KY",
+        distance: 49,
+        elevation: 3200,
+        difficulty: 3,
+        safety: 3,
+        lodging: "Combs Motel",
+        lodgingLink: "",
+        strava: "",
+        notes: [
+          `Starting the day off with a steep, difficult climb is actually kind of great. Gets you in the right mindset to tackle the rest of the day.`,
+          `Would not recommend staying in Hazard, not much here in terms of accomodations or to see. If you can find somewhere else to stay nearby, I would try to bike through`,
+          `Applebees Happy Hour might have the best calorie to dollar ratio we've encountered at a restaurant.`
+        ],
+        images: [
+          {
+            video: false,
+            number: 1,
+            caption: "PB&J Pound Cake Sandwiches. Delicious, but not a good mid-ride meal.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 2,
+            caption: `Oblivious to the pain I'm about to be in.`,
+            alt: ""
+          },
+          {
+            video: false,
+            number: 3,
+            caption: "Home for the night",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 4,
+            caption: "And our Hosts! David and Bunny.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 5,
+            caption: "Dinner. Chipotle for Mike.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 7,
+            caption: "Freeze dried beef stroganoff for Me.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 8,
+            caption: "Swiping through Tinder to see what Charlottsvill has to offer.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 6,
+            caption: "David regaling us with stories from his own cross country bike ride.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 9,
+            caption: "Laid my head down to fall asleep when I noticed something in the other room...",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 10,
+            caption: "What. The.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 11,
+            caption: "Fuck.",
+            alt: ""
+          }
+        ]
+      },
+      {
+        type: "day",
+        day: 14,
+        date: "04/27/2021",
+        startingPoint: "Hazard, KY",
+        endingPoint: "Booneville, KY",
+        distance: 48,
+        elevation: 3200,
+        difficulty: 3,
+        safety: 3,
+        lodging: "First Presbyterian Cycle Hostel",
+        lodgingLink: "https://goo.gl/maps/Y3d6aeh6CpGf4HmG9",
+        strava: "https://www.strava.com/activities/5192775900",
+        notes: [
+          `Rain delay. We hung out in our motel until lunch in order to wait out a thunderstorm.`,
+          `First flat! And a gnarly one at that, a shard of broken glass tore a good hole in Mike's tire and tube. We patched the tube and put some rubber cement in the tire hole. Good as new (we hope)!`,
+          `The hostel in Boonesville is really just a pavillon you can sleep under, but it kept us out of the rain and they had outlets so we could charge everything up. And it's free! `
+        ],
+        images: [
+          {
+            video: false,
+            number: 1,
+            caption: "Initial climb out of Charlottesville",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 2,
+            caption: "",
+            alt: ""
+          },
+          // {
+          //     video: true,
+          //     number: 3,
+          //     caption: '',
+          //     alt: '',
+          // },
+          {
+            video: false,
+            number: 4,
+            caption: `King's Popcorn! Worth the detour.`,
+            alt: ""
+          },
+          {
+            video: false,
+            number: 5,
+            caption: "I may or may not have had an unhealthy obsession with my bike.",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 6,
+            caption: "",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 7,
+            caption: "",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 8,
+            caption: "",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 9,
+            caption: "",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 10,
+            caption: "",
+            alt: ""
+          },
+          {
+            video: false,
+            number: 11,
+            caption: `This place felt like a summer camp, but not the fun kind, like the kind you get brutally murdered at.`,
+            alt: ""
+          }
+        ]
+      },
+      {
+        type: "reflections",
+        content: [
+          {
+            heading: "Tendency to Hold On",
+            content: `If you have ever camped with me, you know I love a good campfire talk. But I always seem to be the last one around the campfire, even when the conversation has run its course and I desperately need to get some zzz. I think it stems from my deep desire to feel connected to people, and good conversations around a campfire are one of the best places for that.
+
+                        I also think it's representative of my tendency to hold onto the things that aren't serving me anymore. Adventure, excitement, novelty. I worry I've been placing those values too high up on my values list, and maybe I should let them go.`
+          },
+          {
+            heading: "Anger and Acceptance",
+            content: `I get irrationally angry when biking in a headwind. I often joke about wanting to punch the wind. It's a fit of fruitless anger, as there is nothing/no one to be angry at. I catch myself looking for someone to place the blame on. Sometimes riding in headwinds is just a just fact of life. There is really nothing I can do to change it, yet I get all worked up as if there is somewhere to put the blame for the situation other than myself. I need to learn to accept these things. They happened. Now all I can do is focus on what's next. What steps can I take to increase my odds of not landing in these situations? This aimless anger is a symptom of my habit of looking for someone else to blame for my problems. My life is my life, my responsibility, and no one else's. The sooner I can get that through my thick skull the sooner I can spend less time being pointlessly frustrated and more time making productive changes.`
+          },
+          {
+            heading: `Pain and Suffering`,
+            content: `They say we suffer more in our heads than in reality, and this trip is really ingraining that lesson. I often find the anticipation of a big climb coming up is far worse than the climb itself. I actually like the days when we start off with a big climb because it gets me in the right mindset from the get-go. It hammers home the old saying “Pain is necessary, suffering is optional”`
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: 1,
     title: "Biking The TransAm Week 1 - All Rainbows and Warmshowers",
     week: 1,

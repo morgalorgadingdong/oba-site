@@ -1,7 +1,7 @@
 <div class="vh-60 hero col-12 d-flex flex-column justify-content-end">
     <div class="img-container">
         <div class="img-overlay"></div>
-        <img class="hero-img img" src="./img/about1.jpg"/>
+        <img class="hero-img img" src="./img/carl-and-morgan.jpg"/>
     </div>
     <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5">
         <h1 class="hero-tagline col-12">About</h1>
@@ -18,11 +18,11 @@
     </div>
 </section>
 
-<section id="mission-section" class="col-12 d-flex justify-content-center flex-wrap py-5">
+<section id="mission-section" class="col-12 d-flex justify-content-center flex-wrap py-5 my-5">
     <!-- <h2>Our story</h2> -->
     <div class="col-12 col-md-10 col-lg-8">
         <h2>Our Mission</h2>
-        <p id="mission-statement" class="pl-3">To deliver unforgettable tours that reveal Oregon's captivating beauty, while spreading the inspiration and growth that traveling by bicycle uniquely provides</p>
+        <p id="mission-statement" class="pl-3">To deliver unforgettable tours that reveal <b>Oregon's captivating beauty</b>, while spreading the <b>inspiration and growth</b> that traveling by bicycle uniquely provides</p>
 
     </div>
 </section>
@@ -89,6 +89,10 @@
         p {
         font-size: 1.3rem;
         }
+    }
+
+    b {
+        color: var(--color-highlight);
     }
     
 </style>

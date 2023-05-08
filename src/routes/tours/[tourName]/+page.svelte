@@ -4,6 +4,7 @@
     import Calendar from "../../Calendar.svelte";
     import { onMount } from "svelte";
     import {Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
+    import '@splidejs/svelte-splide/css';
     //  export let blog;
     //  export const slug = blog;
     
@@ -47,6 +48,14 @@
     let imgSrcCover = `../../img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-cover.jpg`;
     let currentImg = 1;
 
+    let i = 1;
+    let imgSrc
+
+    function renderPicture(listing) {
+        imgSrc = `../../img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-${i}.jpg`;
+        i++
+        return imgSrc
+    }
     
     // let testBlog = blogs[1]
     // let prevBlog
@@ -153,12 +162,50 @@
 
             {/if} -->
 
+            <!-- Mobile photo carousel -->
+            {#if tour.pics > 0}
+            <div class="col-12 px-3">
+                <h3 class="font-logo text-left">Pictures</h3>
+                <Splide aria-label="" class="z-reset" hasTrack={ false } options={ {
+                    type: 'loop',
+                    perPage: 2,
+                    breakpoints: {
+                        768: {
+                            perPage: 1.5,
+                        },
+                        576: {
+                            perPage: 1,
+                        }
+                    },
+                    focus: 'center',
+                    drag: 'free',
+                    snap: true
+                  } }>
+                  <SplideTrack>
+                    {#each Array(tour.pics) as pic}
+                        <SplideSlide class="mb-5 mt-0 mr-3">
+                            <div class="tour-pic">
+                                <img src={renderPicture(tour)} alt="tour" class="" />
+                            </div>
+                        </SplideSlide>
+                    {/each}
+                        
+                    </SplideTrack>
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button class="splide__arrow splide__arrow--next"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                    </Splide>
+            </div>
+            <div class="tour-divider col-12 mb-5 mt-3"></div>
+            {/if}
+            
             <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                 <h3 class="font-logo text-left">What's provided</h3>
                 <ul class="col-12 mx-3">
                     {#each tour.whatsProvided as item}
                     <li class="col-12 text-left px-0 my-3 blog-text">{item}</li>
-                {/each}
+                    {/each}
                 </ul>
                 
             </div>
@@ -166,7 +213,11 @@
                 
                 <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                     <h3 class="font-logo text-left">What to bring</h3>
-                    <p class="col-12 text-left px-0 my-3 blog-text">{tour.whatToBring}</p>
+                    <ul class="col-12 mx-3">
+                        {#each tour.whatToBring as item}
+                        <li class="col-12 text-left px-0 my-3 blog-text">{item}</li>
+                        {/each}
+                    </ul>
                 </div>
             <!-- <div class="col-12 d-flex justify-content-center flex-wrap mt-3 px-3">
                 {#each blog.Sections as Section}
@@ -215,6 +266,15 @@
 </svelte:head> -->
 
 <style>
+
+    .tour-pic img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        max-height: 80vh;
+        object-fit: cover;
+        object-position: center;
+        
+    }
     #highlights-container li {
         padding: 0.7rem;
         background-color: var(--color-primary-dark);
@@ -230,9 +290,13 @@
     }
 
 
+    #quick-details-container h3 {
+        color: white;
+    }
+
     #quick-details-container li {
         padding: 0.7rem;
-        background-color: var(--color-primary);
+        background-color: var(--color-background-light);
         /* border-radius: 6px; */
         /* border: solid 1px white; */
         margin: 0.5rem;
@@ -244,7 +308,7 @@
     #quick-details-container {
         /* border: solid black 2px; */
         height: fit-content;
-        background-color: var(--color-background);
+        background-color: var(--color-primary);
         /* border-radius: 6px; */
     }
 

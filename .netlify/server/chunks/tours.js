@@ -7,11 +7,15 @@ const tours = [
     duration: "Half Day",
     difficulty: "Difficult",
     difficultyRating: 4,
-    price: "$ 107",
+    available: true,
+    availabilityStart: "May 15th",
+    availabilityEnd: "October 15th",
+    price: "$ 155",
     ages: "12+",
     distance: "30 miles",
+    miles: "30",
     elevationGain: "2,100 ft",
-    ebikes: true,
+    ebikes: false,
     featured: true,
     featuredIndex: 1,
     description: [
@@ -28,10 +32,10 @@ const tours = [
         content: `Water and snacks provided.`
       }
     ],
-    whatToBring: "Comfortable, weather appropriate athletic clothes, phone/camera, and a sense of adventure!",
+    whatsProvided: ["Bike", "Helmet", "Water", "Picnic", "Shuttle back to start", "Support vehicle", "Storage for personal items"],
+    whatToBring: ["Comfortable, weather appropriate athletic clothes", "Phone/camera", "A sense of adventure!"],
     mettingLocation: "Bend, OR",
     importantInfo: "",
-    whatsIncluded: "",
     highlights: [
       "Lava-rock moonscape",
       "Dee Wright Observatory",
@@ -44,11 +48,12 @@ const tours = [
         review: "This was a great tour! The guide was very knowledgeable and friendly. I would definitely recommend this tour to anyone looking for a fun and unique experience."
       }
     ],
-    pics: 2,
+    pics: 4,
     meals: false,
     lodging: false,
     bannerAlt: "",
-    calendarURL: "https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451357/?fallback=simple&full-items=yes&flow=928317"
+    calendarURL: "https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451357/?fallback=simple&full-items=yes&flow=928317",
+    ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42770639&sampleGraph=true&privacyCode=CEPHFlyV4wdGq6ag`
   },
   {
     id: 2,
@@ -57,26 +62,33 @@ const tours = [
     type: "Single Day",
     duration: "Half Day",
     difficulty: "Moderate",
-    price: "$ 107",
+    difficultyRating: 3,
+    distance: "25 miles",
+    miles: "25",
+    elevationGain: "700 ft",
+    price: "$ 155",
     ages: "12+",
-    ebikes: true,
+    ebikes: false,
     featured: true,
     featuredIndex: 2,
     description: [
       {
-        content: `Join us on a guided bicycle tour along the Twin Bridges Scenic Bikeway, a picturesque route that encapsulates the natural beauty of Central Oregon. Starting at Drake Park, you'll pedal through the bustling city of Bend before quickly escaping into the tranquil high desert fields and rock formations. Along the way, you'll cross two bridges over the Deschutes River and pass by wetlands, ranches, and hobby farms. Keep your eyes peeled for wildlife and birds that are unique to this area. After a series of short climbs, enjoy a long glide down and back to the start. With low traffic volume and bike lanes, this ride is suitable for riders of all levels from late February through November.`
+        content: `Join us on a guided bicycle tour along the Twin Bridges Scenic Bikeway, a picturesque route that encapsulates the natural beauty of Central Oregon. Starting at Drake Park, you'll pedal through the bustling city of Bend before quickly escaping into the tranquil high desert fields and rock formations. Along the way, you'll cross two bridges over the Deschutes River and pass by wetlands, ranches, and hobby farms. Keep your eyes peeled for wildlife and birds that are unique to this area. After a series of short climbs, enjoy a long glide down and back to the start.`
       },
       {
-        content: `Water and snacks provided.`
+        content: `Partway through our ride, we'll take a break for a quick, yet delightful picnic, offering a chance to sample snacks that are unique to the area.`
       },
       {
-        content: `Option to stop at The Bite in Tumalo to try some local food carts and beers!`
+        content: `With low traffic volume and bike lanes, this ride is suitable for most fitness levels, from late March through October.`
       }
     ],
-    pics: 2,
+    whatsProvided: ["Bike", "Helmet", "Water", "Picnic", "Shuttle back to start", "Support vehicle", "Storage for personal items"],
+    whatToBring: ["Comfortable, weather appropriate athletic clothes", "Phone/camera", "A sense of adventure!"],
+    pics: 4,
     meals: false,
     lodging: false,
     bannerAlt: "",
+    ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42761311&title=Twin%20Bridges%20Scenic%20Tour&sampleGraph=true&privacyCode=TVa5OuPX2YDtzuBy`,
     calendarURL: "https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451510/?fallback=simple&full-items=yes&flow=928317"
   },
   {
@@ -86,22 +98,28 @@ const tours = [
     type: "Multi Day",
     duration: "3 Days",
     difficulty: "Moderate",
+    difficultyRating: 4,
+    distance: "109 miles",
+    miles: "109",
+    elevationGain: "4,200 ft",
+    ages: "12+",
     price: "TBD",
     ebikes: false,
     featured: true,
     featuredIndex: 3,
     description: [
       {
-        content: `Join us on a guided bicycle tour along the Twin Bridges Scenic Bikeway, a picturesque route that encapsulates the natural beauty of Central Oregon. Starting at Drake Park, you'll pedal through the bustling city of Bend before quickly escaping into the tranquil high desert fields and rock formations. Along the way, you'll cross two bridges over the Deschutes River and pass by wetlands, ranches, and hobby farms. Keep your eyes peeled for wildlife and birds that are unique to this area. After a series of short climbs, enjoy a long glide down and back to the start. With low traffic volume and bike lanes, this ride is suitable for riders of all levels from late February through November.
-
-                Option to stop at The Bite in Tumalo to try some local food carts and beers!`
+        content: `Coming soon!`
       }
     ],
+    whatsProvided: ["Bike", "Helmet", "Water", "All lunches and dinners", "Snacks", "Support vehicle", "Storage for personal items"],
+    whatToBring: "Comfortable, weather appropriate athletic clothes, phone/camera, and a sense of adventure!",
     pics: 2,
     meals: true,
     lodging: true,
     bannerAlt: "",
-    calendarURL: ""
+    calendarURL: "",
+    ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42716795&sampleGraph=true&privacyCode=FQBtdqGEu1IyLSSp`
   }
 ];
 export {

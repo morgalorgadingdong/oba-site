@@ -107,7 +107,19 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<link rel="stylesheet" href="' + assets2 + '/css/bootstrap/bootstrap.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/style.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/all.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/animations.css">\n		<link rel="stylesheet" href="https://use.typekit.net/bve4csc.css">\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover" id="the-body">\n		<div style="display: contents">' + body + '</div>\n	</body>\n	<!-- <script src="' + assets2 + '/js/preload.js"><\/script>\n    <script src="' + assets2 + '/js/animations.js"><\/script> -->\n	<!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->\n	<script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"><\/script>\n	<!-- <script src="../js/tours.js" crossorigin="anonymous"><\/script> -->\n</html>\n',
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/OBA_Instagram_Profile.png" />\n		<link rel="stylesheet" href="' + assets2 + '/css/bootstrap/bootstrap.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/style.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/all.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/animations.css">\n		<link rel="stylesheet" href="https://use.typekit.net/bve4csc.css">\n		<meta name="viewport" content="width=device-width" />\n		' + head + `
+	</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVWKMZV73D"><\/script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-SVWKMZV73D');
+	<\/script>
+	<body data-sveltekit-preload-data="hover" id="the-body">
+		<div style="display: contents">` + body + '</div>\n	</body>\n	<!-- <script src="' + assets2 + '/js/preload.js"><\/script>\n    <script src="' + assets2 + '/js/animations.js"><\/script> -->\n	<!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->\n	<script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"><\/script>\n	<!-- <script src="../js/tours.js" crossorigin="anonymous"><\/script> -->\n</html>\n',
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -155,7 +167,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "196oph3"
+  version_hash: "kxctvi"
 };
 function get_hooks() {
   return {};

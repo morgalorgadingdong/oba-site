@@ -11,12 +11,12 @@
 
 <div class="col-12 col-md-8 col-lg-6 col-xl-4 p-3">
     <a class="col-12 trip-preview-container" href={'/tours/' + tour.title}>
-        <div class="trip-preview d-flex flex-column justify-content-end py-0">
+        <div class="trip-preview d-flex flex-column justify-content-end py-0 mx-3">
             <div class="trip-preview-img-container">
                 <img src="{imgSrc}" alt="{tour.title}" class="trip-preview-img">
                 <!-- <div id="tour2" class="trip-preview-img"></div> -->
             </div>
-            <h4 class="px-4 py-2">{tour.title}</h4>
+            <h4 id="tour-title-desktop" class="px-4 py-2">{tour.title}</h4>
             <div class="trip-info-container d-none d-md-flex justify-content-start justify-content-xxl-around px-3 pb-3">
                 <div class="trip-info p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-clock"></i> -->
@@ -37,17 +37,23 @@
                 </div>
             </div>
         </div>
-        <div class="trip-info-container-mobile col-12 d-flex d-md-none justify-content-between justify-content-xxl-around px-3 pb-3">
-            <div class="p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                <!-- <i class="fa-solid fa-clock"></i> -->
+        <div class="trip-info-container-mobile d-flex d-md-none justify-content-between flex-wrap justify-content-xxl-around mx-3 px-0">
+            <h4 id="tour-title-mobile" class="py-2 col-12 mb-0">{tour.title}</h4>
+            <!-- <div class="px-3">
+                <p>{tour.price}</p>
+                <p>{tour.duration}</p>
+                <p>Difficulty (1-5): {tour.difficultyRating}</p>
+            </div> -->
+            <div class="divider mx-3"></div>
+            <div class="p-1 px-3 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+
                 <span>{tour.price}</span>
             </div>
             <div class="mx-1 p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                <!-- <i class="fa-solid fa-tachometer"></i> -->
+
                 <span>{tour.duration}</span>
             </div>
             <div class="p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                <!-- <i class="fa-solid fa-bicycle"></i> -->
                 <span>Difficulty (1-5): {tour.difficultyRating}</span>
             </div>
         </div>
@@ -56,9 +62,19 @@
 
 
 <style>
+    .divider {
+        width: 100%;
+        height: 1px;
+        background-color: lightgray;
+    }
     .trip-info-container-mobile {
         color: var(--color-primary-dark);
+        border-radius: 0 0 6px 6px;
+        border: solid 2px lightgray;
+        border-top: none;
+        /* border-top: 5px solid var(--color-primary); */
     }
+
     .trip-preview-container {
         /* height: 40vh; */
         /* aspect-ratio: 1/1; */
@@ -78,10 +94,10 @@
 
     
     .trip-preview {
-        width: 90%;
+        /* width: 90%; */
         aspect-ratio: 1/1;
-        margin-left: 5%;
-        margin-right: 5%;
+        /* margin-left: 5%;
+        margin-right: 5%; */
         border-radius: 6px;
         /* padding: 1rem; */
         position: relative;
@@ -126,8 +142,7 @@
         /* position: absolute;
         left: 0;
         bottom: 15%; */
-        background-color: var(--color-primary);
-        color: var(--color-light);
+        
         transition: all var(--animation-duration) ease-in-out;
         /* transform: translateY(-300%); */
         z-index: 3;
@@ -138,6 +153,11 @@
         font-family: var(--font-header);
     }
 
+    #tour-title-desktop {
+        background-color: var(--color-primary);
+        color: var(--color-light);
+    }
+
     @media (min-width: 768px) {
         .trip-preview-container h4 {
             /* bottom: 15%; */
@@ -146,7 +166,10 @@
         .trip-preview:hover h4, .trip-preview:focus h4 {
         transform: translateX(1.5vw);
         transition: all var(--animation-duration) ease-in-out; 
-    }
+        }
+        #tour-title-mobile {
+            display: none;
+        }
     }
 
     .trip-info-container {
@@ -188,6 +211,16 @@
             transition: all var(--animation-duration) ease-in-out;
             opacity: 1;
         }
+
+        #tour-title-desktop {
+            display: none;
+        }
+
+        .trip-preview-img-container {
+            border-radius: 6px 6px 0 0;
+            border-bottom: solid 5px var(--color-primary);
+        }
+
     }
 
 </style>

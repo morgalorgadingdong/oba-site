@@ -32,11 +32,10 @@ export const tours = [
                 content: `Water and snacks provided.`
             }
         ],
-        whatsProvided: ['Bike', 'Helmet', 'Water', 'Snacks', 'Storage for personal items'],
-        whatToBring: "Comfortable, weather appropriate athletic clothes, phone/camera, and a sense of adventure!",
+        whatsProvided: ['Bike', 'Helmet', 'Water', 'Picnic', 'Shuttle back to start', 'Support vehicle', 'Storage for personal items'],
+        whatToBring: ['Comfortable, weather appropriate athletic clothes', 'Phone/camera', 'A sense of adventure!'],
         mettingLocation: 'Bend, OR',
         importantInfo: '',
-        whatsIncluded: '',
         highlights: [
             'Lava-rock moonscape',
             'Dee Wright Observatory',
@@ -49,7 +48,7 @@ export const tours = [
                 review: 'This was a great tour! The guide was very knowledgeable and friendly. I would definitely recommend this tour to anyone looking for a fun and unique experience.'
             },
         ],
-        pics: 2,
+        pics: 4,
         meals: false,
         lodging: false,
         bannerAlt: '',
@@ -84,8 +83,8 @@ export const tours = [
             }
         ],
         whatsProvided: ['Bike', 'Helmet', 'Water', 'Picnic', 'Shuttle back to start', 'Support vehicle', 'Storage for personal items'],
-        whatToBring: "Comfortable, weather appropriate athletic clothes, phone/camera, and a sense of adventure!",
-        pics: 2,
+        whatToBring: ['Comfortable, weather appropriate athletic clothes', 'Phone/camera', 'A sense of adventure!'],
+        pics: 4,
         meals: false,
         lodging: false,
         bannerAlt: '',
