@@ -5,6 +5,7 @@
     import { onMount } from "svelte";
     import {Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
     import '@splidejs/svelte-splide/css';
+    import ContactCard from "../../ContactCard.svelte";
     //  export let blog;
     //  export const slug = blog;
     
@@ -86,9 +87,10 @@
     </div>
     <div class="d-flex align-items-start flex-wrap">
         
-        <div id="tour-info-container" class="col-12 col-md-7 col-lg-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5 px-lg-5" >            
+        <div id="tour-info-container" class="col-12 col-md-7 col-lg-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5 px-lg-5 pt-3" >            
                <!-- Tour Quick Details -->
-            <div id="quick-details-container" class="col-10 d-fex justify-content-start flex-wrap p-3 my-3">
+            {#if tour.quickDetails}
+               <div id="quick-details-container" class="col-10 d-fex justify-content-start flex-wrap p-3 mb-3">
                 <h3 class="font-logo">Quick Details</h3>
                 <ul class="d-flex justify-content-start mb-1 flex-wrap col-12">
                     <li>Price: {tour.price}</li>
@@ -105,6 +107,7 @@
                 </ul>
             </div>
             <div class="tour-divider col-12 mb-5 mt-3"></div>
+            {/if}
             <!-- Tour Description -->
             <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                 <h3 class="font-logo text-left">Description</h3>
@@ -115,11 +118,12 @@
 
             <div class="tour-divider col-12 mb-5 mt-3"></div>
 
-
+            {#if tour.ridewithgps}
             <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                 <iframe class="my-3" src="{tour.ridewithgps}" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
             </div>
             <div class="tour-divider col-12 mb-5 mt-3"></div>
+            {/if}
             <!-- {#if tour.highlights.length > 0}
             <div id="highlights-container" class="col-10 d-fex justify-content-start flex-wrap p-3 my-3">
                 <h3 class="font-logo text-left">Highlights</h3>
@@ -200,6 +204,7 @@
             <div class="tour-divider col-12 mb-5 mt-3"></div>
             {/if}
             
+            {#if tour.whatsProvided}
             <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                 <h3 class="font-logo text-left">What's provided</h3>
                 <ul class="col-12 mx-3">
@@ -210,8 +215,10 @@
                 
             </div>
             <div class="tour-divider col-12 mb-5 mt-3"></div>
-                
-                <div class="col-12 d-flex justify-content-start flex-wrap px-3">
+            {/if}
+            
+            {#if tour.whatToBring}
+            <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                     <h3 class="font-logo text-left">What to bring</h3>
                     <ul class="col-12 mx-3">
                         {#each tour.whatToBring as item}
@@ -219,6 +226,9 @@
                         {/each}
                     </ul>
                 </div>
+                
+                <div class="tour-divider col-12 mb-5 mt-3"></div>
+            {/if}
             <!-- <div class="col-12 d-flex justify-content-center flex-wrap mt-3 px-3">
                 {#each blog.Sections as Section}
                     {#if Section.Type == 'text'}
@@ -236,8 +246,18 @@
                     {/if}
                 {/each}
             </div> -->
-        </div>
+
+            {#if tour.conclusion}
+            
+            <div class="col-12 d-flex justify-content-start flex-wrap px-3">
+                <p class="col-12 text-left px-0 my-3 blog-text">{tour.conclusion}</p>
+            </div>
+            {/if}
+            </div> 
+        
+        
         <aside id="calendar-aside" class="col-md-5 col-lg-4 m-0 p-3 p-lg-0">
+            {#if tour.calendarURL}
             <div class="px-0 mx-0 col-12 d-flex flex-wrap">
                 <div id="aside-topsection" class="col-12 mx-0 px-0 order-2 order-md-1">
                     <img src="../../img/tour1-cover.jpg" alt="calendar" class="col-12 px-0 d-none d-md-inline" />
@@ -250,12 +270,26 @@
                 </div>
                 
             </div>
-            
+            {:else}
+            <div class="px-0 mx-0 col-12 d-flex flex-wrap">
+                <div id="" class="col-12 mx-0 p-3 order-2 order-md-1">
+                    <h3 class="font-logo text-left">Contact To Book</h3>
+                    <div class="tour-divider col-12 mb-3 mt-3"></div>
+                    <div class="col-12 d-flex justify-content-center my-3">
+                        
+                        <ContactCard />
+                    </div>    
+                </div>
+            </div>  
+            {/if}
         </aside>
+    
+        <div class="col-12 d-flex justify-content-center">
+            <a href="/tours" class="back-to"><div class="btn py-3 px-3 mb-5">&lt- Back to all tours</div></a>
+        </div>
     </div>
     
     
-    <!-- <a href="/tours" class=""><div class="button my-5">All tours</div></a> -->
     <!-- <a href={'./'+testBlog.Title}>{testBlog.Title}</a>  -->
     <!-- <p on:click={blog = testBlog}>{testBlog.Title}</p> -->
 </section>
@@ -266,6 +300,15 @@
 </svelte:head> -->
 
 <style>
+    .btn {
+        background-color: var(--color-primary);
+        color: var(--color-light);
+        width: fit-content;
+    }
+
+    .back-to {
+        text-decoration: none;
+    } 
 
     .tour-pic img {
         width: 100%;

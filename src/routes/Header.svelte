@@ -174,7 +174,7 @@
         display: block;
         width: 0;
         height: 2px;
-        background-color: var(--color-dark);
+        background-color: var(--color-highlight);
         transition: width 0.3s;
     }
 
@@ -183,7 +183,7 @@
     }
     
     a[aria-current='page-mobile'] > li:after {
-        background-color: var(--color-light);
+        background-color: var(--color-highlight);
         content: '';
         display: block;
         width: 100%;
@@ -227,7 +227,7 @@
     }
 
     nav > ul > a:hover {
-        border-bottom: solid 5px rgb(5, 195, 249, 0.5);
+        border-bottom: solid 5px rgba(0, 0, 0, 1);
         transition: width 0.5s ease;
         transition: background-color 1s ease;
     }

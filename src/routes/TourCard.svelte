@@ -17,7 +17,10 @@
                 <!-- <div id="tour2" class="trip-preview-img"></div> -->
             </div>
             <h4 id="tour-title-desktop" class="px-4 py-2">{tour.title}</h4>
+            
             <div class="trip-info-container d-none d-md-flex justify-content-start justify-content-xxl-around px-3 pb-3">
+                
+                {#if tour.price}
                 <div class="trip-info p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-clock"></i> -->
                     <span>{tour.price}</span>
@@ -35,7 +38,27 @@
                         <span>E-bikes not available</span>
                     {/if} -->
                 </div>
+                {:else}
+                <div class="trip-info blank p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                    <!-- <i class="fa-solid fa-clock"></i> -->
+                    <span>filler</span>
+                </div>
+                <div class="trip-info blank mx-1 p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                    <!-- <i class="fa-solid fa-tachometer"></i> -->
+                    <span>filler</span>
+                </div>
+                <div class="trip-info blank p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                    <!-- <i class="fa-solid fa-bicycle"></i> -->
+                    <span>filler</span>
+                    <!-- {#if tour.available}
+                        <span>E-bikes available</span>
+                    {:else}
+                        <span>E-bikes not available</span>
+                    {/if} -->
+                </div>
+                {/if}
             </div>
+            
         </div>
         <div class="trip-info-container-mobile d-flex d-md-none justify-content-between flex-wrap justify-content-xxl-around mx-3 px-0">
             <h4 id="tour-title-mobile" class="py-2 col-12 mb-0">{tour.title}</h4>
@@ -44,6 +67,8 @@
                 <p>{tour.duration}</p>
                 <p>Difficulty (1-5): {tour.difficultyRating}</p>
             </div> -->
+            
+            {#if tour.price}
             <div class="divider mx-3"></div>
             <div class="p-1 px-3 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
 
@@ -56,6 +81,7 @@
             <div class="p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                 <span>Difficulty (1-5): {tour.difficultyRating}</span>
             </div>
+            {/if}
         </div>
     </a>
 </div>
@@ -73,6 +99,10 @@
         border: solid 2px lightgray;
         border-top: none;
         /* border-top: 5px solid var(--color-primary); */
+    }
+
+    .blank {
+        opacity: 0;
     }
 
     .trip-preview-container {

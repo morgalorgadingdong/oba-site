@@ -7,7 +7,7 @@
 
     let url = 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/?fallback=simple&full-items=yes'
 
-    let view = 'calendar';
+    let view = 'singleDay';
 
     function toggleCalendarView() {
         console.log('toggleCalendarView called')
@@ -37,11 +37,12 @@
 <section class="col-12 d-flex justify-content-center flex-wrap my-5">
     <div class="toggle-container col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap mb-5">
         <div class="col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3">
-            <button class="view-toggle btn {view === 'calendar' ? 'active' : ''}" on:click={toggleCalendarView}>By Date</button>
+            <button class="view-toggle btn {view === 'singleDay' ? 'active' : 'inactive'}" on:click={toggleSingleDayView}>By Tour</button>
         </div>
         <div class="col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3">
-            <button class="view-toggle btn {view === 'singleDay' ? 'active' : ''}" on:click={toggleSingleDayView}>By Tour</button>
+            <button class="view-toggle btn {view === 'calendar' ? 'active' : 'inactive'}" on:click={toggleCalendarView}>By Date</button>
         </div>
+        
         <!-- <div class="col-12 col-sm-4 d-flex justify-content-start justify-content-md-center pl-3 mb-3">
             <button class="view-toggle btn {view === 'multiDay' ? 'active' : ''}" on:click={toggleMultiDayView}>MultiDay Tours</button>
         </div> -->
@@ -86,6 +87,17 @@
     .btn.active {
         background-color: var(--color-primary);
         color: var(--color-light);
+    }
+
+    .btn.inactive {
+        background-color: var(--color-light);
+        color: var(--color-primary);
+    }
+
+    .btn.inactive:hover {
+        background-color: var(--color-primary);
+        color: var(--color-light);
+        box-shadow: none;
     }
 
     .btn {

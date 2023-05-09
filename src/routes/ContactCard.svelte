@@ -1,4 +1,4 @@
-<form id="submissionForm" class="d-flex justify-content-center flex-wrap col-12 col-md-6" name="netlify-form-example" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+<form id="submissionForm" class="d-flex justify-content-center flex-wrap col-12" name="netlify-form-example" method="POST" netlify-honeypot="bot-field" data-netlify="true">
     <input type="hidden" name="form-name" value="netlify-form-example" />
     <div class="fields d-flex justify-content-center  flex-wrap">
         <div class="field col-12">
@@ -6,7 +6,7 @@
             <input type="text" name="name" id="name" required/>
         </div>
         <div id="emailContainer" class="field col-6">
-            <label for="email" class="col-12">Email</label><br>
+            <label for="email">Email</label><br>
             <input type="text" name="email" id="email" required/>
         </div>
         <div id="telContainer" class="field col-6">

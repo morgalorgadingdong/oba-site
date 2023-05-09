@@ -1,5 +1,5 @@
 <script>
-    import ContactCard from './ContactCard.svelte';
+    import ContactCard from '../ContactCard.svelte';
 </script>
 
 <div class="vh-60 hero col-12 d-flex flex-column justify-content-end">
