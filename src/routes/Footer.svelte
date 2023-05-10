@@ -1,9 +1,9 @@
 <footer id="footer" class="col-12 vh-50 d-flex align-content-center pt-5 pb-3">
     <div class="col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5">
         <div class="col-12 col-md-3 px-0 order-md-2 d-flex justify-content-center flex-wrap">
-            <div class="img-container col-10">
+            <a href="/" class="img-container col-10">
                 <img class="img" src="/img/OBA_PrimaryLogo_WhiteType.png" />
-            </div>
+            </a>
             <!-- <h4 class="font-hero text-center py-3">Oregon Bicycle Adventures LLC</h4> -->
         </div>
         <div class="col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap py-3">
