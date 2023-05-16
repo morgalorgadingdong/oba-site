@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@splidejs/svelte-splide": "^0.2.9"
+		"@splidejs/svelte-splide": "^0.2.9",
+		"square": "^27.0.0"
 	}
 }

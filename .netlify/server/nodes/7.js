@@ -1,10 +1,9 @@
-import * as universal from '../entries/pages/tours/_page.ts.js';
+import * as universal from '../entries/pages/store/_page.ts.js';
 
 export const index = 7;
-export const component = async () => (await import('../entries/pages/tours/_page.svelte.js')).default;
-export const file = '_app/immutable/entry/tours-page.svelte.0d09d95e.js';
+export const component = async () => (await import('../entries/pages/store/_page.svelte.js')).default;
 export { universal };
-export const universal_id = "src/routes/tours/+page.ts";
-export const imports = ["_app/immutable/entry/tours-page.svelte.0d09d95e.js","_app/immutable/chunks/index.3fdd7f9f.js","_app/immutable/chunks/TourCard.aa8eb879.js","_app/immutable/chunks/tours.b0f7d6b7.js","_app/immutable/chunks/Calendar.9352a17b.js","_app/immutable/entry/tours-page.ts.b2560fad.js","_app/immutable/chunks/_page.919831ca.js"];
-export const stylesheets = ["_app/immutable/assets/_page.38534f30.css","_app/immutable/assets/TourCard.e47abf14.css","_app/immutable/assets/Calendar.b67e6c6d.css"];
+export const universal_id = "src/routes/store/+page.ts";
+export const imports = ["_app/immutable/nodes/7.35690e2b.js","_app/immutable/chunks/index.3fdd7f9f.js","_app/immutable/chunks/store-items.100e3dbd.js"];
+export const stylesheets = ["_app/immutable/assets/7.9a13f71f.css"];
 export const fonts = [];

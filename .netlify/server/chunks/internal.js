@@ -107,7 +107,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/OBA_Instagram_Profile.png" />\n		<link rel="stylesheet" href="' + assets2 + '/css/bootstrap/bootstrap.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/style.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/all.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/animations.css">\n		<link rel="stylesheet" href="https://use.typekit.net/bve4csc.css">\n		<meta name="viewport" content="width=device-width" />\n		' + head + `
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8">\n		<title>Oregon Bicycle Adventures</title>\n		<meta name="viewport" content="width=device-width, initial-scale=1">\n		<meta name="description" content="Oregon Bicycle Adventures offers guided bike tours that unveil the breathtaking beauty of Oregon, while fostering personal growth and inspiration through unique cycling experiences.">\n		<meta name="keywords" content="Oregon Bicycle Adventures, guided bike tours, bicycle tours, Oregon bike tours, Oregon, cycling, cycling experiences, adventure, travel, scenic rides, Bend activites, Bend tours">\n		<meta name="author" content="Your Name or Company Name">\n		<link rel="canonical" href="https://www.oregonbicycleadventures.com">\n		\n		<!-- Open Graph / Facebook -->\n		<meta property="og:type" content="website">\n		<meta property="og:url" content="https://www.oregonbicycleadventures.com">\n		<meta property="og:title" content="Oregon Bicycle Adventures">\n		<meta property="og:description" content="Oregon Bicycle Adventures offers guided bike tours that unveil the breathtaking beauty of Oregon, while fostering personal growth and inspiration through unique cycling experiences.">\n		<meta property="og:image" content="' + assets2 + '/OBA_Instagram_Profile.png">\n\n		<!-- Twitter -->\n		<meta property="twitter:card" content="summary_large_image">\n		<meta property="twitter:url" content="https://www.oregonbicycleadventures.com">\n		<meta property="twitter:title" content="Oregon Bicycle Adventures">\n		<meta property="twitter:description" content="Oregon Bicycle Adventures offers guided bike tours that unveil the breathtaking beauty of Oregon, while fostering personal growth and inspiration through unique cycling experiences.">\n		<meta property="twitter:image" content="' + assets2 + '/OBA_Instagram_Profile.png">\n\n		<!-- Favicons -->\n		<!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">\n		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">\n		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">\n		<link rel="manifest" href="/site.webmanifest">\n		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">\n		<meta name="msapplication-TileColor" content="#da532c">\n		<meta name="theme-color" content="#ffffff"> -->\n\n		<link rel="icon" href="' + assets2 + '/OBA_Instagram_Profile.png" />\n		<link rel="stylesheet" href="' + assets2 + '/css/bootstrap/bootstrap.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/style.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/all.css">\n		<link rel="stylesheet" href="' + assets2 + '/css/animations.css">\n		<link rel="stylesheet" href="https://use.typekit.net/bve4csc.css">\n		<meta name="viewport" content="width=device-width" />\n		' + head + `
 	</head>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVWKMZV73D"><\/script>
@@ -124,6 +124,11 @@ const options = {
 
 		<style>
 			body {
+				--bg: white;
+				--fg: #222;
+				--divider: #ccc;
+				background: var(--bg);
+				color: var(--fg);
 				font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 					Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 				display: flex;
@@ -148,7 +153,7 @@ const options = {
 			}
 
 			.message {
-				border-left: 1px solid #ccc;
+				border-left: 1px solid var(--divider);
 				padding: 0 0 0 1rem;
 				margin: 0 0 0 1rem;
 				min-height: 2.5rem;
@@ -161,16 +166,24 @@ const options = {
 				font-size: 1em;
 				margin: 0;
 			}
+
+			@media (prefers-color-scheme: dark) {
+				body {
+					--bg: #222;
+					--fg: #ddd;
+					--divider: #666;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "kxctvi"
+  version_hash: "v7a4qa"
 };
 function get_hooks() {
-  return {};
+  return import("./hooks.server.js");
 }
 export {
   assets as a,

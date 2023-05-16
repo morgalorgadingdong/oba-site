@@ -120,15 +120,16 @@ export const tours = [
             }
         ] ,
         whatsProvided: ['Bike', 'Helmet', 'Water', 'All lunches and dinners', 'Snacks', 'Support vehicle', 'Storage for personal items'],
-        whatToBring: "Comfortable, weather appropriate athletic clothes, phone/camera, and a sense of adventure!",
-        pics: 2,
+        whatToBring: ['Comfortable, weather appropriate athletic clothes', 'Phone/camera', 'A sense of adventure!'],
+        pics: 0,
         meals: true,
         lodging: true,
         bannerAlt: '',
         calendarURL: '',
-        ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42716795&sampleGraph=true&privacyCode=FQBtdqGEu1IyLSSp`,
+        ridewithgps: ``,
         conclusion: '',
-        contact: false
+        contact: false,
+        notes: 'https://ridewithgps.com/embeds?type=route&id=42716795&sampleGraph=true&privacyCode=FQBtdqGEu1IyLSSp'
     },
     {
         id: 4,
