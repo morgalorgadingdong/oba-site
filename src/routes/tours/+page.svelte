@@ -24,7 +24,7 @@
 
 </script>
 
-<div class="vh-60 hero col-12 d-flex flex-column justify-content-end">
+<div class="hero hero-sub col-12 d-flex flex-column justify-content-end">
     <div class="img-container">
         <div class="img-overlay"></div>
         <img class="hero-img img" src="./img/tours-2.jpg"/>

@@ -6,7 +6,8 @@
     import { tours } from "./tours";
 </script>
 
-<div class="hero col-12 d-flex flex-column justify-content-end">
+<div class="parralax-container">
+    <div class="hero col-12 d-flex flex-column justify-content-end">
     <div class="img-container">
         <div class="hero-img"></div>
         <!-- <img class="hero-img img" src="./img/hero-7.jpg"/> -->
@@ -15,6 +16,7 @@
         <h1 class="hero-tagline col-12 mb-4">Discover the best of Oregon on two wheels.</h1>
         <a href="/tours"><button class="btn btn-primary">Tours</button></a>
     </div>
+</div>
 </div>
 <!-- <div class="hero-spacer"></div> -->
 

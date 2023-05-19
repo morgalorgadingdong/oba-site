@@ -43,8 +43,9 @@
             </div> -->
             <img src="/img/OBA_PrimaryLogo_WhiteType.png" alt="oba-logo" class="ml-3 mr-0 p-2 p-sm-3 p-lg-2" />
         </a>
-        <nav class="col-5 d-none d-lg-flex justify-content-between align-items-center">
+        <nav class="d-none d-lg-flex col-lg-6 col-xxl-5 justify-content-between align-items-center">
             <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours"><li>Tours</li></a>
+            <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/store') ? 'page' : undefined} href="/store"><li>Store</li></a>
             <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined} href="/blog"><li>Blog</li></a>
             <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined} href="/about"><li>About</li></a>
             <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined} href="/contact"><li>Contact</li></a>
@@ -66,6 +67,7 @@
             <ul id="menu" class="">
                 <a class="col-12 d-flex justify-content-center" href="https://fareharbor.com/embeds/book/oregonbicycleadventures/?full-items=yes"><button class="btn btn-secondary">Book</button></a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page-mobile' : undefined} href="/tours"><li>Tours</li></a>
+                <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/store') ? 'page-mobile' : undefined} href="/store"><li>Store</li></a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page-mobile' : undefined} href="/blog"><li>Blog</li></a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page-mobile' : undefined} href="/about"><li>About</li></a>
                 <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page-mobile' : undefined} href="/contact"><li>Contact</li></a>
