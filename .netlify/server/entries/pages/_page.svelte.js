@@ -9,10 +9,10 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="${"hero col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"hero-img"}"></div>
+  return `<div class="${"parralax-container"}"><div class="${"hero col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"hero-img"}"></div>
         </div>
     <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-5 svelte-1ucf1of"}"><h1 class="${"hero-tagline col-12 mb-4 svelte-1ucf1of"}">Discover the best of Oregon on two wheels.</h1>
-        <a href="${"/tours"}" class="${"svelte-1ucf1of"}"><button class="${"btn btn-primary"}">Tours</button></a></div></div>
+        <a href="${"/tours"}" class="${"svelte-1ucf1of"}"><button class="${"btn btn-primary"}">Tours</button></a></div></div></div>
 
 
 

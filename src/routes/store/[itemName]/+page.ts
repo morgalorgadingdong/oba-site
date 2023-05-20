@@ -5,4 +5,4 @@ export const load = ({ params }) => {
     }
 }
 
-export const prerender = true;
+export const prerender = false;

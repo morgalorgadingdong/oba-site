@@ -22,11 +22,16 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 <header class="${"col-12 px-0 mx-0 svelte-1g6oa6l"}"><div class="${"col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center svelte-1g6oa6l"}"><a class="${"pr-5 d-flex justify-content-start px-0 align-items-center logo-container svelte-1g6oa6l"}" href="${"/"}">
             <img src="${"/img/OBA_PrimaryLogo_WhiteType.png"}" alt="${"oba-logo"}" class="${"ml-3 mr-0 p-2 p-sm-3 p-lg-2 svelte-1g6oa6l"}"></a>
-        <nav class="${"col-5 d-none d-lg-flex justify-content-between align-items-center svelte-1g6oa6l"}"><a class="${"nav-item d-flex justify-content-center align-items-center svelte-1g6oa6l"}"${add_attribute(
+        <nav class="${"d-none d-lg-flex col-lg-6 col-xxl-5 justify-content-between align-items-center svelte-1g6oa6l"}"><a class="${"nav-item d-flex justify-content-center align-items-center svelte-1g6oa6l"}"${add_attribute(
     "aria-current",
     $page.url.pathname.startsWith("/tours") ? "page" : void 0,
     0
   )} href="${"/tours"}"><li class="${"svelte-1g6oa6l"}">Tours</li></a>
+            <a class="${"nav-item d-flex justify-content-center align-items-center svelte-1g6oa6l"}"${add_attribute(
+    "aria-current",
+    $page.url.pathname.startsWith("/store") ? "page" : void 0,
+    0
+  )} href="${"/store"}"><li class="${"svelte-1g6oa6l"}">Store</li></a>
             <a class="${"nav-item d-flex justify-content-center align-items-center svelte-1g6oa6l"}"${add_attribute(
     "aria-current",
     $page.url.pathname.startsWith("/blog") ? "page" : void 0,
@@ -56,6 +61,11 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $page.url.pathname.startsWith("/tours") ? "page-mobile" : void 0,
     0
   )} href="${"/tours"}"><li class="${"svelte-1g6oa6l"}">Tours</li></a>
+                <a class="${"d-flex justify-content-center align-items-center svelte-1g6oa6l"}"${add_attribute(
+    "aria-current",
+    $page.url.pathname.startsWith("/store") ? "page-mobile" : void 0,
+    0
+  )} href="${"/store"}"><li class="${"svelte-1g6oa6l"}">Store</li></a>
                 <a class="${"d-flex justify-content-center align-items-center svelte-1g6oa6l"}"${add_attribute(
     "aria-current",
     $page.url.pathname.startsWith("/blog") ? "page-mobile" : void 0,

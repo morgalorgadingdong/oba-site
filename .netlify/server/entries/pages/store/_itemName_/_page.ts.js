@@ -4,7 +4,7 @@ const load = ({ params }) => {
     itemName: params.itemName
   };
 };
-const prerender = true;
+const prerender = false;
 export {
   load,
   prerender
