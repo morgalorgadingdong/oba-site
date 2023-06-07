@@ -61,9 +61,9 @@
 
             </div>
             {#each tours as tour}
-                <!-- {#if tour.type == 'Single Day'} -->
+                {#if tour.published}
                     <TourCard {tour}/>
-                <!-- {/if} -->
+                {/if}
             {/each}
         </div>
     <!-- {:else if view == 'multiDay'}

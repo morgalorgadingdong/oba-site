@@ -99,6 +99,8 @@
                     <!-- <li>Elevation Gain: {tour.elevationGain}</li> -->
                     <li>Difficulty(1-5): {tour.difficultyRating}</li>
                     <li>Ages: {tour.ages}</li>
+                    <li>Location: {tour.meetingLocation}</li>
+                    <li>Max Group Size: {tour.maxGroupSize}</li>
                     <!-- {#if tour.ebikes}
                         <li>E-bikes available</li>
                     {:else}
@@ -188,7 +190,7 @@
                   <SplideTrack>
                     {#each Array(tour.pics) as pic}
                         <SplideSlide class="mb-5 mt-0 mr-3">
-                            <div class="tour-pic">
+                            <div class="tour-pic d-flex align-items-center">
                                 <img src={renderPicture(tour)} alt="tour" class="" />
                             </div>
                         </SplideSlide>

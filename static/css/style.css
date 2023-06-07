@@ -385,7 +385,7 @@ border: none;
 .splide__slide > div {
 transition: all 0.5s ease;
 /* transition: box-shadow 0.5s ease; */
-min-height: 300px;
+/* min-height: 300px; */
 max-height: fit-content;
 /* background-color: #a5a5a5; */
 border: none;
