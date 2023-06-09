@@ -56,7 +56,7 @@
             
         </div>
     {:else if view == 'singleDay'}
-        <div id="singleDayView" class="col-12 col-xxl-8 px-0 d-flex justify-content-center justify-content-xl-between flex-wrap">
+        <div id="singleDayView" class="col-12 col-xxl-8 px-0 d-flex justify-content-center justify-content-xl-start flex-wrap">
             <div class="filter-container">
 
             </div>

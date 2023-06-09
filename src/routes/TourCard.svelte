@@ -25,10 +25,19 @@
                     <!-- <i class="fa-solid fa-clock"></i> -->
                     <span>{tour.price}</span>
                 </div>
+                {:else}
+                <div class="trip-info blank p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
+                    <!-- <i class="fa-solid fa-clock"></i> -->
+                    <span>filler</span>
+                </div>
+                {/if}
+                {#if tour.duration}
                 <div class="trip-info mx-1 p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-tachometer"></i> -->
                     <span>{tour.duration}</span>
                 </div>
+                {/if}
+                {#if tour.difficultyRating}
                 <div class="trip-info p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-bicycle"></i> -->
                     <span>Difficulty (1-5): {tour.difficultyRating}</span>
@@ -38,25 +47,10 @@
                         <span>E-bikes not available</span>
                     {/if} -->
                 </div>
-                {:else}
-                <div class="trip-info blank p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                    <!-- <i class="fa-solid fa-clock"></i> -->
-                    <span>filler</span>
-                </div>
-                <div class="trip-info blank mx-1 p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                    <!-- <i class="fa-solid fa-tachometer"></i> -->
-                    <span>filler</span>
-                </div>
-                <div class="trip-info blank p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
-                    <!-- <i class="fa-solid fa-bicycle"></i> -->
-                    <span>filler</span>
-                    <!-- {#if tour.available}
-                        <span>E-bikes available</span>
-                    {:else}
-                        <span>E-bikes not available</span>
-                    {/if} -->
-                </div>
                 {/if}
+                
+                
+                
             </div>
             
         </div>

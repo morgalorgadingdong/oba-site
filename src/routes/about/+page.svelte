@@ -10,7 +10,7 @@
 
 
 
-<section id="about-intro" class="col-12 d-flex justify-content-center flex-wrap py-5">
+<section id="about-intro" class="col-12 d-flex justify-content-center flex-wrap py-5 mt-5">
     <!-- <h2>Our story</h2> -->
     <div class="col-12 col-md-10 col-lg-8">
         <p>Oregon Bicycle Adventures is a locally owned and operated bicycle tour company founded by friends Carl and Morgan. Our passion for cycling and exploring Oregon's diverse landscapes is at the heart of every tour we offer.</p>

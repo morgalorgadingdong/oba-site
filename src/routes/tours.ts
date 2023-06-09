@@ -52,7 +52,7 @@ export const tours = [
                 review: 'This was a great tour! The guide was very knowledgeable and friendly. I would definitely recommend this tour to anyone looking for a fun and unique experience.'
             },
         ],
-        pics: 4,
+        pics: 8,
         meals: false,
         lodging: false,
         bannerAlt: '',
@@ -141,6 +141,42 @@ export const tours = [
         notes: 'https://ridewithgps.com/embeds?type=route&id=42716795&sampleGraph=true&privacyCode=FQBtdqGEu1IyLSSp'
     },
     {
+        id: 5,
+        title: "Madras Mountain Views Tour",
+        nickname: 'Madras',
+        featured: false,
+        published: false,
+        type: 'Single Day',
+        duration: 'Half Day',
+        difficulty: 'Moderate',
+        difficultyRating: 3,
+        distance: '29 miles',
+        miles: '29',
+        elevationGain: '1,000 ft',
+        ages: '12+',
+        price: '$ 75',
+        ebikes: false,
+        featuredIndex: 4,
+        quickDetails: true,
+        meetingLocation: 'Madras, OR',
+        maxGroupSize: 4,
+        description: [
+            {
+                content: `Join us at Oregon Bicycle Adventures for an unforgettable 29-mile bike tour through the heart of Central Oregon's scenic landscapes. From the lively town of Madras, pedal your way through serene ranch lands, brushing the stunning rim of Lake Billy Chinook, while the majestic snowy peaks of the Cascade Range paint a beautiful backdrop. Encounter playful goats, munching horses, and bask in the delightful scent of fresh crops. At the midpoint, we'll pause in the quaint town of Culver for a delicious picnic amidst this idyllic rural setting. Refreshed, continue to The Cove Palisades State Park, where the high-desert and deep canyon vistas are simply breathtaking. An optional detour at mile 20 leads to Round Butte Overlook Park, a great spot for birdwatching. The tour wraps up with a tranquil downhill glide back into Madras, completing a day full of charming Oregonian vistas and memories.`
+            }
+        ],
+        whatsProvided: ['Bike', 'Helmet', 'Water', 'Picnic', 'Shuttle from Bend', 'Support vehicle', 'Storage for personal items'],
+        whatToBring: ['Comfortable, weather appropriate athletic clothes', 'Phone/camera', 'A sense of adventure!'],
+        pics: 0,
+        meals: false,
+        lodging: false,
+        bannerAlt: '',
+        ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42761311&title=Twin%20Bridges%20Scenic%20Tour&sampleGraph=true&privacyCode=TVa5OuPX2YDtzuBy`,
+        calendarURL: 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451510/?fallback=simple&full-items=yes&flow=928317',
+        conclusion: '',
+        contact: false
+    },
+    {
         id: 4,
         title: "Custom Bicycle Tour",
         nickname: 'Custom Tour',
@@ -193,48 +229,13 @@ export const tours = [
         conclusion: 'To start planning your Custom Private Bike Tour with Oregon Bicycle Adventures, please contact us through our contact form or give us a call at (503) 949-8766. Our team is excited to help you create an unforgettable cycling experience in the breathtaking Pacific Northwest!',
         contact: true,
     },
-    {
-        id: 5,
-        title: "Madras Mountain Views Tour",
-        nickname: 'Madras',
-        featured: false,
-        published: false,
-        type: 'Single Day',
-        duration: 'Half Day',
-        difficulty: 'Moderate',
-        difficultyRating: 3,
-        distance: '29 miles',
-        miles: '29',
-        elevationGain: '1,000 ft',
-        ages: '12+',
-        price: '$ 75',
-        ebikes: false,
-        featuredIndex: 4,
-        quickDetails: true,
-        meetingLocation: 'Madras, OR',
-        maxGroupSize: 4,
-        description: [
-            {
-                content: `Join us at Oregon Bicycle Adventures for an unforgettable 29-mile bike tour through the heart of Central Oregon's scenic landscapes. From the lively town of Madras, pedal your way through serene ranch lands, brushing the stunning rim of Lake Billy Chinook, while the majestic snowy peaks of the Cascade Range paint a beautiful backdrop. Encounter playful goats, munching horses, and bask in the delightful scent of fresh crops. At the midpoint, we'll pause in the quaint town of Culver for a delicious picnic amidst this idyllic rural setting. Refreshed, continue to The Cove Palisades State Park, where the high-desert and deep canyon vistas are simply breathtaking. An optional detour at mile 20 leads to Round Butte Overlook Park, a great spot for birdwatching. The tour wraps up with a tranquil downhill glide back into Madras, completing a day full of charming Oregonian vistas and memories.`
-            }
-        ],
-        whatsProvided: ['Bike', 'Helmet', 'Water', 'Picnic', 'Shuttle from Bend', 'Support vehicle', 'Storage for personal items'],
-        whatToBring: ['Comfortable, weather appropriate athletic clothes', 'Phone/camera', 'A sense of adventure!'],
-        pics: 0,
-        meals: false,
-        lodging: false,
-        bannerAlt: '',
-        ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42761311&title=Twin%20Bridges%20Scenic%20Tour&sampleGraph=true&privacyCode=TVa5OuPX2YDtzuBy`,
-        calendarURL: 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451510/?fallback=simple&full-items=yes&flow=928317',
-        conclusion: '',
-        contact: false
-    },
+    
     {
         id: 6,
-        title: "Custom Bike Shuttle",
+        title: "Custom Shuttle Ride",
         nickname: 'Shuttle',
         featured: false,
-        published: false,
+        published: true,
         type: 'Single Day',
         duration: '',
         difficulty: '',
@@ -243,7 +244,7 @@ export const tours = [
         miles: '',
         elevationGain: '',
         ages: '12+',
-        price: 'Starting at $ 15 per person',
+        price: 'Starting at $ 20 per person',
         ebikes: false,
         featuredIndex: 4,
         quickDetails: false,
@@ -251,11 +252,24 @@ export const tours = [
         maxGroupSize: 4,
         description: [
             {
-                content: `Join us at Oregon Bicycle Adventures for an unforgettable 29-mile bike tour through the heart of Central Oregon's scenic landscapes. From the lively town of Madras, pedal your way through serene ranch lands, brushing the stunning rim of Lake Billy Chinook, while the majestic snowy peaks of the Cascade Range paint a beautiful backdrop. Encounter playful goats, munching horses, and bask in the delightful scent of fresh crops. At the midpoint, we'll pause in the quaint town of Culver for a delicious picnic amidst this idyllic rural setting. Refreshed, continue to The Cove Palisades State Park, where the high-desert and deep canyon vistas are simply breathtaking. An optional detour at mile 20 leads to Round Butte Overlook Park, a great spot for birdwatching. The tour wraps up with a tranquil downhill glide back into Madras, completing a day full of charming Oregonian vistas and memories.`
+                content: `With years of experience exploring the diverse trails around Bend, we at Oregon Bicycle Adventures are excited to introduce our new shuttle service for mountain bikers. Whether you're a seasoned rider or a newcomer, we curate tailored routes to match your skill level and interests, ensuring you make the most of your time in Bend. Leave the planning and logistics to us as we provide guidance, transportation, and gear for you to Bend's legendary trails.`
             }
         ],
-        whatsProvided: ['Shuttle to or from your desired location', 'Advice on which trails or routes to ride'],
-        whatToBring: ['Comfortable, weather appropriate athletic clothes', 'Phone/camera', 'A sense of adventure!'],
+        whatsProvided: ['Round-trip transportation from your Bend location to the trailhead and back.',
+            'Curated route planning based on your skill and comfort level, leveraging our years of trail-riding experience in Bend.',
+            'Careful handling and transportation of your bike.',
+            'Optional bike and helmet rentals available at an additional cost.',
+            'Complimentary water and light refreshments for your journey.',
+            'Tailored route planning based on your skill and comfort level, leveraging our years of trail-riding experience in Bend.',
+            'Trail maps and detailed guidance on the selected routes.',
+            'Basic first-aid kit for safety on the trails.',
+            'Emergency support, should any issues arise during your ride.'],
+        whatToBring: [
+            'Your mountain bike, helmet, and a basic repair kit (if not renting)',
+            'Water and snacks',
+            'Comfortable, weather appropriate athletic clothes', 
+            'Phone/camera',
+            'A sense of adventure!'],
         pics: 0,
         meals: false,
         lodging: false,
