@@ -23,7 +23,7 @@ const ItemModal = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 const StoreItemCard_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".card.svelte-1q74fzu.svelte-1q74fzu{margin:1rem}.card-body.svelte-1q74fzu.svelte-1q74fzu{padding:0}.card-img-top.svelte-1q74fzu.svelte-1q74fzu{width:100%;height:15rem;padding:0;background-size:cover;background-position:center}.card-img-top.svelte-1q74fzu>img.svelte-1q74fzu{width:100%;height:100%;object-fit:cover;margin:0}",
+  code: ".card.svelte-22fhd3.svelte-22fhd3{margin:1rem}.card-body.svelte-22fhd3.svelte-22fhd3{padding:0}.card-img-top.svelte-22fhd3.svelte-22fhd3{width:100%;height:15rem;padding:0;background-size:cover;background-position:center}.card-img-top.svelte-22fhd3>img.svelte-22fhd3{width:100%;height:100%;object-fit:cover;margin:0}.card-body.svelte-22fhd3.svelte-22fhd3:hover{cursor:pointer}",
   map: null
 };
 const StoreItemCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -55,7 +55,7 @@ const StoreItemCard = create_ssr_component(($$result, $$props, $$bindings, slots
     )}
 
 
-<div data-sveltekit-preload-data="${"hover"}"><div class="${"col-12 card mx-0 px-0 svelte-1q74fzu"}"><div class="${"card-body svelte-1q74fzu"}"><div class="${"card-img-top svelte-1q74fzu"}"><img${add_attribute("src", item.itemData.imgURL[0], 0)} class="${"svelte-1q74fzu"}">
+<div data-sveltekit-preload-data="${"hover"}"><div class="${"col-12 card mx-0 px-0 svelte-22fhd3"}"><div class="${"card-body svelte-22fhd3"}"><div class="${"card-img-top svelte-22fhd3"}"><img${add_attribute("src", item.itemData.imgURL[0], 0)} class="${"svelte-22fhd3"}">
                 
                 
                 </div>
@@ -70,7 +70,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="${"hero hero-sub col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"img-overlay"}"></div>
         <img class="${"hero-img img"}" src="${"./img/hero-2.jpg"}"></div>
     <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline col-12"}">Store</h1></div></div>
-<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><div class="${"col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(items, (item) => {
+<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><h2 class="${"col-12 text-center"}">Coming Soon!</h2>
+    <div class="${"col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(items, (item) => {
     return `${validate_component(StoreItemCard, "StoreItemCard").$$render($$result, { item }, {}, {})}`;
   })}</div>
 </section>`;

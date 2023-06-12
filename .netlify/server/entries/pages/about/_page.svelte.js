@@ -12,7 +12,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 
-<section id="${"about-intro"}" class="${"col-12 d-flex justify-content-center flex-wrap py-5"}">
+<section id="${"about-intro"}" class="${"col-12 d-flex justify-content-center flex-wrap py-5 mt-5"}">
     <div class="${"col-12 col-md-10 col-lg-8"}"><p class="${"svelte-1wmaobe"}">Oregon Bicycle Adventures is a locally owned and operated bicycle tour company founded by friends Carl and Morgan. Our passion for cycling and exploring Oregon&#39;s diverse landscapes is at the heart of every tour we offer.</p></div></section>
 
 <section id="${"mission-section"}" class="${"col-12 d-flex justify-content-center flex-wrap py-5 my-5 svelte-1wmaobe"}">

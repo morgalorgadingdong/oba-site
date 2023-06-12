@@ -3,7 +3,7 @@ import { t as tours } from "../../../../chunks/tours.js";
 /* empty css                                                         */import { S as Splide_1, a as SplideTrack, b as SplideSlide } from "../../../../chunks/SplideSlide.js";
 import "../../../../chunks/splide.min.js";
 import { C as ContactCard } from "../../../../chunks/ContactCard.js";
-const css$1 = {
+const css$2 = {
   code: "iframe.svelte-13nqlle{width:100%;height:400px;border:none;overflow:hidden;transition:all 0.5s ease-in-out}",
   map: null
 };
@@ -12,15 +12,36 @@ const Calendar = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   let frame;
   if ($$props.url === void 0 && $$bindings.url && url !== void 0)
     $$bindings.url(url);
-  $$result.css.add(css$1);
+  $$result.css.add(css$2);
   return `
 
 
 <iframe id="${"idIframe"}" src="${"about:blank"}" class="${"svelte-13nqlle"}"${add_attribute("this", frame, 0)}></iframe>`;
 });
+const TourImg_svelte_svelte_type_style_lang = "";
+const css$1 = {
+  code: ".tour-pic.svelte-13g29sm img.svelte-13g29sm{width:100%;aspect-ratio:3/2;max-height:80vh;object-fit:cover;object-position:center}",
+  map: null
+};
+const TourImg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { tour } = $$props;
+  let { picIndex } = $$props;
+  let imgSrc;
+  function renderPicture(listing) {
+    imgSrc = `../../img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-${picIndex}.jpg`;
+    return imgSrc;
+  }
+  if ($$props.tour === void 0 && $$bindings.tour && tour !== void 0)
+    $$bindings.tour(tour);
+  if ($$props.picIndex === void 0 && $$bindings.picIndex && picIndex !== void 0)
+    $$bindings.picIndex(picIndex);
+  $$result.css.add(css$1);
+  return `<div class="${"tour-pic d-flex align-items-center svelte-13g29sm"}"><img${add_attribute("src", renderPicture(), 0)} class="${" svelte-13g29sm"}"${add_attribute("alt", tour.picAlts[picIndex], 0)}>
+</div>`;
+});
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".btn.svelte-xo50dp.svelte-xo50dp{background-color:var(--color-primary);color:var(--color-light);width:fit-content}.back-to.svelte-xo50dp.svelte-xo50dp{text-decoration:none}.tour-pic.svelte-xo50dp img.svelte-xo50dp{width:100%;aspect-ratio:3/2;max-height:80vh;object-fit:cover;object-position:center}#quick-details-container.svelte-xo50dp h3.svelte-xo50dp{color:white}#quick-details-container.svelte-xo50dp li.svelte-xo50dp{padding:0.7rem;background-color:var(--color-background-light);margin:0.5rem}#quick-details-container.svelte-xo50dp ul.svelte-xo50dp{list-style:none}#quick-details-container.svelte-xo50dp.svelte-xo50dp{height:fit-content;background-color:var(--color-primary)}#quick-details-container.svelte-xo50dp .svelte-xo50dp{color:white}#calendar-aside.svelte-xo50dp.svelte-xo50dp{height:100%}#calendar-aside.svelte-xo50dp>div.svelte-xo50dp{border-radius:6px;box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 0.2);background-color:white;overflow:hidden}#aside-topsection.svelte-xo50dp>img.svelte-xo50dp{aspect-ratio:3/2}#aside-topsection.svelte-xo50dp>img.svelte-xo50dp{object-fit:cover;overflow:hidden}aside.svelte-xo50dp.svelte-xo50dp{height:500px}aside.svelte-xo50dp.svelte-xo50dp{position:relative;top:-20vh;margin:20px;padding-right:4vw !important;padding-left:0}a.svelte-xo50dp.svelte-xo50dp{color:black}.tour-divider.svelte-xo50dp.svelte-xo50dp{border-top:black solid 2px}@media(max-width: 992px){aside.svelte-xo50dp.svelte-xo50dp{top:0;padding-right:0}#calendar-aside.svelte-xo50dp>div.svelte-xo50dp{box-shadow:none}}",
+  code: ".btn.svelte-xo50dp.svelte-xo50dp{background-color:var(--color-primary);color:var(--color-light);width:fit-content}.back-to.svelte-xo50dp.svelte-xo50dp{text-decoration:none}#quick-details-container.svelte-xo50dp h3.svelte-xo50dp{color:white}#quick-details-container.svelte-xo50dp li.svelte-xo50dp{padding:0.7rem;background-color:var(--color-background-light);margin:0.5rem}#quick-details-container.svelte-xo50dp ul.svelte-xo50dp{list-style:none}#quick-details-container.svelte-xo50dp.svelte-xo50dp{height:fit-content;background-color:var(--color-primary)}#quick-details-container.svelte-xo50dp .svelte-xo50dp{color:white}#calendar-aside.svelte-xo50dp.svelte-xo50dp{height:100%}#calendar-aside.svelte-xo50dp>div.svelte-xo50dp{border-radius:6px;box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 0.2);background-color:white;overflow:hidden}#aside-topsection.svelte-xo50dp>img.svelte-xo50dp{aspect-ratio:3/2}#aside-topsection.svelte-xo50dp>img.svelte-xo50dp{object-fit:cover;overflow:hidden}aside.svelte-xo50dp.svelte-xo50dp{height:500px}aside.svelte-xo50dp.svelte-xo50dp{position:relative;top:-20vh;margin:20px;padding-right:4vw !important;padding-left:0}a.svelte-xo50dp.svelte-xo50dp{color:black}.tour-divider.svelte-xo50dp.svelte-xo50dp{border-top:black solid 2px}@media(max-width: 992px){aside.svelte-xo50dp.svelte-xo50dp{top:0;padding-right:0}#calendar-aside.svelte-xo50dp>div.svelte-xo50dp{box-shadow:none}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -34,13 +55,6 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   });
   let url = tour.calendarURL;
   let imgSrcCover = `../../img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-cover.jpg`;
-  let i = 1;
-  let imgSrc;
-  function renderPicture(listing) {
-    imgSrc = `../../img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-${i}.jpg`;
-    i++;
-    return imgSrc;
-  }
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
   $$result.css.add(css);
@@ -58,6 +72,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     
                     <li class="${"svelte-xo50dp"}">Difficulty(1-5): ${escape(tour.difficultyRating)}</li>
                     <li class="${"svelte-xo50dp"}">Ages: ${escape(tour.ages)}</li>
+                    <li class="${"svelte-xo50dp"}">Location: ${escape(tour.meetingLocation)}</li>
+                    <li class="${"svelte-xo50dp"}">Max Group Size: ${escape(tour.maxGroupSize)}</li>
                     </ul></div>
             <div class="${"tour-divider col-12 mb-5 mt-3 svelte-xo50dp"}"></div>` : ``}
             
@@ -97,10 +113,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       default: () => {
         return `${validate_component(SplideTrack, "SplideTrack").$$render($$result, {}, {}, {
           default: () => {
-            return `${each(Array(tour.pics), (pic) => {
+            return `${each(Array(tour.pics), (pic, i) => {
               return `${validate_component(SplideSlide, "SplideSlide").$$render($$result, { class: "mb-5 mt-0 mr-3" }, {}, {
                 default: () => {
-                  return `<div class="${"tour-pic svelte-xo50dp"}"><img${add_attribute("src", renderPicture(), 0)} alt="${"tour"}" class="${" svelte-xo50dp"}"></div>
+                  return `${validate_component(TourImg, "TourImg").$$render($$result, { tour, picIndex: i }, {}, {})}
+                            
+                            
                         `;
                 }
               })}`;

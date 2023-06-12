@@ -6,6 +6,7 @@
     import {Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
     import '@splidejs/svelte-splide/css';
     import ContactCard from "../../ContactCard.svelte";
+    import TourImg from './TourImg.svelte';
     //  export let blog;
     //  export const slug = blog;
     
@@ -63,15 +64,7 @@
         return imgAlt
     }
     
-    // let testBlog = blogs[1]
-    // let prevBlog
-    // let nextBlog
-    // if (blog.Number != 1) {
-    //     prevBlog = blogs[blog.Number - 1]
-    // }
-    // if (blog.Number <= blogs.length+1) {
-    //     nextBlog = blogs[blog.Number + 1]
-    // }
+    
 
 </script>
 
@@ -193,11 +186,11 @@
                     snap: true
                   } }>
                   <SplideTrack>
-                    {#each Array(tour.pics) as pic}
+                    {#each Array(tour.pics) as pic, i}
                         <SplideSlide class="mb-5 mt-0 mr-3">
-                            <div class="tour-pic d-flex align-items-center">
-                                <img src={renderPicture(tour)} alt="tour" class="" alt="{returnImgAlt(tour)}"/>
-                            </div>
+                            <TourImg {tour} picIndex={i}/>
+                            
+                            
                         </SplideSlide>
                     {/each}
                         

@@ -16,11 +16,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <div class="${"col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3"}"><button class="${"view-toggle btn " + escape("inactive", true) + " svelte-1cgzfco"}">By Date</button></div>
         
         </div>
-    ${`${`<div id="${"singleDayView"}" class="${"col-12 col-xxl-8 px-0 d-flex justify-content-center justify-content-xl-between flex-wrap"}"><div class="${"filter-container"}"></div>
+    ${`${`<div id="${"singleDayView"}" class="${"col-12 col-xxl-8 px-0 d-flex justify-content-center justify-content-xl-start flex-wrap"}"><div class="${"filter-container"}"></div>
             ${each(tours, (tour) => {
-    return `
-                    ${validate_component(TourCard, "TourCard").$$render($$result, { tour }, {}, {})}
-                `;
+    return `${tour.published ? `${validate_component(TourCard, "TourCard").$$render($$result, { tour }, {}, {})}` : ``}`;
   })}</div>
     `}`}
     
