@@ -7,10 +7,10 @@
             <!-- <h4 class="font-hero text-center py-3">Oregon Bicycle Adventures LLC</h4> -->
         </div>
         <div class="col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap py-3">
-            <p>Oregon Bicycle Adventures, LLC</p>
-            <p>info@oregonbicycleadventures.com</p>
-            <p>(503) 949-8766</p>
-            <p>Bend, Oregon</p>
+            <p class="col-12">Oregon Bicycle Adventures, LLC</p>
+            <p class="col-12">info@oregonbicycleadventures.com</p>
+            <p class="col-12">(503) 949-8766</p>
+            <p class="col-12">Bend, Oregon</p>
         </div>
         <div class="col-12 col-md-3 px-0 pt-3 order-md-3 d-flex align-content-center flex-wrap justify-content-around">
             <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/oregonbicycleadventures/';" style="cursor: pointer;"></i>
