@@ -2,7 +2,7 @@
     <div class="col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5">
         <div class="col-12 col-md-3 px-0 order-md-2 d-flex justify-content-center flex-wrap">
             <a href="/" class="img-container col-10">
-                <img class="img" src="/img/OBA_PrimaryLogo_WhiteType.png" />
+                <img class="img" src="/img/OBA_PrimaryLogo_WhiteType.png" alt="Oregon Bicycle Adventures Logo"/>
             </a>
             <!-- <h4 class="font-hero text-center py-3">Oregon Bicycle Adventures LLC</h4> -->
         </div>
@@ -10,6 +10,7 @@
             <p>Oregon Bicycle Adventures, LLC</p>
             <p>info@oregonbicycleadventures.com</p>
             <p>(503) 949-8766</p>
+            <p>Bend, Oregon</p>
         </div>
         <div class="col-12 col-md-3 px-0 pt-3 order-md-3 d-flex align-content-center flex-wrap justify-content-around">
             <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/oregonbicycleadventures/';" style="cursor: pointer;"></i>

@@ -15,33 +15,13 @@
 
 </script>
 
-<!-- Header v1 -->
-<!-- <header class="col-12 d-flex justify-content-between">
-    <div class="img-container col-10 col-sm-6 col-md-3 py-1">
-        <a href="/"><img src="/img/logo-2.png" alt="oba-logo"></a>
-    </div>
-    <nav class="col-6 d-flex justify-content-between">
-        <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours">Tours</a>
-        <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined} href="/blog">Blog</a>
-        <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined} href="/about">About</a>
-        <a class="d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined} href="/contact">Contact</a>
-    </nav>
-</header> -->
-
-<!-- Header v2 -->
-
-<!-- hamburger menu below lg screens 992px -->
-
 <svelte:body on:click={closeMenu} />
 
 <header class="col-12 px-0 mx-0">
     <div class="col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center">
         <a class="pr-5 d-flex justify-content-start px-0 align-items-center logo-container" href="/">
-            <!-- <img src="/img/logo-13.png" alt="oba-logo" class="ml-3 mr-0 p-2 pr-sm-0 p-sm-3 p-lg-2" /> 
-            <div class="logo-text-container d-flex align-items-center">
-                <h1 class="logo-text px-2 px-sm-4 py-0 my-2">Oregon Bicycle <br> Adventures</h1>
-            </div> -->
-            <img src="/img/OBA_PrimaryLogo_WhiteType.png" alt="oba-logo" class="ml-3 mr-0 p-2 p-sm-3 p-lg-2" />
+
+            <img src="/img/OBA_PrimaryLogo_WhiteType.png" alt="Oregon Bicycle Adventures Logo" class="ml-3 mr-0 p-2 p-sm-3 p-lg-2" />
         </a>
         <nav class="d-none d-lg-flex col-lg-6 col-xxl-5 justify-content-between align-items-center">
             <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/tours') ? 'page' : undefined} href="/tours"><li>Tours</li></a>
@@ -50,13 +30,8 @@
             <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined} href="/about"><li>About</li></a>
             <a class="nav-item d-flex justify-content-center align-items-center" aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined} href="/contact"><li>Contact</li></a>
         </nav>
-        <!-- <div class="col-10 col-sm-6 col-md-4 py-1 d-flex justify-content-center">
-            <a href="/" class=""><img src="/img/logo-1.png" alt="oba-logo"></a>
-        </div> -->
+
         <div class="col-1 col-xxl-3 d-none d-lg-flex justify-content-end align-items-center align-content-center">
-            <!-- <i class="fa-solid fa-phone color-light my-0 "></i>
-            <p class="color-light my-0 mx-3">(503) 949-8766</p> -->
-            <!-- FareHarbor book button -->
             <a href="https://fareharbor.com/embeds/book/oregonbicycleadventures/?full-items=yes"><button class="btn btn-primary">Book</button></a>
         </div>
         <div id="menuToggle" class="px-3 d-lg-none">
@@ -78,7 +53,7 @@
 
 <style>
     header {
-        /* height: var(--header-height); */
+
         z-index: 1;
         padding-top: 2rem;
         background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
@@ -86,7 +61,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        /* overflow-x: hidden; */
+
     }
 
     .logo-container {
@@ -107,7 +82,6 @@
         font-weight: 400;
         color: var(--color-light);
         font-family: var(--font-logo);
-        /* border-left: solid 3px var(--color-primary-dark); */
         padding: 0.8rem 1.5rem;
         background-color: var(--color-primary);
         margin: 0;
@@ -129,27 +103,13 @@
         width: 200%;
         background-color: var(--color-primary);
         z-index: -1;
-        /* opacity: 0; */
     }
 
-    /* .banner-rect {
-        position: absolute;
-        top: 25%;
-        left: 0;
-        height: 50%;
-        width: 100%;
-        background-color: var(--color-dark);
-        opacity: 0.7;
-    } */
 
 
     nav {
         list-style-type: none;
     }
-
-    /* a[aria-current='page'] {
-        border-bottom: solid 2px var(--color-secondary);
-    } */
 
     nav a, #menu a {
         color: var(--color-light);

@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     /**
 	 * @type {{ }}
 	 */
@@ -13,7 +15,7 @@
     <a class="col-12 trip-preview-container" href={'/tours/' + tour.title}>
         <div class="trip-preview d-flex flex-column justify-content-end py-0 mx-3">
             <div class="trip-preview-img-container">
-                <img src="{imgSrc}" alt="{tour.title}" class="trip-preview-img">
+                <img src="{imgSrc}" alt="{tour.bannerAlt}" class="trip-preview-img">
                 <!-- <div id="tour2" class="trip-preview-img"></div> -->
             </div>
             <h4 id="tour-title-desktop" class="px-4 py-2">{tour.title}</h4>

@@ -53,9 +53,19 @@ export const tours = [
             },
         ],
         pics: 8,
+        picAlts: [
+            '3 people with bikes posing at the summit of McKenzie Pass, sunny sky and mountain views in the background',
+            '2 people posing on their bikes in front of a wall of snow next to the road',
+            'Beautiful scene featuring a wooden fence, a green pasture, and the sisters mountains in the background',
+            'A picture taken from behind of 3 ciclist biking up the McKenzie Pass, blue skies and tall trees loom overhead',
+            'A picture of a woman biking up the McKenzie Pass, looking at the camera and giving a hang loose, with lava rock and mountains in the background',
+            'A drone shot of the top of the Mckenzie pass, featuring the Dwight Observatory made of lavarock',
+            'A picture taken from behind of 3 ciclist biking up the McKenzie Pass, surrounded by green, lush trees',
+            'A picture taken from behind of 2 ciclist biking up the McKenzie Pass, surrounded by green trees and a blue sky'
+        ],
+        bannerAlt: 'A picture of lavarock and mountains, with a blue sky in the background, taken from the top of the McKenzie Pass',
         meals: false,
         lodging: false,
-        bannerAlt: '',
         calendarURL: 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451357/?fallback=simple&full-items=yes&flow=928317',
         ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42770639&sampleGraph=true&privacyCode=CEPHFlyV4wdGq6ag`,
         conclusion: '',
@@ -95,9 +105,16 @@ export const tours = [
         whatsProvided: ['Tour guide to teach, motivate, and inspire you while you ride', 'Water & snacks', 'Beer and food vouchers at the Bite in Tumalo', 'Shuttle back to Bend', 'Support vehicle with storage for personal items', 'Optional bike & helmet rental', 'Optional custom pickup and dropoff locations'],
         whatToBring: ['Comfortable, weather appropriate athletic clothes', 'Wallet/ID', 'Phone/camera', 'A sense of adventure!'],
         pics: 4,
+        picAlts: [
+            'A picture taken from behind of 4 ciclists biking on a back road, about to head downhill, blue skies and green trees loom overhead',
+            '2 people biking towards the camera on a two lane backroad, with south sister mountain in the background',
+            '1 person taking a right hand turn on his bike towards the camera. Ranch fence and pasture in the background, with the sisters mountains behind that. A sign on the road reads "Bend 12" and "Sisters 10" in opposite directions',
+            '5 people pose on the back of a truck, with bikes in the back. They are all smiling and appear to be having a great time.'
+            
+        ],
+        bannerAlt: 'Close up of two bicyclist biking down a back road, away from the camera and towards the sisters mountains in the background',
         meals: false,
         lodging: false,
-        bannerAlt: '',
         ridewithgps: `https://ridewithgps.com/embeds?type=route&id=42761311&title=Twin%20Bridges%20Scenic%20Tour&sampleGraph=true&privacyCode=TVa5OuPX2YDtzuBy`,
         calendarURL: 'https://fareharbor.com/embeds/script/calendar/oregonbicycleadventures/items/451510/?fallback=simple&full-items=yes&flow=928317',
         conclusion: '',
@@ -133,7 +150,7 @@ export const tours = [
         pics: 0,
         meals: true,
         lodging: true,
-        bannerAlt: '',
+        bannerAlt: 'Smith rock, with a red path winding in the foreground, and the river and jagged rocks in the background',
         calendarURL: '',
         ridewithgps: ``,
         conclusion: '',
@@ -223,7 +240,7 @@ export const tours = [
         pics: 0,
         meals: false,
         lodging: false,
-        bannerAlt: '',
+        bannerAlt: 'A cyclist with panniers rides on a scenic road with trees to his right, and a winding river to his left',
         calendarURL: '',
         ridewithgps: ``,
         conclusion: 'To start planning your Custom Private Bike Tour with Oregon Bicycle Adventures, please contact us through our contact form or give us a call at (503) 949-8766. Our team is excited to help you create an unforgettable cycling experience in the breathtaking Pacific Northwest!',
@@ -273,12 +290,12 @@ export const tours = [
         pics: 0,
         meals: false,
         lodging: false,
-        bannerAlt: '',
+        bannerAlt: 'Close up of mountain bikes on a tailgate, with trees and the rising sun in the background.',
         ridewithgps: ``,
         calendarURL: '',
         conclusion: '',
         contact: false
-    },
+    }
     
      
 ]

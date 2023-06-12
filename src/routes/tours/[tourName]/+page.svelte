@@ -54,8 +54,13 @@
 
     function renderPicture(listing) {
         imgSrc = `../../img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-${i}.jpg`;
-        i++
         return imgSrc
+    }
+
+    function returnImgAlt(tour) {
+        let imgAlt = tour.picAlts[i]
+        i++
+        return imgAlt
     }
     
     // let testBlog = blogs[1]
@@ -191,7 +196,7 @@
                     {#each Array(tour.pics) as pic}
                         <SplideSlide class="mb-5 mt-0 mr-3">
                             <div class="tour-pic d-flex align-items-center">
-                                <img src={renderPicture(tour)} alt="tour" class="" />
+                                <img src={renderPicture(tour)} alt="tour" class="" alt="{returnImgAlt(tour)}"/>
                             </div>
                         </SplideSlide>
                     {/each}
