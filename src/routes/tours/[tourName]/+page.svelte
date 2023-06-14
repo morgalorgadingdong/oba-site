@@ -342,7 +342,7 @@
     </div>  
 
 
-    <div class="col-12 px-5 d-flex justify-content-start">
+    <div class="col-12 px-1 px-sm-3 px-lg-5 d-flex justify-content-start">
         <a href="/tours" class="back-to"><div class="py-3 px-3 mb-5">&lt- Back to all tours</div></a>
     </div>
     <!-- <a href={'./'+testBlog.Title}>{testBlog.Title}</a>  -->
@@ -429,7 +429,7 @@
     }
 
     #calendar-aside {
-        height: 100%;
+        /* height: 100%; */
     }
 
     #calendar-aside > div {
