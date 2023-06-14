@@ -176,6 +176,10 @@ button:hover, .btn:hover {
   font-family: var(--font-logo);
 }
 
+.fw-bold {
+  font-weight: 700;
+}
+
 
 /* Box Model Hack */
 * {

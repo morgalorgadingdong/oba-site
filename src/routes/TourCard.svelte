@@ -11,7 +11,7 @@
 </script>
 
 
-<div class="col-12 col-md-8 col-lg-6 col-xl-4 p-3">
+<div class="col-12 col-md-8 col-lg-4 p-3">
     <a class="col-12 trip-preview-container" href={'/tours/' + tour.title}>
         <div class="trip-preview d-flex flex-column justify-content-end py-0 mx-3">
             <div class="trip-preview-img-container">
@@ -42,7 +42,7 @@
                 {#if tour.difficultyRating}
                 <div class="trip-info p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center">
                     <!-- <i class="fa-solid fa-bicycle"></i> -->
-                    <span>Difficulty (1-5): {tour.difficultyRating}</span>
+                    <span>Level: {tour.difficulty}</span>
                     <!-- {#if tour.available}
                         <span>E-bikes available</span>
                     {:else}

@@ -1,23 +1,10 @@
-Blog card styling
-Blog filter functionality
-Icon
+Add partners to home page (need permission to add logo and link to their website?)
+    Cascade Armory
+    Deschutes Brewery
+    Bike shop?
+    BEA?
+        Should we donate a % of profits to BEA?
+    COTA
+        Should we donate a % of profits to COTA?
 
 
-
-
-Bikes and helmets provided
-
-Adjust quick details to have distance
-    Add support vehicles
-
-
-Add What Is Provided to every tour
-
-Twin Bridges
-    Add photos of The Bite
-    Add picture of elevation
-    Add RideWGPS
-
-Update availability on website for all tours
-    Mckenzie Pass - June, just weekends
-    Twin Bridges - Just weekends

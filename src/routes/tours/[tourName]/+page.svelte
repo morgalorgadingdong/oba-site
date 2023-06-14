@@ -70,7 +70,7 @@
 
 
 
-<section>
+<section class="d-flex justify-content-center flex-wrap">
     <div id="" class="vh-60 hero col-12 d-flex flex-column justify-content-end">
         <div class="img-container">
             <div class="img-overlay"></div>
@@ -83,7 +83,7 @@
             <h1 class="hero-tagline font-logo col-12 col-lg-8 text-left text-md-center">{tour.title}</h1>
         </div>
     </div>
-    <div class="d-flex align-items-start flex-wrap">
+    <div id="tour-content-container" class="d-flex align-items-start flex-wrap col-12 px-0 col-xxl-10">
         
         <div id="tour-info-container" class="col-12 col-md-7 col-lg-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5 px-lg-5 pt-3" >            
                <!-- Tour Quick Details -->
@@ -95,7 +95,7 @@
                     <li>Duration: {tour.duration}</li>
                     <li>Distance: {tour.distance}</li>
                     <!-- <li>Elevation Gain: {tour.elevationGain}</li> -->
-                    <li>Difficulty(1-5): {tour.difficultyRating}</li>
+                    <li>Level: {tour.difficulty}</li>
                     <li>Ages: {tour.ages}</li>
                     <li>Location: {tour.meetingLocation}</li>
                     <li>Max Group Size: {tour.maxGroupSize}</li>
@@ -121,6 +121,93 @@
             {#if tour.ridewithgps}
             <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                 <iframe class="my-3" src="{tour.ridewithgps}" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
+            </div>
+            <div class="tour-divider col-12 mb-5 mt-3"></div>
+            {/if}
+
+
+            {#if tour.pics > 0}
+            <div class="col-12 px-3">
+                <h3 class="font-logo text-left">Pictures</h3>
+                <Splide aria-label="" class="z-reset" hasTrack={ false } options={ {
+                    type: 'loop',
+                    perPage: 2,
+                    breakpoints: {
+                        768: {
+                            perPage: 1.5,
+                        },
+                        576: {
+                            perPage: 1,
+                        }
+                    },
+                    focus: 'center',
+                    drag: 'free',
+                    snap: true
+                  } }>
+                  <SplideTrack>
+                    {#each Array(tour.pics) as pic, i}
+                        <SplideSlide class="mb-5 mt-0 mr-3">
+                            <TourImg {tour} picIndex={i}/>
+                            
+                            
+                        </SplideSlide>
+                    {/each}
+                        
+                    </SplideTrack>
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button class="splide__arrow splide__arrow--next"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                    </Splide>
+            </div>
+            <div class="tour-divider col-12 mb-5 mt-3"></div>
+            {/if}
+
+            {#if tour.itinerary}
+            <div class="col-12 d-flex justify-content-start flex-wrap px-3">
+                <h3 class="font-logo text-left">Itinerary</h3>
+                {#each tour.itinerary as day}
+                <div class="col-12 d-flex flex-wrap">
+
+                    
+                <div class="col-12 col-xl-3 d-flex flex-xl-column justify-content-start flex-wrap bg-light mb-3">
+                        <h3 class="text-left px-0 my-3 col-12 col-xl-auto">Day {day.day}</h3>
+                        <div class="tour-divider mb-3"></div>
+                        <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
+                            <p class="text-left px-0 fw-bold">Meals Provided</p>
+                            <ul class="pl-3">
+                                {#each day.meals as meal}
+                                    <li>{meal}</li>
+                                {/each}
+                            </ul>
+                        </div>
+                        <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
+                            <p class="text-left px-0 fw-bold">Lodging</p>
+                            <p class="text-left px-3">{day.lodging}</p>
+                        </div>
+                        <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
+                            <p class="text-left px-0 fw-bold">Distance</p>
+                            <p class="text-left px-3">{day.miles} miles</p>
+                        </div>
+                        <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
+                            <p class="text-left px-0 fw-bold">Elevation Gain/Loss</p>
+                            <p class="text-left px-3">+{day.elevationGain}/-{day.elevationLoss}</p>
+                        </div>
+                            
+                    </div>
+                    <div class="col-12 col-xl-9 d-flex flex-column justify-content-start mb-3">
+                        
+                        <h3 class="text-left px-0 my-3">{day.title}</h3>
+                        <div class="tour-divider mb-3"></div>
+                        {#each day.description as paragraph}
+                            <p class="text-left px-0">{paragraph}</p>
+                        {/each}
+                    </div>
+                    
+                    
+                </div>
+
+                {/each}
             </div>
             <div class="tour-divider col-12 mb-5 mt-3"></div>
             {/if}
@@ -167,42 +254,7 @@
             {/if} -->
 
             <!-- Mobile photo carousel -->
-            {#if tour.pics > 0}
-            <div class="col-12 px-3">
-                <h3 class="font-logo text-left">Pictures</h3>
-                <Splide aria-label="" class="z-reset" hasTrack={ false } options={ {
-                    type: 'loop',
-                    perPage: 2,
-                    breakpoints: {
-                        768: {
-                            perPage: 1.5,
-                        },
-                        576: {
-                            perPage: 1,
-                        }
-                    },
-                    focus: 'center',
-                    drag: 'free',
-                    snap: true
-                  } }>
-                  <SplideTrack>
-                    {#each Array(tour.pics) as pic, i}
-                        <SplideSlide class="mb-5 mt-0 mr-3">
-                            <TourImg {tour} picIndex={i}/>
-                            
-                            
-                        </SplideSlide>
-                    {/each}
-                        
-                    </SplideTrack>
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev"><i class="fa-solid fa-caret-left"></i></button>
-                        <button class="splide__arrow splide__arrow--next"><i class="fa-solid fa-caret-right"></i></button>
-                    </div>
-                    </Splide>
-            </div>
-            <div class="tour-divider col-12 mb-5 mt-3"></div>
-            {/if}
+           
             
             {#if tour.whatsProvided}
             <div class="col-12 d-flex justify-content-start flex-wrap px-3">
@@ -227,7 +279,7 @@
                     </ul>
                 </div>
                 
-                <div class="tour-divider col-12 mb-5 mt-3"></div>
+                
             {/if}
             <!-- <div class="col-12 d-flex justify-content-center flex-wrap mt-3 px-3">
                 {#each blog.Sections as Section}
@@ -261,9 +313,7 @@
             <div class="px-0 mx-0 col-12 d-flex flex-wrap">
                 <div id="aside-topsection" class="col-12 mx-0 px-0 order-2 order-md-1">
                     <img src="../../img/tour1-cover.jpg" alt="calendar" class="col-12 px-0 d-none d-md-inline" />
-                    <div class="col-12 d-flex justify-content-center my-3">
-                        <button class="btn btn-primary">Book now</button>
-                    </div>    
+                      
                 </div>
                 <div id="aside-bottomsection" class="col-12 mx-0 px-0 order-1 order-md-2">
                     <Calendar {url} />
@@ -284,12 +334,17 @@
             {/if}
         </aside>
     
-        <div class="col-12 d-flex justify-content-center">
-            <a href="/tours" class="back-to"><div class="btn py-3 px-3 mb-5">&lt- Back to all tours</div></a>
-        </div>
+        
     </div>
     
-    
+    <div class="col-12 d-flex justify-content-center mb-5">
+        <a href="{tour.bookBtnURL}"><button class="btn btn-primary">Book now</button></a>
+    </div>  
+
+
+    <div class="col-12 px-5 d-flex justify-content-start">
+        <a href="/tours" class="back-to"><div class="py-3 px-3 mb-5">&lt- Back to all tours</div></a>
+    </div>
     <!-- <a href={'./'+testBlog.Title}>{testBlog.Title}</a>  -->
     <!-- <p on:click={blog = testBlog}>{testBlog.Title}</p> -->
 </section>
@@ -300,6 +355,16 @@
 </svelte:head> -->
 
 <style>
+
+@media (min-width: 1400px) { 
+    #tour-content-container {
+        max-width: 83vw !important;
+    }
+}
+
+    li {
+        list-style: none;
+    }
     .btn {
         background-color: var(--color-primary);
         color: var(--color-light);
