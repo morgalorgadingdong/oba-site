@@ -48,7 +48,7 @@
         </div>
         <div class="col-12 col-md-3">
             <h4>Small Groups</h4>
-            <p>At Oregon Bicycle Adventures, we believe that smaller is better. We keep our group sizes intentionally small, with a maximum of 5 riders per guide. This allows us to provide a more personalized experience, catered to the needs and interests of each individual rider.</p>
+            <p>At Oregon Bicycle Adventures, we believe that smaller is better. We keep our group sizes intentionally small, with a maximum of 4 riders per guide. This allows us to provide a more personalized experience, catered to the needs and interests of each individual rider.</p>
         </div>
         <div class="col-12 col-md-3">
             <h4>Expert Guidance</h4>

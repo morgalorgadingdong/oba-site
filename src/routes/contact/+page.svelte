@@ -17,7 +17,7 @@
         <div class="col-12 col-md-6 pt-5 px-0">
             
             <p class="col-12 px-0">Phone: (503) 949-8766</p>
-            <p class="col-12 px-0">Email: info@oregonbicycleadventures.com</p>
+            <p class="col-12 px-0">Email: morgan@oregonbicycleadventures.com</p>
             <p class="col-12 px-0">Or you can use the form on this page and we'll get back to you within 24 hours!</p>
         </div>
         

@@ -22,7 +22,7 @@
     <!-- <h2>Our story</h2> -->
     <div class="col-12 col-md-10 col-lg-8">
         <h2>Our Mission</h2>
-        <p id="mission-statement" class="pl-3">To deliver unforgettable tours that reveal <b>Oregon's captivating beauty</b>, while spreading the <b>inspiration and growth</b> that traveling by bicycle uniquely provides</p>
+        <p id="mission-statement" class="pl-3">To deliver unforgettable tours that reveal <b>Oregon's captivating beauty</b>, while spreading the <b>inspiration and growth</b> that traveling by bicycle uniquely provides.</p>
 
     </div>
 </section>
