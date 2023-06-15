@@ -7,6 +7,7 @@
     import '@splidejs/svelte-splide/css';
     import ContactCard from "../../ContactCard.svelte";
     import TourImg from './TourImg.svelte';
+    import DetailItem from './DetailItem.svelte';
     //  export let blog;
     //  export const slug = blog;
     
@@ -53,6 +54,10 @@
     let i = 1;
     let imgSrc
 
+        function returnAccordianNumber() {
+
+        }
+
     function renderPicture(listing) {
         imgSrc = `../../img/tours/${tour.id}. ${tour.nickname}/tour${tour.id}-${i}.jpg`;
         return imgSrc
@@ -64,7 +69,18 @@
         return imgAlt
     }
     
-    
+
+
+    let accordianToggle
+    let accordianContent
+    function returnAccordionToggle(day) {
+        accordianToggle= `accordion-toggle-${day}`
+        return accordianToggle
+    }
+    function returnAccordionContent(day) {
+        accordianContent= `accordion-content-${day}`
+        return accordianContent
+    }
 
 </script>
 
@@ -166,47 +182,47 @@
             {#if tour.itinerary}
             <div class="col-12 d-flex justify-content-start flex-wrap px-3">
                 <h3 class="font-logo text-left">Itinerary</h3>
-                {#each tour.itinerary as day}
+                {#each tour.itinerary as itinerary}
                 <div class="col-12 d-flex flex-wrap">
 
                     
-                <div class="col-12 col-xl-3 d-flex flex-xl-column justify-content-start flex-wrap bg-light mb-3">
-                        <h3 class="text-left px-0 my-3 col-12 col-xl-auto">Day {day.day}</h3>
-                        <div class="tour-divider mb-3"></div>
-                        <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
-                            <p class="text-left px-0 fw-bold">Meals Provided</p>
-                            <ul class="pl-3">
-                                {#each day.meals as meal}
-                                    <li>{meal}</li>
-                                {/each}
-                            </ul>
+                    <div class="col-12 col-xl-3 d-flex flex-xl-column justify-content-start flex-wrap bg-light mb-3">
+                            <h3 class="text-left px-0 my-3 col-12 col-xl-auto">Day {itinerary.day}</h3>
+                            <div class="tour-divider mb-3"></div>
+                            <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
+                                <p class="text-left px-0 fw-bold">Meals Provided</p>
+                                <ul class="pl-3">
+                                    {#each itinerary.meals as meal}
+                                        <li>{meal}</li>
+                                    {/each}
+                                </ul>
+                            </div>
+                            <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
+                                <p class="text-left px-0 fw-bold">Lodging</p>
+                                <p class="text-left px-3">{itinerary.lodging}</p>
+                            </div>
+                            <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
+                                <p class="text-left px-0 fw-bold">Distance</p>
+                                <p class="text-left px-3">{itinerary.miles} miles</p>
+                            </div>
+                            <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
+                                <p class="text-left px-0 fw-bold">Elevation Gain/Loss</p>
+                                <p class="text-left px-3">+{itinerary.elevationGain}/-{itinerary.elevationLoss}</p>
+                            </div>
+                                
                         </div>
-                        <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
-                            <p class="text-left px-0 fw-bold">Lodging</p>
-                            <p class="text-left px-3">{day.lodging}</p>
-                        </div>
-                        <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
-                            <p class="text-left px-0 fw-bold">Distance</p>
-                            <p class="text-left px-3">{day.miles} miles</p>
-                        </div>
-                        <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
-                            <p class="text-left px-0 fw-bold">Elevation Gain/Loss</p>
-                            <p class="text-left px-3">+{day.elevationGain}/-{day.elevationLoss}</p>
-                        </div>
+                        <div class="col-12 col-xl-9 d-flex flex-column justify-content-start mb-3">
                             
-                    </div>
-                    <div class="col-12 col-xl-9 d-flex flex-column justify-content-start mb-3">
+                            <h3 class="text-left px-0 my-3">{itinerary.title}</h3>
+                            <div class="tour-divider mb-3 d-none d-md-inline"></div>
+                            {#each itinerary.description as paragraph}
+                                <p class="text-left px-0 d-none d-md-inline">{paragraph}</p>
+                            {/each}
+                            <DetailItem {itinerary}/> 
+                        </div>
                         
-                        <h3 class="text-left px-0 my-3">{day.title}</h3>
-                        <div class="tour-divider mb-3"></div>
-                        {#each day.description as paragraph}
-                            <p class="text-left px-0">{paragraph}</p>
-                        {/each}
                     </div>
-                    
-                    
-                </div>
-
+                    <div class="tour-divider mb-3 col-12 d-inline d-md-none"></div>
                 {/each}
             </div>
             <div class="tour-divider col-12 mb-5 mt-3"></div>

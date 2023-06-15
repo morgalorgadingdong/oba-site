@@ -82,10 +82,10 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
   return `<footer id="${"footer"}" class="${"col-12 vh-50 d-flex align-content-center pt-5 pb-3 svelte-nhjtpw"}"><div class="${"col-12 d-flex justify-content-between align-content-center align-items-center flex-wrap py-5 svelte-nhjtpw"}"><div class="${"col-12 col-md-3 px-0 order-md-2 d-flex justify-content-center flex-wrap"}"><a href="${"/"}" class="${"img-container col-10 svelte-nhjtpw"}"><img class="${"img"}" src="${"/img/OBA_PrimaryLogo_WhiteType.png"}" alt="${"Oregon Bicycle Adventures Logo"}"></a>
             </div>
-        <div class="${"col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap py-3"}"><p class="${"svelte-nhjtpw"}">Oregon Bicycle Adventures, LLC</p>
-            <p class="${"svelte-nhjtpw"}">info@oregonbicycleadventures.com</p>
-            <p class="${"svelte-nhjtpw"}">(503) 949-8766</p>
-            <p class="${"svelte-nhjtpw"}">Bend, Oregon</p></div>
+        <div class="${"col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap py-3"}"><p class="${"col-12 svelte-nhjtpw"}">Oregon Bicycle Adventures, LLC</p>
+            <p class="${"col-12 svelte-nhjtpw"}">info@oregonbicycleadventures.com</p>
+            <p class="${"col-12 svelte-nhjtpw"}">(503) 949-8766</p>
+            <p class="${"col-12 svelte-nhjtpw"}">Bend, Oregon</p></div>
         <div class="${"col-12 col-md-3 px-0 pt-3 order-md-3 d-flex align-content-center flex-wrap justify-content-around"}"><i class="${"fa-brands fa-instagram svelte-nhjtpw"}" onclick="${"location.href='https://www.instagram.com/oregonbicycleadventures/';"}" style="${"cursor: pointer;"}"></i>
             <i class="${"fa-brands fa-facebook svelte-nhjtpw"}" onclick="${"location.href='https://www.facebook.com/profile.php?id=100092429499374';"}" style="${"cursor: pointer;"}"></i>
             <i class="${"fa-solid fa-envelope svelte-nhjtpw"}" onclick="${"location.href='/contact';"}" style="${"cursor: pointer;"}"></i></div></div>

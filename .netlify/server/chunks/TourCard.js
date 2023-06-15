@@ -10,7 +10,7 @@ const TourCard = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   if ($$props.tour === void 0 && $$bindings.tour && tour !== void 0)
     $$bindings.tour(tour);
   $$result.css.add(css);
-  return `<div class="${"col-12 col-md-8 col-lg-6 col-xl-4 p-3"}"><a class="${"col-12 trip-preview-container svelte-mzmq5b"}"${add_attribute("href", "/tours/" + tour.title, 0)}><div class="${"trip-preview d-flex flex-column justify-content-end py-0 mx-3 svelte-mzmq5b"}"><div class="${"trip-preview-img-container svelte-mzmq5b"}"><img${add_attribute("src", imgSrc, 0)}${add_attribute("alt", tour.bannerAlt, 0)} class="${"trip-preview-img svelte-mzmq5b"}">
+  return `<div class="${"col-12 col-md-8 col-lg-4 p-3"}"><a class="${"col-12 trip-preview-container svelte-mzmq5b"}"${add_attribute("href", "/tours/" + tour.title, 0)}><div class="${"trip-preview d-flex flex-column justify-content-end py-0 mx-3 svelte-mzmq5b"}"><div class="${"trip-preview-img-container svelte-mzmq5b"}"><img${add_attribute("src", imgSrc, 0)}${add_attribute("alt", tour.bannerAlt, 0)} class="${"trip-preview-img svelte-mzmq5b"}">
                 </div>
             <h4 id="${"tour-title-desktop"}" class="${"px-4 py-2 svelte-mzmq5b"}">${escape(tour.title)}</h4>
             
@@ -20,7 +20,7 @@ const TourCard = create_ssr_component(($$result, $$props, $$bindings, slots) => 
                 ${tour.duration ? `<div class="${"trip-info mx-1 p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center svelte-mzmq5b"}">
                     <span class="${"svelte-mzmq5b"}">${escape(tour.duration)}</span></div>` : ``}
                 ${tour.difficultyRating ? `<div class="${"trip-info p-1 px-2 py-md-2 px-md-3 d-flex align-items-center justify-content-center svelte-mzmq5b"}">
-                    <span class="${"svelte-mzmq5b"}">Difficulty (1-5): ${escape(tour.difficultyRating)}</span>
+                    <span class="${"svelte-mzmq5b"}">Level: ${escape(tour.difficulty)}</span>
                     </div>` : ``}</div></div>
         <div class="${"trip-info-container-mobile d-flex d-md-none justify-content-between flex-wrap justify-content-xxl-around mx-3 px-0 svelte-mzmq5b"}"><h4 id="${"tour-title-mobile"}" class="${"py-2 col-12 mb-0 svelte-mzmq5b"}">${escape(tour.title)}</h4>
             
