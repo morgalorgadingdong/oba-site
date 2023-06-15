@@ -10,17 +10,18 @@
 
 
 
-<section id="about-intro" class="col-12 d-flex justify-content-center flex-wrap py-5 mt-5">
+<section id="about-intro" class="col-12 d-flex justify-content-center flex-wrap py-5">
     <!-- <h2>Our story</h2> -->
-    <div class="col-12 col-md-10 col-lg-8">
-        <p>Oregon Bicycle Adventures is a locally owned and operated bicycle tour company founded by friends Carl and Morgan. Our passion for cycling and exploring Oregon's diverse landscapes is at the heart of every tour we offer.</p>
-
+    <div class="col-12 d-flex justify-content-center">
+        <img src="./img/OBA_Icon.png" alt="Oregon Bicycle Adventures Icon" class="icon">
+        <p class="py-0 my-0 col-12 col-md-10 col-lg-8 col-xl-6">Oregon Bicycle Adventures is a locally owned and operated bicycle tour company founded by friends Carl and Morgan. Our passion for cycling and exploring Oregon's diverse landscapes is at the heart of every tour we offer.</p>
+        
     </div>
 </section>
 
-<section id="mission-section" class="col-12 d-flex justify-content-center flex-wrap py-5 my-5">
+<section id="mission-section" class="col-12 d-flex justify-content-center flex-wrap py-5 mb-5">
     <!-- <h2>Our story</h2> -->
-    <div class="col-12 col-md-10 col-lg-8">
+    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
         <h2>Our Mission</h2>
         <p id="mission-statement" class="pl-3">To deliver unforgettable tours that reveal <b>Oregon's captivating beauty</b>, while spreading the <b>inspiration and growth</b> that traveling by bicycle uniquely provides.</p>
 
@@ -94,5 +95,30 @@
     b {
         color: var(--color-highlight);
     }
+
+    .icon-img {
+        margin: 0 auto;
+        display: block;
+    }
     
+    #about-intro {
+        overflow: hidden;
+    }
+
+    #about-intro > div {
+        position: relative;
+        
+    }
+
+    #about-intro > div > img.icon {
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        transform: translate(-10%, 30%);
+        font-size: 1.5rem;
+        font-style: italic;
+        width: 60%;
+        max-width: 500px;
+        opacity: 0.7;
+    }
 </style>

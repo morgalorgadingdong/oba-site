@@ -277,7 +277,7 @@
             
             {#if tour.whatsProvided}
             <div class="col-12 d-flex justify-content-start flex-wrap px-3">
-                <h3 class="font-logo text-left">What's provided</h3>
+                <h3 class="font-logo text-left">What's included</h3>
                 <ul class="col-12 mx-3">
                     {#each tour.whatsProvided as item}
                     <li class="col-12 text-left px-0 my-3 blog-text">{item}</li>
