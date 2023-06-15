@@ -185,15 +185,16 @@
                 {#each tour.itinerary as itinerary}
                 <div class="col-12 d-flex flex-wrap">
 
-                    
-                    <div class="col-12 col-xl-3 d-flex flex-xl-column justify-content-start flex-wrap bg-light mb-3">
-                            <h3 class="text-left px-0 my-3 col-12 col-xl-auto">Day {itinerary.day}</h3>
-                            <div class="tour-divider mb-3"></div>
+                    <h3 class="text-left px-0 my-3 col-12">Day {itinerary.day} - {itinerary.title}</h3>
+                    <div class="tour-divider mb-3 col-12 d-none d-md-inline"></div>
+                    <div class="col-12 col-xl-3 d-flex flex-xl-column justify-content-start flex-wrap bg-light mb-3 mb-xl-3 pt-3">
+                            
+                            <!-- <div class="tour-divider mb-3"></div> -->
                             <div class="px-1 px-sm-3 col-6 col-xl-auto bg-light">
                                 <p class="text-left px-0 fw-bold">Meals Provided</p>
                                 <ul class="pl-3">
                                     {#each itinerary.meals as meal}
-                                        <li>{meal}</li>
+                                        <li class="ls-none">{meal}</li>
                                     {/each}
                                 </ul>
                             </div>
@@ -211,10 +212,10 @@
                             </div>
                                 
                         </div>
-                        <div class="col-12 col-xl-9 d-flex flex-column justify-content-start mb-3">
+                        <div class="col-12 col-xl-9 d-flex flex-column justify-content-start mb-3 px-0 px-xl-4">
                             
-                            <h3 class="text-left px-0 my-3">{itinerary.title}</h3>
-                            <div class="tour-divider mb-3 d-none d-md-inline"></div>
+                            
+                            <!-- <div class="tour-divider mb-3 d-none d-md-inline"></div> -->
                             {#each itinerary.description as paragraph}
                                 <p class="text-left px-0 d-none d-md-inline">{paragraph}</p>
                             {/each}
@@ -222,7 +223,9 @@
                         </div>
                         
                     </div>
+                    {#if itinerary.day != tour.itinerary.length}
                     <div class="tour-divider mb-3 col-12 d-inline d-md-none"></div>
+                    {/if}
                 {/each}
             </div>
             <div class="tour-divider col-12 mb-5 mt-3"></div>
@@ -378,9 +381,13 @@
     }
 }
 
-    li {
+
+.ls-none {
         list-style: none;
     }
+    /* li {
+        list-style: none;
+    } */
     .btn {
         background-color: var(--color-primary);
         color: var(--color-light);
