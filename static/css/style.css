@@ -202,6 +202,10 @@ body {
   border-top: var(--color-primary) solid 2px;
 }
 
+.modal p {
+  margin-bottom: 0;
+}
+
 /******************************************
 /* SECTIONS
 /*******************************************/

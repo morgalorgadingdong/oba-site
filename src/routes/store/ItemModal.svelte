@@ -14,10 +14,16 @@
     function addToCart(item) {
         cart.update((items) => items, item);
     }
+
+    function parseDescription(description) {
+        let parsedDescription = description.replace(/\n/g, '<br>');
+        return parsedDescription;
+    }
+
   </script>
   
   {#if isOpen}
-    <div class="modal  justify-content-center">
+    <div class="modal justify-content-center">
       <div class="modal-content col-12 col-md-10 col-lg-8">
         <div class="col-12 d-flex justify-content-start flex-wrap px-0">
           <span class="close" on:click={close}>&times;</span>
@@ -28,8 +34,9 @@
           <div class="col-12 col-xl-9 px-0">
             <h2>{title}</h2>
             <div class="tour-divider col-12 mt-1 mb-3"></div>
-            <p class="col-12">{content.itemData.description}</p>
-            <div class="col-12 d-flex justify-content-center">
+            {@html content.itemData.descriptionHtml}
+            <!-- <p class="col-12">{parseDescription(content.itemData.description)}</p> -->
+            <div class="col-12 d-flex justify-content-center mt-4">
               <a href="https://square.link/u/FM5ymk6E" target="_blank" rel="noreferrer"><button  class="btn">Purchase</button></a>
               
             </div>
@@ -41,6 +48,10 @@
   {/if}
 
   <style>
+
+    p {
+      margin-bottom: 0;
+    }
    
     img {
       /* height: 300px; */
@@ -69,7 +80,7 @@
       height: 100vh;
       overflow: auto;
       background-color: rgba(0,0,0,0.4);
-      padding-top: 3%;
+      padding: 2% 0;
     }
   
     .modal-content {
@@ -80,7 +91,7 @@
     }
   
     .close {
-      color: #aaaaaa;
+      color: black;
       /* float: right; */
       font-size: 28px;
       font-weight: bold;
@@ -96,7 +107,9 @@
 
     @media (max-width: 768px) {
       .modal {
-        padding-top: 0%;
+        padding: 0%;
+        border-radius: 0;
+        border: none;
       }
       
       .modal-content {
