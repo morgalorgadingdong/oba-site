@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as add_attribute, e as escape, f as each, v as validate_component } from "../../../chunks/index.js";
+import { c as create_ssr_component, b as add_attribute, e as escape, d as each, v as validate_component } from "../../../chunks/index2.js";
 import { b as blogs } from "../../../chunks/blogs.js";
 const BlogCard_svelte_svelte_type_style_lang = "";
 const BlogCard2_svelte_svelte_type_style_lang = "";

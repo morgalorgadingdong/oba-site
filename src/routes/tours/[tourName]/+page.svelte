@@ -566,9 +566,7 @@ a {
     background-color: rgb(175, 173, 172, 0.1);
 }
 
-.tour-divider {
-    border-top: black solid 2px;
-}
+
 
 
 /* @media (max-width: 767px) {

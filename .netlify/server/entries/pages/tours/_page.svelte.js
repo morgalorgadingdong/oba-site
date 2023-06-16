@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, f as each, v as validate_component } from "../../../chunks/index.js";
+import { c as create_ssr_component, e as escape, d as each, v as validate_component } from "../../../chunks/index2.js";
 import { T as TourCard } from "../../../chunks/TourCard.js";
 import { t as tours } from "../../../chunks/tours.js";
 /* empty css                                                      */const _page_svelte_svelte_type_style_lang = "";

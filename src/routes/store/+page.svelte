@@ -15,7 +15,6 @@
     </div>
 </div>
 <section class="col-12 d-flex justify-content-center flex-wrap my-5">
-    <h2 class="col-12 text-center">Coming Soon!</h2>
     <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4">
         {#each items as item}
             <StoreItemCard { item } />

@@ -2,8 +2,8 @@
   {
     "type": "ITEM",
     "id": "447LL3SLYPBRG2DT2NB4DQTR",
-    "updatedAt": "2023-05-11T16:36:01.735Z",
-    "version": "1683822961735n",
+    "updatedAt": "2023-06-16T01:48:15.302Z",
+    "version": "1686880095302n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -14,8 +14,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "SYHCY6PQPZ4TOSW67KNA3WFT",
-          "updatedAt": "2023-05-11T16:35:52.71Z",
-          "version": "1683822952710n",
+          "updatedAt": "2023-06-16T01:48:15.302Z",
+          "version": "1686880095302n",
           "isDeleted": false,
           "presentAtAllLocations": true,
           "itemVariationData": {
@@ -24,7 +24,7 @@
             "ordinal": 0,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "5400n",
+              "amount": "6000n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -33,6 +33,7 @@
                 "trackInventory": true
               }
             ],
+            "inventoryAlertType": "NONE",
             "itemOptionValues": [
               {
                 "itemOptionId": "NZIAFXUWBUPXLETGDRVTXRPQ",
@@ -46,8 +47,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "5CAVVK42UV2MRPSNCTHU7IKV",
-          "updatedAt": "2023-05-11T16:35:52.031Z",
-          "version": "1683822952031n",
+          "updatedAt": "2023-06-16T01:48:15.302Z",
+          "version": "1686880095302n",
           "isDeleted": false,
           "presentAtAllLocations": true,
           "itemVariationData": {
@@ -56,7 +57,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "5400n",
+              "amount": "6000n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -66,6 +67,7 @@
               }
             ],
             "trackInventory": false,
+            "inventoryAlertType": "NONE",
             "itemOptionValues": [
               {
                 "itemOptionId": "NZIAFXUWBUPXLETGDRVTXRPQ",
@@ -79,8 +81,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "3CL4RZCKKJ5NRANRALWEH66S",
-          "updatedAt": "2023-05-11T16:35:52.129Z",
-          "version": "1683822952129n",
+          "updatedAt": "2023-06-16T01:48:15.302Z",
+          "version": "1686880095302n",
           "isDeleted": false,
           "presentAtAllLocations": true,
           "itemVariationData": {
@@ -89,7 +91,7 @@
             "ordinal": 2,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "5400n",
+              "amount": "6000n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -99,6 +101,7 @@
               }
             ],
             "trackInventory": false,
+            "inventoryAlertType": "NONE",
             "itemOptionValues": [
               {
                 "itemOptionId": "NZIAFXUWBUPXLETGDRVTXRPQ",
@@ -112,8 +115,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "JVUGOJUIAZT4SCCYUG4HPUMX",
-          "updatedAt": "2023-05-11T16:35:52.369Z",
-          "version": "1683822952369n",
+          "updatedAt": "2023-06-16T01:48:15.302Z",
+          "version": "1686880095302n",
           "isDeleted": false,
           "presentAtAllLocations": true,
           "itemVariationData": {
@@ -122,7 +125,7 @@
             "ordinal": 3,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "5400n",
+              "amount": "6000n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -132,6 +135,7 @@
               }
             ],
             "trackInventory": false,
+            "inventoryAlertType": "NONE",
             "itemOptionValues": [
               {
                 "itemOptionId": "NZIAFXUWBUPXLETGDRVTXRPQ",
@@ -145,8 +149,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "NRRIJL6I4DJ52FKD57CJN3OY",
-          "updatedAt": "2023-05-11T16:35:52.054Z",
-          "version": "1683822952054n",
+          "updatedAt": "2023-06-16T01:48:15.302Z",
+          "version": "1686880095302n",
           "isDeleted": false,
           "presentAtAllLocations": true,
           "itemVariationData": {
@@ -155,7 +159,7 @@
             "ordinal": 4,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "5400n",
+              "amount": "6000n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -165,6 +169,7 @@
               }
             ],
             "trackInventory": false,
+            "inventoryAlertType": "NONE",
             "itemOptionValues": [
               {
                 "itemOptionId": "NZIAFXUWBUPXLETGDRVTXRPQ",

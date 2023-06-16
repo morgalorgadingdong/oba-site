@@ -1,4 +1,4 @@
-import { c as create_ssr_component } from "./index.js";
+import { c as create_ssr_component } from "./index2.js";
 const ContactCard_svelte_svelte_type_style_lang = "";
 const css = {
   code: "ul.svelte-1f9ydaj{list-style:none}#submissionForm.svelte-1f9ydaj{max-width:600px}#submissionForm.svelte-1f9ydaj{margin-bottom:25px}.fields.svelte-1f9ydaj{width:100%}.field.svelte-1f9ydaj{padding:10px 5px;width:100%}#name.svelte-1f9ydaj{width:100%}#tel.svelte-1f9ydaj,#email.svelte-1f9ydaj{width:100%}#telContainer.svelte-1f9ydaj,#emailContainer.svelte-1f9ydaj{width:50%}#message.svelte-1f9ydaj{width:100%}input.svelte-1f9ydaj{width:100%;flex-grow:2;line-height:1.5rem}",

@@ -198,6 +198,9 @@ body {
   position: relative;
 }
 
+.tour-divider {
+  border-top: var(--color-primary) solid 2px;
+}
 
 /******************************************
 /* SECTIONS

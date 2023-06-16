@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as add_attribute, e as escape } from "../../../../chunks/index.js";
+import { c as create_ssr_component, b as add_attribute, e as escape } from "../../../../chunks/index2.js";
 import { i as items } from "../../../../chunks/store-items.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;

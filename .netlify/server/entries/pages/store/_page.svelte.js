@@ -1,8 +1,10 @@
-import { c as create_ssr_component, h as createEventDispatcher, e as escape, v as validate_component, d as add_attribute, f as each } from "../../../chunks/index.js";
+import { c as create_ssr_component, f as createEventDispatcher, b as add_attribute, e as escape, v as validate_component, d as each } from "../../../chunks/index2.js";
 import { i as items } from "../../../chunks/store-items.js";
+import { r as readable } from "../../../chunks/index.js";
+readable(items);
 const ItemModal_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".modal.svelte-442pxe{display:block;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.4)}.modal-content.svelte-442pxe{background-color:#fefefe;margin:15% auto;padding:20px;border:1px solid #888;width:80%}.close.svelte-442pxe{color:#aaaaaa;float:right;font-size:28px;font-weight:bold}.close.svelte-442pxe:hover,.close.svelte-442pxe:focus{color:#000;text-decoration:none;cursor:pointer}",
+  code: "img.svelte-myesom{object-fit:contain}span.svelte-myesom{z-index:10;position:absolute;top:0;left:0}.modal.svelte-myesom{display:flex;position:fixed;z-index:1;left:0;top:0;width:100vw;height:100vh;overflow:auto;background-color:rgba(0,0,0,0.4);padding-top:3%}.modal-content.svelte-myesom{background-color:#fefefe;padding:20px;border:1px solid #888;height:fit-content}.close.svelte-myesom{color:#aaaaaa;font-size:28px;font-weight:bold}.close.svelte-myesom:hover,.close.svelte-myesom:focus{color:#000;text-decoration:none;cursor:pointer}@media(max-width: 768px){.modal.svelte-myesom{padding-top:0%}.modal-content.svelte-myesom{width:100%;min-height:100%;overflow-y:scroll}span.svelte-myesom{position:fixed;top:0;left:2%}}",
   map: null
 };
 const ItemModal = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -17,9 +19,13 @@ const ItemModal = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   if ($$props.content === void 0 && $$bindings.content && content !== void 0)
     $$bindings.content(content);
   $$result.css.add(css$1);
-  return `${isOpen ? `<div class="${"modal svelte-442pxe"}"><div class="${"modal-content svelte-442pxe"}"><span class="${"close svelte-442pxe"}">×</span>
-        <h2>${escape(title)}</h2>
-        <p>${escape(content)}</p></div></div>` : ``}`;
+  return `${isOpen ? `<div class="${"modal justify-content-center svelte-myesom"}"><div class="${"modal-content col-12 col-md-10 col-lg-8 svelte-myesom"}"><div class="${"col-12 d-flex justify-content-start flex-wrap px-0"}"><span class="${"close svelte-myesom"}">×</span>
+          <div class="${"d-flex align-items-center px-0 col-12 col-xl-3"}"><img${add_attribute("src", content.itemData.imgURL[0], 0)} class="${"img svelte-myesom"}"></div>
+          
+          <div class="${"col-12 col-xl-9 px-0"}"><h2>${escape(title)}</h2>
+            <div class="${"tour-divider col-12 mt-1 mb-3"}"></div>
+            <p class="${"col-12"}">${escape(content.itemData.description)}</p>
+            <div class="${"col-12 d-flex justify-content-center"}"><a href="${"https://square.link/u/FM5ymk6E"}" target="${"_blank"}" rel="${"noreferrer"}"><button class="${"btn"}">Purchase</button></a></div></div></div></div></div>` : ``}`;
 });
 const StoreItemCard_svelte_svelte_type_style_lang = "";
 const css = {
@@ -42,7 +48,7 @@ const StoreItemCard = create_ssr_component(($$result, $$props, $$bindings, slots
       $$result,
       {
         title: item.itemData.name,
-        content: item.itemData.description,
+        content: item,
         isOpen: isModalOpen
       },
       {
@@ -70,8 +76,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="${"hero hero-sub col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"img-overlay"}"></div>
         <img class="${"hero-img img"}" src="${"./img/hero-2.jpg"}"></div>
     <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline col-12"}">Store</h1></div></div>
-<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><h2 class="${"col-12 text-center"}">Coming Soon!</h2>
-    <div class="${"col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(items, (item) => {
+<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><div class="${"col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(items, (item) => {
     return `${validate_component(StoreItemCard, "StoreItemCard").$$render($$result, { item }, {}, {})}`;
   })}</div>
 </section>`;

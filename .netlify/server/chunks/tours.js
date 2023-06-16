@@ -121,7 +121,7 @@ const tours = [
   },
   {
     id: 3,
-    title: "Central Oregon Adventure Tour",
+    title: "The Essential Central Oregon Bike Tour",
     nickname: "COAT",
     featured: true,
     published: true,
@@ -133,7 +133,7 @@ const tours = [
     miles: "109",
     elevationGain: "4,200 ft",
     ages: "18+",
-    price: "$2,700",
+    price: "$2,600",
     ebikes: false,
     featuredIndex: 3,
     quickDetails: true,
@@ -142,11 +142,12 @@ const tours = [
     activities: ["Biking (bike included)", "Hiking", "Beer tasting", "Brewery Tour", "Foot Tours"],
     description: [
       {
-        content: `Embark on a 4-day guided bicycle trip across Central Oregon's beautiful landscapes, crafted just right for folks looking for that perfect combo of adventure and comfort. Start in the lively city of Bend, pedal through the striking Smith Rock State Park, and explore the charming town of Sisters. It's not just about the cycling - along the route, you'll get a taste of local beer, enjoy a relaxing wine tasting, and discover unique small-town vibes. You'll also have a chance to try some tasty meals and rest each night in comfortable, one of a kind lodgings. It's not just a bike ride, it's a unique chance to dive deep into the Central Oregon lifestyle. You'll end this tour with memories to cherish, feeling like you've really traveled through this special part of the world.
-                `
-      }
+        content: `Get ready for an unforgettable journey through Central Oregon's most scenic landscapes. This 4-day cycling adventure has been expertly curated to ensure you experience the absolute best of Central Oregon, covering its must-see spots and hidden gems.`
+      },
+      { content: `From the charming streets of Bend to the stunning panoramas of Smith Rock, we've got it all covered. Savor local brews in Bend, pedal your way through the captivating Crooked River Canyon, and witness the awe-inspiring views from the summit of McKenzie Pass. You'll taste award-winning wines at Faith, Hope & Charity Vineyards, and enjoy a well-deserved celebratory meal at the historic McKenzie General Store.` },
+      { content: `Don't miss out on the chance to immerse yourself in the local culture, savor local flavors, and create lifelong memories while traversing the region's diverse landscapes. This is the tour for those who want to experience Central Oregon as we believe it’s best experienced - from the seat of a bicycle.` }
     ],
-    whatsProvided: ["Tour guide to teach, motivate, and inspire you while you ride", "Water & snacks", "Support vehicle with storage for personal items", "Bike & helmet rental", "3 Nights in unique, locally-inspired lodging", "3 Breakfasts, 3 Lunches, 3 Dinners", "Wine tasting at Faith, Hope, and Charity Vineyards", "Brewery tour and tasting at Deschutes Brewery"],
+    whatsProvided: ["Tour guide to teach, motivate, and inspire you while you ride", "Water & snacks", "Support vehicle with storage for personal items", "Bike & helmet rental", "3 Nights in unique, locally-inspired lodging", "3 Breakfasts, 3 Lunches, 3 Dinners", "Wine tasting at Faith, Hope, and Charity Vineyards", "Brewery tour and tasting at Deschutes Brewery", "Access to all photos taken by our photographer", "Complimentary OBA Jersey and water bottle"],
     whatToBring: ["Comfortable, weather appropriate athletic clothes for 4 days", "Swimsuit", "Phone/camera", "A sense of adventure!"],
     pics: 13,
     picAlts: [

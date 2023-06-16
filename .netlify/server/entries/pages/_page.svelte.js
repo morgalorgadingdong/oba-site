@@ -1,4 +1,4 @@
-import { c as create_ssr_component, f as each, v as validate_component } from "../../chunks/index.js";
+import { c as create_ssr_component, d as each, v as validate_component } from "../../chunks/index2.js";
 import "../../chunks/splide.min.js";
 import { T as TourCard } from "../../chunks/TourCard.js";
 import { t as tours } from "../../chunks/tours.js";
@@ -27,7 +27,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <div class="${"col-12 col-md-3"}"><h4>Locally Based</h4>
             <p>Oregon Bicycle Adventures is proudly locally based out of Bend, Oregon. As lifelong Oregonians, We have decades of experience exploring the hidden gems of Oregon. Our insider knowledge of the state allows us to create unique and unforgettable experiences that showcase the best of what Oregon has to offer.</p></div>
         <div class="${"col-12 col-md-3"}"><h4>Small Groups</h4>
-            <p>At Oregon Bicycle Adventures, we believe that smaller is better. We keep our group sizes intentionally small, with a maximum of 5 riders per guide. This allows us to provide a more personalized experience, catered to the needs and interests of each individual rider.</p></div>
+            <p>At Oregon Bicycle Adventures, we believe that smaller is better. We keep our group sizes intentionally small, with a maximum of 4 riders per guide. This allows us to provide a more personalized experience, catered to the needs and interests of each individual rider.</p></div>
         <div class="${"col-12 col-md-3"}"><h4>Expert Guidance</h4>
             <p>With experience in guiding, outdoor coaching, and multi-month bicycle tours, we are experts in the field of bicycle touring. From route planning to bike maintenance, we provide the guidance and support needed to ensure that every trip is safe, enjoyable, and memorable.</p></div></div></section>
 

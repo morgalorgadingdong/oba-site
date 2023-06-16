@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as add_attribute, e as escape, f as each, v as validate_component } from "../../../../chunks/index.js";
+import { c as create_ssr_component, b as add_attribute, e as escape, d as each, v as validate_component } from "../../../../chunks/index2.js";
 import { t as tours } from "../../../../chunks/tours.js";
 /* empty css                                                         */import { S as Splide_1, a as SplideTrack, b as SplideSlide } from "../../../../chunks/SplideSlide.js";
 import "../../../../chunks/splide.min.js";
@@ -55,7 +55,7 @@ ${``}`;
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "@media(min-width: 1400px){#tour-content-container.svelte-16e9bna.svelte-16e9bna{max-width:83vw !important}}li.svelte-16e9bna.svelte-16e9bna{list-style:none}.btn.svelte-16e9bna.svelte-16e9bna{background-color:var(--color-primary);color:var(--color-light);width:fit-content}.back-to.svelte-16e9bna.svelte-16e9bna{text-decoration:none}#quick-details-container.svelte-16e9bna h3.svelte-16e9bna{color:white}#quick-details-container.svelte-16e9bna li.svelte-16e9bna{padding:0.7rem;background-color:var(--color-background-light);margin:0.5rem}#quick-details-container.svelte-16e9bna ul.svelte-16e9bna{list-style:none}#quick-details-container.svelte-16e9bna.svelte-16e9bna{height:fit-content;background-color:var(--color-primary)}#quick-details-container.svelte-16e9bna .svelte-16e9bna{color:white}#calendar-aside.svelte-16e9bna>div.svelte-16e9bna{border-radius:6px;box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 0.2);background-color:white;overflow:hidden}#aside-topsection.svelte-16e9bna>img.svelte-16e9bna{aspect-ratio:3/2}#aside-topsection.svelte-16e9bna>img.svelte-16e9bna{object-fit:cover;overflow:hidden}aside.svelte-16e9bna.svelte-16e9bna{height:500px}aside.svelte-16e9bna.svelte-16e9bna{position:relative;top:-20vh;margin:20px;padding-right:4vw !important;padding-left:0}a.svelte-16e9bna.svelte-16e9bna{color:black}.tour-divider.svelte-16e9bna.svelte-16e9bna{border-top:black solid 2px}@media(max-width: 992px){aside.svelte-16e9bna.svelte-16e9bna{top:0;padding-right:0}#calendar-aside.svelte-16e9bna>div.svelte-16e9bna{box-shadow:none}}",
+  code: "@media(min-width: 1400px){#tour-content-container.svelte-skxk20.svelte-skxk20{max-width:83vw !important}}.ls-none.svelte-skxk20.svelte-skxk20{list-style:none}.btn.svelte-skxk20.svelte-skxk20{background-color:var(--color-primary);color:var(--color-light);width:fit-content}.back-to.svelte-skxk20.svelte-skxk20{text-decoration:none}#quick-details-container.svelte-skxk20 h3.svelte-skxk20{color:white}#quick-details-container.svelte-skxk20 li.svelte-skxk20{padding:0.7rem;background-color:var(--color-background-light);margin:0.5rem}#quick-details-container.svelte-skxk20 ul.svelte-skxk20{list-style:none}#quick-details-container.svelte-skxk20.svelte-skxk20{height:fit-content;background-color:var(--color-primary)}#quick-details-container.svelte-skxk20 .svelte-skxk20{color:white}#calendar-aside.svelte-skxk20>div.svelte-skxk20{border-radius:6px;box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 0.2);background-color:white;overflow:hidden}#aside-topsection.svelte-skxk20>img.svelte-skxk20{aspect-ratio:3/2}#aside-topsection.svelte-skxk20>img.svelte-skxk20{object-fit:cover;overflow:hidden}aside.svelte-skxk20.svelte-skxk20{height:500px}aside.svelte-skxk20.svelte-skxk20{position:relative;top:-20vh;margin:20px;padding-right:4vw !important;padding-left:0}a.svelte-skxk20.svelte-skxk20{color:black}@media(max-width: 992px){aside.svelte-skxk20.svelte-skxk20{top:0;padding-right:0}#calendar-aside.svelte-skxk20>div.svelte-skxk20{box-shadow:none}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -78,28 +78,28 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
         <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-start flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline font-logo col-12 col-lg-8 text-left text-md-center"}">${escape(tour.title)}</h1></div></div>
-    <div id="${"tour-content-container"}" class="${"d-flex align-items-start flex-wrap col-12 px-0 col-xxl-10 svelte-16e9bna"}"><div id="${"tour-info-container"}" class="${"col-12 col-md-7 col-lg-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5 px-lg-5 pt-3 svelte-16e9bna"}">
-            ${tour.quickDetails ? `<div id="${"quick-details-container"}" class="${"col-10 d-fex justify-content-start flex-wrap p-3 mb-3 svelte-16e9bna"}"><h3 class="${"font-logo svelte-16e9bna"}">Quick Details</h3>
-                <ul class="${"d-flex justify-content-start mb-1 flex-wrap col-12 svelte-16e9bna"}"><li class="${"svelte-16e9bna"}">Price: ${escape(tour.price)}</li>
-                    <li class="${"svelte-16e9bna"}">Duration: ${escape(tour.duration)}</li>
-                    <li class="${"svelte-16e9bna"}">Distance: ${escape(tour.distance)}</li>
+    <div id="${"tour-content-container"}" class="${"d-flex align-items-start flex-wrap col-12 px-0 col-xxl-10 svelte-skxk20"}"><div id="${"tour-info-container"}" class="${"col-12 col-md-7 col-lg-8 d-flex flex-wrap justify-content-center content-container text-start center m-0 mb-5 px-lg-5 pt-3 svelte-skxk20"}">
+            ${tour.quickDetails ? `<div id="${"quick-details-container"}" class="${"col-10 d-fex justify-content-start flex-wrap p-3 mb-3 svelte-skxk20"}"><h3 class="${"font-logo svelte-skxk20"}">Quick Details</h3>
+                <ul class="${"d-flex justify-content-start mb-1 flex-wrap col-12 svelte-skxk20"}"><li class="${"svelte-skxk20"}">Price: ${escape(tour.price)}</li>
+                    <li class="${"svelte-skxk20"}">Duration: ${escape(tour.duration)}</li>
+                    <li class="${"svelte-skxk20"}">Distance: ${escape(tour.distance)}</li>
                     
-                    <li class="${"svelte-16e9bna"}">Level: ${escape(tour.difficulty)}</li>
-                    <li class="${"svelte-16e9bna"}">Ages: ${escape(tour.ages)}</li>
-                    <li class="${"svelte-16e9bna"}">Location: ${escape(tour.meetingLocation)}</li>
-                    <li class="${"svelte-16e9bna"}">Max Group Size: ${escape(tour.maxGroupSize)}</li>
+                    <li class="${"svelte-skxk20"}">Level: ${escape(tour.difficulty)}</li>
+                    <li class="${"svelte-skxk20"}">Ages: ${escape(tour.ages)}</li>
+                    <li class="${"svelte-skxk20"}">Location: ${escape(tour.meetingLocation)}</li>
+                    <li class="${"svelte-skxk20"}">Max Group Size: ${escape(tour.maxGroupSize)}</li>
                     </ul></div>
-            <div class="${"tour-divider col-12 mb-5 mt-3 svelte-16e9bna"}"></div>` : ``}
+            <div class="${"tour-divider col-12 mb-5 mt-3"}"></div>` : ``}
             
             <div class="${"col-12 d-flex justify-content-start flex-wrap px-3"}"><h3 class="${"font-logo text-left"}">Description</h3>
                 ${each(tour.description, (paragraph) => {
     return `<p class="${"col-12 text-left px-0 my-3 blog-text"}">${escape(paragraph.content)}</p>`;
   })}</div>
 
-            <div class="${"tour-divider col-12 mb-5 mt-3 svelte-16e9bna"}"></div>
+            <div class="${"tour-divider col-12 mb-5 mt-3"}"></div>
 
             ${tour.ridewithgps ? `<div class="${"col-12 d-flex justify-content-start flex-wrap px-3"}"><iframe class="${"my-3"}"${add_attribute("src", tour.ridewithgps, 0)} style="${"width: 1px; min-width: 100%; height: 700px; border: none;"}" scrolling="${"no"}"></iframe></div>
-            <div class="${"tour-divider col-12 mb-5 mt-3 svelte-16e9bna"}"></div>` : ``}
+            <div class="${"tour-divider col-12 mb-5 mt-3"}"></div>` : ``}
 
 
             ${tour.pics > 0 ? `<div class="${"col-12 px-3"}"><h3 class="${"font-logo text-left"}">Pictures</h3>
@@ -143,64 +143,63 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       }
     }
   )}</div>
-            <div class="${"tour-divider col-12 mb-5 mt-3 svelte-16e9bna"}"></div>` : ``}
+            <div class="${"tour-divider col-12 mb-5 mt-3"}"></div>` : ``}
 
             ${tour.itinerary ? `<div class="${"col-12 d-flex justify-content-start flex-wrap px-3"}"><h3 class="${"font-logo text-left"}">Itinerary</h3>
                 ${each(tour.itinerary, (itinerary) => {
-    return `<div class="${"col-12 d-flex flex-wrap"}"><div class="${"col-12 col-xl-3 d-flex flex-xl-column justify-content-start flex-wrap bg-light mb-3"}"><h3 class="${"text-left px-0 my-3 col-12 col-xl-auto"}">Day ${escape(itinerary.day)}</h3>
-                        <div class="${"tour-divider mb-3 svelte-16e9bna"}"></div>
-                        <div class="${"px-1 px-sm-3 col-6 col-xl-auto bg-light"}"><p class="${"text-left px-0 fw-bold"}">Meals Provided</p>
-                            <ul class="${"pl-3"}">${each(itinerary.meals, (meal) => {
-      return `<li class="${"svelte-16e9bna"}">${escape(meal)}</li>`;
+    return `<div class="${"col-12 d-flex flex-wrap"}"><h3 class="${"text-left px-0 my-3 col-12"}">Day ${escape(itinerary.day)} - ${escape(itinerary.title)}</h3>
+                    <div class="${"tour-divider mb-3 col-12 d-none d-md-inline"}"></div>
+                    <div class="${"col-12 col-xl-3 d-flex flex-xl-column justify-content-start flex-wrap bg-light mb-3 mb-xl-3 pt-3"}">
+                            <div class="${"px-1 px-sm-3 col-6 col-xl-auto bg-light"}"><p class="${"text-left px-0 fw-bold"}">Meals Provided</p>
+                                <ul class="${"pl-3"}">${each(itinerary.meals, (meal) => {
+      return `<li class="${"ls-none svelte-skxk20"}">${escape(meal)}</li>`;
     })}
-                            </ul></div>
-                        <div class="${"px-1 px-sm-3 col-6 col-xl-auto bg-light"}"><p class="${"text-left px-0 fw-bold"}">Lodging</p>
-                            <p class="${"text-left px-3"}">${escape(itinerary.lodging)}</p></div>
-                        <div class="${"px-1 px-sm-3 col-6 col-xl-auto bg-light"}"><p class="${"text-left px-0 fw-bold"}">Distance</p>
-                            <p class="${"text-left px-3"}">${escape(itinerary.miles)} miles</p></div>
-                        <div class="${"px-1 px-sm-3 col-6 col-xl-auto bg-light"}"><p class="${"text-left px-0 fw-bold"}">Elevation Gain/Loss</p>
-                            <p class="${"text-left px-3"}">+${escape(itinerary.elevationGain)}/-${escape(itinerary.elevationLoss)}</p>
-                        </div></div>
-                    <div class="${"col-12 col-xl-9 d-flex flex-column justify-content-start mb-3"}"><h3 class="${"text-left px-0 my-3"}">${escape(itinerary.title)}</h3>
-                        <div class="${"tour-divider mb-3 svelte-16e9bna"}"></div>
-                        ${each(itinerary.description, (paragraph) => {
+                                </ul></div>
+                            <div class="${"px-1 px-sm-3 col-6 col-xl-auto bg-light"}"><p class="${"text-left px-0 fw-bold"}">Lodging</p>
+                                <p class="${"text-left px-3"}">${escape(itinerary.lodging)}</p></div>
+                            <div class="${"px-1 px-sm-3 col-6 col-xl-auto bg-light"}"><p class="${"text-left px-0 fw-bold"}">Distance</p>
+                                <p class="${"text-left px-3"}">${escape(itinerary.miles)} miles</p></div>
+                            <div class="${"px-1 px-sm-3 col-6 col-xl-auto bg-light"}"><p class="${"text-left px-0 fw-bold"}">Elevation Gain/Loss</p>
+                                <p class="${"text-left px-3"}">+${escape(itinerary.elevationGain)}/-${escape(itinerary.elevationLoss)}</p>
+                            </div></div>
+                        <div class="${"col-12 col-xl-9 d-flex flex-column justify-content-start mb-3 px-0 px-xl-4"}">
+                            ${each(itinerary.description, (paragraph) => {
       return `<p class="${"text-left px-0 d-none d-md-inline"}">${escape(paragraph)}</p>`;
     })}
-                        ${validate_component(DetailItem, "DetailItem").$$render($$result, { itinerary }, {}, {})} 
-                    </div></div>
-
-                                        `;
+                            ${validate_component(DetailItem, "DetailItem").$$render($$result, { itinerary }, {}, {})} 
+                        </div></div>
+                    ${itinerary.day != tour.itinerary.length ? `<div class="${"tour-divider mb-3 col-12 d-inline d-md-none"}"></div>` : ``}`;
   })}</div>
-            <div class="${"tour-divider col-12 mb-5 mt-3 svelte-16e9bna"}"></div>` : ``}
+            <div class="${"tour-divider col-12 mb-5 mt-3"}"></div>` : ``}
             
 
             
            
             
-            ${tour.whatsProvided ? `<div class="${"col-12 d-flex justify-content-start flex-wrap px-3"}"><h3 class="${"font-logo text-left"}">What&#39;s provided</h3>
+            ${tour.whatsProvided ? `<div class="${"col-12 d-flex justify-content-start flex-wrap px-3"}"><h3 class="${"font-logo text-left"}">What&#39;s included</h3>
                 <ul class="${"col-12 mx-3"}">${each(tour.whatsProvided, (item) => {
-    return `<li class="${"col-12 text-left px-0 my-3 blog-text svelte-16e9bna"}">${escape(item)}</li>`;
+    return `<li class="${"col-12 text-left px-0 my-3 blog-text"}">${escape(item)}</li>`;
   })}</ul></div>
-            <div class="${"tour-divider col-12 mb-5 mt-3 svelte-16e9bna"}"></div>` : ``}
+            <div class="${"tour-divider col-12 mb-5 mt-3"}"></div>` : ``}
             
             ${tour.whatToBring ? `<div class="${"col-12 d-flex justify-content-start flex-wrap px-3"}"><h3 class="${"font-logo text-left"}">What to bring</h3>
                     <ul class="${"col-12 mx-3"}">${each(tour.whatToBring, (item) => {
-    return `<li class="${"col-12 text-left px-0 my-3 blog-text svelte-16e9bna"}">${escape(item)}</li>`;
+    return `<li class="${"col-12 text-left px-0 my-3 blog-text"}">${escape(item)}</li>`;
   })}</ul></div>` : ``}
             
 
             ${tour.conclusion ? `<div class="${"col-12 d-flex justify-content-start flex-wrap px-3"}"><p class="${"col-12 text-left px-0 my-3 blog-text"}">${escape(tour.conclusion)}</p></div>` : ``}</div> 
         
         
-        <aside id="${"calendar-aside"}" class="${"col-md-5 col-lg-4 m-0 p-3 p-lg-0 svelte-16e9bna"}">${tour.calendarURL ? `<div class="${"px-0 mx-0 col-12 d-flex flex-wrap svelte-16e9bna"}"><div id="${"aside-topsection"}" class="${"col-12 mx-0 px-0 order-2 order-md-1 svelte-16e9bna"}"><img src="${"../../img/tour1-cover.jpg"}" alt="${"calendar"}" class="${"col-12 px-0 d-none d-md-inline svelte-16e9bna"}"></div>
-                <div id="${"aside-bottomsection"}" class="${"col-12 mx-0 px-0 order-1 order-md-2 svelte-16e9bna"}">${validate_component(Calendar, "Calendar").$$render($$result, { url }, {}, {})}</div></div>` : `<div class="${"px-0 mx-0 col-12 d-flex flex-wrap svelte-16e9bna"}"><div id="${""}" class="${"col-12 mx-0 p-3 order-2 order-md-1"}"><h3 class="${"font-logo text-left"}">Contact To Book</h3>
-                    <div class="${"tour-divider col-12 mb-3 mt-3 svelte-16e9bna"}"></div>
+        <aside id="${"calendar-aside"}" class="${"col-md-5 col-lg-4 m-0 p-3 p-lg-0 svelte-skxk20"}">${tour.calendarURL ? `<div class="${"px-0 mx-0 col-12 d-flex flex-wrap svelte-skxk20"}"><div id="${"aside-topsection"}" class="${"col-12 mx-0 px-0 order-2 order-md-1 svelte-skxk20"}"><img src="${"../../img/tour1-cover.jpg"}" alt="${"calendar"}" class="${"col-12 px-0 d-none d-md-inline svelte-skxk20"}"></div>
+                <div id="${"aside-bottomsection"}" class="${"col-12 mx-0 px-0 order-1 order-md-2 svelte-skxk20"}">${validate_component(Calendar, "Calendar").$$render($$result, { url }, {}, {})}</div></div>` : `<div class="${"px-0 mx-0 col-12 d-flex flex-wrap svelte-skxk20"}"><div id="${""}" class="${"col-12 mx-0 p-3 order-2 order-md-1"}"><h3 class="${"font-logo text-left"}">Contact To Book</h3>
+                    <div class="${"tour-divider col-12 mb-3 mt-3"}"></div>
                     <div class="${"col-12 d-flex justify-content-center my-3"}">${validate_component(ContactCard, "ContactCard").$$render($$result, {}, {}, {})}</div></div></div>`}</aside></div>
     
-    <div class="${"col-12 d-flex justify-content-center mb-5"}"><a${add_attribute("href", tour.bookBtnURL, 0)} class="${"svelte-16e9bna"}"><button class="${"btn btn-primary svelte-16e9bna"}">Book now</button></a></div>  
+    <div class="${"col-12 d-flex justify-content-center mb-5"}"><a${add_attribute("href", tour.bookBtnURL, 0)} class="${"svelte-skxk20"}"><button class="${"btn btn-primary svelte-skxk20"}">Book now</button></a></div>  
 
 
-    <div class="${"col-12 px-1 px-sm-3 px-lg-5 d-flex justify-content-start"}"><a href="${"/tours"}" class="${"back-to svelte-16e9bna"}"><div class="${"py-3 px-3 mb-5"}">&lt;- Back to all tours</div></a></div>
+    <div class="${"col-12 px-1 px-sm-3 px-lg-5 d-flex justify-content-start"}"><a href="${"/tours"}" class="${"back-to svelte-skxk20"}"><div class="${"py-3 px-3 mb-5"}">&lt;- Back to all tours</div></a></div>
     
     </section>
  

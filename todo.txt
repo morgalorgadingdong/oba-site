@@ -7,4 +7,4 @@ Add partners to home page (need permission to add logo and link to their website
     COTA
         Should we donate a % of profits to COTA?
 
-
+Add functional cart

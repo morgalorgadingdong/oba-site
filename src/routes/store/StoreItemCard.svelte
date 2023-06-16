@@ -22,12 +22,12 @@
 <Modal 
   bind:isOpen={isModalOpen} 
   title={item.itemData.name} 
-  content={item.itemData.description} 
+  content={item} 
   on:close={closeModal} 
 />
 
 
-<div on:click={openModal} data-sveltekit-preload-data="hover">
+<div on:click={openModal} on:keypress={openModal} data-sveltekit-preload-data="hover">
     <div class="col-12 card mx-0 px-0">
         <div class="card-body">
             <div class="card-img-top" >
