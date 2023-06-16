@@ -28,7 +28,7 @@
 </div> -->
 
 
-<section id="tours" class="col-12 my-0 py-5 d-flex justify-content-center px-0">
+<section id="tours" class="col-12 my-0 py-5 d-flex justify-content-center px-0 flex-wrap">
     <!-- <h2 class="col-12">Tours</h2> -->
     <div class="d-flex justify-content-center justify-content-xl-start col-12 px-0 flex-wrap">
         {#each tours as tour}
@@ -37,6 +37,7 @@
             {/if}
         {/each}
     </div>
+    <a href="/tours" class="mt-5"><button class="btn btn-primary">All Tours</button></a>
 </section>
 
 <section id="why-choose-us" class="col-12 d-flex justify-content-center py-5 mb-0">

@@ -8,3 +8,13 @@ Add partners to home page (need permission to add logo and link to their website
         Should we donate a % of profits to COTA?
 
 Add functional cart
+
+Address Cross-Site Scripting vulnerability with Store
+
+
+Review and edit all copy on site
+    Home Page
+    About page
+    Tour descriptions
+    tour itinerary
+    Store item descriptions
