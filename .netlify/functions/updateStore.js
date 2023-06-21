@@ -9,6 +9,7 @@ const client = new Client({
 });
 let storeItems
 async function retrieveStoreItems() {
+exports.handler = async function(event, context) {    
     try {
         const response = await client.catalogApi.searchCatalogItems({
         // customAttributeFilters: [
@@ -25,6 +26,7 @@ async function retrieveStoreItems() {
         retrieveStoreItemImgs()
     } catch(error) {
         console.log(error);
+    }
     }
 }
 
@@ -80,4 +82,4 @@ function createJSONStoreItems() {
     console.log('Updated JSON Store File')
 }
 
-retrieveStoreItems()
+// retrieveStoreItems()
