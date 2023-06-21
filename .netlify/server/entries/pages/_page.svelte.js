@@ -18,10 +18,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 
-<section id="${"tours"}" class="${"col-12 my-0 py-5 d-flex justify-content-center px-0 svelte-1ucf1of"}">
+<section id="${"tours"}" class="${"col-12 my-0 py-5 d-flex justify-content-center px-0 flex-wrap svelte-1ucf1of"}">
     <div class="${"d-flex justify-content-center justify-content-xl-start col-12 px-0 flex-wrap"}">${each(tours, (tour) => {
     return `${tour.featured == true ? `${validate_component(TourCard, "TourCard").$$render($$result, { tour }, {}, {})}` : ``}`;
-  })}</div></section>
+  })}</div>
+    <a href="${"/tours"}" class="${"mt-5"}"><button class="${"btn btn-primary"}">All Tours</button></a></section>
 
 <section id="${"why-choose-us"}" class="${"col-12 d-flex justify-content-center py-5 mb-0 svelte-1ucf1of"}"><div class="${"col-12 col-md-10 d-flex justify-content-between flex-wrap"}"><h2 class="${"col-12 text-left svelte-1ucf1of"}">Why book with us</h2>
         <div class="${"col-12 col-md-3"}"><h4>Locally Based</h4>

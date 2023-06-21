@@ -4,7 +4,7 @@ import { r as readable } from "../../../chunks/index.js";
 readable(items);
 const ItemModal_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "img.svelte-myesom{object-fit:contain}span.svelte-myesom{z-index:10;position:absolute;top:0;left:0}.modal.svelte-myesom{display:flex;position:fixed;z-index:1;left:0;top:0;width:100vw;height:100vh;overflow:auto;background-color:rgba(0,0,0,0.4);padding-top:3%}.modal-content.svelte-myesom{background-color:#fefefe;padding:20px;border:1px solid #888;height:fit-content}.close.svelte-myesom{color:#aaaaaa;font-size:28px;font-weight:bold}.close.svelte-myesom:hover,.close.svelte-myesom:focus{color:#000;text-decoration:none;cursor:pointer}@media(max-width: 768px){.modal.svelte-myesom{padding-top:0%}.modal-content.svelte-myesom{width:100%;min-height:100%;overflow-y:scroll}span.svelte-myesom{position:fixed;top:0;left:2%}}",
+  code: "img.svelte-vjzasf{object-fit:contain}span.svelte-vjzasf{z-index:10;position:absolute;top:0;left:0}.modal.svelte-vjzasf{display:flex;position:fixed;z-index:1;left:0;top:0;width:100vw;height:100vh;overflow:auto;background-color:rgba(0,0,0,0.4);padding:2% 0}.modal-content.svelte-vjzasf{background-color:#fefefe;padding:20px;border:1px solid #888;height:fit-content}.close.svelte-vjzasf{color:black;font-size:28px;font-weight:bold}.close.svelte-vjzasf:hover,.close.svelte-vjzasf:focus{color:#000;text-decoration:none;cursor:pointer}@media(max-width: 768px){.modal.svelte-vjzasf{padding:0%;border-radius:0;border:none}.modal-content.svelte-vjzasf{width:100%;min-height:100%;overflow-y:scroll}span.svelte-vjzasf{position:fixed;top:0;left:2%}}",
   map: null
 };
 const ItemModal = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -19,13 +19,14 @@ const ItemModal = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   if ($$props.content === void 0 && $$bindings.content && content !== void 0)
     $$bindings.content(content);
   $$result.css.add(css$1);
-  return `${isOpen ? `<div class="${"modal justify-content-center svelte-myesom"}"><div class="${"modal-content col-12 col-md-10 col-lg-8 svelte-myesom"}"><div class="${"col-12 d-flex justify-content-start flex-wrap px-0"}"><span class="${"close svelte-myesom"}">×</span>
-          <div class="${"d-flex align-items-center px-0 col-12 col-xl-3"}"><img${add_attribute("src", content.itemData.imgURL[0], 0)} class="${"img svelte-myesom"}"></div>
+  return `${isOpen ? `<div class="${"modal justify-content-center svelte-vjzasf"}"><div class="${"modal-content col-12 col-md-10 col-lg-8 svelte-vjzasf"}"><div class="${"col-12 d-flex justify-content-start flex-wrap px-0"}"><span class="${"close svelte-vjzasf"}">×</span>
+          <div class="${"d-flex align-items-center px-0 col-12 col-xl-3"}"><img${add_attribute("src", content.itemData.imgURL[0], 0)} class="${"img svelte-vjzasf"}"></div>
           
           <div class="${"col-12 col-xl-9 px-0"}"><h2>${escape(title)}</h2>
             <div class="${"tour-divider col-12 mt-1 mb-3"}"></div>
-            <p class="${"col-12"}">${escape(content.itemData.description)}</p>
-            <div class="${"col-12 d-flex justify-content-center"}"><a href="${"https://square.link/u/FM5ymk6E"}" target="${"_blank"}" rel="${"noreferrer"}"><button class="${"btn"}">Purchase</button></a></div></div></div></div></div>` : ``}`;
+            <!-- HTML_TAG_START -->${content.itemData.descriptionHtml}<!-- HTML_TAG_END -->
+            
+            <div class="${"col-12 d-flex justify-content-center mt-4"}"><a href="${"https://square.link/u/FM5ymk6E"}" target="${"_blank"}" rel="${"noreferrer"}"><button class="${"btn"}">Purchase</button></a></div></div></div></div></div>` : ``}`;
 });
 const StoreItemCard_svelte_svelte_type_style_lang = "";
 const css = {
