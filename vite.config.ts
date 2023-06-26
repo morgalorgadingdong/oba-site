@@ -3,16 +3,16 @@ import type { UserConfig, defineConfig, searchForWorkspaceRoot } from 'vite';
 
 const config: UserConfig = {
 	plugins: [sveltekit()],
-	server: {
-		fs: {
-		  allow: [
-			// Search up for workspace root
-			searchForWorkspaceRoot(process.cwd()),
-			// Your custom rules
-			'/.netlify/functions/',
-		  ],
-		},
-	  },
+	// server: {
+	// 	fs: {
+	// 	  allow: [
+	// 		// Search up for workspace root
+	// 		searchForWorkspaceRoot(process.cwd()),
+	// 		// Your custom rules
+	// 		'/.netlify/functions/',
+	// 	  ],
+	// 	},
+	//   },
 
 };
 
