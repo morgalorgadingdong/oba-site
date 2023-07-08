@@ -7,16 +7,16 @@
 </script>
 
 <div class="parralax-container">
-    <div class="hero col-12 d-flex flex-column justify-content-end">
-    <div class="img-container">
-        <div class="hero-img"></div>
-        <!-- <img class="hero-img img" src="./img/hero-7.jpg"/> -->
+    <div class="hero col-12 d-flex flex-column justify-content-center">
+        <div class="img-container">
+            <div class="hero-img"></div>
+            <!-- <img class="hero-img img" src="./img/hero-7.jpg"/> -->
+        </div>
+        <div id="hero-tagline-container" class="d-flex justify-content-start justify-content-sm-center flex-wrap p-3 pb-5">
+            <h1 class="hero-tagline col-12 mb-4">Discover the best of Oregon on two wheels.</h1>
+            <a href="/tours"><button class="btn btn-primary">Tours</button></a>
+        </div>
     </div>
-    <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-5">
-        <h1 class="hero-tagline col-12 mb-4">Discover the best of Oregon on two wheels.</h1>
-        <a href="/tours"><button class="btn btn-primary">Tours</button></a>
-    </div>
-</div>
 </div>
 <!-- <div class="hero-spacer"></div> -->
 
@@ -40,7 +40,7 @@
     <a href="/tours" class="mt-5"><button class="btn btn-primary">All Tours</button></a>
 </section>
 
-<section id="why-choose-us" class="col-12 d-flex justify-content-center py-5 mb-0">
+<section id="why-choose-us" class="col-12 d-flex justify-content-center py-5 my-0">
     <div class="col-12 col-md-10 d-flex justify-content-between flex-wrap">
         <h2 class="col-12 text-left">Why book with us</h2>
         <div class="col-12 col-md-3">
@@ -127,11 +127,24 @@
 
 
 <style>
+    #hero-tagline-container {
+        padding-top: 15rem !important;
+    }
     section {
         
         margin: 1rem 0;
     }
+
+    .hero-img {
+        position: fixed;
+    }
     
+
+    .parralax-container > .hero > .img-container {
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+
+    }
+
     /* .hero-img {
         background-image: url(../img/hero-7.jpg);
         background-size: cover;
@@ -156,6 +169,7 @@
 
     section#tours {
         padding: 0;
+        background-color: white;
     }
 
    
@@ -369,4 +383,10 @@
         transition: all var(--animation-duration) ease-in-out;
         cursor: pointer;
     } */
+
+    @media (max-width: 576px) {
+        h1 {
+            text-align: left;
+        }
+    }
 </style>

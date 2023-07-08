@@ -8,7 +8,7 @@
 
 <button on:click={toggle} aria-expanded={isOpen} class="d-flex justify-content-center align-items-center d-md-none"><svg style="tran"  width="20" height="20" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg> <p>Details</p> </button>
 {#if isOpen}
-<ul transition:slide={{ duration: 600 }}>
+<ul transition:slide={{ duration: 500 }}>
 	{#each itinerary.description as paragraph}
 		<p class="text-left px-0 mt-3">{paragraph}</p>
 	{/each}
@@ -42,7 +42,7 @@
 		padding-top: 0.5em
 	}
 
-	svg { transition: transform 0.2s ease-in;
+	svg { transition: transform 0.25s ease-in;
 	}
 
 	@media (min-width: 768px) {

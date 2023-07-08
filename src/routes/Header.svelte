@@ -56,7 +56,8 @@
 
         z-index: 1;
         padding-top: 2rem;
-        background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
+        padding-bottom: 2rem;
+        background:  linear-gradient(rgba(37, 37, 37, 0.8), rgba(255, 255, 255, 0));
         width: 100vw;
         position: absolute;
         top: 0;
@@ -199,8 +200,11 @@
         }
 
 
-@media screen and (max-width: 991px) {
-  header > .col-12 {
+@media screen and (max-width: 992px) {
+  header {
+    background: none;
+  }
+    header > .col-12 {
     background-color: var(--color-primary);
   }
   
@@ -317,7 +321,7 @@
   margin: -100px 0 0 -50px; */
   padding: 25px;
   padding-top: 125px;
-  background: var(--color-dark);
+  background: rgb(74, 73, 73, 0.9);
   /* opacity: 0; */
   /* visibility: hidden; */
   list-style-type: none;

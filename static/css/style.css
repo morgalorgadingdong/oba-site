@@ -8,19 +8,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/hero-7.jpg);
+  background-image: url(../img/hero-12-c.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
   transform: translateZ(0);
   z-index: -1;
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
+/* @supports (-webkit-overflow-scrolling: touch) {
   .hero-img {
     background-attachment: scroll;
   }
-}
+} */
 
 
 
@@ -153,9 +154,12 @@ button:focus {
   --animation-duration-long: 2s;
 }
 
+h1 {
+  font-family: var(--font-hero);
+}
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-header);
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-hero);
   font-weight: 400;
 }
 
@@ -212,6 +216,7 @@ body {
 section {
   min-height: 80vh;
   max-height: fit-content;
+  background-color: white;
 }
 
 /* NAVBAR */
@@ -530,6 +535,14 @@ z-index: 1;
   #inspirational-section span {
     color: var(--color-light);
     font-size: 28px !important;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#hero-tagline-container a {
+  margin-left: 15px;
 }
 
  }

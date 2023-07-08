@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<section class="col-12 d-flex justify-content-center flex-wrap my-5">
+<section class="col-12 d-flex justify-content-center flex-wrap py-5">
     <div class="toggle-container col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap mb-5">
         <div class="col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3">
             <button class="view-toggle btn {view === 'singleDay' ? 'active' : 'inactive'}" on:click={toggleSingleDayView}>By Tour</button>
