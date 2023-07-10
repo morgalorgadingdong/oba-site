@@ -3,12 +3,14 @@ import { SQUARE_ACCESS_TOKEN } from '$env/static/private';
 import { Client, Environment, ApiError } from 'square';
 import fs from 'fs';
 
+console.log('loading netlify/functions/webhooks.js')
+
 const client = new Client({
     accessToken: SQUARE_ACCESS_TOKEN,
     environment: Environment.Production,
 });
 let storeItems
-async function retrieveStoreItems() {
+
 exports.handler = async function(event, context) {    
     try {
         const response = await client.catalogApi.searchCatalogItems({
@@ -79,8 +81,8 @@ exports.handler = async function(event, context) {
         console.log(error);
     }
     }
-}
 
 
 
+// async function retrieveStoreItems() {
 // retrieveStoreItems()

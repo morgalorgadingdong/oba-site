@@ -2,7 +2,9 @@ import { SQUARE_ACCESS_TOKEN_SANDBOX } from '$env/static/private';
 import { SQUARE_ACCESS_TOKEN } from '$env/static/private';
 import { Client, Environment, ApiError } from 'square';
 import fs from 'fs';
-console.log(SQUARE_ACCESS_TOKEN_SANDBOX);
+// console.log(SQUARE_ACCESS_TOKEN_SANDBOX);
+
+console.log('hooks.server.ts loaded')
 
 import type { Handle } from '@sveltejs/kit';
 import { construct_svelte_component_dev } from 'svelte/internal';
