@@ -26,8 +26,10 @@ exports.handler = async function(event, context) {
         storeItems = response.result.items;
         console.log(storeItems)
         console.log('Retrieved store items');
-        retrieveStoreItemImgs()
         
+        // Temporarily disabling this step to test JSON file creation
+        // retrieveStoreItemImgs()
+        createJSONStoreItems()
         async function retrieveStoreItemImgs() {    
             let index = 0;
             let imgURL = []
