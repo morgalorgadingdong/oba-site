@@ -34,9 +34,11 @@ exports.handler = async function(event, context) {
                 let ids = item.itemData.imageIds
                 
                 if (ids.length == 1) {
+                    console.log('Single image ID found')
                     ids = String(ids)
                     console.log(ids)
                     try {
+                        console.log(`attempting to retrieve image with id: ${id}`);
                         const response = await client.catalogApi.retrieveCatalogObject(ids);
                         imgURL.push(response.result.object.imageData.url) 
                         console.log('Appended all img URLs')
@@ -44,6 +46,7 @@ exports.handler = async function(event, context) {
                     console.log(error);
                     }
                 } else if (ids.length > 1) {
+                    console.log('Multiple image IDs found')
                     for (let id of ids) {
                         id = String(id);
                         console.log(id);
@@ -60,12 +63,11 @@ exports.handler = async function(event, context) {
                 storeItems[index].itemData.imgURL = imgURL
                 index++
             }
-            
-            
             createJSONStoreItems()
         }
         
         function createJSONStoreItems() {
+            console.log('Creating JSON Store File')
             //BigInt workaround
             const json = JSON.stringify(storeItems, (key, value) =>
                 typeof value === "bigint" ? value.toString() + "n" : value
