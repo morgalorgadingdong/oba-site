@@ -77,14 +77,19 @@ exports.handler = async function(event, context) {
             });
             console.log('Updated JSON Store File')
             
-            return {
-                statusCode: 200,
-                body: JSON.stringify({ message: "Online store updated" }),
-            };
+            
 
         }
+        return {
+            statusCode: 200,
+            body: JSON.stringify({ message: "Online store updated" }),
+        };
     } catch(error) {
         console.log(error);
+        return {
+            statusCode: 500,
+            body: JSON.stringify({ error: "Internal server error" }),
+          };
     }
     }
 
