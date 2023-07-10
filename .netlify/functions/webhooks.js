@@ -1,5 +1,5 @@
-import { SQUARE_ACCESS_TOKEN_SANDBOX } from '$env/static/private';
-import { SQUARE_ACCESS_TOKEN } from '$env/static/private';
+// const SQUARE_ACCESS_TOKEN_SANDBOX = process.env.SQUARE_ACCESS_TOKEN_SANDBOX;
+const SQUARE_ACCESS_TOKEN = process.env.SQUARE_ACCESS_TOKEN;
 import { Client, Environment, ApiError } from 'square';
 import fs from 'fs';
 
