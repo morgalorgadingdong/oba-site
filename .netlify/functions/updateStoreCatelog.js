@@ -76,6 +76,12 @@ exports.handler = async function(event, context) {
                     if (err) throw err;
             });
             console.log('Updated JSON Store File')
+            
+            return {
+                statusCode: 200,
+                body: JSON.stringify({ message: "Online store updated" }),
+            };
+
         }
     } catch(error) {
         console.log(error);
