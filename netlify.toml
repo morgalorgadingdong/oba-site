@@ -3,4 +3,8 @@
   publish = "build"
 
 [dev]
-  targetPort = 8080
+ command = "svelte-kit dev"
+ 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
