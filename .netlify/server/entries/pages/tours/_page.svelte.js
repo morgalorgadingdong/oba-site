@@ -12,7 +12,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <img class="${"hero-img img svelte-1cgzfco"}" src="${"./img/tours-2.jpg"}"></div>
     <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline col-12 svelte-1cgzfco"}">Tours</h1></div></div>
 
-<section class="${"col-12 d-flex justify-content-center flex-wrap my-5 svelte-1cgzfco"}"><div class="${"toggle-container col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap mb-5 svelte-1cgzfco"}"><div class="${"col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3"}"><button class="${"view-toggle btn " + escape("active", true) + " svelte-1cgzfco"}">By Tour</button></div>
+<section class="${"col-12 d-flex justify-content-center flex-wrap py-5 svelte-1cgzfco"}"><div class="${"toggle-container col-12 col-md-8 px-0 d-flex justify-content-between flex-wrap mb-5 svelte-1cgzfco"}"><div class="${"col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3"}"><button class="${"view-toggle btn " + escape("active", true) + " svelte-1cgzfco"}">By Tour</button></div>
         <div class="${"col-6 d-flex justify-content-center justify-content-md-center pl-3 mb-3"}"><button class="${"view-toggle btn " + escape("inactive", true) + " svelte-1cgzfco"}">By Date</button></div>
         
         </div>

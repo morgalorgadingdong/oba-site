@@ -12,6 +12,7 @@ const client = new Client({
 let storeItems
 
 exports.handler = async function(event, context) {    
+    
     try {
         const response = await client.catalogApi.searchCatalogItems({
         // customAttributeFilters: [
@@ -26,6 +27,7 @@ exports.handler = async function(event, context) {
         console.log(storeItems)
         console.log('Retrieved store items');
         retrieveStoreItemImgs()
+        
         async function retrieveStoreItemImgs() {    
             let index = 0;
             let imgURL = []
@@ -53,12 +55,14 @@ exports.handler = async function(event, context) {
                         try {
                             console.log(`attempting to retrieve image with id: ${id}`);
                             const response = await client.catalogApi.retrieveCatalogObject(id);
+                            console.log('Retrieved image')
                             imgURL.push(response.result.object.imageData.url);
-                            console.log('Appended all img URLs');
+                            
                         } catch (error) {
                             console.log(error);
                         }
                     }
+                    console.log('Appended all img URLs');
                 }
                 storeItems[index].itemData.imgURL = imgURL
                 index++
@@ -82,10 +86,8 @@ exports.handler = async function(event, context) {
             
 
         }
-        return {
-            statusCode: 200,
-            body: JSON.stringify({ message: "Online store updated" }),
-        };
+        
+        
     } catch(error) {
         console.log(error);
         return {
@@ -93,6 +95,10 @@ exports.handler = async function(event, context) {
             body: JSON.stringify({ error: "Internal server error" }),
           };
     }
+    return {
+        statusCode: 200,
+        body: JSON.stringify({ message: "Online store updated" }),
+    };
     }
 
 

@@ -41,7 +41,7 @@ const TourImg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const DetailItem_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "ul.svelte-12elz8n.svelte-12elz8n{padding-left:0}p.svelte-12elz8n.svelte-12elz8n{margin:0;padding:0;width:fit-content}button.svelte-12elz8n.svelte-12elz8n{background-color:var(--color-primary)}button.svelte-12elz8n.svelte-12elz8n{border:none;line-height:100%;margin:auto;color:white;cursor:pointer;margin:0;padding-bottom:0.5em;padding-top:0.5em\r\n	}svg.svelte-12elz8n.svelte-12elz8n{transition:transform 0.2s ease-in}@media(min-width: 768px){button.svelte-12elz8n.svelte-12elz8n,ul.svelte-12elz8n.svelte-12elz8n,p.svelte-12elz8n.svelte-12elz8n,svg.svelte-12elz8n.svelte-12elz8n{display:none}}[aria-expanded=true].svelte-12elz8n svg.svelte-12elz8n{transform:rotate(0.25turn)}",
+  code: "ul.svelte-5k588o.svelte-5k588o{padding-left:0}p.svelte-5k588o.svelte-5k588o{margin:0;padding:0;width:fit-content}button.svelte-5k588o.svelte-5k588o{background-color:var(--color-primary)}button.svelte-5k588o.svelte-5k588o{border:none;line-height:100%;margin:auto;color:white;cursor:pointer;margin:0;padding-bottom:0.5em;padding-top:0.5em\r\n	}svg.svelte-5k588o.svelte-5k588o{transition:transform 0.25s ease-in}@media(min-width: 768px){button.svelte-5k588o.svelte-5k588o,ul.svelte-5k588o.svelte-5k588o,p.svelte-5k588o.svelte-5k588o,svg.svelte-5k588o.svelte-5k588o{display:none}}[aria-expanded=true].svelte-5k588o svg.svelte-5k588o{transform:rotate(0.25turn)}",
   map: null
 };
 const DetailItem = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -50,7 +50,7 @@ const DetailItem = create_ssr_component(($$result, $$props, $$bindings, slots) =
   if ($$props.itinerary === void 0 && $$bindings.itinerary && itinerary !== void 0)
     $$bindings.itinerary(itinerary);
   $$result.css.add(css$1);
-  return `<button${add_attribute("aria-expanded", isOpen, 0)} class="${"d-flex justify-content-center align-items-center d-md-none svelte-12elz8n"}"><svg style="${"tran"}" width="${"20"}" height="${"20"}" fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}" class="${"svelte-12elz8n"}"><path d="${"M9 5l7 7-7 7"}"></path></svg> <p class="${"svelte-12elz8n"}">Details</p></button>
+  return `<button${add_attribute("aria-expanded", isOpen, 0)} class="${"d-flex justify-content-center align-items-center d-md-none svelte-5k588o"}"><svg style="${"tran"}" width="${"20"}" height="${"20"}" fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}" class="${"svelte-5k588o"}"><path d="${"M9 5l7 7-7 7"}"></path></svg> <p class="${"svelte-5k588o"}">Details</p></button>
 ${``}`;
 });
 const _page_svelte_svelte_type_style_lang = "";
