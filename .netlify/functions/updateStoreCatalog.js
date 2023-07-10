@@ -3,8 +3,6 @@ import { Client, Environment, ApiError } from 'square';
 import fs from 'fs';
 import path from 'path';
 
-console.log('loading netlify/functions/webhooks.js')
-
 const client = new Client({
     accessToken: SQUARE_ACCESS_TOKEN,
     environment: Environment.Production,
@@ -78,11 +76,12 @@ exports.handler = async function(event, context) {
             const json = JSON.stringify(storeItems, (key, value) =>
                 typeof value === "bigint" ? value.toString() + "n" : value
                 , 2);
-            const filePath = path.join(__dirname, '..', '..', 'src', 'routes', 'store-items.json');
+            console.log(__dirname)
+            const filePath = path.join(__dirname, '..', '..', '..', '..', 'src', 'routes', 'store-items.json');
             // console.log(json)
-                fs.writeFile(filePath, json, 'utf8', function(err) {
-                    console.log('File written')
-                    if (err) throw err;
+            fs.writeFile(filePath, json, 'utf8', function(err) {
+                console.log('File written')
+                if (err) throw err;
             });
             console.log('Updated JSON Store File')
             
