@@ -105,6 +105,13 @@ button:focus {
   font-weight: 400 600 700 800 900;
   font-style: normal;
 }
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('../fonts/SpaceGrotesk-VariableFont_wght.ttf');
+  font-weight: 400 600 700 800 900;
+  font-style: normal;
+}
+
 
 /* Variables */
 * {
@@ -145,8 +152,8 @@ button:focus {
   --font-serif: 'Playfair', serif;
   --font-mono: 'Cormorant-Garamond', serif;
 
-  --font-header: 'OpenSans', serif;
-  --font-hero: 'Sanchez', sans-serif;
+  --font-header: 'SpaceGrotesk', sans-serif;
+  --font-hero: 'SpaceGrotesk', sans-serif;
 
   --header-height: 0;
 

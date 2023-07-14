@@ -128,7 +128,7 @@
 
 <style>
     #hero-tagline-container {
-        padding-top: 15rem !important;
+        padding-top: 30rem !important;
     }
     section {
         
