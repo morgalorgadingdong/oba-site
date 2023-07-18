@@ -343,7 +343,7 @@ export const tours = [
         title: "Custom Shuttle Ride",
         nickname: 'Shuttle',
         featured: false,
-        published: true,
+        published: false,
         type: 'Single Day',
         duration: '',
         difficulty: '',
