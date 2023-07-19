@@ -1,7 +1,15 @@
 import "../../../chunks/index2.js";
-const csr = true;
-const prerender = true;
+import { getDocs, collection } from "firebase/firestore";
+import { d as db } from "../../../chunks/firebase.js";
+const load = async () => {
+  const storeItems = await getDocs(collection(db, "store"));
+  const storeItemsArray = storeItems.docs.map((doc) => doc.data());
+  return {
+    storeItems: storeItemsArray
+  };
+};
+const prerender = false;
 export {
-  csr,
+  load,
   prerender
 };

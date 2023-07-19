@@ -113,14 +113,33 @@ const options = {
 	<!-- <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/c3115bc4a5f9197edced380b/script.js"><\/script>  -->
 	<!-- End cookieyes banner -->
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVWKMZV73D"><\/script>
-	<script>
+	<script type="module" src="https://cookieconsent.popupsmart.com/js/CookieConsent.js" ><\/script>
+<script type="text/javascript" src="https://cookieconsent.popupsmart.com/js/App.js"><\/script>
+<script>
+    popupsmartCookieConsentPopup({
+        "siteName" : "Oregon Bicycle Adventures" ,
+        "notice_banner_type": "simple-dialog",
+        "consent_type": "gdpr",
+        "palette": "light",
+        "language": "English",
+        "privacy_policy_url" : "#" ,
+        "preferencesId" : "#" ,
+        "companyLogoURL" : "https://d2r80wdbkwti6l.cloudfront.net/Xf5V2NhFdvaeI61iTGq2b7kCi62QjhtF.jpg"
+    });
+<\/script>
+<!-- Google Analytics start -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SVWKMZV73D" type="text/plain" cookie-consent="tracking"><\/script>
+	<script type="text/plain" cookie-consent="tracking">
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 
 	gtag('config', 'G-SVWKMZV73D');
 	<\/script>
+
+    <!-- Google Analytics end -->
+    
+<noscript>Cookie Consent by <a href="https://popupsmart.com/" rel="nofollow noopener">Popupsmart Website</a></noscript> 
 	<body data-sveltekit-preload-data="hover" id="the-body">
 		<div style="display: contents">` + body + '</div>\n	</body>\n	<!-- <script src="' + assets2 + '/js/preload.js"><\/script>\n    <script src="' + assets2 + '/js/animations.js"><\/script> -->\n	<!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->\n	<script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"><\/script>\n	<!-- <script src="../js/tours.js" crossorigin="anonymous"><\/script> -->\n</html>\n',
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
@@ -183,7 +202,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1msr7bw"
+  version_hash: "ip5snz"
 };
 function get_hooks() {
   return import("./hooks.server.js");

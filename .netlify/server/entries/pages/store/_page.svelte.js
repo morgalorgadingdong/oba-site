@@ -1,6 +1,6 @@
 import { c as create_ssr_component, f as createEventDispatcher, b as add_attribute, e as escape, v as validate_component, d as each } from "../../../chunks/index2.js";
-import { i as items } from "../../../chunks/store-items.js";
 import { r as readable } from "../../../chunks/index.js";
+import { i as items } from "../../../chunks/store-items.js";
 readable(items);
 const ItemModal_svelte_svelte_type_style_lang = "";
 const css$1 = {
@@ -20,11 +20,11 @@ const ItemModal = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     $$bindings.content(content);
   $$result.css.add(css$1);
   return `${isOpen ? `<div class="${"modal justify-content-center svelte-vjzasf"}"><div class="${"modal-content col-12 col-md-10 col-lg-8 svelte-vjzasf"}"><div class="${"col-12 d-flex justify-content-start flex-wrap px-0"}"><span class="${"close svelte-vjzasf"}">×</span>
-          <div class="${"d-flex align-items-center px-0 col-12 col-xl-3"}"><img${add_attribute("src", content.itemData.imgURL[0], 0)} class="${"img svelte-vjzasf"}"></div>
+          <div class="${"d-flex align-items-center px-0 col-12 col-xl-3"}"><img${add_attribute("src", content.imgURL[0], 0)} class="${"img svelte-vjzasf"}"></div>
           
           <div class="${"col-12 col-xl-9 px-0"}"><h2>${escape(title)}</h2>
             <div class="${"tour-divider col-12 mt-1 mb-3"}"></div>
-            <!-- HTML_TAG_START -->${content.itemData.descriptionHtml}<!-- HTML_TAG_END -->
+            <!-- HTML_TAG_START -->${content.descriptionHTML}<!-- HTML_TAG_END -->
             
             <div class="${"col-12 d-flex justify-content-center mt-4"}"><a href="${"https://square.link/u/FM5ymk6E"}" target="${"_blank"}" rel="${"noreferrer"}"><button class="${"btn"}">Purchase</button></a></div></div></div></div></div>` : ``}`;
 });
@@ -35,8 +35,6 @@ const css = {
 };
 const StoreItemCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { item } = $$props;
-  let price = item.itemData.variations[0].itemVariationData.priceMoney.amount;
-  price = Number(price.slice(0, -1)) / 100;
   let isModalOpen = false;
   if ($$props.item === void 0 && $$bindings.item && item !== void 0)
     $$bindings.item(item);
@@ -48,7 +46,7 @@ const StoreItemCard = create_ssr_component(($$result, $$props, $$bindings, slots
     $$rendered = `${validate_component(ItemModal, "Modal").$$render(
       $$result,
       {
-        title: item.itemData.name,
+        title: item.name,
         content: item,
         isOpen: isModalOpen
       },
@@ -62,22 +60,26 @@ const StoreItemCard = create_ssr_component(($$result, $$props, $$bindings, slots
     )}
 
 
-<div data-sveltekit-preload-data="${"hover"}"><div class="${"col-12 card mx-0 px-0 svelte-22fhd3"}"><div class="${"card-body svelte-22fhd3"}"><div class="${"card-img-top svelte-22fhd3"}"><img${add_attribute("src", item.itemData.imgURL[0], 0)} class="${"svelte-22fhd3"}">
+<div data-sveltekit-preload-data="${"hover"}"><div class="${"col-12 card mx-0 px-0 svelte-22fhd3"}"><div class="${"card-body svelte-22fhd3"}"><div class="${"card-img-top svelte-22fhd3"}"><img${add_attribute("src", item.imgURL[0], 0)} class="${"svelte-22fhd3"}">
                 
                 
                 </div>
-            <div class="${"col-12 d-flex justify-content-between"}"><p>${escape(item.itemData.name)}</p>
-                <p>$ ${escape(price)}</p></div>
+            <div class="${"col-12 d-flex justify-content-between"}"><p>${escape(item.name)}</p>
+                <p>$ ${escape(item.price)}</p></div>
             </div></div>
 </div>`;
   } while (!$$settled);
   return $$rendered;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { data } = $$props;
+  console.log(data);
+  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
+    $$bindings.data(data);
   return `<div class="${"hero hero-sub col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"img-overlay"}"></div>
         <img class="${"hero-img img"}" src="${"./img/hero-2.jpg"}"></div>
     <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline col-12"}">Store</h1></div></div>
-<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><div class="${"col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(items, (item) => {
+<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><div class="${"col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(data.storeItems, (item) => {
     return `${validate_component(StoreItemCard, "StoreItemCard").$$render($$result, { item }, {}, {})}`;
   })}</div>
 </section>`;

@@ -1,16 +1,26 @@
+import { error, json } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
 const SQUARE_ACCESS_TOKEN = process.env.SQUARE_ACCESS_TOKEN;
 import { Client, Environment, ApiError } from 'square';
 import fs from 'fs';
 import path from 'path';
+import { doc, getDoc, writeBatch } from "firebase/firestore";
+import { db } from "$lib/firebase";
 
 const client = new Client({
     accessToken: SQUARE_ACCESS_TOKEN,
     environment: Environment.Production,
 });
-let storeItems
 
-exports.handler = async function(event, context) {    
+
+export const load = async function(event, context) {    
     
+}
+
+
+
+export const GET: RequestHandler = async ({ request }) => {
+    let storeItems
     try {
         const response = await client.catalogApi.searchCatalogItems({
         // customAttributeFilters: [
@@ -67,29 +77,25 @@ exports.handler = async function(event, context) {
                 storeItems[index].itemData.imgURL = imgURL
                 index++
             }
-            createJSONStoreItems()
+            updateDB()
         }
-        
-        function createJSONStoreItems() {
-            console.log('Creating JSON Store File')
-            //BigInt workaround
-            const json = JSON.stringify(storeItems, (key, value) =>
-                typeof value === "bigint" ? value.toString() + "n" : value
-                , 2);
-            console.log(__dirname)
-            const filePath = path.join(__dirname, 'store-items.json');
-            // console.log(json)
-            fs.writeFile(filePath, json, 'utf8', function(err) {
-                console.log('File written')
-                if (err) throw err;
-            });
-            console.log('Updated JSON Store File')
+        async function updateDB() {
+            console.log('Updating DB')
             
-            
-
+            storeItems.forEach(item => {
+                async function addStoreItemToDB(item) {
+                    const docRef = doc(db, "store", "store-items", item.id);
+                    await setDoc(docRef, item);
+            })
+            // const db = doc(db, 'store', 'store-items');
+            // const batch = writeBatch(db);
+            // batch.set(db, {storeItems: storeItems});
+            // batch.commit().then(() => {
+            //     console.log('DB updated')
+            // }).catch((error) => {
+            //     console.log(error)
+            // })
         }
-        
-        
     } catch(error) {
         console.log(error);
         return {
@@ -101,9 +107,31 @@ exports.handler = async function(event, context) {
         statusCode: 200,
         body: JSON.stringify({ message: "Online store updated" }),
     };
+}
+
+export const POST: RequestHandler = async ({ request, cookies }) => {
+
+    const { idToken } = await request.json();
+
+    const expiresIn = 60 * 60 * 24 * 5 * 1000; // 5 days
+
+    const decodedIdToken = await adminAuth.verifyIdToken(idToken);
+
+    if (new Date().getTime() / 1000 - decodedIdToken.auth_time < 5 * 60) {
+        const cookie = await adminAuth.createSessionCookie(idToken, { expiresIn });
+        const options = { maxAge: expiresIn, httpOnly: true, secure: true, path: '/' };
+
+        cookies.set('__session', cookie, options);
+
+        return json({ status: 'signedIn' });
+    } else {
+        throw error(401, 'Recent sign in required!');
     }
 
 
+};
 
-// async function retrieveStoreItems() {
-// retrieveStoreItems()
+export const DELETE: RequestHandler = async ({ cookies }) => {
+    cookies.delete('__session', { path: '/' });
+    return json({ status: 'signedOut' });
+}

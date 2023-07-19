@@ -28,13 +28,13 @@
         <div class="col-12 d-flex justify-content-start flex-wrap px-0">
           <span class="close" on:click={close}>&times;</span>
           <div class="d-flex align-items-center px-0 col-12 col-xl-3">
-            <img src="{ content.itemData.imgURL[0] }" class="img"/>
+            <img src="{ content.imgURL[0] }" class="img"/>
           </div>
           
           <div class="col-12 col-xl-9 px-0">
             <h2>{title}</h2>
             <div class="tour-divider col-12 mt-1 mb-3"></div>
-            {@html content.itemData.descriptionHtml}
+            {@html content.descriptionHTML}
             <!-- <p class="col-12">{parseDescription(content.itemData.description)}</p> -->
             <div class="col-12 d-flex justify-content-center mt-4">
               <a href="https://square.link/u/FM5ymk6E" target="_blank" rel="noreferrer"><button  class="btn">Purchase</button></a>
