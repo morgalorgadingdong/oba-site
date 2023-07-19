@@ -1,7 +1,9 @@
 <script>
     import items from '../store-items.json';
     import StoreItemCard from './StoreItemCard.svelte';
+    export let data
 
+    console.log(data)
     
 </script>
 

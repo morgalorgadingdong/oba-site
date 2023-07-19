@@ -77,7 +77,7 @@ exports.handler = async function(event, context) {
                 typeof value === "bigint" ? value.toString() + "n" : value
                 , 2);
             console.log(__dirname)
-            const filePath = path.join(__dirname, '..', '..', '..', '..', 'src', 'routes', 'store-items.json');
+            const filePath = path.join(__dirname, 'store-items.json');
             // console.log(json)
             fs.writeFile(filePath, json, 'utf8', function(err) {
                 console.log('File written')
