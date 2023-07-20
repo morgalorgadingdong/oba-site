@@ -179,15 +179,6 @@
         opacity: 1;
     }
 
-    .trip-preview-container {
-        /* height: 40vh; */
-        /* aspect-ratio: 1/1; */
-        overflow: hidden;
-        position: relative;
-        padding: 0;
-        z-index: 0;
-    }
-
     /* .trip-preview-container h4 {
         width: 100%;
         text-align: center;
@@ -195,115 +186,7 @@
         color: var(--color-light);
     } */
 
-    
-    .trip-preview {
-        width: 90%;
-        aspect-ratio: 1/1;
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 6px;
-        /* padding: 1rem; */
-        position: relative;
-    }
 
-    
-
-    
-    .trip-preview-img-container {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 6px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* position: relative; */
-        /* z-index: 2; */
-    }
-
-    .trip-preview-img {
-        /* height: 40vh; */
-        width: 100%;
-        height: 100%;
-        transition: all var(--animation-duration) ease-in-out;
-        background-size: cover;
-        background-position: center;
-        /* position: absolute;
-        top: 0;
-        left: 0; */
-        /* z-index: 1; */
-    }
-
-
-
-    .trip-preview:hover .trip-preview-img, .trip-preview:focus .trip-preview-img {
-        transform: scale(1.10);
-        transition: all var(--animation-duration) ease-in-out;
-        cursor: pointer;
-    }
-
-    .trip-preview-container h4 {
-        /* position: absolute;
-        left: 0;
-        bottom: 15%; */
-        background-color: var(--color-primary);
-        color: var(--color-light);
-        transition: all var(--animation-duration) ease-in-out;
-        /* transform: translateY(-300%); */
-        z-index: 3;
-        position: relative;
-        right: 2vw;
-        /* bottom: 6vw; */
-        width: fit-content;
-        font-family: var(--font-hero);
-    }
-
-    .trip-info-container {
-        transform: translateY(-100%);
-        transition: all var(--animation-duration) ease-in-out;
-        /* z-index: -1;
-        width: 90%;
-        margin-left: 10%; */
-        opacity: 0;
-        position: relative;
-        /* bottom: 6vw; */
-    }
-
-    .trip-info {
-        background-color: var(--color-primary);
-        color: var(--color-light);
-        padding: 0.5rem 0.75rem;
-        height: 100%;
-        /* z-index: -1; */
-        
-    }
-
-    .trip-info span {
-        line-height: 1rem;
-    }
-
-    .trip-preview:hover .trip-info-container, .trip-preview:focus .trip-info-container  {
-        transform: translateY(0%);
-        transition: all var(--animation-duration) ease-in-out;
-        opacity: 1;
-        
-    }
-
-    #tour1 {
-        background-image: url('$lib/img/tour1-cover.jpg');
-    }
-    #tour2 {
-        background-image: url('$lib/img/tour2-cover2.jpg');
-    }
-
-    #tour3 {
-        background-image: url('$lib/img/tour3-cover.jpeg');
-    }
-    
-    #tour4 {
-        background-image: url('$lib/img/tour4-cover.jpg');
-
-    }
 
 
     #why-choose-us {
@@ -328,49 +211,6 @@
     #inspirational-section span {
         color: var(--color-light);
         font-size: 40px;
-    }
-
-
-    .trip-preview-container p {
-        color: var(--color-light);
-        /* line-height: 1rem; */
-        margin-bottom: 0;
-    }
-
-    .trip-preview-text-container {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        /* container height minus padding on both sides to get true height, minus height of text minus padding of text, minus top padding */
-        bottom: calc(-33vw + 2rem + 30px + 1rem + 0.5rem);
-        left: 0;
-        background-color: rgba(var(--color-dark-o), 0.5);
-        transition: all var(--animation-duration) ease-in-out;
-    }
-
-    .trip-about-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 10%;
-        height: 100%;
-    }
-
-    
-    .cta-container {
-
-    } 
-
-    .cta {
-        position: absolute;
-        bottom: 0%;
-        transform: translate(0%, 40%);
-        text-align: center;
-        /* background-color: rgba(var(--color-dark-o), 0.8);
-        width: fit-content; */
-        background-color: var(--color-primary);
-        z-index: 2
     }
 
     /* .trip-preview-img-container:hover h4 {

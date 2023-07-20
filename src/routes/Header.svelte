@@ -20,7 +20,6 @@
 <header class="col-12 px-0 mx-0">
     <div class="col-12 d-flex justify-content-between px-0 px-lg-5 align-items-center">
         <a class="pr-5 d-flex justify-content-start px-0 align-items-center logo-container" href="/">
-
             <img src="/img/OBA_PrimaryLogo_WhiteType.png" alt="Oregon Bicycle Adventures Logo" class="ml-3 mr-0 p-2 p-sm-3 p-lg-2" />
         </a>
         <nav class="d-none d-lg-flex col-lg-6 col-xxl-5 justify-content-between align-items-center">
