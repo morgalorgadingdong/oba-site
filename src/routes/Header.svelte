@@ -31,7 +31,7 @@
         </nav>
 
         <div class="col-1 col-xxl-3 d-none d-lg-flex justify-content-end align-items-center align-content-center">
-            <a href="https://fareharbor.com/embeds/book/oregonbicycleadventures/?full-items=yes"><button class="btn btn-primary">Book</button></a>
+            <a href="/store/cart"><img src="./img/cart.png" class="icon"></a>
         </div>
         <div id="menuToggle" class="px-3 d-lg-none">
             <input type="checkbox" bind:checked={headerToggle}/>
@@ -51,6 +51,10 @@
 </header>
 
 <style>
+    .icon {
+        max-width: 23px;
+    }
+    
     header {
 
         z-index: 1;

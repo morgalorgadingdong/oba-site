@@ -109,7 +109,7 @@
         z-index: -1;
     } */
 
-    .hero-img {
+    .img {
         object-position: left;
     }
 

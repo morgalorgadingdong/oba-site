@@ -1,8 +1,6 @@
 // const SQUARE_ACCESS_TOKEN = process.env.SQUARE_ACCESS_TOKEN;
 import { Client, Environment, ApiError } from 'square';
-import fs from 'fs';
-import path from 'path';
-import { doc, setDoc, writeBatch } from "firebase/firestore";
+import { doc, setDoc, getDocs, deleteDoc, collection } from "firebase/firestore";
 import { db } from "$lib/firebase";
 import { SQUARE_ACCESS_TOKEN } from '$env/static/private';
 
@@ -35,6 +33,7 @@ export const load = async function() {
     let priceS: string;
     let price: number;
     let variations: any[] = [];
+    let squareItemIds = [];
     try {
         const response = await client.catalogApi.searchCatalogItems({});
         storeItems = response.result.items;
@@ -62,10 +61,12 @@ export const load = async function() {
                 [], 
                 variations
             )
+            squareItemIds.push(storeItems[i].id);
 
             try {
                 await retrieveStoreItemImgs(currentItem)
                 await setStoreItemToDB(currentItem)
+                await deleteNonExistentItems(squareItemIds);
             } catch (error) {
                 console.log(error)
             }
@@ -127,6 +128,19 @@ export const load = async function() {
                 imgIds: currentItem.imgIds, 
                 imgURL: currentItem.imgURL,
                 variations: currentItem.variations
+            });
+        }
+
+        async function deleteNonExistentItems(squareItemIds) {
+            // Get all documents from the store collection
+            const querySnapshot = await getDocs(collection(db, 'store'));
+        
+            // Loop through each document
+            querySnapshot.forEach(async (doc) => {
+                // If the document's id is not found in the squareItemIds array, delete the document
+                if (!squareItemIds.includes(doc.data().id)) {
+                    await deleteDoc(doc.ref);
+                }
             });
         }
 
