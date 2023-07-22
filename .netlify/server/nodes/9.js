@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/store/_itemName_/_page.ts.js';
+import * as server from '../entries/pages/store/checkout/_page.server.ts.js';
 
 export const index = 9;
-export const component = async () => (await import('../entries/pages/store/_itemName_/_page.svelte.js')).default;
-export { universal };
-export const universal_id = "src/routes/store/[itemName]/+page.ts";
-export const imports = ["_app/immutable/nodes/9.db24cda4.js","_app/immutable/chunks/index.f24d19fd.js","_app/immutable/chunks/store-items.a6156795.js"];
+export const component = async () => (await import('../entries/pages/store/checkout/_page.svelte.js')).default;
+export { server };
+export const server_id = "src/routes/store/checkout/+page.server.ts";
+export const imports = ["_app/immutable/nodes/9.09be4f5c.js","_app/immutable/chunks/index.fe5c5514.js"];
 export const stylesheets = [];
 export const fonts = [];

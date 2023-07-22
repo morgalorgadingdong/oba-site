@@ -1,4 +1,4 @@
-import { c as create_ssr_component } from "../../../chunks/index2.js";
+import { c as create_ssr_component } from "../../../chunks/index3.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: "#mission-section.svelte-p0yttu.svelte-p0yttu.svelte-p0yttu{background-color:var(--color-primary);color:white}#mission-statement.svelte-p0yttu.svelte-p0yttu.svelte-p0yttu{font-size:1.5rem;font-style:italic}@media(min-width: 768px){p.svelte-p0yttu.svelte-p0yttu.svelte-p0yttu{font-size:1.3rem}}b.svelte-p0yttu.svelte-p0yttu.svelte-p0yttu{color:var(--color-highlight)}#about-intro.svelte-p0yttu.svelte-p0yttu.svelte-p0yttu{overflow:hidden}#about-intro.svelte-p0yttu>div.svelte-p0yttu.svelte-p0yttu{position:relative}#about-intro.svelte-p0yttu>div.svelte-p0yttu>img.icon.svelte-p0yttu{position:absolute;bottom:0%;left:0;transform:translate(-10%, 30%);font-size:1.5rem;font-style:italic;width:60%;max-width:500px;opacity:0.7}",
@@ -7,7 +7,7 @@ const css = {
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<div class="${"hero hero-sub col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"img-overlay"}"></div>
-        <img class="${"hero-img img"}" src="${"./img/carl-and-morgan.jpg"}"></div>
+        <img class="${"img"}" src="${"./img/carl-and-morgan.jpg"}"></div>
     <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline col-12"}">About</h1></div></div>
 
 

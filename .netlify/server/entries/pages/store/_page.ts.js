@@ -1,4 +1,4 @@
-import "../../../chunks/index2.js";
+import "../../../chunks/index3.js";
 import { getDocs, collection } from "firebase/firestore";
 import { d as db } from "../../../chunks/firebase.js";
 const load = async () => {
@@ -8,7 +8,7 @@ const load = async () => {
     storeItems: storeItemsArray
   };
 };
-const prerender = false;
+const prerender = true;
 export {
   load,
   prerender

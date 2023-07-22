@@ -1,4 +1,4 @@
-import { c as create_ssr_component, i as compute_rest_props, f as createEventDispatcher, j as spread, k as escape_attribute_value, l as escape_object, b as add_attribute, v as validate_component } from "./index2.js";
+import { c as create_ssr_component, h as compute_rest_props, i as createEventDispatcher, j as spread, k as escape_attribute_value, l as escape_object, b as add_attribute, v as validate_component } from "./index3.js";
 import "./splide.min.js";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

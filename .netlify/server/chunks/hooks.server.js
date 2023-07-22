@@ -1,7 +1,7 @@
 import { S as SQUARE_ACCESS_TOKEN } from "./private.js";
 import { Client, Environment } from "square";
 import fs from "fs";
-import "./index2.js";
+import "./index3.js";
 console.log("hooks.server.ts loaded");
 const handle = async ({ event, resolve }) => {
   const response = await resolve(event);

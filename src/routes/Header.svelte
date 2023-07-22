@@ -1,6 +1,7 @@
 <script>
     import { page } from '$app/stores';
     import { onMount } from 'svelte';
+    import cartImg from '$lib/img/cart.png';
     
     /**
      * @type {any}
@@ -31,7 +32,7 @@
         </nav>
 
         <div class="col-1 col-xxl-3 d-none d-lg-flex justify-content-end align-items-center align-content-center">
-            <a href="/store/cart"><img src="./img/cart.png" class="icon"></a>
+            <a href="/store/cart"><img src={cartImg} class="icon"></a>
         </div>
         <div id="menuToggle" class="px-3 d-lg-none">
             <input type="checkbox" bind:checked={headerToggle}/>

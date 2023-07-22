@@ -1,4 +1,4 @@
-import { c as create_ssr_component, b as add_attribute, e as escape, d as each, v as validate_component } from "../../../../chunks/index2.js";
+import { c as create_ssr_component, b as add_attribute, e as escape, d as each, v as validate_component } from "../../../../chunks/index3.js";
 import { t as tours } from "../../../../chunks/tours.js";
 /* empty css                                                         */import { S as Splide_1, a as SplideTrack, b as SplideSlide } from "../../../../chunks/SplideSlide.js";
 import "../../../../chunks/splide.min.js";
