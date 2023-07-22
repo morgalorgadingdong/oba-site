@@ -3,12 +3,31 @@
 
     // let price = item.itemData.variations[0].itemVariationData.priceMoney.amount;
     // price = (Number(price.slice(0, -1))) / 100;
-    console.log(item)
+
+    import Modal from './ItemModal.svelte';
+
+    let isModalOpen = false;
+    
+
+    function openModal() {
+        isModalOpen = true;
+    }
+
+    function closeModal() {
+        isModalOpen = false;
+    }
 </script>
 
 
+<Modal 
+  bind:isOpen={isModalOpen} 
+  title={item.name} 
+  content={item} 
+  on:close={closeModal} 
+/>
 
-<a href={'./store/' + item.name} data-sveltekit-preload-data="hover">
+
+<div on:click={openModal} on:keypress={openModal} data-sveltekit-preload-data="hover">
     <div class="col-12 card mx-0 px-0">
         <div class="card-body">
             <div class="card-img-top" >
@@ -24,7 +43,7 @@
             <!-- <div class="card-img-top"></div> -->
         </div>
     </div>
-</a>
+</div>
 
 
 <style>
