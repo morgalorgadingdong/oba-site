@@ -17,15 +17,7 @@
 
 </script>
 
-<div class="hero hero-sub col-12 d-flex flex-column justify-content-end">
-    <div class="img-container">
-        <div class="img-overlay"></div>
-        <img class="img" src="../img/hero-2.jpg"/>
-    </div>
-    <div id="hero-tagline-container" class="d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5">
-        <h1 class="hero-tagline col-12">Store</h1>
-    </div>
-</div>
+
 <div class="col-12 d-flex justify-content-start flex-wrap px-0 py-5">
     
     <div class="col-12 col-sm-6 d-flex align-items-start px-0 product-image-container">
@@ -53,7 +45,7 @@
         
     </div>
     <div class="col-12 d-flex justify-content-center">
-        <a href="/store" class=""><div class="btn-secondary my-5">Back to Store</div></a>
+        <a href="/store" class=""><div class="btn btn-secondary my-5">Back to Store</div></a>
     </div>
 
 </div>

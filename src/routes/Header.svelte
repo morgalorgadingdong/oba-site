@@ -32,7 +32,7 @@
         </nav>
 
         <div class="col-1 col-xxl-3 d-none d-lg-flex justify-content-end align-items-center align-content-center">
-            <a href="/store/cart"><img src={cartImg} class="icon"></a>
+            <a class="" href="https://fareharbor.com/embeds/book/oregonbicycleadventures/?full-items=yes"><button class="btn">Book</button></a>
         </div>
         <div id="menuToggle" class="px-3 d-lg-none">
             <input type="checkbox" bind:checked={headerToggle}/>
@@ -73,6 +73,7 @@
         position: relative;
         height: 100%;
         background-color: var(--color-primary);
+        border-radius: 0 0.25rem 0.25rem 0;
     }
 
     .logo-text-container {

@@ -24,10 +24,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   console.log(data);
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
-  return `<div class="${"hero hero-sub col-12 d-flex flex-column justify-content-end"}"><div class="${"img-container"}"><div class="${"img-overlay"}"></div>
-        <img class="${"img"}" src="${"./img/hero-2.jpg"}"></div>
-    <div id="${"hero-tagline-container"}" class="${"d-flex justify-content-center flex-wrap p-3 pb-3 pb-md-5"}"><h1 class="${"hero-tagline col-12"}">Store</h1></div></div>
-<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><div class="${"col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(data.storeItems, (item) => {
+  return `<section class="${"col-12 d-flex justify-content-center flex-wrap my-5"}"><div class="${"col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-wrap content-container mt-4"}">${each(data.storeItems, (item) => {
     return `${validate_component(StoreItemCard, "StoreItemCard").$$render($$result, { item }, {}, {})}`;
   })}</div>
 </section>`;

@@ -1,5 +1,6 @@
 <script>
     import { cart } from '$lib/stores/cart';
+    import CheckOutButton from './CheckOutButton.svelte';
 
     function removeItem(item) {
       // similar logic as addItem, but for removing an item
@@ -14,7 +15,10 @@
         cart.set([])
     }
 
-    
+    function returnDynamicRoute(item) {
+      let route = `/store/${item.name}`
+      return route
+    }
 
     let total
     $: total = $cart.reduce((acc, item) => acc + item.price * item.quantity, 0)
@@ -23,37 +27,48 @@
   
   <!-- display the cart items -->
   
-  <div class="col-12 d-flex justify-content-center flex-wrap py-5">
-    <ul class="col-12 col-lg-8">
+  <div class="col-12 d-flex justify-content-center flex-wrap py-5 px-0">
+    <ul class="col-12 col-lg-8 px-0">
       {#if $cart.length === 0}
         <p class="text-center">Your cart is empty.</p>
       {/if}
       {#each $cart as item}
-        <li class="col-12 d-flex justify-content-between align-items-center mb-3">
+        <li class="col-12 d-flex justify-content-between align-items-center mb-3 px-0">
           
-          <img src={item.img} alt={item.name} class="col-2"/>
-          <p class="col-4 cart-item-text">{item.name}</p>
+          <a href={returnDynamicRoute(item)} class="col-6 d-flex align-items-center px-0">
+            <img src={item.img} alt={item.name} class="col-4"/>
+            <p class="col-8 cart-item-text">{item.name}</p>
+          </a>
           <span class="mx-3">{item.size}</span> <span class="mx-3">${item.price}</span>  <input type="number" bind:value={item.quantity} min="1"/>
           <button class="btn-remove" on:click={ removeItem(item) }>X</button>
         </li>
       {/each}
 
     </ul>
+    {#if $cart.length > 0}  
     <div class="col-12 d-flex justify-content-end flex-wrap">
       <h3 class="col-12 text-right">Total: $ {total}</h3>
       <div class="col-12 d-flex justify-content-end my-3">
-        <a href="/store/checkout"><button class="btn" disabled>Checkout</button></a>
+        
+          <CheckOutButton />
+        
       </div>
       <div class="col-12 d-flex justify-content-end">
-        <button class="btn-secondary" on:click={_ => clearCart()}>Clear Cart</button>
+        <button class="btn btn-secondary" on:click={_ => clearCart()}>Clear Cart</button>
       </div>
-  </div>
+    </div>
+    {/if}
 </div>
   
   <!-- a button to add an item to the cart -->
   <!-- <button on:click={_ => addItem('some-id')}>Add item</button> -->
 
 <style>
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
   input {
     width: 40px;

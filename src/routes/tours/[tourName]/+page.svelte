@@ -362,7 +362,7 @@
 
 
     <div class="col-12 px-1 px-sm-3 px-lg-5 d-flex justify-content-start">
-        <a href="/tours" class="back-to"><div class="py-3 px-3 mb-5">&lt- Back to all tours</div></a>
+        <a href="/tours" class="back-to"><button class="btn btn-secondary mb-5">Back to all tours</button></a>
     </div>
     <!-- <a href={'./'+testBlog.Title}>{testBlog.Title}</a>  -->
     <!-- <p on:click={blog = testBlog}>{testBlog.Title}</p> -->
@@ -388,11 +388,11 @@
     /* li {
         list-style: none;
     } */
-    .btn {
+    /* .btn {
         background-color: var(--color-primary);
         color: var(--color-light);
         width: fit-content;
-    }
+    } */
 
     .back-to {
         text-decoration: none;
@@ -440,7 +440,8 @@
         /* border: solid black 2px; */
         height: fit-content;
         background-color: var(--color-primary);
-        /* border-radius: 6px; */
+        border-radius: 0.25rem;
+        
     }
 
     #quick-details-container * {

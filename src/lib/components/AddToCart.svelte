@@ -74,7 +74,7 @@
 
 <form on:submit|preventDefault={addToCart} class="d-flex justify-content-start align-items-center flex-wrap py-3">
     
-  <label for="size" class="pl-3">Size:</label>
+  <label for="size" class="pl-3 pr-1">Size:</label>
     <select id="size" bind:value={size}>
         <option value="">Select Size</option>
         {#each variations as variation}
@@ -83,7 +83,7 @@
     </select>
 
     
-    <label for="quantity" class="pl-3">Quantity:</label>
+    <label for="quantity" class="pl-3 pr-1">Quantity:</label>
     <input type="number" id="quantity" bind:value={quantity} min="1" />
 
     <button class="btn m-3" type="submit">Add to Cart</button>

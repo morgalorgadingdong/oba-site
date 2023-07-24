@@ -94,6 +94,7 @@
         border-radius: 0 0 6px 6px;
         border: solid 2px lightgray;
         border-top: none;
+        border-radius: 0.25rem;
         /* border-top: 5px solid var(--color-primary); */
     }
 
@@ -182,6 +183,7 @@
     #tour-title-desktop {
         background-color: var(--color-primary);
         color: var(--color-light);
+        border-radius: 0.25rem;
     }
 
     @media (min-width: 768px) {
@@ -214,6 +216,7 @@
         color: var(--color-light);
         padding: 0.5rem 0.75rem;
         height: 100%;
+        border-radius: 0.25rem;
         /* z-index: -1; */
         
     }

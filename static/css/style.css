@@ -262,8 +262,14 @@ a:hover {
   cursor: pointer;
 }
 
+button {
+  border-radius: 0.25rem;
+}
+
 .btn {
-  border-radius: 0;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
   min-width: 100px;
   font-family: var(--font-header);
   text-transform: uppercase;
