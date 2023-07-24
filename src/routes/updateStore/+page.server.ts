@@ -27,7 +27,6 @@ function StoreItem(name, id, description, descriptionHTML, price, imgIds, imgURL
 // Loop through each store item, retreiving imgURLs, creating a new StoreItem object for each, and then pushing that item to the store items array
 // Push each store item to the DB
 
-
 export const load = async function() {    
     let storeItems: any;
     let priceS: string;
