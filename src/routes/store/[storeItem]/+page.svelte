@@ -24,7 +24,7 @@
     
     <div class="col-12 col-sm-6 d-flex align-items-start px-0 product-image-container">
         {#if data.imgURL.length > 1}
-        <Splide aria-label="" class="z-reset" hasTrack={ false } options={ {
+        <Splide aria-label="" class="z-reset col-12 px-0" hasTrack={ false } options={ {
             type: 'loop',
             perPage: 1,
             breakpoints: {
@@ -39,7 +39,7 @@
           } }>
           <SplideTrack>
             {#each data.imgURL as pic}
-                <SplideSlide class="d-flex justify-content-center">
+                <SplideSlide class="d-flex justify-content-center mb-3">
                     <img src="{ pic }" class="product-image mx-3 col-12"/>
                 </SplideSlide>
             {/each}

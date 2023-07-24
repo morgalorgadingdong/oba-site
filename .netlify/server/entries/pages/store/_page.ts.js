@@ -8,7 +8,7 @@ const load = async () => {
     storeItems: storeItemsArray
   };
 };
-const prerender = true;
+const prerender = false;
 export {
   load,
   prerender
