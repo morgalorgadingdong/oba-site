@@ -2,6 +2,8 @@
     // import { PageData } from "./$types";
     import { page } from '$app/stores';
     import AddToCart from '$lib/components/AddToCart.svelte';
+    import {Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
+    import '@splidejs/svelte-splide/css';
     // import { enhance } from "$app/forms";
     
 
@@ -21,7 +23,36 @@
 <div class="col-12 d-flex justify-content-start flex-wrap px-0 py-5">
     
     <div class="col-12 col-sm-6 d-flex align-items-start px-0 product-image-container">
-        <img src="{ data.imgURL[0] }" class="product-image mx-3 col-12"/>
+        {#if data.imgURL.length > 1}
+        <Splide aria-label="" class="z-reset" hasTrack={ false } options={ {
+            type: 'loop',
+            perPage: 1,
+            breakpoints: {
+
+                576: {
+                    perPage: 1,
+                }
+            },
+            focus: 'center',
+            drag: 'free',
+            snap: true
+          } }>
+          <SplideTrack>
+            {#each data.imgURL as pic}
+                <SplideSlide class="d-flex justify-content-center">
+                    <img src="{ pic }" class="product-image mx-3 col-12"/>
+                </SplideSlide>
+            {/each}
+                
+            </SplideTrack>
+            <div class="splide__arrows col-12 d-flex justify-content-between">
+                <button class="splide__arrow splide__arrow--prev"><i class="fa-solid fa-caret-left"></i></button>
+                <button class="splide__arrow splide__arrow--next"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            </Splide>
+        {:else}
+            <img src="{ data.imgURL[0] }" class="product-image mx-3 col-12"/>
+        {/if}
     </div>
     
     <div class="col-12 col-sm-6 px-5 d-flex justify-content-center flex-wrap">

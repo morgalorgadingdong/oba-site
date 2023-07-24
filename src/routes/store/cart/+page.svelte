@@ -11,7 +11,7 @@
         <h1 class="hero-tagline col-12">Cart</h1>
     </div>
 </div> -->
-<section class="col-12 d-flex justify-content-center flex-wrap my-5">
+<section class="col-12 d-flex justify-content-center flex-wrap mb-5">
     <Cart />
     <div class="col-12 d-flex justify-content-center ">
         <a href="/store"><button class="btn btn-secondary">Keep shopping</button></a>

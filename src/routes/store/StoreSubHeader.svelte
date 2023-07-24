@@ -1,5 +1,5 @@
 <script>
-    import cartImg from '$lib/img/cart-primary.png';
+    import cartImg from '$lib/img/cart.png';
     import { page } from '$app/stores';
 
     // export let data
@@ -21,7 +21,7 @@
 <div class="col-12 d-flex justify-content-between mt-3 align-items-center">
     <div class="col-9 d-flex justify-content-start">
         {#if $page.route.id !== '/store' && !$page.route.id?.includes("cart")}
-            <a href="/store"><span>/store </span></a><span>/{getLastSegment()}</span>
+            <a href="/store"><span class="color-highlight">/store </span></a><span>/{getLastSegment()}</span>
         {/if}
     </div>
     <div class="col-3 d-flex justify-content-end">
@@ -39,5 +39,24 @@
         width: 23px;
         
         margin: 10px;
+    }
+
+    div.col-12 {
+        position: relative;
+    }
+
+    div.col-12 div {
+        position: relative;
+        top: -60px;
+    }
+
+    
+
+    span {
+        color: white;
+    }
+
+    div.col-12 div a {
+        color: var(--color-highlight) !important;
     }
 </style>

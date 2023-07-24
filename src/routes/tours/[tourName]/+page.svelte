@@ -162,7 +162,7 @@
                   } }>
                   <SplideTrack>
                     {#each Array(tour.pics) as pic, i}
-                        <SplideSlide class="mb-5 mt-0 mr-3">
+                        <SplideSlide class="mb-3 mt-0 mr-3">
                             <TourImg {tour} picIndex={i}/>
                             
                             
@@ -170,7 +170,7 @@
                     {/each}
                         
                     </SplideTrack>
-                    <div class="splide__arrows">
+                    <div class="splide__arrows col-12 d-flex justify-content-between">
                         <button class="splide__arrow splide__arrow--prev"><i class="fa-solid fa-caret-left"></i></button>
                         <button class="splide__arrow splide__arrow--next"><i class="fa-solid fa-caret-right"></i></button>
                     </div>
