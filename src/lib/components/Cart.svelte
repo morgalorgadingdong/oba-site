@@ -22,6 +22,9 @@
 
     let total
     $: total = $cart.reduce((acc, item) => acc + item.price * item.quantity, 0)
+    
+    let currentCart
+    $: currentCart = $cart
 
   </script>
   
@@ -50,7 +53,7 @@
       <h3 class="col-12 text-right">Total: $ {total}</h3>
       <div class="col-12 d-flex justify-content-end my-3">
         
-          <CheckOutButton />
+          <CheckOutButton {currentCart} />
         
       </div>
       <div class="col-12 d-flex justify-content-end">

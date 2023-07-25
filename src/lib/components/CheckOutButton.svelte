@@ -2,10 +2,26 @@
 import { cart } from '$lib/stores/cart';
 import { goto } from '$app/navigation';
 
+export let currentCart
+
+
+$: currentCart = $cart
 let isLoading = false;
-let currentCart = $cart         
+// let currentCart = $cart         
 console.log(currentCart)
-let formattedCart = currentCart.map(item => {
+
+
+
+// name: item.name,
+// quantity: item.quantity,
+// basePriceMoney: {
+//     amount: item.price * 100,
+//     currency: 'USD'
+// }
+
+
+async function createCheckoutLink() {
+  let formattedCart = currentCart.map(item => {
     return {
         name: item.name,
         quantity: String(item.quantity),
@@ -17,16 +33,6 @@ let formattedCart = currentCart.map(item => {
     }
 })
 console.log(formattedCart)
-
-// name: item.name,
-// quantity: item.quantity,
-// basePriceMoney: {
-//     amount: item.price * 100,
-//     currency: 'USD'
-// }
-
-
-async function createCheckoutLink() {
   isLoading = true;  
   const data = {
       items: formattedCart
