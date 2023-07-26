@@ -92,6 +92,7 @@
     .product-image {
         width: 100%;
         height: auto;
+        max-height: 80vh;
         object-fit: contain;
     }
 
