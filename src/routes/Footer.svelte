@@ -8,7 +8,7 @@
         </div>
         <div class="col-12 col-md-3 px-0 order-md-1 d-flex align-content-center flex-wrap py-3">
             <p class="col-12">Oregon Bicycle Adventures, LLC</p>
-            <p class="col-12">morgan@oregonbicycleadventures.com</p>
+            <p class="col-12">carl.smith@oregonbicycleadventures.com</p>
             <p class="col-12">(360) 483-7042</p>
             <p class="col-12">Bend, Oregon</p>
         </div>
