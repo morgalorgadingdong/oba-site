@@ -140,20 +140,20 @@ const options = {
 	<!-- <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/c3115bc4a5f9197edced380b/script.js"><\/script>  -->
 	<!-- End cookieyes banner -->
 	<!-- Google tag (gtag.js) -->
-	<script type="module" src="https://cookieconsent.popupsmart.com/js/CookieConsent.js" ><\/script>
-<script type="text/javascript" src="https://cookieconsent.popupsmart.com/js/App.js"><\/script>
-<script>
-    popupsmartCookieConsentPopup({
-        "siteName" : "Oregon Bicycle Adventures" ,
-        "notice_banner_type": "simple-dialog",
-        "consent_type": "gdpr",
-        "palette": "light",
-        "language": "English",
-        "privacy_policy_url" : "#" ,
-        "preferencesId" : "#" ,
-        "companyLogoURL" : "https://d2r80wdbkwti6l.cloudfront.net/Xf5V2NhFdvaeI61iTGq2b7kCi62QjhtF.jpg"
-    });
-<\/script>
+	<!-- <script type="module" src="https://cookieconsent.popupsmart.com/js/CookieConsent.js" ><\/script>
+	<script type="text/javascript" src="https://cookieconsent.popupsmart.com/js/App.js"><\/script>
+	<script>
+		popupsmartCookieConsentPopup({
+			"siteName" : "Oregon Bicycle Adventures" ,
+			"notice_banner_type": "simple-dialog",
+			"consent_type": "gdpr",
+			"palette": "light",
+			"language": "English",
+			"privacy_policy_url" : "#" ,
+			"preferencesId" : "#" ,
+			"companyLogoURL" : "https://d2r80wdbkwti6l.cloudfront.net/Xf5V2NhFdvaeI61iTGq2b7kCi62QjhtF.jpg"
+		});
+	<\/script> -->
 <!-- Google Analytics start -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SVWKMZV73D" type="text/plain" cookie-consent="tracking"><\/script>
 	<script type="text/plain" cookie-consent="tracking">
@@ -229,7 +229,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "myt8ya"
+  version_hash: "1wj0ttm"
 };
 function get_hooks() {
   return import("./hooks.server.js");

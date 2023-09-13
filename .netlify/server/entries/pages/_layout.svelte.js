@@ -24,11 +24,7 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $page.url.pathname.startsWith("/store") ? "page" : void 0,
     0
   )} href="${"/store"}"><li class="${"svelte-1clsoqq"}">Store</li></a>
-            <a class="${"nav-item d-flex justify-content-center align-items-center svelte-1clsoqq"}"${add_attribute(
-    "aria-current",
-    $page.url.pathname.startsWith("/blog") ? "page" : void 0,
-    0
-  )} href="${"/blog"}"><li class="${"svelte-1clsoqq"}">Blog</li></a>
+            
             <a class="${"nav-item d-flex justify-content-center align-items-center svelte-1clsoqq"}"${add_attribute(
     "aria-current",
     $page.url.pathname.startsWith("/about") ? "page" : void 0,
@@ -56,11 +52,7 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $page.url.pathname.startsWith("/store") ? "page-mobile" : void 0,
     0
   )} href="${"/store"}"><li class="${"svelte-1clsoqq"}">Store</li></a>
-                <a class="${"d-flex justify-content-center align-items-center svelte-1clsoqq"}"${add_attribute(
-    "aria-current",
-    $page.url.pathname.startsWith("/blog") ? "page-mobile" : void 0,
-    0
-  )} href="${"/blog"}"><li class="${"svelte-1clsoqq"}">Blog</li></a>
+                
                 <a class="${"d-flex justify-content-center align-items-center svelte-1clsoqq"}"${add_attribute(
     "aria-current",
     $page.url.pathname.startsWith("/about") ? "page-mobile" : void 0,

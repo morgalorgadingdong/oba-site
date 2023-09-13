@@ -360,6 +360,10 @@
         <a href="{tour.bookBtnURL}"><button class="btn btn-primary">Book now</button></a>
     </div>  
 
+    <div class="col-12 d-flex justify-content-center mb-5">
+        
+        <a href="{tour.contactBtnURL}"><button class="btn btn-primary">Contact us</button></a>
+    </div>
 
     <div class="col-12 px-1 px-sm-3 px-lg-5 d-flex justify-content-start">
         <a href="/tours" class="back-to"><button class="btn btn-secondary mb-5">Back to all tours</button></a>

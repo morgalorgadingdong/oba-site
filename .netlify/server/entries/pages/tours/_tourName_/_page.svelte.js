@@ -198,6 +198,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     
     <div class="${"col-12 d-flex justify-content-center mb-5"}"><a${add_attribute("href", tour.bookBtnURL, 0)} class="${"svelte-1wnyjt7"}"><button class="${"btn btn-primary"}">Book now</button></a></div>  
 
+    <div class="${"col-12 d-flex justify-content-center mb-5"}"><a${add_attribute("href", tour.contactBtnURL, 0)} class="${"svelte-1wnyjt7"}"><button class="${"btn btn-primary"}">Contact us</button></a></div>
 
     <div class="${"col-12 px-1 px-sm-3 px-lg-5 d-flex justify-content-start"}"><a href="${"/tours"}" class="${"back-to svelte-1wnyjt7"}"><button class="${"btn btn-secondary mb-5"}">Back to all tours</button></a></div>
     

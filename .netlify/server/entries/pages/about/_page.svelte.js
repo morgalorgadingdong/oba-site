@@ -14,7 +14,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 <section id="${"about-intro"}" class="${"col-12 d-flex justify-content-center flex-wrap py-5 svelte-p0yttu"}">
     <div class="${"col-12 d-flex justify-content-center svelte-p0yttu"}"><img src="${"./img/OBA_Icon.png"}" alt="${"Oregon Bicycle Adventures Icon"}" class="${"icon svelte-p0yttu"}">
-        <p class="${"py-0 my-0 col-12 col-md-10 col-lg-8 col-xl-6 svelte-p0yttu"}">Oregon Bicycle Adventures is a locally owned and operated bicycle tour company founded by friends Carl and Morgan. Our passion for cycling and exploring Oregon&#39;s diverse landscapes is at the heart of every tour we offer.</p></div></section>
+        <p class="${"py-0 my-0 col-12 col-md-10 col-lg-8 col-xl-6 svelte-p0yttu"}">Oregon Bicycle Adventures is a locally owned and operated bicycle tour company founded by two friends. Our passion for cycling and exploring Oregon&#39;s diverse landscapes is at the heart of every tour we offer.</p></div></section>
 
 <section id="${"mission-section"}" class="${"col-12 d-flex justify-content-center flex-wrap py-5 mb-5 svelte-p0yttu"}">
     <div class="${"col-12 col-md-10 col-lg-8 col-xl-6"}"><h2>Our Mission</h2>
@@ -24,14 +24,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     
     <div class="${"col-12 d-flex justify-content-between flex-wrap align-items-center mb-5"}"><div class="${"col-12 col-lg-4 py-3 px-0"}"><img src="${"./img/carl.jpg"}" alt="${"Carl"}" class="${"img vh-50"}"></div>
         <div class="${"col-12 col-lg-8 py-3 px-0 px-md-5 d-flex align-items-center flex-wrap"}"><h3 class="${"col-12 px-0"}">Carl</h3>
-            <p class="${"col-12 px-0 svelte-p0yttu"}">Co-owner and guide</p>
-            <p class="${"svelte-p0yttu"}">Carl has always been passionate about providing memorable experiences for others. His first venture began in 2016 with a winery tour company, where he discovered the joy of creating unique and enjoyable outings for his clients. After moving to Oregon in 2017, Carl quickly embraced the outdoor lifestyle, and the state&#39;s natural beauty became an integral part of his life. His enthusiasm, expertise, and dedication to curating exceptional adventures make him an invaluable member of our team, ensuring that each cycling tour is enjoyable and remarkable for our guests.</p>
-            </div></div>
-    <div class="${"col-12 d-flex justify-content-between flex-wrap align-items-center mb-5"}"><div class="${"col-12 col-lg-4 py-3 px-0"}"><img src="${"./img/morgan.jpg"}" alt="${"Morgan"}" class="${"img vh-50"}"></div>
-        <div class="${"col-12 col-lg-8 py-3 px-0 px-md-5 d-flex align-items-center flex-wrap"}"><h3 class="${"col-12 px-0"}">Morgan</h3>
-            <p class="${"col-12 px-0 svelte-p0yttu"}">Co-owner and guide</p>
-            <p class="${"svelte-p0yttu"}">Morgan, an Oregon native, has spent his life exploring the state&#39;s captivating landscape. From childhood camping trips to adult adventures, he knows Oregon like the back of his hand. In 2021, he made a bold decision to leave his career as a mechanical engineer and pursue his dream of biking across the country. This journey not only ignited a passion for cycling but also deepened his love for his home state. Morgan&#39;s extensive knowledge of Oregon and his commitment to cycling allow him to create authentic, engaging experiences for our guests.</p>
-            </div></div>
+            <p class="${"col-12 px-0 svelte-p0yttu"}">Owner and guide</p>
+            <p class="${"svelte-p0yttu"}">Carl has always been passionate about providing memorable experiences for others. His first venture began in 2016 with a winery tour company, where he discovered the joy of creating unique and enjoyable outings for his clients. After moving to Oregon in 2017, Carl quickly embraced the outdoor lifestyle, and the state&#39;s natural beauty became an integral part of his life. His enthusiasm, expertise, and dedication to curating exceptional adventures make him an invaluable member of our team, ensuring that each cycling tour is enjoyable and remarkable for our guests.</p></div></div>
+    
 </section>`;
 });
 export {
