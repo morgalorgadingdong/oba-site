@@ -28,7 +28,7 @@
     </div>
 </section>
 
-<section class="col-12 d-flex justify-content-center flex-wrap py-5 px-3 px-lg-5">
+<!-- <section class="col-12 d-flex justify-content-center flex-wrap py-5 px-3 px-lg-5 hidden">
     <h2>Get to know us</h2>
     
     <div class="col-12 d-flex justify-content-between flex-wrap align-items-center mb-5">
@@ -41,7 +41,7 @@
             <p>Carl has always been passionate about providing memorable experiences for others. His first venture began in 2016 with a winery tour company, where he discovered the joy of creating unique and enjoyable outings for his clients. After moving to Oregon in 2017, Carl quickly embraced the outdoor lifestyle, and the state's natural beauty became an integral part of his life. His enthusiasm, expertise, and dedication to curating exceptional adventures make him an invaluable member of our team, ensuring that each cycling tour is enjoyable and remarkable for our guests.</p>
         </div>
     </div>
-    <!-- <div class="col-12 d-flex justify-content-between flex-wrap align-items-center mb-5">
+    <div class="col-12 d-flex justify-content-between flex-wrap align-items-center mb-5">
         <div class="col-12 col-lg-4 py-3 px-0">
             <img src="./img/morgan.jpg" alt="Morgan" class="img vh-50">
         </div>
@@ -51,8 +51,8 @@
             <p>Morgan, an Oregon native, has spent his life exploring the state's captivating landscape. From childhood camping trips to adult adventures, he knows Oregon like the back of his hand. In 2021, he made a bold decision to leave his career as a mechanical engineer and pursue his dream of biking across the country. This journey not only ignited a passion for cycling but also deepened his love for his home state. Morgan's extensive knowledge of Oregon and his commitment to cycling allow him to create authentic, engaging experiences for our guests.</p>
         </div>
         
-    </div> -->
-</section>
+    </div>
+</section> -->
 
 <style>
     #mission-section {
